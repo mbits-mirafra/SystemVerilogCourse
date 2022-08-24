@@ -1,5 +1,5 @@
 # vsim work.fork_join_none -l fork_join_none.log -c -do "run -all;quit;" 
-# Start time: 23:58:21 on Aug 22,2022
+# Start time: 05:18:37 on Aug 25,2022
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -31,5 +31,5 @@
 # Thread-5-1: [12] oops
 # main_Thread-4: [15] ending of fork-join
 # quit
-# End time: 23:58:22 on Aug 22,2022, Elapsed time: 0:00:01
+# End time: 05:18:37 on Aug 25,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
