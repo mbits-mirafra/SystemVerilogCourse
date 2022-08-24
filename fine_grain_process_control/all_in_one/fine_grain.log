@@ -1,6 +1,6 @@
 # vsim fine_grain -l fine_grain.log -c -do "run -all;quit;" 
-# Start time: 04:59:34 on Aug 25,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 05:25:28 on Aug 25,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -33,5 +33,5 @@
 #                   14p4
 #                   15p4:FINISHED
 # quit
-# End time: 04:59:35 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 05:25:29 on Aug 25,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
