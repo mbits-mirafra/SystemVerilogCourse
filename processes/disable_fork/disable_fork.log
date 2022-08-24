@@ -1,6 +1,6 @@
 # vsim disable_fork -l disable_fork.log -c -do "run -all;quit;" 
-# Start time: 10:58:09 on Aug 23,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 05:21:10 on Aug 25,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -15,3 +15,12 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
+# Loading sv_std.std
+# Loading work.disable_fork(fast)
+# run -all
+# main_Thread-1: [5] starting of fork-join
+# Thread-1: [5] basics of syatem verilog
+# main_Thread-2: [15] ending of fork-join
+# quit
+# End time: 05:21:10 on Aug 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
