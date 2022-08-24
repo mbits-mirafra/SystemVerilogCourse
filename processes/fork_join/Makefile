@@ -10,4 +10,5 @@ simulate:
 
 clear:
 	clear
+	rm -rf fork_join.log
 

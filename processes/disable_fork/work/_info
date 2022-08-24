@@ -1,0 +1,43 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/vinay_B7/SystemVerilog_Course/processes/disable_fork
+T_opt
+!s110 1661232489
+VOCKhU22Y;GG_4?HiMAzKe2
+04 12 4 work disable_fork fast 0
+=1-a4badb503ddd-63046569-7152d-32f0
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+vdisable_fork
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1661232488
+!i10b 1
+!s100 hlJif^hK[l=H3ZTYoJ0QW1
+I^:zJ75<;_1DI@nE6?c]E@1
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 disable_fork_sv_unit
+S1
+R0
+w1661232485
+8disable_fork.sv
+Fdisable_fork.sv
+L0 10
+OE;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1661232488.000000
+!s107 disable_fork.sv|
+!s90 -sv|disable_fork.sv|
+!i113 0
+o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
