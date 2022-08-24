@@ -1,6 +1,6 @@
 # vsim logic_data -l logic_file.log -c -do "run -all;quit;" 
-# Start time: 04:38:51 on Aug 22,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 02:41:40 on Aug 25,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,8 +18,11 @@
 # Loading sv_std.std
 # Loading work.logic_data(fast)
 # run -all
-# data=xxx
-# data=101
+# 
+# Default value of logic data type =xxx
+# 
+# Value of logic data type  after initialization =101
+# 
 # quit
-# End time: 04:38:52 on Aug 22,2022, Elapsed time: 0:00:01
+# End time: 02:41:41 on Aug 25,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -9,26 +9,125 @@ z2
 cModel Technology
 Z0 d/hwetools/work_area/frontend/mouna/System_verilog/SystemVerilog_Course/data_type/logic
 T_opt
-!s110 1661123307
-Vd:keL[og89lWz78`>SoJn2
-04 10 4 work logic_data fast 0
-=1-a4badb503ddd-6302baeb-9a446-4ad6
-o-quiet -auto_acc_if_foreign -work work
-Z1 tCvgOpt 0
+!s110 1661375501
+VV7ZnA3H]kCkjLf4199K@@0
+Z1 04 10 4 work logic_data fast 0
+=1-a4badb503ddd-6306940c-e4471-34a6
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
 n@_opt
-OE;O;10.6c;65
+Z4 OE;O;10.6c;65
+T_opt1
+!s110 1661204790
+V]SWb@A]?DT@UCz3_=<2?V0
+R1
+=1-a4badb503ddd-6303f936-b7e70-59ca
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt10
+!s110 1661208492
+Vf>9e68f;:RIIASZn?nIXV1
+R1
+=1-a4badb503ddd-630407ac-a5bbf-3bb
+R2
+R3
+n@_opt10
+R4
+R0
+T_opt2
+!s110 1661205554
+V_O`bSPW>NVF@m3nI^?0hn2
+R1
+=1-a4badb503ddd-6303fc32-471ef-7101
+R2
+R3
+n@_opt2
+R4
+R0
+T_opt3
+!s110 1661206153
+VgFg;`Q43mGz?Aifc<TF8P1
+R1
+=1-a4badb503ddd-6303fe89-9f69a-7a0a
+R2
+R3
+n@_opt3
+R4
+R0
+T_opt4
+!s110 1661206436
+V;;LjOS9[`ez[i^WFIFG?X3
+R1
+=1-a4badb503ddd-6303ffa4-4f206-53d0
+R2
+R3
+n@_opt4
+R4
+R0
+T_opt5
+!s110 1661206695
+VP4@5@@CKk`lLQEXUVZA`D3
+R1
+=1-a4badb503ddd-630400a7-4cd97-5994
+R2
+R3
+n@_opt5
+R4
+R0
+T_opt6
+!s110 1661206732
+VPH8AL3Pebe]_ROLCRbgNm2
+R1
+=1-a4badb503ddd-630400cc-872e9-5c13
+R2
+R3
+n@_opt6
+R4
+R0
+T_opt7
+!s110 1661207403
+VkjgW7]SZMSo`ZY>iJZF0Y1
+R1
+=1-a4badb503ddd-6304036b-4c131-67ee
+R2
+R3
+n@_opt7
+R4
+R0
+T_opt8
+!s110 1661207681
+VkWhQ0DW@7KEOc85mIaTO_0
+R1
+=1-a4badb503ddd-63040481-1238f-76c3
+R2
+R3
+n@_opt8
+R4
+R0
+T_opt9
+!s110 1661207784
+VHTgfUUdP@JdM^b^]V2B0H1
+R1
+=1-a4badb503ddd-630404e7-dda47-781b
+R2
+R3
+n@_opt9
+R4
 R0
 vlogic_data
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1661123331
+!s110 1661375499
 !i10b 1
-!s100 DRHoS1^eeUJT3_^3HzQ^51
-IVOLTj:QEknldK2[[l2RHm1
+!s100 M7[kI`3`bnWL=CjzY^TOO0
+Ij]TJDFU9X1B;hkFPSmXAE1
 VDg1SIo80bB@j0V0VzS_@n1
 !s105 logic_file_sv_unit
 S1
 R0
-w1661123281
+w1661375496
 8logic_file.sv
 Flogic_file.sv
 L0 5
@@ -36,9 +135,9 @@ OE;L;10.6c;65
 r1
 !s85 0
 31
-!s108 1661123330.000000
+!s108 1661375499.000000
 !s107 logic_file.sv|
 !s90 -sv|logic_file.sv|
 !i113 0
 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+R3
