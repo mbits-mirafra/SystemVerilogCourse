@@ -7,6 +7,7 @@ compile:
 
 simulate:
 	vsim sample -l fork_join.log -c -do "run -all;quit;"
+	rm -rf work
 
 clear:
 	clear
