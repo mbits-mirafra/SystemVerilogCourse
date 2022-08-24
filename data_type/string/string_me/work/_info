@@ -1,0 +1,103 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/mouna/System_verilog/SystemVerilog_Course/data_type/string/string_me
+T_opt
+!s110 1661362223
+VF1B1i0iOlS5onDO25A4gY2
+Z1 04 8 4 work string_m fast 0
+=1-a4badb503ddd-6306602f-2c0f6-7352
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+Z4 OE;O;10.6c;65
+T_opt1
+!s110 1661279070
+VkeN4>HifP<hfW:FN^:S1Z0
+R1
+=1-a4badb503ddd-63051b5e-97095-79b2
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1661279149
+VZ@^[[2YA60b^n9193LW[i1
+R1
+=1-a4badb503ddd-63051bad-ab31f-4363
+R2
+R3
+n@_opt2
+R4
+R0
+T_opt3
+!s110 1661271613
+VJm@hFl5JJaER5AW?Uh:D<0
+R1
+=1-a4badb503ddd-6304fe3d-7a915-7d60
+R2
+R3
+n@_opt3
+R4
+R0
+T_opt4
+!s110 1661276513
+Vk<3m@M0:Kho^z6zOh[PoU2
+R1
+=1-a4badb503ddd-63051161-60aef-1b7a
+R2
+R3
+n@_opt4
+R4
+R0
+T_opt5
+!s110 1661276535
+VWYdeYzfL[3b1^Y^PVEzKW2
+R1
+=1-a4badb503ddd-63051177-cc1e6-4c61
+R2
+R3
+n@_opt5
+R4
+R0
+T_opt6
+!s110 1661276734
+V8TEDgHjY07oE;;;TzlH`Z1
+R1
+=1-a4badb503ddd-6305123e-8ff8f-7ad
+R2
+R3
+n@_opt6
+R4
+R0
+vstring_m
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1661362216
+!i10b 1
+!s100 g^zimOMD:YaJ=CfTK[0c50
+I4OmM7k84`L66SAnJSI:T:2
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 string_method_sv_unit
+S1
+R0
+w1661362214
+8string_method.sv
+Fstring_method.sv
+L0 1
+OE;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1661362216.000000
+!s107 string_method.sv|
+!s90 -sv|string_method.sv|
+!i113 0
+o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3

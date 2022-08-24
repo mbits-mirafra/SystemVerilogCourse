@@ -1,0 +1,43 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/mouna/System_verilog/SystemVerilog_Course/data_type/string/string_op
+T_opt
+!s110 1661369254
+VQQNR1B21_FMK=X1K>=zf81
+04 8 4 work string_o fast 0
+=1-a4badb503ddd-63067ba5-e6352-2251
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+vstring_o
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1661369247
+!i10b 1
+!s100 @Lc[fm7`ThO06no`<]om02
+Ined2W[Z`<^;;CBeIBGCBN3
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 string_op_sv_unit
+S1
+R0
+w1661369225
+8string_op.sv
+Fstring_op.sv
+L0 1
+OE;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1661369247.000000
+!s107 string_op.sv|
+!s90 -sv|string_op.sv|
+!i113 0
+o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
