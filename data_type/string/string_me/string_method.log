@@ -1,5 +1,5 @@
 # vsim string_m -l string_method.log -c -do "run -all;quit;" 
-# Start time: 23:00:23 on Aug 24,2022
+# Start time: 21:09:35 on Aug 25,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -22,38 +22,38 @@
 # str=Manipal
 # str1=mirafra
 # 
-# str.len() - Returns length of string
-# Output of str.len()
+# // str.len() - Returns length of string
+# // Output of str.len()
 # 7
 # 
-# temp.putc() - Used to assign one character of string
-# Output of temp.putc(3, t)
+# // temp.putc() - Used to assign one character of string
+# // Output of temp.putc(3, t)
 # Mantpal
 # 
-# str.getc() - Returns a character
-# Output of str.getc(1))
+# // str.getc() - Returns a character
+# // Output of str.getc(1))
 # a
 # 
-# str.tolower() - Returns the lowercase of string
-# Output of str.tolower()
+# // str.tolower() - Returns the lowercase of string
+# // Output of str.tolower()
 # manipal
 # 
-# str.toupper() - Returns the uppercase of string
-# Output of str.toupper()
+# // str.toupper() - Returns the uppercase of string
+# // Output of str.toupper()
 # MANIPAL
 # 
-# str.compare() - Returns the string compared result in ascii format
-# Output of str.compare(str1)
+# // str.compare() - Returns the string compared result in ascii format
+# // Output of str.compare(str1)
 #         -32
 # 
-# str.icompare() - Returns caseless string compared result in ascii format
-# Output of str.icompare(str1)
+# // str.icompare() - Returns caseless string compared result in ascii format
+# // Output of str.icompare(str1)
 #          -8
 # 
-# str.substr(1,2) - Returns the sub string of main string
-# Output of str.substr(1,2)
+# // str.substr(1,2) - Returns the sub string of main string
+# // Output of str.substr(1,2)
 # an
 # 
 # quit
-# End time: 23:00:24 on Aug 24,2022, Elapsed time: 0:00:01
+# End time: 21:09:37 on Aug 25,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0

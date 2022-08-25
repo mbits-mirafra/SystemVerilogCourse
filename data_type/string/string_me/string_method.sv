@@ -12,47 +12,47 @@ initial begin
   $display("str1=mirafra"); 
 
   //gives the length of a string
-  $display("\nstr.len() - Returns length of string");
-  $display("Output of str.len()");
+  $display("\n// str.len() - Returns length of string");
+  $display("// Output of str.len()");
   $display("%0d",str.len());
 
   //replace the given index(3) with the given letter(t)
   // temp is initialised to string because to make the changes, i.e temp.putc(3, "t")
   temp=str;
   temp.putc(3, "t");
-  $display("\ntemp.putc() - Used to assign one character of string");
-  $display("Output of temp.putc(3, t)");
+  $display("\n// temp.putc() - Used to assign one character of string");
+  $display("// Output of temp.putc(3, t)");
   $display("%s", temp);
 
 
   //gives the mentioned index(1) letter from string
-  $display("\nstr.getc() - Returns a character");
-  $display("Output of str.getc(1))");
+  $display("\n// str.getc() - Returns a character");
+  $display("// Output of str.getc(1))");
   $display("%s", str.getc(1));
 
   //gives the string in lowercase
-  $display("\nstr.tolower() - Returns the lowercase of string");
-  $display("Output of str.tolower()");
+  $display("\n// str.tolower() - Returns the lowercase of string");
+  $display("// Output of str.tolower()");
   $display("%s", str.tolower());
 
   //gives the string in uppercase
-  $display("\nstr.toupper() - Returns the uppercase of string");
-  $display("Output of str.toupper()");
+  $display("\n// str.toupper() - Returns the uppercase of string");
+  $display("// Output of str.toupper()");
   $display("%s", str.toupper());
 
   //Here 2 string are compared and the result is ascii value
-  $display("\nstr.compare() - Returns the string compared result in ascii format");
-  $display("Output of str.compare(str1)");
+  $display("\n// str.compare() - Returns the string compared result in ascii format");
+  $display("// Output of str.compare(str1)");
   $display("%d", str.compare(str1));
 
   //Here 2 string are compared regardless of their case(upper or lower) and the result is ascii value
-  $display("\nstr.icompare() - Returns caseless string compared result in ascii format");
-  $display("Output of str.icompare(str1)");
+  $display("\n// str.icompare() - Returns caseless string compared result in ascii format");
+  $display("// Output of str.icompare(str1)");
   $display("%d", str.icompare(str1));
 
   //gives the string letter which is mentioned(1,2) as below
-  $display("\nstr.substr(1,2) - Returns the sub string of main string");
-  $display("Output of str.substr(1,2)");
+  $display("\n// str.substr(1,2) - Returns the sub string of main string");
+  $display("// Output of str.substr(1,2)");
   $display("%s", str.substr(1,2));
   $display("");
 end

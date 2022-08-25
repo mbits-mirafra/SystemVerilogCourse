@@ -1,6 +1,6 @@
 # vsim string_o -l string_op.log -c -do "run -all;quit;" 
-# Start time: 00:57:33 on Aug 25,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 21:13:12 on Aug 25,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -22,29 +22,29 @@
 # str1 = Manipal
 # str2 = Udupi
 # 
-# str1 == str2, Equality operator
-# Output of equality operator
+# // str1 == str2, Equality operator
+# // Output of equality operator
 # string1 and string2 are not equal
 # 
-# str1 != str2, Inequality operator
-# Output of inequality operator
+# // str1 != str2, Inequality operator
+# // Output of inequality operator
 # string1 and string2 are not equal
 # 
-# Comparision operator ( > => < <= ), compares ascii value
-# Output of comparision operator
+# // Comparision operator ( > => < <= ), compares ascii value
+# // Output of comparision operator
 # String1 < String2 
 # String1 <= String2 
 # 
-# Concatenation of str1 and str2,{str1,str2}
-# Output of concatenation operator
+# // Concatenation of str1 and str2,{str1,str2}
+# // Output of concatenation operator
 # ManipalUdupi
 # 
-# Replication of str1,{2{str1}}
-# Output of replication operator
+# // Replication of str1,{2{str1}}
+# // Output of replication operator
 # ManipalManipal
 # 
-# Displaying index letter of a string,str1[i]
-# Output
+# // Displaying index letter of a string,str1[i]
+# // Output
 # M 
 # a 
 # n 
@@ -54,5 +54,5 @@
 # l 
 # 
 # quit
-# End time: 00:57:34 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 21:13:13 on Aug 25,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
