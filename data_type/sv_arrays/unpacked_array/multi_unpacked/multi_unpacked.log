@@ -1,0 +1,35 @@
+# vsim multi_unpacked -l multi_unpacked.log -c -do "run -all;quit;" 
+# Start time: 22:45:57 on Aug 25,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.multi_unpacked(fast)
+# run -all
+# 
+# // displaying values of 2 dimensional unpacked arrays
+# values of abc[0][0] = 29
+# values of abc[0][1] = 18
+# values of abc[0][2] = 34
+# values of abc[1][0] = 26
+# values of abc[1][1] = 32
+# values of abc[1][2] = 13
+# 
+# // displaying values of 2 dimensional unpacked array in one line
+# abc = '{'{29, 18, 34}, '{26, 32, 13}}
+# 
+# quit
+# End time: 22:45:58 on Aug 25,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

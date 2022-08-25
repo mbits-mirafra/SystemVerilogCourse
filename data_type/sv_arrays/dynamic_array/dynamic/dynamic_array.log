@@ -1,0 +1,35 @@
+# vsim dynamic_array -l dynamic_array.log -c -do "run -all;quit;" 
+# Start time: 22:32:07 on Aug 25,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dynamic_array(fast)
+# run -all
+# 
+# // setting array size to seven
+# 
+# // dynamic array values
+# value of abc[0]=11
+# value of abc[1]=12
+# value of abc[2]=13
+# value of abc[3]=14
+# value of abc[4]=15
+# value of abc[5]=16
+# value of abc[6]=17
+# 
+# quit
+# End time: 22:32:08 on Aug 25,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

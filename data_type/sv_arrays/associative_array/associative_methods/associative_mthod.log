@@ -1,0 +1,53 @@
+# vsim associative_method -l associative_mthod.log -c -do "run -all;quit;" 
+# Start time: 00:22:17 on Aug 26,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: associative_methods.sv(44): (vopt-2240) Treating stand-alone use of function 'first' as an implicit VOID cast.
+# ** Warning: associative_methods.sv(50): (vopt-2240) Treating stand-alone use of function 'last' as an implicit VOID cast.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.associative_method(fast)
+# run -all
+# 
+# // associative array given below
+# abc = '{"ahmedabad":25, "rajkot":55, "surendranagar":38, "vadodara":10 }
+# 
+# // abc.num() - gives number of elements inside array
+# // output of abc.num()
+# 4
+# 
+# // abc.size() - returns size of array
+# // output of abc.size()
+# 4
+# 
+# // abc.exists(index) - returns whether the particular index exists inside array or not
+# // output of abc.exist(vadodara)
+# index vadodara exists in array
+# 
+# // abc.first(index) - returns the first index value in array
+# // output of abc.first(variable)
+# abc[ahmedabad]=25
+# 
+# // abc.last(index) - returns the last index value in array
+# // output of abc.last(variable)
+# abc[vadodara]=10
+# 
+# // abc.delete(index) - deletes the index and it's corresponding value in array
+# // output after deleting rajkot index in array
+# '{"ahmedabad":25, "surendranagar":38, "vadodara":10 }
+# 
+# quit
+# End time: 00:22:18 on Aug 26,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
