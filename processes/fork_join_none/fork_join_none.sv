@@ -46,10 +46,10 @@ module fork_join_none();
       #0 $display("Thread-6: [%0t] fork_join_any",$time);//Thread 6
     join_none:fork_main
     
-    #0 $display("main_Thread-2: [%0t] assertions",$time);//Thread 7
-    #0 $display("main_Thread-3: [%0t] coverages",$time);//Thread 8
+    #0 $display("main_Thread-2: [%0t] assertions",$time);
+    #0 $display("main_Thread-3: [%0t] coverages",$time);
 
-    #10 $display("main_Thread-4: [%0t] ending of fork-join",$time);//Thread 9
+    #10 $display("main_Thread-4: [%0t] ending of fork-join",$time);
   
   end:main
 
