@@ -1,5 +1,5 @@
-# vsim work.func_by_value -l func_by_value_log.log -c -do "run -all;exit;" 
-# Start time: 11:18:09 on Aug 26,2022
+# vsim work.blocking_swap -l blocking_swap_log.log -c -do "run -all;exit;" 
+# Start time: 11:15:59 on Aug 26,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,10 +16,14 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.func_by_value(fast)
+# Loading work.blocking_swap(fast)
 # run -all
-# Result= 0 , addend= 5 , augend= 6
-# Result= 11 , addend= 5 , augend= 6
+# Inital : 
+# Greater_number=5 & Lesser_number=2
+# swapping with Temporary variable : 
+# Greater_number=2 & Lesser_number=5
+# swapping without Temporary variable : 
+# Greater_number=5 & Lesser_number=5
 # exit
-# End time: 11:18:09 on Aug 26,2022, Elapsed time: 0:00:00
+# End time: 11:15:59 on Aug 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

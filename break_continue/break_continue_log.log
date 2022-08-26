@@ -1,5 +1,5 @@
-# vsim func_by_value -c -do "run -all;exit;" 
-# Start time: 05:05:01 on Aug 25,2022
+# vsim work.break_continue -l break_continue_log.log -c -do "run -all;exit;" 
+# Start time: 11:22:43 on Aug 26,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,10 +16,14 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.func_by_value(fast)
+# Loading work.break_continue(fast)
 # run -all
-# Result= 0 , addend= 5 , augend= 6
-# Result= 11 , addend= 5 , augend= 6
+# array[0]=0
+# array[1]=1
+# array[0]=0
+# array[1]=1
+# array[3]=3
+# array[4]=4
 # exit
-# End time: 05:05:02 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 11:22:44 on Aug 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

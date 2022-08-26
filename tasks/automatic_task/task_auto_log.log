@@ -1,6 +1,6 @@
-# vsim blocking_swap -c -do "run -all;exit;" 
-# Start time: 05:11:55 on Aug 26,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim work.task_auto -l task_auto_log.log -c -do "run -all;exit;" 
+# Start time: 11:19:11 on Aug 26,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,14 +16,11 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.blocking_swap(fast)
+# Loading work.task_auto(fast)
 # run -all
-# Inital : 
-# Greater_number=5 & Lesser_number=2
-# swapping with Temporary variable : 
-# Greater_number=2 & Lesser_number=5
-# swapping without Temporary variable : 
-# Greater_number=5 & Lesser_number=5
+# Number before task =0
+# Number after first task =1
+# Number after second task =1
 # exit
-# End time: 05:11:56 on Aug 26,2022, Elapsed time: 0:00:01
+# End time: 11:19:12 on Aug 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

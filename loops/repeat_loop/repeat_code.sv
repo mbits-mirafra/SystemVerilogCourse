@@ -10,7 +10,7 @@ end
 module repeat_loop;
 int b;
 initial begin   //procedural_block
-  $display("---for_ever loop output-----");
+  $display("---repeat loop output-----");
 
   repeat(5) begin //repeat loop
   $display("\tVlaue of b=%0b",b);

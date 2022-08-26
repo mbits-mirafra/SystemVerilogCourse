@@ -1,6 +1,6 @@
 # vsim repeat_loop -l repeat_loop_output.log -c -do "run -all; exit;" 
-# Start time: 05:34:05 on Aug 25,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 11:09:34 on Aug 26,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,7 +18,7 @@
 # Loading sv_std.std
 # Loading work.repeat_loop(fast)
 # run -all
-# ---for_ever loop output-----
+# ---repeat loop output-----
 # 	Vlaue of b=0
 # 	Vlaue of b=1
 # 	Vlaue of b=10
@@ -26,5 +26,5 @@
 # 	Vlaue of b=100
 # ---------
 #  exit
-# End time: 05:34:06 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 11:09:35 on Aug 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,6 +1,6 @@
-# vsim task1 -c -do "run -all;exit;" 
-# Start time: 08:41:27 on Aug 25,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim priority_case -l priority_case_log.log -c -do "run -all;exit;" 
+# Start time: 11:13:12 on Aug 26,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,11 +16,10 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.task1(fast)
+# Loading work.priority_case(fast)
 # run -all
-# Number before task =0
-# Number after first task =1
-# Number after second task =1
-# exit
-# End time: 08:41:28 on Aug 25,2022, Elapsed time: 0:00:01
+# This is priority no 1
+# ** Note: $finish    : priority_case.sv(21)
+#    Time: 4 ns  Iteration: 0  Instance: /priority_case
+# End time: 11:13:13 on Aug 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,5 +1,5 @@
-# vsim task_auto -c -do "run -all;exit;" 
-# Start time: 08:51:11 on Aug 25,2022
+# vsim task1 -l task1.log -c -do "run -all;exit;" 
+# Start time: 11:22:15 on Aug 26,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,11 +16,11 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.task_auto(fast)
+# Loading work.task1(fast)
 # run -all
 # Number before task =0
 # Number after first task =1
-# Number after second task =1
+# Number after second task =2
 # exit
-# End time: 08:51:12 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 11:22:16 on Aug 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

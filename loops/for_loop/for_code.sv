@@ -13,4 +13,4 @@ initial begin//procedural block
   
     $display("\t Value of i =%0d",i);
   end
-  endmodule:for_loop
+endmodule:for_loop

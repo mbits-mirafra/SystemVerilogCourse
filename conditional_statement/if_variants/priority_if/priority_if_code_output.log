@@ -1,5 +1,5 @@
-# vsim work.func_by_value -l func_by_value_log.log -c -do "run -all;exit;" 
-# Start time: 11:18:09 on Aug 26,2022
+# vsim priority_if_code -l priority_if_code_output.log -c -do "run -all; exit;" 
+# Start time: 11:15:11 on Aug 26,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,10 +16,9 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.func_by_value(fast)
+# Loading work.priority_if_code(fast)
 # run -all
-# Result= 0 , addend= 5 , augend= 6
-# Result= 11 , addend= 5 , augend= 6
-# exit
-# End time: 11:18:09 on Aug 26,2022, Elapsed time: 0:00:00
+# Number is 4
+#  exit
+# End time: 11:15:11 on Aug 26,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
