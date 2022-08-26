@@ -44,8 +44,8 @@ module fork_join_any();
       
     join_any:fork_main
 
-    #1 $display("main_Thread-2: [%0t]assertions",$time);//Thread 6
-    #3 $display("main_Thread-3: [%0t] coverages",$time);//Thread 7
+    #1 $display("main_Thread-2: [%0t]assertions",$time);
+    #3 $display("main_Thread-3: [%0t] coverages",$time);
       
     #10 $display("main_Thread-4: [%0t] ending of fork-join",$time);
   
