@@ -1,14 +1,13 @@
 //--------------------------------------------------------------------------------------------
 //
-//fork-join_any block:
+//fork-join_any block: 
 //
-//This is a process control block where it can have multiple threads in it.
-//This is similar to begin-end block but there is a difference which is 
-//The begin-end works serially but fork-join_any works parallely.
+//This is a process control block where it can have multiple threads in it. 
+//This is very similar to fork-join block. 
 //
-//This is very similar to fork-join block here the main thread in fork-join will wait until all
-//the child threads get executed but where as in fork-join_any any of the one child thread get
-//executed the main thread will also works parallely to child threads.
+//Here in fork-join all the main Threads after join will wait until all the child Threads 
+//get executed but where as in fork-join_any any of the one child thread get executed 
+//then all the main thread will also works parallely to child threads.
 //--------------------------------------------------------------------------------------------
 
 module fork_join_any();
@@ -23,7 +22,7 @@ module fork_join_any();
       //This is a fork-join block.
       //In this block we can have multiple threads like
       //begin-end,$displays
-      //Even a fork-join has nested fork-join in it.
+      //Even a fork-join_any has nested fork-join in it.
       //
       //-------------------------------------------------------
 
@@ -45,8 +44,8 @@ module fork_join_any();
       
     join_any:fork_main
 
-    #1 $display("main_Thread-2: [%0t]assertions",$time);//Thread 6
-    #3 $display("main_Thread-3: [%0t] coverages",$time);//Thread 7
+    #1 $display("main_Thread-2: [%0t]assertions",$time);
+    #3 $display("main_Thread-3: [%0t] coverages",$time);
       
     #10 $display("main_Thread-4: [%0t] ending of fork-join",$time);
   
