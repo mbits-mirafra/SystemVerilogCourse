@@ -6,34 +6,28 @@ typedef struct packed {
 	bit[7:0]experience;
 	logic[15:0] salary;
 
-} employee_details;     //Structure_name
+} employee_details_s;     //Structure_name
 
 module emp_info;
 
 //declare structure variable 
-employee_details emp_info; 
+employee_details_s emp_info1,emp_info2; 
 
 initial begin
 
 //values initialize to structure members 
-emp_info.id =43;
-emp_info.experience = 2;
-emp_info.salary = 25000;
+emp_info1.id =43;
+emp_info1.experience = 2;
+emp_info1.salary = 25000;
 
 //Display the values
 $display("\n Packed structure example");
-$display("\n structure name = employee_details"); 
-$display("\n emp_info = %p", emp_info);
+$display("\n structure name 'employee_details_s' "); 
+$display("\n emp_info1.id = %p", emp_info1.id);
+$display("\n emp_info1.experience = %p", emp_info1.experience);
+$display("\n emp_info1.salary = %p", emp_info1.salary);
 
-
-//Initialization of values to structure members 
-emp_info.id = 67 ;
-emp_info.experience  = 4;
-emp_info.salary = 50000;
-
-//Display the values
-$display("\n emp_info = %p", emp_info);
-$display("");
+$display("\n Bitstream size of emp_info1: %0d", $bits(emp_info1));
 
 end
 endmodule:emp_info
