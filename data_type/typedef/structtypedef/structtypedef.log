@@ -1,6 +1,6 @@
 # vsim structtype -l structtypedef.log -c -do "run -all;quit;" 
-# Start time: 04:46:36 on Aug 25,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 20:12:40 on Aug 30,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -21,8 +21,13 @@
 # 
 #  typedef structure example
 # 
-#  details = '{name:"Melbin", id:23, age:22}
+#  details.name = "Melbin"
 # 
+#  details.id = 23
+# 
+#  details.li = 22
+# 
+#  Bitstream size of personal_details_s: 120
 # quit
-# End time: 04:46:36 on Aug 25,2022, Elapsed time: 0:00:00
+# End time: 20:12:41 on Aug 30,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

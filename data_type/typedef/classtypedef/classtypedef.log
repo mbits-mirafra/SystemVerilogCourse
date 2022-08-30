@@ -1,6 +1,6 @@
 # vsim typedefclass -l classtypedef.log -c -do "run -all;quit;" 
-# Start time: 08:42:00 on Aug 25,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 20:22:09 on Aug 30,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -22,8 +22,8 @@
 # 
 #  typedef class example
 # 
-#  fruit1 and fruit2
+#  fruit2 class usage with typedef to avoid compile error
 # 
 # quit
-# End time: 08:42:01 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 20:22:10 on Aug 30,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
