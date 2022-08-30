@@ -11,7 +11,7 @@ typedef struct packed {
 module emp_info;
 
 //declare structure variable 
-employee_details_s emp_info1,emp_info2; 
+employee_details_s emp_info1; 
 
 initial begin
 
@@ -26,7 +26,7 @@ $display("\n structure name 'employee_details_s' ");
 $display("\n emp_info1.id = %p", emp_info1.id);
 $display("\n emp_info1.experience = %p", emp_info1.experience);
 $display("\n emp_info1.salary = %p", emp_info1.salary);
-
+// Display in bit size
 $display("\n Bitstream size of emp_info1: %0d", $bits(emp_info1));
 
 end
