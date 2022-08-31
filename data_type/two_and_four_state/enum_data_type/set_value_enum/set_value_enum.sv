@@ -3,12 +3,12 @@
 module set_value_enum;
   
 //in the below line set value other than default to an enum data type.
- enum {monday=0, tuesday, wednesday=5, thursday=7, friday=10, saturday, sunday }days;
+ enum {MONDAY=0, TUESDAY, WEDNESDAY=5, THURSDAY=7, FRIDAY=10, SATURDAY, SUNDAY }days;
 
  initial begin
 
    //displaying days and its value
-   $display("\n//days and given its value = {monday=0, tuesday, wednesday=5, thursday=7, friday=10, saturday, sunday }");
+   $display("\n//days and given its value = {\n MONDAY=0,\n TUESDAY,\n WEDNESDAY=5,\n THURSDAY=7,\n FRIDAY=10,\n SATURDAY,\n SUNDAY\n }");
    days = days.first; //assign first day in variable days
 
     $display("");

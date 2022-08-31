@@ -1,5 +1,5 @@
 # vsim default_value_enum -l default_value_enum.log -c -do "run -all; exit;" 
-# Start time: 12:38:20 on Aug 25,2022
+# Start time: 00:04:41 on Sep 01,2022
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -19,16 +19,24 @@
 # Loading work.default_value_enum(fast)
 # run -all
 # 
-# // days = {monday, tuesday, wednesday, thursday, friday, saturday, sunday }
+# // days = {
+#  MONDAY,
+#  TUESDAY,
+#  WEDNESDAY,
+#  THURSDAY,
+#  FRIDAY,
+#  SATURDAY,
+#  SUNDAY
+#  }
 # 
-# Days name = monday  and its default value is = 0
-# Days name = tuesday  and its default value is = 1
-# Days name = wednesday  and its default value is = 2
-# Days name = thursday  and its default value is = 3
-# Days name = friday  and its default value is = 4
-# Days name = saturday  and its default value is = 5
-# Days name = sunday  and its default value is = 6
+# Days name = MONDAY  and its default value is = 0
+# Days name = TUESDAY  and its default value is = 1
+# Days name = WEDNESDAY  and its default value is = 2
+# Days name = THURSDAY  and its default value is = 3
+# Days name = FRIDAY  and its default value is = 4
+# Days name = SATURDAY  and its default value is = 5
+# Days name = SUNDAY  and its default value is = 6
 # 
 #  exit
-# End time: 12:38:21 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 00:04:41 on Sep 01,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

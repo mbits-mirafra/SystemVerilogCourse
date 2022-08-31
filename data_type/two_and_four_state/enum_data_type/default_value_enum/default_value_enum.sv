@@ -2,12 +2,12 @@
 
 module default_value_enum;
 //in the below line declare enum data type with default value.
-enum {monday, tuesday, wednesday, thursday, friday, saturday, sunday }days;
+enum {MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY,SATURDAY,SUNDAY }days;
 
 initial begin
 
   //displaying days 
-  $display("\n// days = {monday, tuesday, wednesday, thursday, friday, saturday, sunday }");
+  $display("\n// days = {\n MONDAY,\n TUESDAY,\n WEDNESDAY,\n THURSDAY,\n FRIDAY,\n SATURDAY,\n SUNDAY\n }");
   
   days = days.first; //assign first day in variable days
 

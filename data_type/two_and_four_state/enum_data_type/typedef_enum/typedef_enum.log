@@ -1,6 +1,6 @@
 # vsim typedef_enum -l typedef_enum.log -c -do "run -all; exit;" 
-# Start time: 12:40:39 on Aug 25,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 00:12:03 on Sep 01,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,20 +19,28 @@
 # Loading work.typedef_enum(fast)
 # run -all
 # 
-# //days = {monday, tuesday, wednesday, thursday, friday, saturday, sunday }
+# //days = {
+#  MONDAY,
+#  TUESDAY,
+#  WEDNESDAY,
+#  THURSDAY,
+#  FRIDAY,
+#  SATURDAY,
+#  SUNDAY
+#  }
 # 
-# first day name = monday  and its value is = 0
+# first day name = MONDAY  and its value is = 0
 # 
-# last day name = sunday  and its value is = 6
+# last day name = SUNDAY  and its value is = 6
 # 
-# next day name after wednesday  = thursday  and its value is = 3
+# next day name after wednesday  = THURSDAY  and its value is = 3
 # 
-# previous day name befor wednesday  = tuesday  and its value is = 1
+# previous day name befor wednesday  = TUESDAY  and its value is = 1
 # 
-# current day name = tuesday  and its value is = 1
+# current day name = TUESDAY  and its value is = 1
 # 
 # total number of days in week type is = 7
 # 
 #  exit
-# End time: 12:40:40 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 00:12:04 on Sep 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
