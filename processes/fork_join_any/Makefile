@@ -1,5 +1,10 @@
 all:
-	make clear;make compile;make simulate;
+	rm -rf fork_join_any.log
+	rm -rf work
+	clear
+	vlib work
+	vlog -sv fork_join_any.sv && vsim work.fork_join_any -l fork_join_any.log -c -do "run -all;quit;"
+	#make clear;make compile;make simulate;
 
 compile:
 	vlib work
@@ -9,5 +14,6 @@ simulate:
 	vsim work.fork_join_any -l fork_join_any.log -c -do "run -all;quit;"
 
 clear:
-	clear
 	rm -rf fork_join_any.log
+	rm -rf work
+	clear

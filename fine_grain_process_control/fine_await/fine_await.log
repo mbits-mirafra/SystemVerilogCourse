@@ -1,6 +1,6 @@
 # vsim fine_await -l fine_await.log -c -do "run -all;quit;" 
-# Start time: 06:04:49 on Aug 26,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 21:30:41 on Aug 26,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -32,5 +32,5 @@
 # [9] p2_if: FINISHED
 # [11] p1_3: FINISHED
 # quit
-# End time: 06:04:50 on Aug 26,2022, Elapsed time: 0:00:01
+# End time: 21:30:42 on Aug 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
