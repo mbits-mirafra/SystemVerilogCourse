@@ -1,5 +1,5 @@
 # vsim sample -l fork_join.log -c -do "run -all;quit;" 
-# Start time: 05:15:30 on Aug 25,2022
+# Start time: 02:39:00 on Sep 05,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -18,17 +18,11 @@
 # Loading sv_std.std
 # Loading work.sample(fast)
 # run -all
-# main_Thread-1: [5] starting of fork-join
-# Thread-1: [5] basics of syatem verilog
-# Thread-5-2: [5] nested_fork
-# Thread-4-1: [6] processes
-# Thread-7: [6] coverages
-# Thread-2: [8] data types
-# Thread-4-2: [9] communications
-# Thread-3: [10] control-flow
-# Thread-5-1: [12] oops
-# Thread-6: [14]assertions
-# main_Thread-2: [24] ending of fork-join
+# [0]Thread-1: Values of a= 5,b= 6, c= 0,d= 0
+# [1]Thread-1: Values of a= 6,b= 7, c= 0,d= 0
+# [2] Event is triggered
+# [2]Thread-1: Values of a= 6,b= 7, c= 7,d= 0
+# [3]Thread-1: Values of a= 6,b= 7, c= 7,d= 7
 # quit
-# End time: 05:15:31 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 02:39:01 on Sep 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
