@@ -2,16 +2,21 @@
 //
 //disable_fork:
 //
-//This is used to disable the fork-join, fork-join_any, fork-join_none processes at any point 
+//This is used to disable the fork-join_any, fork-join_none processes at any point 
 //of the code.
 //
 //--------------------------------------------------------------------------------------------
 
 module disable_fork();
+  //string a,b,c;
+  event e1;
+  string a = "Malpe";
+  string b = "Kudlu";
+  string c;
 
   initial begin:main //This is a procedural block
-
-    #5 $display("main_Thread-1: [%0t] starting of fork-join",$time); 
+   
+    #0 $display("main_T-1: [%0t] Values of a = %0s,b = %0s,c = %0s",$time,a,b,c); 
 
     fork:fork_main
       //-------------------------------------------------------
@@ -22,29 +27,30 @@ module disable_fork();
       //Even a fork-join has nested fork-join in it.
       //
       //-------------------------------------------------------
-
-      #0 $display("Thread-1: [%0t] basics of syatem verilog",$time);//Thread 1
-
-      #3 $display("Thread-2: [%0t] data types",$time);//Thread 2
+    
+          
+      #3 b <= "Delta";//Thread 1
       
-      #5 $display("Thread-3: [%0t] control-flow",$time);//Thread 3
-      
-      begin:first //Thread 4
-        #1 $display("Thread-4-1: [%0t] processes",$time);
-        #3 $display("Thread-4-2: [%0t] communications",$time);
+      #4 $display("T-2: [%0t] Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 2
+             
+      begin:first //Thread 3
+        #1 -> e1;
+        c = "Hoode";
+        #1 $display("T-3: [%0t] Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);
       end:first
-      
-      fork:nested_fork //Thread 5
-        #7 $display("Thread-5-1: [%0t] oops",$time);
-        #0 $display("Thread-5-2: [%0t] nested_fork",$time);
+    
+      fork:nested_fork //Thread 4
+    
+          @(e1.triggered);
+          #1 $display("main_T-4: [%0t] Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);
+        
       join:nested_fork
       
-      #9 $display("Thread-6: [%0t]assertions",$time);//Thread 6
-      #1 $display("Thread-7: [%0t] coverages",$time);//Thread 7
-
+      #1 $display("T-5: [%0t] Values of a = %0s,b = %0s,c = %0s",$time,a,b,c);
+      
     join_any:fork_main
     disable fork;
-    #10 $display("main_Thread-2: [%0t] ending of fork-join",$time);
+    #1 $display("main_Th-2: [%0t] ending of fork-join",$time);
   
   end:main
 

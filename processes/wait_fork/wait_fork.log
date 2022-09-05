@@ -1,6 +1,6 @@
 # vsim wait_fork -l wait_fork.log -c -do "run -all;quit;" 
-# Start time: 05:19:51 on Aug 25,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 21:40:38 on Sep 05,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,17 +18,12 @@
 # Loading sv_std.std
 # Loading work.wait_fork(fast)
 # run -all
-# main_Thread-1: [5] starting of fork-join
-# Thread-1: [5] basics of syatem verilog
-# Thread-5-2: [5] nested_fork
-# Thread-4-1: [6] processes
-# Thread-7: [6] coverages
-# Thread-2: [8] data types
-# Thread-4-2: [9] communications
-# Thread-3: [10] control-flow
-# Thread-5-1: [12] oops
-# Thread-6: [14]assertions
-# main_Thread-2: [14] ending of fork-join
+# main_Th-1: [1] values of a = Malpe,b = kudlu,c = 
+# T2-2: [1] values of a = Malpe,b = kudlu,c = 
+# T-3: [2] values of a = Malpe,b = Delta,c = Hoode
+# T2-4: [3] values of a = Malpe,b = Delta,c = Hoode
+# T2-3: [3] values of a = Malpe,b = Delta,c = Hoode
+# T-6: [3] values of a = Malpe,b = Delta,c = Hoode
 # quit
-# End time: 05:19:52 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 21:40:39 on Sep 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
