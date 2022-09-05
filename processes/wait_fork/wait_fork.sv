@@ -2,52 +2,54 @@
 //
 //wait fork:
 //
-//This is used to wait all the Threads after the wait fork will be waiting for the entire 
-//fork block to get executed then all the remaining Threads will get executed.
+//This is used to wait for all the Threads of the entire 
+//fork block to get executed then all the remaining main Threads will get executed.
 //
 //--------------------------------------------------------------------------------------------
-
 module wait_fork();
+  
+  event e1;
+  string a = "Malpe";
+  string b = "kudlu";
+  string c;
+  
+  initial begin:BEGIN_B1 //This is a procedural block
+    
+    #1 $display("[%0t] Thread_T1: values of a = %0s,b = %0s,c = %0s",$time,a,b,c); 
+    
+    //-------------------------------------------------------
+    //
+    //This is a fork-join block.
+    //In this block we can have multiple threads like
+    //begin-end,$displays
+    //Even a fork-join has nested fork-join in it.
+    //
+    //-------------------------------------------------------
 
-  initial begin:main //This is a procedural block
+    fork:FORK_F1 //Thread 2
+    
+      #2 b <= "Delta";//T2-1
 
-    #5 $display("main_Thread-1: [%0t] starting of fork-join",$time); 
-
-    fork:fork_main
-      //-------------------------------------------------------
-      //
-      //This is a fork-join block.
-      //In this block we can have multiple threads like
-      //begin-end,$displays
-      //Even a fork-join has nested fork-join in it.
-      //
-      //-------------------------------------------------------
-
-      #0 $display("Thread-1: [%0t] basics of syatem verilog",$time);//Thread 1
-
-      #3 $display("Thread-2: [%0t] data types",$time);//Thread 2
+      #0 $display("[%0t] Thread_T2: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);
+                
+      begin:BEGIN_B2 //Thread 2-3
+        #1 -> e1;
+        c = "Hoode";
+        #1 $display("[%0t] Thread_T3: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);
+      end:BEGIN_B2
       
-      #5 $display("Thread-3: [%0t] control-flow",$time);//Thread 3
+      fork:FORK_F2 //Thread 2-4
+        wait(e1.triggered);
+        #2 $display("[%0t] Thread_T4: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);
+      join:FORK_F2
       
-      begin:first //Thread 4
-        #1 $display("Thread-4-1: [%0t] processes",$time);
-        #3 $display("Thread-4-2: [%0t] communications",$time);
-      end:first
-      
-      fork:nested_fork //Thread 5
-        #7 $display("Thread-5-1: [%0t] oops",$time);
-        #0 $display("Thread-5-2: [%0t] nested_fork",$time);
-      join:nested_fork
-      
-      #9 $display("Thread-6: [%0t]assertions",$time);//Thread 6
-      #1 $display("Thread-7: [%0t] coverages",$time);//Thread 7
+      #1 $display("[%0t] Thread_T5: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 3
 
-    join_none:fork_main
+    join_none:FORK_F1
     
     wait fork;
-
-    #0 $display("main_Thread-2: [%0t] ending of fork-join",$time);
+    #0 $monitor("[%0t] Thread_T6: values of a = %0s,b = %0s,c = %0s",$time,a,b,c);//Thread 6
   
-  end:main
+  end:BEGIN_B1
 
 endmodule:wait_fork

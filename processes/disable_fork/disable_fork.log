@@ -1,6 +1,6 @@
 # vsim disable_fork -l disable_fork.log -c -do "run -all;quit;" 
-# Start time: 05:21:10 on Aug 25,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 22:50:22 on Sep 05,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,9 +18,10 @@
 # Loading sv_std.std
 # Loading work.disable_fork(fast)
 # run -all
-# main_Thread-1: [5] starting of fork-join
-# Thread-1: [5] basics of syatem verilog
-# main_Thread-2: [15] ending of fork-join
+# [0] Thread_T1: Values of a = Malpe,b = Kudlu,c = 
+# [1] Thread_T4: Values of a = Malpe,b = Kudlu,c = Hoode
+# [1] Thread_T5: Values of a = Malpe,b = Kudlu,c = Hoode
+# [2] Thread_T6: ending of fork-join
 # quit
-# End time: 05:21:10 on Aug 25,2022, Elapsed time: 0:00:00
+# End time: 22:50:23 on Sep 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

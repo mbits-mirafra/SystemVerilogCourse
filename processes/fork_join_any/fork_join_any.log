@@ -1,5 +1,5 @@
 # vsim work.fork_join_any -l fork_join_any.log -c -do "run -all;quit;" 
-# Start time: 05:32:42 on Aug 25,2022
+# Start time: 22:30:48 on Sep 05,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -18,17 +18,12 @@
 # Loading sv_std.std
 # Loading work.fork_join_any(fast)
 # run -all
-# main_Thread-1: [5] starting of fork-join
-# Thread-1: [5] basics of syatem verilog
-# Thread-5-2: [5] nested_fork
-# Thread-4-1: [6] processes
-# main_Thread-2: [6]assertions
-# Thread-2: [8] data types
-# Thread-4-2: [9] communications
-# main_Thread-3: [9] coverages
-# Thread-3: [10] control-flow
-# Thread-5-1: [12] oops
-# main_Thread-4: [19] ending of fork-join
+# [0] Thread_T1: Starting of fork_join_any
+# [0] Thread_T2: Values of a =Kapu,b =,c =Malpe,d =
+# [1] Thread_T3: Values of a =Kapu,b =Kapu,c =Malpe,d =
+# [2] Thread_T5: Values of a =Kapu,b =Kapu,c =Malpe,d =
+# [3] Thread_T4: Values of a =Kapu,b =Kapu,c =Malpe,d =
+# [3] Thread_T6: Values of a =Kapu,b =Kapu,c =Malpe,d =Kodi
 # quit
-# End time: 05:32:43 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 22:30:49 on Sep 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

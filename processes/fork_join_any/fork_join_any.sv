@@ -12,43 +12,55 @@
 
 module fork_join_any();
 
-  initial begin:main //This is a procedural block
-
-    #5 $display("main_Thread-1: [%0t] starting of fork-join",$time); 
-
-    fork:fork_main
-      //-------------------------------------------------------
-      //
-      //This is a fork-join block.
-      //In this block we can have multiple threads like
-      //begin-end,$displays
-      //Even a fork-join_any has nested fork-join in it.
-      //
-      //-------------------------------------------------------
-
-      #0 $display("Thread-1: [%0t] basics of syatem verilog",$time);//Thread 1
-
-      #3 $display("Thread-2: [%0t] data types",$time);//Thread 2
-      
-      #5 $display("Thread-3: [%0t] control-flow",$time);//Thread 3
-      
-      begin:first //Thread 4
-        #1 $display("Thread-4-1: [%0t] processes",$time);
-        #3 $display("Thread-4-2: [%0t] communications",$time);
-      end:first
-      
-      fork:nested_fork //Thread 5
-        #7 $display("Thread-5-1: [%0t] oops",$time);
-        #0 $display("Thread-5-2: [%0t] nested_fork",$time);
-      join:nested_fork
-      
-    join_any:fork_main
-
-    #1 $display("main_Thread-2: [%0t]assertions",$time);
-    #3 $display("main_Thread-3: [%0t] coverages",$time);
-      
-    #10 $display("main_Thread-4: [%0t] ending of fork-join",$time);
+  event e1;
+  string a,b,c,d,e;
   
-  end:main
+  initial begin:BEGIN_B1 //This is a procedural block
+    
+    $display("[%0t] Thread_T1: Starting of fork_join_any",$time);// Main Thread 
+    a = "Kapu";
+    c = "Malpe";
+    
+    //-------------------------------------------------------
+    //
+    //This is a fork-join block.
+    //In this block we can have multiple threads like
+    //begin-end,$displays
+    //Even a fork-join_any has nested fork-join in it.
+    //
+    //-------------------------------------------------------
+    
+    fork:FORK_F1
+      
+      begin:BEGIN_B2//Thread 1
+        #0 $display("[%0t] Thread_T2: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);    
+        
+        begin:BEGIN_B3
+          b <= a;
+          #1 $display("[%0t] Thread_T3: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);
+        end:BEGIN_B3
+      
+      end:BEGIN_B2
+      
+      fork:FORK_F2//Thread 2
+        
+        begin:BEGIN_B4
+          #3 -> e1;
+          $display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);
+        end:BEGIN_B4
+          
+      join:FORK_F2
+      
+    join_any:FORK_F1
+
+    #1 $display("[%0t] Thread_T5: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);//Thread 3
+    
+    begin:BEGIN_B5
+      wait(e1.triggered);
+      d = "Kodi";
+      $monitor("[%0t] Thread_T6: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);//Thread 4
+    end:BEGIN_B5
+  
+  end:BEGIN_B1
 
 endmodule:fork_join_any
