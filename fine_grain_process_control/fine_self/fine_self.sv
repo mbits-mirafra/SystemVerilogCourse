@@ -9,8 +9,9 @@
 //--------------------------------------------------------------------------------------------
 
 module fine_self; // Defining a module
+  event e1,e2,e3,e4;
   process p1; 
-  initial begin:main_begin // Procedural Block
+  initial begin:BEGIN_B1 // Procedural Block
     //------------------------------------------------------
     //creating a variable p1 for predefined class 'process'.
     //Since we have not created object p1, so we are checking 
@@ -18,19 +19,49 @@ module fine_self; // Defining a module
     //Later after delay 10 we are creating an object inside 
     //self().
     //-------------------------------------------------------
-    
-    if(p1 == null)
-      $display("[%0t] Not created",$time);
-    else
-      $display("[%0t] Created",$time);
+    #1 $display("[%0t] We are getting into fork-join block",$time);
+    fork:FORK_F1
+      
+      $display("[%0t] Entered into fork-join and started first check for the process",$time);
+      #1 ->e1;
+      begin:BEGIN_B2
+        wait(e1.triggered);
+        if(p1 == null)
+          #1 $display("[%0t] Not created",$time);
+        else
+          #1 $display("[%0t] Created",$time);
+        ->e2;
+        ->e3;
+      end:BEGIN_B2
+      
+      #2 p1 = process :: self();
 
-    #10 p1 = process :: self();
-    
-    if(p1 == null)
-      $display("[%0t] Not created",$time);
-    else
-      $display("[%0t] Created",$time);
-  
-  end:main_begin
+      begin:BEGIN_B3
+        wait(e2.triggered);
+        #1 $display("[%0t] Started second check for the process",$time);
+        if(p1 == null)
+          $display("[%0t] Not created",$time);
+        else
+          $display("[%0t] Created",$time);
+        ->e4;
+      end:BEGIN_B3
+      
+      fork:FORK_F2
+
+        begin:BEGIN_B4
+          wait(e3.triggered);
+          $display("[%0t] first check for the process done",$time);
+        end:BEGIN_B4
+      
+        begin:BEGIN_B5
+          wait(e4.triggered);
+          $display("[%0t] Second check for the process done",$time);
+        end:BEGIN_B5
+      
+      join:FORK_F2
+
+    join:FORK_F1
+
+  end:BEGIN_B1
 
 endmodule:fine_self
