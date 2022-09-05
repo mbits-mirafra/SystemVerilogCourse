@@ -1,3 +1,21 @@
+rm -rf fork_join.log
+rm -rf work
+clear
+[3;J[H[2Jvlib work;
+vlog -sv fork_join.sv && vsim sample -l fork_join.log -c -do "run -all;quit;"
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 25 2017
+Start time: 02:13:18 on Sep 05,2022
+vlog -sv fork_join.sv 
+-- Compiling module sample
+
+Top level modules:
+	sample
+End time: 02:13:18 on Sep 05,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.6c
+
 # vsim sample -l fork_join.log -c -do "run -all;quit;" 
 # Start time: 02:13:19 on Sep 05,2022
 # ** Note: (vsim-3812) Design is being optimized...
@@ -24,3 +42,4 @@
 # quit
 # End time: 02:13:20 on Sep 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
+#make clear;make compile;make simulate
