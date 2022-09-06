@@ -1,5 +1,5 @@
 # vsim fine_resume -l fine_resume.log -c -do "run -all;quit;" 
-# Start time: 04:12:02 on Sep 06,2022
+# Start time: 21:57:36 on Sep 06,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -21,14 +21,14 @@
 # [0] Seeking status:
 # [1] I am in process p1
 # [1] Initial status of p1: RUNNING
-# [2] Status of p1 before suspending: RUNNING
-# [2] I am in process p2
-# [2] Initial status of p2: RUNNING
-# [4] Status of p1 before resuming: SUSPENDED
-# [5] Status of p1 after resuming: RUNNING
-# [5] Status of p2 in p1 block: FINISHED
-# [14] Final status of p1: FINISHED
-# [23] Final status of p2: FINISHED
+# [1] Status of p1 before suspending: RUNNING
+# [1] I am in process p2
+# [1] Initial status of p2: RUNNING
+# [2] Status of p1 before resuming: SUSPENDED
+# [2] Status of p2 in p1 block: FINISHED
+# [3] Status of p1 after resuming: FINISHED
+# [4] Final status of p1: FINISHED
+# [4] Final status of p2: FINISHED
 # quit
-# End time: 04:12:04 on Sep 06,2022, Elapsed time: 0:00:02
+# End time: 21:57:36 on Sep 06,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
