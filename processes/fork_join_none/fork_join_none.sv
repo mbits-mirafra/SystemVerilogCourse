@@ -11,11 +11,11 @@
 module fork_join_none();
 
   event e1;
-  string a,b,c,d,e;
+  string a,b,c,d;
   
   initial begin:BEGIN_B1 //This is a procedural block
     
-    $display("[%0t] Thread_T1: Starting of fork_join_any",$time);// Main Thread 
+    $display("[%0t] Thread_T1: Starting of fork_join_none",$time);// Main Thread 
     a = "Kapu";
     c = "Malpe";
     

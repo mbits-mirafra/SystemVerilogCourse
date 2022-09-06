@@ -1,5 +1,5 @@
 # vsim wait_fork -l wait_fork.log -c -do "run -all;quit;" 
-# Start time: 23:03:41 on Sep 05,2022
+# Start time: 08:20:00 on Sep 06,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -25,5 +25,5 @@
 # [3] Thread_T3: values of a = Malpe,b = kudlu,c = Hoode
 # [3] Thread_T6: values of a = Malpe,b = Delta,c = Hoode
 # quit
-# End time: 23:03:42 on Sep 05,2022, Elapsed time: 0:00:01
+# End time: 08:20:01 on Sep 06,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

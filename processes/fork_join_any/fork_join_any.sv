@@ -13,7 +13,7 @@
 module fork_join_any();
 
   event e1;
-  string a,b,c,d,e;
+  string a,b,c,d;
   
   initial begin:BEGIN_B1 //This is a procedural block
     

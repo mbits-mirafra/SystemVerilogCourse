@@ -4,7 +4,6 @@ all:
 	clear
 	vlib work;
 	vlog -sv fork_join.sv && vsim sample -l fork_join.log -c -do "run -all;quit;"
-	#make clear;make compile;make simulate
 
 compile:
 	vlib work;
