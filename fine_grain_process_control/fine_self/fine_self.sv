@@ -11,6 +11,7 @@
 module fine_self; // Defining a module
   event e1,e2,e3,e4;
   process p1; 
+  
   initial begin:BEGIN_B1 // Procedural Block
     //------------------------------------------------------
     //creating a variable p1 for predefined class 'process'.
@@ -20,25 +21,27 @@ module fine_self; // Defining a module
     //self().
     //-------------------------------------------------------
     #1 $display("[%0t] We are getting into fork-join block",$time);
+
     fork:FORK_F1
       
       $display("[%0t] Entered into fork-join and started first check for the process",$time);
       #1 ->e1;
+      
       begin:BEGIN_B2
         wait(e1.triggered);
         if(p1 == null)
           #1 $display("[%0t] Not created",$time);
         else
           #1 $display("[%0t] Created",$time);
-        ->e2;
         ->e3;
+        ->e2;
       end:BEGIN_B2
       
       #2 p1 = process :: self();
 
       begin:BEGIN_B3
         wait(e2.triggered);
-        #1 $display("[%0t] Started second check for the process",$time);
+        $display("[%0t] Started second check for the process",$time);
         if(p1 == null)
           $display("[%0t] Not created",$time);
         else

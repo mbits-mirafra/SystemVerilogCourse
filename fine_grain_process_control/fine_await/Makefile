@@ -4,7 +4,6 @@ all:
 		clear
 		vlib work
 		vlog -sv fine_await.sv && vsim fine_await -l fine_await.log -c -do "run -all;quit;"
-		#make clear;make compile;make simulate
 
 compile:
 	  vlib work

@@ -4,7 +4,6 @@ all:
 	clear
 	vlib work
 	vlog -sv fine_self.sv && vsim fine_self -l fine_self.log -c -do "run -all;quit;"
-	# make clear;make compile;make simulate
 
 compile:
 	 vlib work

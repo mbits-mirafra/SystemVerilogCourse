@@ -1,6 +1,6 @@
 # vsim fine_await -l fine_await.log -c -do "run -all;quit;" 
-# Start time: 21:30:41 on Aug 26,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 05:45:39 on Sep 06,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,18 +19,14 @@
 # Loading work.fine_await(fast)
 # run -all
 # [0] Seeking status:
-# [1] p1
-# [1] p2
-# [2] I'm in Amalfi Coast, Italy
-# [3] p1_1: RUNNING
-# [4] p1_if: RUNNING
-# [6] Waiting for bus
-# [7] p1_2: WAITING
-# [7] p2_1: RUNNING
-# [8] p2_2: RUNNING
-# [9] p2_3: FINISHED
-# [9] p2_if: FINISHED
-# [11] p1_3: FINISHED
+# [1] I am in process p1
+# [1] Initial status of p1: RUNNING
+# [1] Status of p1 before await: RUNNING
+# [1] I am in process p2
+# [1] Initial status of p2: RUNNING
+# [2] Status of p1 after await: WAITING
+# [3] Final status of p2: FINISHED
+# [3] Final status of p1: FINISHED
 # quit
-# End time: 21:30:42 on Aug 26,2022, Elapsed time: 0:00:01
+# End time: 05:45:40 on Sep 06,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,6 +1,6 @@
 # vsim fine_kill -l fine_kill.log -c -do "run -all;quit;" 
-# Start time: 06:00:35 on Aug 26,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 04:18:42 on Sep 06,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,9 +19,9 @@
 # Loading work.fine_kill(fast)
 # run -all
 # [0] Seeking status:
-# [1] I'm in Amalfi Coast, Italy
-# [4] p1_1: RUNNING
-# [5] p1_2: KILLED
+# [1] I am in process p1
+# [1] Initial status check of p1: RUNNING
+# [2] Status of p1 before killing: KILLED
 # quit
-# End time: 06:00:36 on Aug 26,2022, Elapsed time: 0:00:01
+# End time: 04:18:43 on Sep 06,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

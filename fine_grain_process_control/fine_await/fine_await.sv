@@ -10,51 +10,50 @@
 
 module fine_await;
   process p1,p2;
-
-  initial begin:main_begin //Procedural block
+  event e1,e2;
+  
+  initial begin:BEGIN_B1 //Procedural block
     //-------------------------------------------------------
     //We are waiting for p2 to complete in order to complete
     //p1.
-    //
     //-------------------------------------------------------
     $display("[%0t] Seeking status:",$time);
 
-    fork:fork1
+    fork:FORK_F1
     
-      begin:fork1_begin1
-        
-        #1 $display("[%0t] p1",$time);
+      begin:BEGIN_B2
         p1 = process :: self();
-        #1 $display("[%0t] I'm in Amalfi Coast, Italy",$time);
-        #1 $display("[%0t] p1_1: %s",$time,p1.status());
-      
+        #1 $display("[%0t] I am in process p1",$time);
+        $display("[%0t] Initial status of p1: %s",$time,p1.status());
+        $display("[%0t] Status of p1 before await: %s",$time,p1.status());
+        
         if(p1.status() != process :: FINISHED)
-        begin
-          #1 $display("[%0t] p1_if: %s",$time,p1.status());
           p2.await();
-          #1 $display("[%0t] p2_if: %s",$time,p2.status());
-        end
-    
-      end:fork1_begin1
-    
-      #7 $display("[%0t] p1_2: %s",$time,p1.status());
-      #11 $display("[%0t] p1_3: %s",$time,p1.status());
-    
-      begin:fork1_begin2 
+        
+      end:BEGIN_B2
       
-        #1 $display("[%0t] p2",$time);
+      #2 $display("[%0t] Status of p1 after await: %s",$time,p1.status());
+    
+      begin:BEGIN_B4 
         p2 = process :: self();
-        #5 $display("[%0t] Waiting for bus",$time);
-        #1 $display("[%0t] p2_1: %s",$time,p2.status());
-        #1 $display("[%0t] p2_2: %s",$time,p2.status());
-    
-      end:fork1_begin2
-      
-      #9 $display("[%0t] p2_3: %s",$time,p2.status());
-   
-    join:fork1
+        #1 $display("[%0t] I am in process p2",$time);
+        $display("[%0t] Initial status of p2: %s",$time,p2.status());
+        #2 ->e2;
+      end:BEGIN_B4
+     
+      begin:BEGIN_B5
+        wait(e2.triggered);
+        $display("[%0t] Final status of p2: %s",$time,p2.status());
+        ->e1;
+      end:BEGIN_B5
 
-  end:main_begin
+      begin:BEGIN_B6
+        wait(e1.triggered);
+        $display("[%0t] Final status of p1: %s",$time,p1.status());
+      end:BEGIN_B6
+    join_any:FORK_F1
+
+  end:BEGIN_B1
 
 endmodule:fine_await
 

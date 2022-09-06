@@ -8,58 +8,65 @@
 
 module fine_resume;
   process p1,p2;
-  initial begin:mainbegin //Procedural block
+  event e1,e2,e3;
+
+  initial begin:BEGIN_B1 //Procedural block
   //-------------------------------------------------------
   //We are resuming p1 for the rest of the code after it
   //getting suspended.
-  //
   //-------------------------------------------------------
     
     $display("[%0t] Seeking status:",$time);
              
-    fork:fork1
+    fork:FORK_F1
     
-      begin:fork1_begin1
-        
-        #1 $display("[%0t] p1",$time);
+      begin:BEGIN_B2
         p1 = process :: self();
-        #1 $display("[%0t] I'm in Amalfi Coast, Italy",$time);
-        #1 $display("[%0t] p1_1: %s",$time,p1.status());
-       
+        #1 $display("[%0t] I am in process p1",$time);
+        $display("[%0t] Initial status of p1: %s",$time,p1.status());
+        ->e1;
+
         if(p1.status() != process :: FINISHED)
-        begin
-          #1 $display("[%0t] p1_if_in_p1: %s",$time,p1.status());
+
+        begin:BEGIN_B3
+          #1 $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());
           p1.suspend(); //p1 is suspended
-          #1 $display("[%0t] p2_if_in_p1: %s",$time,p2.status());
-        end
-
-      end:fork1_begin1
-                                   
-      #7 $display("[%0t] p1_2: %s",$time,p1.status());
-      #11 $display("[%0t] p1_3: %s",$time,p1.status());
+          #1 $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());
+        end:BEGIN_B3
       
-      #15
-      if(p1.status == process :: SUSPENDED)
-      begin
-        #1 $display("[%0t] p1_before: %s",$time,p1.status());
-        p1.resume();
-        #1 $display("[%0t] p1_after: %s",$time,p1.status());
-      end
+      end:BEGIN_B2
+                           
+      begin:BEGIN_B4
+        wait(e2.triggered);
+        //if(p1.status == process :: SUSPENDED)
 
-      begin:fork1_begin2
-        #1 $display("[%0t] p2",$time);
+        //begin:BEGIN_B5
+          #1 $display("[%0t] Status of p1 before resuming: %s",$time,p1.status());
+          p1.resume();
+          #1 $display("[%0t] Status of p1 after resuming: %s",$time,p1.status());
+        //end:BEGIN_B5
+        
+        ->e3;
+      end:BEGIN_B4
+
+      begin:BEGIN_B6
+        wait(e1.triggered);
         p2 = process :: self();
-        #5 $display("[%0t] Waiting for bus",$time);
-        #1 $display("[%0t] p2_1: %s",$time,p2.status());
-        #1 $display("[%0t] p2_2: %s",$time,p2.status());
-      end:fork1_begin2
-                                                
-      #9 $display("[%0t] p2_3: %s",$time,p2.status());
-      #9 $display("[%0t] p1_4: %s",$time,p1.status());
-                                                   
-    join:fork1
-  
-  end:mainbegin
+        #1 $display("[%0t] I am in process p2",$time);
+        $display("[%0t] Initial status of p2: %s",$time,p2.status());
+        if(p1.status() == process :: SUSPENDED)
+          #1 ->e2;
+      end:BEGIN_B6
+      
+      begin:BEGIN_B7
+        wait(e3.triggered);
+        #9 $display("[%0t] Final status of p1: %s",$time,p1.status());
+        #9 $display("[%0t] Final status of p2: %s",$time,p2.status());
+      end:BEGIN_B7
+
+    join:FORK_F1
+
+  end:BEGIN_B1
 
 endmodule:fine_resume
 
