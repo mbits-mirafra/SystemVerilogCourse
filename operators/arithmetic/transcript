@@ -1,0 +1,8 @@
+# vsim arithmetic_code -c -do "run -all;exit;" 
+# Start time: 02:44:38 on Sep 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): arithmetic_code.sv(36): (vopt-2122) Invalid format specification '% '.
+# ** Error: (vopt-2064) Compiler back-end code generation process terminated with code 2.
+# Error loading design
+# End time: 02:44:38 on Sep 07,2022, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
