@@ -1,21 +1,17 @@
-/*
-Syntax
-if(condition)begin
-  statements;
-end
-*/
-//module name is if_code
-module if_code; 
-logic [2:0] weight; //using logic data type [2:0] and variable is weight
-
-assign weight = 3'd5;//here we assigning in the value of 5 to variable
-
-initial begin //procedural block
-  if(weight<3'd7) //if_condition
-  begin
-    $display("weight is 5kg");
-    $display("Need to increase the weight");
-  end
-end
-endmodule :if_code
-
+module if_code;
+bit [3:0]a;
+initial begin 
+    a=10;
+    
+   $display ("Value of a = %0d",a);
+   
+  $display ("--------------------------------------------------------------");
+   if (a==10)begin 
+      $display ("if expression is true , Successfully entered into the if block");
+      $display ( "a is equal to 10 " );
+      $display("---------------------------------------------------------------");
+    end 
+     $display("out of if block");
+  end 
+  endmodule 
+  

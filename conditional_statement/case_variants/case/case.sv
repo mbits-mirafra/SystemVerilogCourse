@@ -1,36 +1,31 @@
-//--------------------------------------------------------------------------------------------
-// syntax : case(item)
-//          case_expr1 : begin statements; end
-//          case_expr2 : begin statements; end
-//          case_expr3 : begin statements; end
-//          default: begin statements; end
-//          endcase
-//
-// If the item is match with the case_expr 
-// only those statements were evaluated, 
-// if there is no match then default is executed.
-//--------------------------------------------------------------------------------------------
-module case1();
-  
-  int i=0;
- 
-  initial 
-  begin
-   #10 $finish; // This will stop/halt the execution process 
-  end
+// case statement allows us to execute the code for the particular case expression
 
-  always  // for every one 1 time cycle i will be incremented by 1
-  begin
-    #1 i++;
-  end;
-  
-  always @(i) 
-  begin
-    case(i)
-      32'd0 : begin $display("[%0t] case value is %0d",$time,i);end
-      32'd1 : begin $display("[%0t] case value is %0d",$time,i);end
-      32'd2 : begin $display("[%0t] case value is %0d",$time,i);end
-      default:begin $display("[%0t] default case",$time);end
-    endcase
-  end
+
+//Syntax:
+//       case(condition)
+//       condition_1: Statements ;
+//       condition_2: Statements ;
+//       ...........
+//       conditon_N: Statements;
+//       default   : Statements;
+//       endcase
+
+
+module top;
+bit [1:0] x;
+
+initial begin
+  x = 2'b01;
+
+//Here expression= "x" should match one of the items
+//If none of the case items match the given expression,
+//statement within the default item is executed 
+  case(x)
+    00 : $display("Value of x = %0b", x);
+    01 : $display("Value of x = %0b",x);
+    10 : $display("Value of x = %0b",x);
+    11 : $display("Value of x = %0b" ,x);
+    default : $display("Value of x is not found");
+  endcase
+end
 endmodule

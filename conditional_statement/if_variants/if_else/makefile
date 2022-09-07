@@ -1,9 +1,14 @@
 compile:
-			vlib work;
-			vlog -sv if_else_code.sv
+		vlib work;
+			vlog -sv if_else.sv
 
 simulate:
-			vsim if_else_code -l if_else_code_output.log -c -do "run -all; exit;"
+		vsim if_else -l if_else_log.log -c -do "run -all; exit;"
 
-all: 
-	make compile && make simulate
+all:
+
+		vlib work;
+			vlog -sv if_else.sv
+		vsim if_else -l if_else_log.log -c -do "run -all; exit;"
+
+		

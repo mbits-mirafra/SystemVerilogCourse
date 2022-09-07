@@ -1,6 +1,6 @@
 # vsim do_while_code -l do_while_code_output.log -c -do "run -all; exit;" 
-# Start time: 00:21:41 on Aug 26,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 06:08:37 on Sep 07,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -25,5 +25,5 @@
 # 	 Value of apple = 4
 # 	 Value of apple = 5
 #  exit
-# End time: 00:21:41 on Aug 26,2022, Elapsed time: 0:00:00
+# End time: 06:08:38 on Sep 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,0 +1,26 @@
+# vsim top -l unique0_case_op.log -c -do "run -all;exit;" 
+# Start time: 12:02:40 on Sep 05,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.top(fast)
+# run -all
+# ** Warning: (vsim-8360) unique0_case.sv(26): The if/case statement is not unique.
+#    Time: 0 ns  Iteration: 0  Instance: /top
+#  Value of x is = 1
+# exit
+# End time: 12:02:41 on Sep 05,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
