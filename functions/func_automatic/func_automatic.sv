@@ -1,30 +1,34 @@
 module func_automatic();
 
 
-  task sum(int a, int b);
-    #2;
-    $display("\t @ %0t ns the sum in static is %0d",$time, a+b);
-  endtask
+    int result1,result2;
+    function int factorial_static(int var1);
+    if(var1>=2)
+      result1=factorial_static(var1-1)*var1;
+    else
+      begin
+        result1=1;
+      end
+      return result1;
+    endfunction
   
-  task automatic sum_auto(int a, int b);
-    #2;
-    $display("\t @ %0t ns the sum in automatic is %0d",$time, a+b);
-  endtask
-  
+    function automatic int factorial_automatic(int var1);
+      if(var1>=2)
+        result2=factorial_automatic(var1-1)*var1;
+      else
+      begin
+        result2=1;
+      end
+      return result2;
+    endfunction
+
   initial
   begin
-    $display("\t ----sum using static & automatic function----");
     fork
-      begin
-        sum(2,3);
-        sum_auto(2,3);
-      end
-    
-      begin
-        #1;
-        sum(3,4);
-        sum_auto(3,4);
-      end
+      result1=factorial_static(5);
+      result2=factorial_automatic(5);
     join
+    $display("factorial_static:%0d",result1);
+    $display("factorial_automatic:%0d",result2);
   end
 endmodule: func_automatic

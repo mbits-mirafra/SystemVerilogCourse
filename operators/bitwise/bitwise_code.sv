@@ -16,19 +16,19 @@ module bitwise_code;
   $display("\n \t the bitwise AND (a&b) operator output is %0b",y);
 
   y=a|c;
-  $display("\n \t the bitwise OR (a|b) operator output is %0b",y);
+  $display("\n \t the bitwise OR (a|c) operator output is %0b",y);
 
   y=a^b;
   $display("\n \t the bitwise XOR (a^b) operator output is %0b",y);
 
   y= ~(a & b);
-  $display("\n \t the bitwise NAND (a~&b) operator output is %0b", y);
+  $display("\n \t the bitwise NAND ~(a&b) operator output is %0b", y);
 
   y=  ~(b|a);
-  $display("\n \t the bitwise NOR (a~&b) operator output is %0b", y);
+  $display("\n \t the bitwise NOR ~(b|a) operator output is %0b", y);
 
   y= ~(a^b);
-  $display("\n \t the bitwise XNOR (a~&b) operator output is %0b", y);
+  $display("\n \t the bitwise XNOR ~(a^b) operator output is %0b", y);
 
 end
 endmodule 

@@ -1,6 +1,6 @@
 # vsim bitwise_code -l bitwise_code_output.log -c -do "run -all; exit;" 
-# Start time: 05:01:29 on Sep 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 10:30:47 on Sep 07,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -27,15 +27,15 @@
 # 
 #  	 the bitwise AND (a&b) operator output is 101
 # 
-#  	 the bitwise OR (a|b) operator output is 1111
+#  	 the bitwise OR (a|c) operator output is 1111
 # 
 #  	 the bitwise XOR (a^b) operator output is 1000
 # 
-#  	 the bitwise NAND (a~&b) operator output is 1010
+#  	 the bitwise NAND ~(a&b) operator output is 1010
 # 
-#  	 the bitwise NOR (a~&b) operator output is 10
+#  	 the bitwise NOR ~(b|a) operator output is 10
 # 
-#  	 the bitwise XNOR (a~&b) operator output is 111
+#  	 the bitwise XNOR ~(a^b) operator output is 111
 #  exit
-# End time: 05:01:30 on Sep 07,2022, Elapsed time: 0:00:01
+# End time: 10:30:48 on Sep 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

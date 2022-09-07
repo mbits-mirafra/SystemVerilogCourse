@@ -1,6 +1,6 @@
 # vsim shift_code -l shift_code_output.log -c -do "run -all; exit;" 
-# Start time: 23:14:25 on Sep 06,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 11:32:50 on Sep 07,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -21,15 +21,15 @@
 # 
 #  	 the value of a is 1011
 # 
-#  	 the value of b is 1100
+#  	 the value signed number of b is 1100
 # 
-#  	 the a of logical left shift operator output is 110
+#  	 the a of logical left shift(a<<2) operator output is 1100
 # 
-#  	 the b logical left shift operator output is 11
+#  	 the b logical right shift(b>>2) operator output is 11
 # 
-#  	 the a logical left shift operator output is 1100
+#  	 the a Arithmetic left shift(a<<<1) operator output is 110
 # 
-#  	 the b logical left shift operator output is 110
+#  	 the b Arithmetic right shift(b>>>3) operator output is 1111
 #  exit
-# End time: 23:14:26 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 11:32:51 on Sep 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

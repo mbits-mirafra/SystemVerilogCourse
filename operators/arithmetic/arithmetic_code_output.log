@@ -1,5 +1,5 @@
 # vsim arithmetic_code -l arithmetic_code_output.log -c -do "run -all; exit;" 
-# Start time: 02:46:23 on Sep 07,2022
+# Start time: 23:29:32 on Sep 07,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -49,5 +49,5 @@
 #  	 the value of y is after doing a ** b is 100000
 # -------------------------
 #  exit
-# End time: 02:46:24 on Sep 07,2022, Elapsed time: 0:00:01
+# End time: 23:29:33 on Sep 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

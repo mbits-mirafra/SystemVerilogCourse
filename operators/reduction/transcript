@@ -1,6 +1,6 @@
-# vsim concatenation_code -l concatenation_code_output.log -c -do "run -all; exit;" 
-# Start time: 10:41:28 on Sep 07,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim reduction_code -c -do "run -all;exit;" 
+# Start time: 08:14:25 on Sep 07,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,18 +16,24 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.concatenation_code(fast)
+# Loading work.reduction_code(fast)
 # run -all
 # 
-#  	 the value of a is 1
+#  	 the value a is 1010
 # 
-#  	 the value of b is 1110
+#  	 the reduction output of NOT is  0 
 # 
-#  	 the value of c is 1101
+#  	 the reduction output of OR is 1 
 # 
-#  	 the output a,b,c of Concatenation operators output is 111101101
+#  	 the reduction output of AND is 0 
 # 
-#  	 the output a,b,3c of Replicates operators output is 11110110111011101
-#  exit
-# End time: 10:41:29 on Sep 07,2022, Elapsed time: 0:00:01
+#  	 the reduction output of NOR is 0 
+# 
+#  	 the reduction output of NAND is 1 
+# 
+#  	 the reduction output of XOR is 0 
+# 
+#  	 the reduction output of XNOR is 1 
+# exit
+# End time: 08:14:27 on Sep 07,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
