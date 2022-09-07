@@ -1,5 +1,5 @@
 # vsim work.fork_join_none -l fork_join_none.log -c -do "run -all;quit;" 
-# Start time: 08:17:36 on Sep 06,2022
+# Start time: 23:03:29 on Sep 07,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -22,8 +22,8 @@
 # [0] Thread_T4: Values of a =Kapu,b =,c =Malpe,d =
 # [1] Thread_T5: Values of a =Kapu,b =,c =Malpe,d =
 # [1] Thread_T2: Values of a =Kapu,b =,c =Malpe,d =
-# [2] Thread_T3: Values of a =Kapu,b =Kapu,c =Malpe,d =Kodi
+# [2] Thread_T3: Values of a =Kapu,b =Kapu,c =Malpe,d =
 # [2] Thread_T6: Values of a =Kapu,b =Kapu,c =Malpe,d =Kodi
 # quit
-# End time: 08:17:37 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 23:03:30 on Sep 07,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

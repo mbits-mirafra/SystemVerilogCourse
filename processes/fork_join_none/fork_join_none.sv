@@ -37,7 +37,7 @@ module fork_join_none();
       end:BEGIN_B2
       
       fork:FORK_F2
-        #1 -> e1;
+        #2 -> e1;
         $display("[%0t] Thread_T4: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);
       join:FORK_F2
       
@@ -46,7 +46,7 @@ module fork_join_none();
     #1 $display("[%0t] Thread_T5: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);//Thread 3
     wait(e1.triggered);
     d = "Kodi";
-    #1 $monitor("[%0t] Thread_T6: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);//Thread 4
+    $monitor("[%0t] Thread_T6: Values of a =%0s,b =%0s,c =%0s,d =%0s",$time,a,b,c,d);//Thread 4
   
   end:BEGIN_B1
 
