@@ -20,7 +20,7 @@ module fine_self; // Defining a module
     //Later after delay 10 we are creating an object inside 
     //self().
     //-------------------------------------------------------
-    #1 $display("[%0t] We are getting into fork-join block",$time);
+    $display("[%0t] We are getting into fork-join block",$time);
 
     fork:FORK_F1
       
@@ -30,11 +30,11 @@ module fine_self; // Defining a module
       begin:BEGIN_B2
         wait(e1.triggered);
         if(p1 == null)
-          #1 $display("[%0t] Not created",$time);
+          $display("[%0t] Not created",$time);
         else
-          #1 $display("[%0t] Created",$time);
+          $display("[%0t] Created",$time);
         ->e3;
-        ->e2;
+        #1 ->e2;
       end:BEGIN_B2
       
       #2 p1 = process :: self();

@@ -1,5 +1,5 @@
 # vsim fine_self -l fine_self.log -c -do "run -all;quit;" 
-# Start time: 04:24:47 on Sep 06,2022
+# Start time: 23:12:30 on Sep 08,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -18,13 +18,13 @@
 # Loading sv_std.std
 # Loading work.fine_self(fast)
 # run -all
-# [1] We are getting into fork-join block
-# [1] Entered into fork-join and started first check for the process
-# [3] Not created
-# [3] first check for the process done
-# [3] Started second check for the process
-# [3] Created
-# [3] Second check for the process done
+# [0] We are getting into fork-join block
+# [0] Entered into fork-join and started first check for the process
+# [1] Not created
+# [1] first check for the process done
+# [2] Started second check for the process
+# [2] Created
+# [2] Second check for the process done
 # quit
-# End time: 04:24:48 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 23:12:31 on Sep 08,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
