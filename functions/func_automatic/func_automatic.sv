@@ -24,10 +24,10 @@ module func_automatic();
 
   initial
   begin
-    fork
+    
       result1=factorial_static(5);
       result2=factorial_automatic(5);
-    join
+    
     $display("factorial_static:%0d",result1);
     $display("factorial_automatic:%0d",result2);
   end
