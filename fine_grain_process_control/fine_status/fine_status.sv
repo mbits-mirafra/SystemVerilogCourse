@@ -18,7 +18,6 @@ module fine_status;
     //We will be checking whether in which mode the p1 and p2
     //will be for the given value of time.
     //-------------------------------------------------------
-    
     $display("[%0t] Seeking status:",$time);
     
     fork:FORK_F1
@@ -62,7 +61,7 @@ module fine_status;
 
     wait(e4.triggered);
     #1 $display("[%0t] Final status of p3: %s",$time,p3.status());
-  
+
   end:BEGIN_B1
 
 endmodule:fine_status

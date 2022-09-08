@@ -1,5 +1,5 @@
 # vsim fine_status -l fine_status.log -c -do "run -all;quit;" 
-# Start time: 04:23:46 on Sep 06,2022
+# Start time: 23:29:55 on Sep 08,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -31,5 +31,5 @@
 # [3] Still working in p2
 # [3] Final status of p2: FINISHED
 # quit
-# End time: 04:23:47 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 23:29:55 on Sep 08,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

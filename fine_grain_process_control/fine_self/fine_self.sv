@@ -5,7 +5,6 @@
 //
 // It will return the handle of the process.That means it will create an object for 
 // the pre-define class called 'process'.
-//
 //--------------------------------------------------------------------------------------------
 
 module fine_self; // Defining a module
@@ -20,6 +19,7 @@ module fine_self; // Defining a module
     //Later after delay 10 we are creating an object inside 
     //self().
     //-------------------------------------------------------
+
     $display("[%0t] We are getting into fork-join block",$time);
 
     fork:FORK_F1

@@ -28,6 +28,8 @@ module fine_kill;
         
         if(p1.status() != process :: FINISHED)
           p1.kill();
+          $display("hi i am working");
+          $display("what about you?");
       end:BEGIN_B2
       
       begin
@@ -36,7 +38,7 @@ module fine_kill;
       end
 
     join:FORK_F1
-
+  
   end:BEGIN_B1
 
 endmodule:fine_kill
