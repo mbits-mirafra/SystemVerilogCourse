@@ -19,7 +19,7 @@ initial begin
   //Here expression= "x" should be used with inside statement
   //Here we are specifying the range
   //  If none of the case items match the given expression, statement within the default item is executed
-    unique case(x) inside
+     case(x) inside
     [2:3] : $display("Value of x = %0d", x);
     [4:5] :$display("Value of x = %0d",x);
     [6:9] : $display("Value of x = %0d",x);
