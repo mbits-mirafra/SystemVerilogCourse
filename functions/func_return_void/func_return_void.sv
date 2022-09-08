@@ -15,7 +15,6 @@ module func_return_void;
   //-------------------------------------------------------
   function void display(string str);
     $display("%s",str);
-    return 0;
   endfunction : display
 
 endmodule : func_return_void
