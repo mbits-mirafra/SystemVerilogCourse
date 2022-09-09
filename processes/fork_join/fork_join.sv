@@ -8,7 +8,7 @@
 //
 //--------------------------------------------------------------------------------------------
 
-module sample();
+module fork_join();
 
   event e1;
   int a=5,b=6,c,d;
@@ -52,4 +52,4 @@ module sample();
 
    end:BEGIN_B1
 
-endmodule:sample
+endmodule:fork_join

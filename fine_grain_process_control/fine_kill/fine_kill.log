@@ -1,5 +1,5 @@
 # vsim fine_kill -l fine_kill.log -c -do "run -all;quit;" 
-# Start time: 23:38:31 on Sep 08,2022
+# Start time: 04:12:05 on Sep 10,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -23,5 +23,5 @@
 # [1] Initial status check of p1: RUNNING
 # [2] Status of p1 before killing: KILLED
 # quit
-# End time: 23:38:32 on Sep 08,2022, Elapsed time: 0:00:01
+# End time: 04:12:06 on Sep 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
