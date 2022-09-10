@@ -18,11 +18,8 @@
 # Loading sv_std.std
 # Loading work.func_automatic(fast)
 # run -all
-# 	 ----sum using static & automatic function----
-# 	 @ 2 ns the sum in static is 7
-# 	 @ 3 ns the sum in static is 7
-# 	 @ 4 ns the sum in automatic is 5
-# 	 @ 5 ns the sum in automatic is 7
+# factorial_static:1
+# factorial_automatic:120
 # exit
 # End time: 10:48:46 on Sep 05,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
