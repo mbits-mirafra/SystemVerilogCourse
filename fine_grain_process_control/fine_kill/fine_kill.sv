@@ -32,10 +32,10 @@ module fine_kill;
           $display("what about you?");
       end:BEGIN_B2
       
-      begin
+      begin:BEGIN_B3
         wait(e1.triggered);
         #1 $display("[%0t] Status of p1 before killing: %s",$time,p1.status());
-      end
+      end:BEGIN_B3
 
     join:FORK_F1
   
