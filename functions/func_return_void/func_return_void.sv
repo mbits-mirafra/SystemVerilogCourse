@@ -13,8 +13,9 @@ module func_return_void;
   //-------------------------------------------------------
   // Writing the definition of the function.
   //-------------------------------------------------------
-  function void display(string str);
+  function int display(string str);
     $display("%s",str);
+      return 0;
   endfunction : display
 
 endmodule : func_return_void
