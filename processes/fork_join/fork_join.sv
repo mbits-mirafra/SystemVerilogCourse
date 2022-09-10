@@ -52,4 +52,4 @@ module fork_join();
 
    end:BEGIN_B1
 
-endmodule:sample
+endmodule:fork_join
