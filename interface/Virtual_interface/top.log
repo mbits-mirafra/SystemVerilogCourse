@@ -1,6 +1,6 @@
 # vsim top -l top.log -c -do "run -all; exit;" 
-# Start time: 21:14:54 on Sep 11,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 00:07:46 on Sep 08,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -91,5 +91,5 @@
 #  sum=1, carry = 1
 # 
 #  exit
-# End time: 21:14:56 on Sep 11,2022, Elapsed time: 0:00:02
+# End time: 00:07:47 on Sep 08,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
