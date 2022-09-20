@@ -1,0 +1,37 @@
+# vsim dynamic -l dynamic.log -c -do "run -all;quit;" 
+# Start time: 02:31:43 on Aug 29,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.dynamic(fast)
+# run -all
+#  //
+#  The dynamic array elements: 
+#  1 2 5 6 8
+# 
+#  //printring the value of  the each index place
+# da[0] = 1
+# da[1] = 2
+# da[2] = 5
+# da[3] = 6
+# da[4] = 8
+# 
+# //out of bound display default value of data_type 
+# 	da[1024]=0
+#  
+# quit
+# End time: 02:31:44 on Aug 29,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,56 @@
+# vsim associative_method -l associative_mthod.log -c -do "run -all;quit;" 
+# Start time: 10:26:25 on Aug 30,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.associative_method(fast)
+# run -all
+# 
+# // associative array given below
+# abc = '{"ahmedabad":25, "rajkot":55, "surat":48, "surendranagar":38, "vadodara":10 }
+# 
+# // abc.num() - gives number of elements inside array
+# // output of abc.num()
+# 5
+# 
+# // abc.size() - returns size of array
+# // output of abc.size()
+# 5
+# 
+# // abc.exists(index) - returns whether the particular index exists inside array or not
+# // output of abc.exist(vadodara)
+# index vadodara exists in array
+# 
+# // abc.first(index) - returns the first index value in array
+# // output of abc.first(variable)
+# abc[ahmedabad]=25
+# 
+# // abc.last(index) - returns the last index value in array
+# // output of abc.last(variable)
+# abc[vadodara]=10
+# 
+# // abc.next(index) - gives next index value which is greater than current index
+# // and it's corresponding value in array
+# // output after abc.next(val1)
+# abc[ahmedabad]=25
+# 
+# // abc.delete(index) - deletes the index and it's corresponding value in array
+# // output after deleting surendranagar index in array
+# '{"ahmedabad":25, "rajkot":55, "surat":48, "vadodara":10 }
+# 
+# quit
+# End time: 10:26:26 on Aug 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
