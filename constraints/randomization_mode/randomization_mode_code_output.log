@@ -1,0 +1,42 @@
+# vsim randomization_mode -l randomization_mode_code_output.log -c -do "run -all; exit;" 
+# Start time: 19:52:00 on Sep 20,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.randomization_mode_code_sv_unit(fast)
+# Loading work.randomization_mode(fast)
+# run -all
+# Before Randomization data1 = 0 data2= 0
+# randomization of all variables are enabled
+# [0] After enable the randomizations data1 =5, data2 = 1
+# [0] state = 1
+# [0] After disable in the randomization data1 =5, data2 = 1
+# [1] After enable the randomizations data1 =0, data2 = 0
+# [1] state = 1
+# [1] After disable in the randomization data1 =0, data2 = 0
+# [2] After enable the randomizations data1 =7, data2 = 3
+# [2] state = 1
+# [2] After disable in the randomization data1 =7, data2 = 3
+# [3] After enable the randomizations data1 =5, data2 = 2
+# [3] state = 1
+# [3] state = 0
+# [3] After disable in the randomization data1 =5, data2 = 2
+# [4] After enable the randomizations data1 =5, data2 = 2
+# [4] state = 0
+# [4] After disable in the randomization data1 =5, data2 = 2
+#  exit
+# End time: 19:52:01 on Sep 20,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
