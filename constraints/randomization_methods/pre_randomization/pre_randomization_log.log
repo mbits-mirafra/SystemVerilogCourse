@@ -1,6 +1,6 @@
-# vsim conflict_with_inline -l conflict_with_inline_log.log -c -do "run -all;exit;" 
-# Start time: 21:36:43 on Sep 21,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim pre_randomization -l pre_randomization_log.log -c -do "run -all;exit;" 
+# Start time: 22:38:03 on Sep 20,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,11 +16,19 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.conflict_with_inline_sv_unit(fast)
-# Loading work.conflict_with_inline(fast)
+# Loading work.pre_randomization_sv_unit(fast)
+# Loading work.pre_randomization(fast)
 # run -all
-# 	Randomization Failed 	 @ iteration: 1 -----> value: 0
-# 	Randomization Failed 	 @ iteration: 2 -----> value: 0
+# 	[0]Calling Randomize....
+# 	stopping randomization
+# 	[1] @ iteration: 1 -----> value: 0 
+# 	[1]Calling Randomize....
+# 	[2] @ iteration: 2 -----> value: 4 
+# 	[2]Calling Randomize....
+# 	stopping randomization
+# 	[3] @ iteration: 3 -----> value: 4 
+# 	[3]Calling Randomize....
+# 	[4] @ iteration: 4 -----> value: 13 
 # exit
-# End time: 21:36:45 on Sep 21,2022, Elapsed time: 0:00:02
+# End time: 22:38:04 on Sep 20,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

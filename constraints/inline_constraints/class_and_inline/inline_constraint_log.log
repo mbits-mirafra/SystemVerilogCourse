@@ -1,6 +1,6 @@
 # vsim inline_constraint -l inline_constraint_log.log -c -do "run -all;exit;" 
-# Start time: 06:34:33 on Sep 21,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 21:35:54 on Sep 21,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -22,5 +22,5 @@
 # 	[1] @ iteration: 1  -----> value: 3
 # 	[2] @ iteration: 2  -----> value: 7
 # exit
-# End time: 06:34:35 on Sep 21,2022, Elapsed time: 0:00:02
+# End time: 21:35:55 on Sep 21,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
