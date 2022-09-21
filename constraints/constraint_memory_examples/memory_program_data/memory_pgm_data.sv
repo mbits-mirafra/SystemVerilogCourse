@@ -62,8 +62,8 @@ module memory_pgm_data();
   begin
 
     mb =new();
-    mb.total_mem=6*1024;//12KB
-    void'(mb.randomize());//with{num_pgms==37;num_data==18;num_space==47});
+    mb.total_mem=6144;
+    void'(mb.randomize());
     mb.display();
   end
 

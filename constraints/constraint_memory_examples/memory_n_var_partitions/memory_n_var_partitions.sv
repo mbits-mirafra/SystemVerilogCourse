@@ -8,7 +8,6 @@ class memory_block;
   constraint parts {mem_num_parts>=2;
                     mem_num_parts<=8;}
 
- // constraint part_size {mem_part_size==(mem_ram_end-mem_ram_start)/mem_num_parts+1;}
   constraint part_sizes {mem_part_size.size()==mem_num_parts;
                          mem_part_size.sum()==mem_ram_end-mem_ram_start+1;
                          foreach(mem_part_size[i])
@@ -21,12 +20,10 @@ class memory_block;
                         else
                          mem_part_start[i]==mem_ram_start;}
   function display();
-    $display("\tRAM start addr : %0d ",mem_ram_start);
-    $display("\tRAM end addr : %0d ",mem_ram_end);
+    $display("\t RAM start addr : %0d ",mem_ram_start);
+    $display("\t RAM end addr : %0d ",mem_ram_end);
     $display("\t No of Partitions : %0d ",mem_num_parts);
-    //$display("\t Size of each partition : %0d ",mem_part_size);
-    //$write("%c[0m",27);
-    $display("\n\t %c[0;31m-----------partitions-----------%c[0m",27,27);
+    $display("\n\t -----------partitions-----------");
     foreach(mem_part_start[i])
     begin
       if(i==mem_num_parts-1)
@@ -45,7 +42,7 @@ module memory_n_var_partitions();
   begin
     memb.mem_ram_start=32'h0;
     memb.mem_ram_end=32'h3fff;
-    void'(memb.randomize());//with{mem_num_parts==4;});
+    void'(memb.randomize());
     void'(memb.display());
   end
 endmodule

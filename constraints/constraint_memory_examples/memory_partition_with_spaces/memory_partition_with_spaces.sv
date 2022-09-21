@@ -25,7 +25,7 @@ class memory_block;
                          mem_part_start[i]==mem_part_start[i-1]+mem_part_size[i-1];
                         else
                          mem_part_start[i]==mem_ram_start;}
-  function display();
+  function void display();
     $display("\tRAM start addr : %0d ",mem_ram_start);
     $display("\tRAM end addr : %0d ",mem_ram_end);
     $display("\tNo of Partitions : %0d ",mem_num_parts);
@@ -35,12 +35,16 @@ class memory_block;
     foreach(mem_part_start[i])
     begin
       if(i==mem_num_parts-1)
-      $display("\t%c[0;34m Partition : %0d with size :%0d from %0d to %0d %c[0m\n",27,i,mem_part_size[i],mem_part_start[i]+mem_space[i-1],mem_ram_end,27);
+      $display("\t%c[0;34m Partition : %0d with size :%0d from %0d to %0d %c[0m\n"
+      ,27,i,mem_part_size[i],mem_part_start[i]+mem_space[i-1],mem_ram_end,27);
       else if(i==0)
-        $display("\t%c[0;34m Partition : %0d with size :%0d from %0d to %0d %c[1;31m \n\t\tspace_part : %0d bytes ",27,i,mem_part_size[i],mem_part_start[i],mem_part_start[i+1]-1,27,mem_space[i]);
+        $display("\t%c[0;34m Partition : %0d with size :%0d from %0d to %0d %c[1;31m\
+        \n\t\tspace_part : %0d bytes ",27,i,mem_part_size[i],mem_part_start[i],
+        mem_part_start[i+1]-1,27,mem_space[i]);
       else
-         $display("\t%c[0;34m Partition : %0d with size :%0d from %0d to %0d %c[1;31m \n\t\tspace_part : %0d bytes",27,i,mem_part_size[i],mem_part_start[i]+mem_space[i-1],mem_part_start[i+1]-1,27,mem_space[i]);
-
+         $display("\t%c[0;34m Partition : %0d with size :%0d from %0d to %0d %c[1;31m\
+         \n\t\tspace_part : %0d bytes",27,i,mem_part_size[i],
+         mem_part_start[i]+mem_space[i-1],mem_part_start[i+1]-1,27,mem_space[i]);
       end
 endfunction
 endclass

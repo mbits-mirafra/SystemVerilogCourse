@@ -1,6 +1,6 @@
 # vsim memory_partition_with_spaces -l memory_partition_with_spaces_log.log -c -do "run -all;exit;" 
-# Start time: 03:59:31 on Sep 19,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 12:43:24 on Sep 21,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -26,16 +26,16 @@
 # 	mem_space : 256 1024 256 1024
 # 
 # 	 [1;32m-----------[1;34mpartitions[1;32m------------[0m
-# 	[0;34m Partition : 0 with size :2048 from 0 to 2047 [1;31m 
+# 	[0;34m Partition : 0 with size :2048 from 0 to 2047 [1;31m        
 # 		space_part : 256 bytes 
-# 	[0;34m Partition : 1 with size :256 from 2304 to 2303 [1;31m 
+# 	[0;34m Partition : 1 with size :256 from 2304 to 2303 [1;31m         
 # 		space_part : 1024 bytes
-# 	[0;34m Partition : 2 with size :256 from 3328 to 2559 [1;31m 
+# 	[0;34m Partition : 2 with size :256 from 3328 to 2559 [1;31m         
 # 		space_part : 256 bytes
-# 	[0;34m Partition : 3 with size :2048 from 2816 to 4607 [1;31m 
+# 	[0;34m Partition : 3 with size :2048 from 2816 to 4607 [1;31m         
 # 		space_part : 1024 bytes
 # 	[0;34m Partition : 4 with size :2048 from 5632 to 9215 [0m
 # 
 # exit
-# End time: 03:59:32 on Sep 19,2022, Elapsed time: 0:00:01
+# End time: 12:43:25 on Sep 21,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
