@@ -1,0 +1,66 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/bhavana_b7/try/copy/shallow_copy
+T_opt
+!s110 1663629578
+VBnbK1I?Rhg^2ob?RD35Xm3
+04 7 4 work shallow fast 0
+=1-a4badb503ddf-6328f90a-77375-3ddf
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+vshallow
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 20 shallow_copy_sv_unit 0 22 ce8fE>57i=n2P9I@>kUJR2
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 7hK3RUe:@@FGSkUGHGW7?0
+In?HfGKJk7JKf<e8Qk^00h1
+!s105 shallow_copy_sv_unit
+S1
+R0
+Z3 w1663629575
+Z4 8shallow_copy.sv
+Z5 Fshallow_copy.sv
+L0 33
+Z6 OE;L;10.6c;65
+Z7 !s108 1663629577.000000
+Z8 !s107 shallow_copy.sv|
+Z9 !s90 -sv|shallow_copy.sv|
+!i113 0
+Z10 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xshallow_copy_sv_unit
+R2
+Vce8fE>57i=n2P9I@>kUJR2
+r1
+!s85 0
+31
+!i10b 1
+!s100 [mi6DGlLRUbAcDc0fRJT73
+Ice8fE>57i=n2P9I@>kUJR2
+!i103 1
+S1
+R0
+R3
+R4
+R5
+L0 5
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R1
