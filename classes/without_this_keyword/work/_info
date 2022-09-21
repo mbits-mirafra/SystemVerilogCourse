@@ -1,0 +1,67 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/nitishyadav/hwetools/work_area/frontend/nitish_b7/oops/without_this
+T_opt
+!s110 1663623472
+VniRd3eK^jQhRmca?o2Do32
+04 17 4 work check_electricity fast 0
+=1-a4badb503ddf-6328e130-3401d-3a06
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+R0
+vcheck_electricity
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 20 without_this_sv_unit 0 22 V2aHnoVU0cDb64l2Acbiz0
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 A1:1]IiV8<inQfZ6hC0@Y3
+IU;e>`dR>4N28nX^>N6Z3d1
+!s105 without_this_sv_unit
+S1
+R0
+Z3 w1663668421
+Z4 8without_this.sv
+Z5 Fwithout_this.sv
+L0 21
+Z6 OE;L;10.6c;65
+Z7 !s108 1663647981.000000
+!s107 without_this.sv|
+Z8 !s90 -sv|without_this.sv|
+!i113 0
+Z9 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xwithout_this_sv_unit
+R2
+VV2aHnoVU0cDb64l2Acbiz0
+r1
+!s85 0
+31
+!i10b 1
+!s100 [m_ng7Lc6GcgkgWC7IZB?0
+IV2aHnoVU0cDb64l2Acbiz0
+!i103 1
+S1
+R0
+R3
+R4
+R5
+L0 6
+R6
+R7
+Z10 !s107 without_this.sv|
+R8
+!i113 0
+R9
+R1
