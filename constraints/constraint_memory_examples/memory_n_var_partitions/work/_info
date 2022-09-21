@@ -1,0 +1,66 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/hemanth_b7/system_verilog/constraints/practical_examples/memory_n_var_partitions
+T_opt
+!s110 1663527225
+V]MZAzL[hP5liU>KoU8<g[3
+04 23 4 work memory_n_var_partitions fast 0
+=1-a4badb503ddf-63276939-20ae1-759f
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+vmemory_n_var_partitions
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 31 memory_n_var_partitions_sv_unit 0 22 Q7k=c`5fz_gN7IAe2lHkl1
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ?BV`D`;UIa[Nh40FnfLTK1
+Ij3hf?4842nG@d@m[^Pa3m1
+!s105 memory_n_var_partitions_sv_unit
+S1
+R0
+Z3 w1663527223
+Z4 8memory_n_var_partitions.sv
+Z5 Fmemory_n_var_partitions.sv
+L0 42
+Z6 OE;L;10.6c;65
+Z7 !s108 1663527224.000000
+Z8 !s107 memory_n_var_partitions.sv|
+Z9 !s90 -sv|memory_n_var_partitions.sv|
+!i113 0
+Z10 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xmemory_n_var_partitions_sv_unit
+R2
+VQ7k=c`5fz_gN7IAe2lHkl1
+r1
+!s85 0
+31
+!i10b 1
+!s100 bD?]kF<ED@bBa3KEa]:JS1
+IQ7k=c`5fz_gN7IAe2lHkl1
+!i103 1
+S1
+R0
+R3
+R4
+R5
+L0 1
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R1

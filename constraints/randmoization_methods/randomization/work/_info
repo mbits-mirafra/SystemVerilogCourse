@@ -1,0 +1,67 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/hemanth_b7/system_verilog/constraints/randomizations/randomization
+T_opt
+!s110 1663690937
+V551BcFh@EcYcJKfVEHfE>1
+04 13 4 work randomization fast 0
+=1-a4badb503ddf-6329e8b8-e66d2-70dd
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+R0
+vrandomization
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 21 randomization_sv_unit 0 22 k042XP5YIECiBgA<AfAKF1
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 6?N3S8O_WTKXB?lbn7N012
+IMIYWMR`Q[UYoE_Ea`6Xf03
+!s105 randomization_sv_unit
+S1
+R0
+Z3 w1663691068
+Z4 8randomization.sv
+Z5 Frandomization.sv
+L0 6
+Z6 OE;L;10.6c;65
+Z7 !s108 1663693723.000000
+!s107 randomization.sv|
+Z8 !s90 -sv|randomization.sv|
+!i113 0
+Z9 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xrandomization_sv_unit
+R2
+Vk042XP5YIECiBgA<AfAKF1
+r1
+!s85 0
+31
+!i10b 1
+!s100 b=:mK;f73>d0Y=kF8?b>N3
+Ik042XP5YIECiBgA<AfAKF1
+!i103 1
+S1
+R0
+R3
+R4
+R5
+L0 1
+R6
+R7
+Z10 !s107 randomization.sv|
+R8
+!i113 0
+R9
+R1

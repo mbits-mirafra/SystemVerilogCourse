@@ -1,0 +1,36 @@
+# vsim static_constraint -l static_constraint_log.log -c -do "run -all;exit;" 
+# Start time: 05:22:27 on Sep 20,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.static_constraint_sv_unit(fast)
+# Loading work.static_constraint(fast)
+# run -all
+# 	[1;31m-----Non-static constraint turned off only in object 1 -----[0m
+# 	Constraint : value must be 1
+# 	[1] @ iteration: 1 -----> value in object_1: 0  value in object_2: 1
+# 	[2] @ iteration: 2 -----> value in object_1: 1  value in object_2: 1
+# 	[3] @ iteration: 3 -----> value in object_1: 0  value in object_2: 1
+# 
+# 	[1;34m-----static constraint turned off only in object 3-----[0m
+# 
+# 	Constraint : value must be 1
+# 	[4] @ iteration: 1 -----> value in object_3: 4  value in object_4: 7
+# 	[5] @ iteration: 2 -----> value in object_3: 0  value in object_4: 7
+# 	[6] @ iteration: 3 -----> value in object_3: 4  value in object_4: 1
+# exit
+# End time: 05:22:31 on Sep 20,2022, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0

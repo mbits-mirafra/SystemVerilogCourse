@@ -1,0 +1,47 @@
+# vsim memory_pgm_data -l memory_pgm_data_log.log -c -do "run -all;exit;" 
+# Start time: 03:57:42 on Sep 19,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.memory_pgm_data_sv_unit(fast)
+# Loading work.memory_pgm_data(fast)
+# run -all
+# 	Total_RAM : 6144 
+# 	No.of Programs : 10 
+# 	No.of data's : 2 
+# 	No.of space's : 5 
+# 	Total_program_size : 3456 , Total_data_size : 128 Total_space_size : 2560 
+# 
+# 	 [1;32m Program_0 is of 408 bytes [0m
+# 	 [1;32m Program_1 is of 412 bytes [0m
+# 	 [1;32m Program_2 is of 208 bytes [0m
+# 	 [1;32m Program_3 is of 408 bytes [0m
+# 	 [1;32m Program_4 is of 480 bytes [0m
+# 	 [1;32m Program_5 is of 272 bytes [0m
+# 	 [1;32m Program_6 is of 344 bytes [0m
+# 	 [1;32m Program_7 is of 236 bytes [0m
+# 	 [1;32m Program_8 is of 304 bytes [0m
+# 	 [1;32m Program_9 is of 384 bytes [0m
+# 	 [1;33m data_0 is of 64 bytes [0m
+# 	 [1;33m data_1 is of 64 bytes [0m
+# 	 [1;34m space_0 is of 512 bytes [0m
+# 	 [1;34m space_1 is of 512 bytes [0m
+# 	 [1;34m space_2 is of 512 bytes [0m
+# 	 [1;34m space_3 is of 512 bytes [0m
+# 	 [1;34m space_4 is of 512 bytes [0m
+# exit
+# End time: 03:57:44 on Sep 19,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
