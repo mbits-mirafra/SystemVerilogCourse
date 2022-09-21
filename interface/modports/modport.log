@@ -1,6 +1,6 @@
 # vsim top -l modport.log -c -do "run -all; exit;" 
-# Start time: 02:18:17 on Sep 08,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 07:49:24 on Sep 21,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -27,5 +27,5 @@
 # input_p=0	 input_q=1	 output_r=0
 # input_p=1	 input_q=1	 output_r=1
 #  exit
-# End time: 02:18:18 on Sep 08,2022, Elapsed time: 0:00:01
+# End time: 07:49:25 on Sep 21,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

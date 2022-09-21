@@ -10,11 +10,11 @@ driver drv;
 initial
 begin
 
-  //creating the driver instance
-  drv = new(intf);
+//creating the driver instance
+drv = new(intf);
 
-  //calling the task run
-  drv.run();
+//calling the task run
+drv.run();
 
 end
 endmodule:test

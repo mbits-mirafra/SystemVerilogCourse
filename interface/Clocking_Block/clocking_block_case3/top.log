@@ -1,6 +1,6 @@
 # vsim top -l top.log -c -do "log -r /*; add wave -r /*; run -all;quit;" -wlf waveform.wlf 
-# Start time: 02:49:17 on Sep 20,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 07:40:00 on Sep 21,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -37,7 +37,7 @@
 # test side [83] : d_tb_drive = 0 q_dut_sample = 0
 # DUT side  [85] : d_tb_drive = 1 q_dut_sample = 1
 # test side [93] : d_tb_drive = 1 q_dut_sample = 1
-# ** Note: $finish    : test.sv(18)
+# ** Note: $finish    : test.sv(21)
 #    Time: 93 ns  Iteration: 0  Instance: /top/t2
-# End time: 02:49:17 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 07:40:00 on Sep 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
