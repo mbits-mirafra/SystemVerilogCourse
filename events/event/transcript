@@ -1,6 +1,6 @@
-# vsim work.func_automatic -l func_automatic_log.log -c -do "run -all;exit;" 
-# Start time: 00:06:38 on Sep 10,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim event1 -c -do "run -all;exit;" 
+# Start time: 13:26:45 on Sep 13,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,10 +16,9 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.func_automatic(fast)
+# Loading work.event1(fast)
 # run -all
-# factorial_static:1
-# factorial_automatic:120
+# [10] Event_1 Triggered from block1
 # exit
-# End time: 00:06:39 on Sep 10,2022, Elapsed time: 0:00:01
+# End time: 13:26:46 on Sep 13,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
