@@ -1,0 +1,33 @@
+# vsim top -l invert_inside.sv.log -c -do "run -all;exit;" 
+# Start time: 04:43:36 on Sep 19,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.invert_inside_sv_unit(fast)
+# Loading work.top(fast)
+# run -all
+# -----Output for invert inside constraint-----
+# ---------------------------------------------
+# [0] @ iteration: 1 -----> var2=11
+# [0] @ iteration: 2 -----> var2=10
+# [0] @ iteration: 3 -----> var2=13
+# [0] @ iteration: 4 -----> var2=14
+# [0] @ iteration: 5 -----> var2=2
+# [0] @ iteration: 6 -----> var2=12
+# ---------------------------------------------
+# exit
+# End time: 04:43:37 on Sep 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,37 @@
+# vsim constraint_top -l bidirectional_const.sv.log -c -do "run -all;exit;" 
+# Start time: 04:54:19 on Sep 19,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.bidirectional_const_sv_unit(fast)
+# Loading work.constraint_top(fast)
+# run -all
+#  -----Output for bidirectional constraint-----
+#  -----constraint 1 & 2 limits the value to 7,8,9,10 and 11-----
+# ----------------------------------------------------------------
+# [0] @ iteration 1 -----> value1 = 11
+# [0] @ iteration 2 -----> value1 = 10
+# [0] @ iteration 3 -----> value1 = 11
+# [0] @ iteration 4 -----> value1 = 8
+# [0] @ iteration 5 -----> value1 = 10
+# [0] @ iteration 6 -----> value1 = 10
+# [0] @ iteration 7 -----> value1 = 7
+# [0] @ iteration 8 -----> value1 = 8
+# [0] @ iteration 9 -----> value1 = 10
+# ----------------------------------------------------------------
+# exit
+# End time: 04:54:20 on Sep 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
