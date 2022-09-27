@@ -1,10 +1,10 @@
 //Module:fullinput_adder
 module fulladder(in_a,in_b,in_c,out_sum,out_carry) ;
 
-//Declinput_aration of input variainput_bles
+//Declaration of input variables
 input in_a,in_b,in_c;
 
-//Declinput_aration of output variainput_bles
+//Declaration of output variables
 output out_sum;
 output out_carry;
 

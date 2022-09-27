@@ -1,5 +1,5 @@
 # vsim top -l modport.log -c -do "run -all; exit;" 
-# Start time: 09:48:58 on Sep 27,2022
+# Start time: 10:08:10 on Sep 27,2022
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -26,5 +26,5 @@
 # input_p=1	 input_q=0	 output_r=0
 # input_p=1	 input_q=1	 output_r=1
 #  exit
-# End time: 09:48:59 on Sep 27,2022, Elapsed time: 0:00:01
+# End time: 10:08:10 on Sep 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
