@@ -1,0 +1,8 @@
+# vsim top -l interface.log -c -do "run -all; exit;" 
+# Start time: 23:30:13 on Sep 27,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): (vopt-7063) test.sv(7): Failed to find 'y' in hierarchical name '/inf/y'.
+# Optimization failed
+# Error loading design
+# End time: 23:30:13 on Sep 27,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
