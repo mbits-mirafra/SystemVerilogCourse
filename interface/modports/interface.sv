@@ -1,13 +1,13 @@
 // interface defination for and gate
 interface and_intr;
   //input and output signals declaration for design
-  logic input_p,input_q;
-  logic output_r;
+  logic p,q;
+  logic r;
 
   // modport declaration for design file
-  modport design_andg(input input_p,input input_q,output output_r);
+  modport DUT_MP(input p,input q,output r);
   
   // modport declaration for testbench file
-  modport tb_andg(output input_p,output input_q,input output_r);
+  modport TB_MP(output p,output q,input r);
 
 endinterface : and_intr
