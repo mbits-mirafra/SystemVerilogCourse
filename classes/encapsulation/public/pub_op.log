@@ -1,5 +1,5 @@
 # vsim pub -l pub_op.log -c -do "run -all;quit;" 
-# Start time: 23:25:52 on Sep 21,2022
+# Start time: 22:52:51 on Sep 27,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -19,9 +19,9 @@
 # Loading work.pub_sv_unit(fast)
 # Loading work.pub(fast)
 # run -all
-# sum = 23
+# sum = 15
 # 1.d = 5
 # 2.d = 10
 # quit
-# End time: 23:25:53 on Sep 21,2022, Elapsed time: 0:00:01
+# End time: 22:52:52 on Sep 27,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

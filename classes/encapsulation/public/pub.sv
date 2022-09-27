@@ -7,11 +7,11 @@
 //to child classes.
 //--------------------------------------------------------------------------------------------
 class parent;
-  bit [3:0] a,b;
-  bit[5:0] c;
+  int a,b;
+  int c;
   int d = 5;
 
-  function int sum(bit[4:0]val1,val2);
+  function int sum(int val1,val2);
     c = val1 + val2;
     return c;
   endfunction:sum
@@ -41,7 +41,7 @@ module pub();
   initial begin
     p = new();
     c1 = new();
-    e = p.sum(1010,0101);
+    e = p.sum(5,10);
     p.display();
     c1.d = 10;
     c1.disp();

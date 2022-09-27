@@ -5,11 +5,11 @@
 //will not be able to access by child class.
 //--------------------------------------------------------------------------------------------
 class parent;
-  bit [3:0] a,b;
-  local bit[5:0] c;
+  int a,b;
+  local int c;
   local int d = 5;
 
-  function int sum(bit[4:0]val1,val2);
+  function int sum(int val1,val2);
     c = val1 + val2;
     return c;
   endfunction:sum
@@ -39,7 +39,7 @@ module encap();
   initial begin
     p = new();
     c1 = new();
-    e = p.sum(1010,0101);
+    e = p.sum(5,10);
     p.display();
    // p.c = 5'b10;
    // p.display();

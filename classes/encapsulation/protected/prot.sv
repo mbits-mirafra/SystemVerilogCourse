@@ -6,11 +6,11 @@
 //This can be done by the keyword 'protected'
 //--------------------------------------------------------------------------------------------
 class parent;
-  bit [3:0] a,b;
-  protected bit[5:0] c;
+  int a,b;
+  protected int c;
   protected int d = 5;
 
-  function int sum(bit[4:0]val1,val2);
+  function int sum(int val1,val2);
     c = val1 + val2;
     return c;
   endfunction:sum
@@ -40,7 +40,7 @@ module prot();
   initial begin
     p = new();
     c1 = new();
-    e = p.sum(1010,0101);
+    e = p.sum(5,10);
     p.display();
    // p.d = 10;
     c1.disp();
