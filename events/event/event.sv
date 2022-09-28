@@ -18,14 +18,14 @@ module events();
   
   initial
   begin
-    #10 @(event_1);
+    #5 @(event_1.triggered);
     $display("[%0d] Event_1 catched in block2",$time);
   end
-
+/*
   initial
   begin
-    #10 wait(event_1.triggered);
+    #5 wait(event_1.triggered);
     $display("[%0d] Event_1 catched in block3",$time);
   end
-
+*/
 endmodule
