@@ -1,6 +1,6 @@
-# vsim work.events -l events.log -c -do "run -all;exit;" 
-# Start time: 22:46:55 on Sep 28,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim static_method -c -do "run -all;exit" 
+# Start time: 22:20:04 on Sep 21,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,10 +16,11 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.events(fast)
+# Loading work.static_method_sv_unit(fast)
+# Loading work.static_method(fast)
 # run -all
-# [5] Event_1 Triggered from block1
-# [5] Event_1 catched in block2
+# contents of team
+# team=3
 # exit
-# End time: 22:46:56 on Sep 28,2022, Elapsed time: 0:00:01
+# End time: 22:20:05 on Sep 21,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

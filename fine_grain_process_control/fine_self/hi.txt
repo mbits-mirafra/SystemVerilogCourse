@@ -1,3 +1,21 @@
+rm -rf fine_self.log
+rm -rf work 
+clear
+[3;J[H[2Jvlib work
+vlog -sv fine_self.sv && vsim fine_self -l fine_self.log -c -do "run -all;quit;"
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 25 2017
+Start time: 02:06:13 on Sep 26,2022
+vlog -sv fine_self.sv 
+-- Compiling module fine_self
+
+Top level modules:
+	fine_self
+End time: 02:06:13 on Sep 26,2022, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 10.6c
+
 # vsim fine_self -l fine_self.log -c -do "run -all;quit;" 
 # Start time: 02:06:14 on Sep 26,2022
 # ** Note: (vsim-3812) Design is being optimized...
@@ -27,4 +45,4 @@
 # [2] Second check for the process done
 # quit
 # End time: 02:06:14 on Sep 26,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# Errors: 0, Warnings: 

@@ -1,5 +1,5 @@
-# vsim work.events -l events.log -c -do "run -all;exit;" 
-# Start time: 22:46:55 on Sep 28,2022
+# vsim poly_ex -l poly_op.log -c -do "run -all;quit;" 
+# Start time: 23:26:39 on Sep 21,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,10 +16,13 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.events(fast)
+# Loading work.poly_sv_unit(fast)
+# Loading work.poly_ex(fast)
 # run -all
-# [5] Event_1 Triggered from block1
-# [5] Event_1 catched in block2
-# exit
-# End time: 22:46:56 on Sep 28,2022, Elapsed time: 0:00:01
+# This is child class
+# a = 3, b = 4,e = 7
+# This is parent class
+# a = 1, b= 2
+# quit
+# End time: 23:26:40 on Sep 21,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
