@@ -18,17 +18,17 @@ class base_class;    //define a class
     this.fan=fan;
     this.switch=switch;
     $display("Inside class method :- switch is %0s that's why fan is %0s",switch,fan);
-  endfunction
+  endfunction:open_electricity
 
-endclass
+endclass:base_class
 
 module check_electricity;
   base_class b1;     //create a handle
   
-  initial begin
+  initial begin:BEGIN_I
     b1=new();     //create an object
     b1.open_electricity;   //access the class method
     $display("Outside class :- switch is %0s that's why fan is %s",b1.switch,b1.fan);
-  end
+  end:BEGIN_I
 
-endmodule
+endmodule:check_electricity
