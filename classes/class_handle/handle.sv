@@ -3,7 +3,7 @@
 //to an object of the class.
 //this handle is point to the NULL
 //..............................................
-class home;    //define class
+class home; //define class
 
   //declare class properties
   bit light;
@@ -14,17 +14,19 @@ class home;    //define class
   task open_electricity();
     switch = "ON";
     $display("switch is %s so electricity is open",switch);
-  endtask
-endclass
+  endtask:open_electricity
+  
+endclass:home
 
 module tb;
- //create a handle for a class home that can point to an object
- //of the class type home 
-home h1;
-initial begin
-  if (h1==null)
-    $display("object is empty");
+  //create a handle for a class home that can point to an object
+  //of the class type home 
+  home h1;
+  
+  initial begin:BEGIN_I
+    if (h1==null)
+      $display("object is empty");
     else
       $display("object is not empty");
-  end
-endmodule
+  end:BEGIN_I
+endmodule:tb
