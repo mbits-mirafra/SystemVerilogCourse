@@ -11,11 +11,11 @@ class data;
   const int b=1;//global constant
   function new();
     a="team";
-  endfunction
+  endfunction:new
   function void display();
     $display("a=%0d,b=%0d",a,b);
-  endfunction
-endclass//endclass-1
+  endfunction:display
+endclass:data
 
 //---class 2---
 class pack;
@@ -26,16 +26,16 @@ class pack;
     c="static";
     d=4;
     ar =new();
-  endfunction
+  endfunction:new
   function void display();
     $display("\t c=%0d,\t d=%0d,\t a=%0d,\t b=%0d",c,d,ar.a,ar.b);
-  endfunction
-endclass//endclass-2
+  endfunction:display
+endclass:pack
 
 module global_class;
 pack p1;
 pack p2;
-initial begin
+initial begin:BEGIN_I
   p1=new();
   p1.display();
  // p1.b=2;// invalid usage of b
@@ -52,5 +52,5 @@ initial begin
   p2.c="TEAM";
   p1.display();
   p2.display();
-end
+end:BEGIN_I
 endmodule:global_class
