@@ -14,18 +14,18 @@ class base_class;      //define class
      fan=fan;
      switch=switch;
      $display("Inside class method :- switch is %0s that's why fan is %0s",switch,fan);
-   endfunction
+   endfunction:open_electricity
 
- endclass
+ endclass:base_class
 
  module check_electricity;
  base_class b1;
 
- initial begin
+ initial begin:BEGIN_I
    b1=new();
    b1.open_electricity;
    $display("Outside class :- switch is %0s that's why fan is %s",b1.switch,b1.fan);
-  end
+  end:BEGIN_I
 
- endmodule
+ endmodule:check_electricity
 
