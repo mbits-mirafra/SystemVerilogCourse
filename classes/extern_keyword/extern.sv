@@ -8,18 +8,18 @@ class home;
 
   //function declaration - extern indicates out-of-body declaration
   extern function void display();
-endclass
+endclass:home
 
   //function implementation outside class body
 function void home::display();
   string switch="OFF";
   $display("The switch is %0s that's why fan is %0s",fan,switch);
-endfunction
+endfunction:display
 
 module extern_example;
 home h;
-initial begin
+initial begin:BEGIN_I
   h=new();
   h.display;
-end
-endmodule
+end:BEGIN_I
+endmodule:extern_example
