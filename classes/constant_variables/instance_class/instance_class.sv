@@ -12,11 +12,11 @@ class data;
   function new();
     a=5;
     b="bhavana";
-  endfunction
+  endfunction:new
    function void display();
      $display("a=%0d,b=%0d",a,b);
-   endfunction
- endclass//endclass-1
+   endfunction:display
+ endclass:data
 
 //---- class 2 ---
  class pack;
@@ -27,17 +27,17 @@ class data;
      c=3;
      d=4;
      dt=new();//class handle
-   endfunction
+   endfunction:new
    function void display();
     $display("c=%0d,d=%0d,a=%0d,b=%0d",c,d,dt.a,dt.b);
-  endfunction
-endclass//endclass-2
+  endfunction:display
+endclass:pack
 
 
  module tb;
  pack t1;
  pack t2;
- initial begin
+ initial begin:BEGIN_I
  t1=new();
  //t1.a=2;
  ////--------------------------------------------------------------------------------------------
@@ -55,8 +55,8 @@ endclass//endclass-2
  t2.dt.b="BJT";
  t1.display();
  t2.display();
- end 
- endmodule
+ end:BEGIN_I
+ endmodule:tb
 
 
  
