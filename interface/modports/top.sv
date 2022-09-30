@@ -7,9 +7,9 @@ module top();
   and_intr inf();
 
   // design module called
-  and_gate a1(inf.DUT_MP);
+  and_gate a1(inf);
 
   // testbench module called
-  tb a2(inf.TB_MP);
+  tb a2(inf);
 
 endmodule : top
