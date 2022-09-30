@@ -24,9 +24,12 @@ module tb;
   home h1;
   
   initial begin:BEGIN_I
+    $display("Let's declare handle");
+    $display("Check wheather the object is created or not");
     if (h1==null)
       $display("object is empty");
     else
       $display("object is not empty");
   end:BEGIN_I
+
 endmodule:tb

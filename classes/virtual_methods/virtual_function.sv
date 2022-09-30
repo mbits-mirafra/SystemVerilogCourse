@@ -5,57 +5,61 @@ class packet;
   function new();
     a="Team";
     b=4;
-  endfunction
+  endfunction:new
 
-  virtual function void  display();
-  $display("a=%0d",a);
-  $display("b=%0d",b);
-endfunction
- endclass
+  virtual function void display();
+    $display("a=%0d",a);
+    $display("b=%0d",b);
+  endfunction:display
 
- class pack extends packet;
-   string c;
-   int d;
+endclass:packet
 
-   function new();
-     c="BJT";
-     d=8;
-   endfunction
+class pack extends packet;
+  string c;
+  int d;
 
-   function void display();
-     // super.display();
-     $display("c=%0d",c);
-     $display("d=%0d",d);
-   endfunction
- endclass
+  function new();
+    c="BJT";
+    d=8;
+  endfunction:new
 
- class pack1 extends packet;
-   string e;
+  function void display();
+    // super.display();
+    $display("c = %0d",c);
+    $display("d = %0d",d);
+  endfunction:display
 
-   function new();
-     e="Manipal";
-   endfunction
-   function void display();
-     //super.display();
-     $display("e=%0d",e);
-   endfunction
- endclass
+endclass:pack
 
- packet pp0,pp1;
- pack p2;
- pack1 p3;
+class pack1 extends packet;
+  string e;
 
- module example;
+  function new();
+    e="Manipal";
+  endfunction:new
+  
+  function void display();
+    //super.display();
+    $display("e = %0d",e);
+  endfunction:display
 
- initial begin
-   p2=new();
-   p3=new();
-   pp0=p2;
-   pp1=new p3;
-   //p1.display();
-   pp0.display();
-   pp1.display();
-   //p3.e=7;
-   //pp1.display();
- end
- endmodule
+endclass:pack1
+
+packet pp0,pp1;
+pack p2;
+pack1 p3;
+
+module virt_fun;
+
+  initial begin:BEGIN_I
+    p2=new();
+    p3=new();
+    pp0=p2;
+    pp1=new p3;
+    pp0.display();
+    pp1.display();
+    //p3.e=7;
+    //pp1.display();
+  end:BEGIN_I
+
+endmodule:virt_fun

@@ -1,6 +1,5 @@
 //..........................................................
 //object is created by using the new() function
-//
 //..............................................................
 class home; //define class
 
@@ -22,7 +21,7 @@ module tb;
   home h1;     //creating handle
 
   initial begin:BEGIN_I
-  
+    $display("Using new() method we can create an object");
     //call the new() function of class and create an object
     h1=new();
     if (h1==null)

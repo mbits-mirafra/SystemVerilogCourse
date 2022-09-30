@@ -1,5 +1,5 @@
-# vsim tb -l object.log -c -do "run -all;quit;" 
-# Start time: 02:08:57 on Oct 01,2022
+# vsim super_example -c -do "run -all;quit;" 
+# Start time: 02:17:47 on Oct 01,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,11 +16,11 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.object_sv_unit(fast)
-# Loading work.tb(fast)
+# Loading work.super_sv_unit(fast)
+# Loading work.super_example(fast)
 # run -all
-# Using new() method we can create an object
-# object is not empty
+# Here using super keyword we can get both display() methods
+# switch is ON that's why fan is ON 
 # quit
-# End time: 02:08:57 on Oct 01,2022, Elapsed time: 0:00:00
+# End time: 02:17:48 on Oct 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

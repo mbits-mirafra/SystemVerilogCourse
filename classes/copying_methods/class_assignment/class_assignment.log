@@ -1,5 +1,5 @@
 # vsim assignment -l class_assignment.log -c -do "run -all;quit;" 
-# Start time: 21:40:59 on Sep 20,2022
+# Start time: 02:39:10 on Oct 01,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -20,25 +20,13 @@
 # Loading work.assignment(fast)
 # run -all
 # contents of p1 before changes
-# 	 a=Mirafra
-# 	 b=7
-# 	 c=team
-# 	 d=4
+# a=Mirafra,	 b=7,	 c=team,	 d=4
 # contents of p2 before changes
-# 	 a=Mirafra
-# 	 b=7
-# 	 c=team
-# 	 d=4
+# a=Mirafra,	 b=7,	 c=team,	 d=4
 # contents of p1 after changes
-# 	 a=Team3
-# 	 b=4
-# 	 c=BJT
-# 	 d=8
+# a=Team3,	 b=4,	 c=BJT,	 d=8
 # contents of p2 after changes
-# 	 a=Team3
-# 	 b=4
-# 	 c=BJT
-# 	 d=8
+# a=Team3,	 b=4,	 c=BJT,	 d=8
 # quit
-# End time: 21:41:00 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 02:39:11 on Oct 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

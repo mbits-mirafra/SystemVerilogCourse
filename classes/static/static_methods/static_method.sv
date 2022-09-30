@@ -4,25 +4,35 @@
 //static methods.
 //Using 'static' keyword
 //-------------------------------------------------------
+
 class Mirafra;
   static int  team ;
+  
   function new();
     //incrementing team
     team ++;
-  endfunction
+  endfunction:new
+  
   //declaring static method
   static function void disp();
-  $display("team=%0d",team);
-endfunction
-endclass
+    $display("\t team=%0d",team);
+  endfunction:disp
+
+endclass:Mirafra
+
 module static_method;
-Mirafra m[3];//declaring array
-initial  begin
-  foreach(m[i])begin
-    m[i]=new;
-  end
-  $display("contents of team");
-  m[2].disp();
-end
-endmodule
+  Mirafra m[3];//declaring array
+
+  initial begin:BEGIN_I
+    $display("");
+    foreach(m[i])begin:BEGIN_LOOP
+      m[i]=new;
+    end:BEGIN_LOOP
+
+    $display("\t contents of team");
+    m[2].disp();
+    $display("");
+  end:BEGIN_I
+
+endmodule:static_method
 

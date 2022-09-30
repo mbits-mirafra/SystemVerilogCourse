@@ -1,5 +1,5 @@
 # vsim tb -l instance_class.log -c -do "run -all;quit;" 
-# Start time: 00:16:40 on Sep 19,2022
+# Start time: 02:30:29 on Oct 01,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -19,10 +19,10 @@
 # Loading work.instance_class_sv_unit(fast)
 # Loading work.tb(fast)
 # run -all
-# c=3,d=4,a=5,b=team
-# c=3,d=7,a=5,b=team
-# c=8,d=0,a=5,b=BJT
-# c=8,d=0,a=5,b=BJT
+# a = 5,	 b = team,	 c = 3,	 d = 4
+# a = 5,	 b = team,	 c = 3,	 d = 7
+# a = 5,	 b = BJT,	 c = 8,	 d = 0
+# a = 5,	 b = BJT,	 c = 8,	 d = 0
 # quit
-# End time: 00:16:41 on Sep 19,2022, Elapsed time: 0:00:01
+# End time: 02:30:30 on Oct 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

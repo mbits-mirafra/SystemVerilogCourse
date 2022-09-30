@@ -1,5 +1,5 @@
-# vsim example -l virtual_function.log -c -do "run -all;quit;" 
-# Start time: 11:01:26 on Sep 21,2022
+# vsim virt_fun -l virtual_function.log -c -do "run -all;quit;" 
+# Start time: 02:52:16 on Oct 01,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -17,11 +17,11 @@
 # //
 # Loading sv_std.std
 # Loading work.virtual_function_sv_unit(fast)
-# Loading work.example(fast)
+# Loading work.virt_fun(fast)
 # run -all
-# c=BJT
-# d=8
-# e=Manipal
+# c = BJT
+# d = 8
+# e = Manipal
 # quit
-# End time: 11:01:28 on Sep 21,2022, Elapsed time: 0:00:02
+# End time: 02:52:17 on Oct 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

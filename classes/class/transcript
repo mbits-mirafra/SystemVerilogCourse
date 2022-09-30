@@ -1,6 +1,6 @@
-# vsim static_method -c -do "run -all;exit" 
-# Start time: 22:20:04 on Sep 21,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim check_electricity -c -do "run -all;quit;" 
+# Start time: 03:04:53 on Oct 01,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,11 +16,13 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.static_method_sv_unit(fast)
-# Loading work.static_method(fast)
+# Loading work.class_sv_unit(fast)
+# Loading work.check_electricity(fast)
 # run -all
-# contents of team
-# team=3
-# exit
-# End time: 22:20:05 on Sep 21,2022, Elapsed time: 0:00:01
+# 
+# 	 switch is ON so electricity is open
+# 	 light is 1(ON) and fan is also 1(ON)
+# 
+# quit
+# End time: 03:04:54 on Oct 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

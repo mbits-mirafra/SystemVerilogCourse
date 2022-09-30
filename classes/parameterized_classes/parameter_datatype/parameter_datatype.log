@@ -1,5 +1,5 @@
 # vsim test -l parameter_datatype.log -c -do "run -all;quit;" 
-# Start time: 10:08:53 on Sep 21,2022
+# Start time: 02:36:27 on Oct 01,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -20,25 +20,13 @@
 # Loading work.test(fast)
 # run -all
 # contents of t2 before value changes
-# 	 c = Mirafra
-# 	 d = 8
-# 	 x = teams
-# 	 y=25
+# c = Mirafra 	 d = 8 	 x = teams 	 y=25
 # contents of t1 before value changes
-# 	 c = Teams
-# 	 d = 3
-# 	 x = teams
-# 	 y=25
+# c = Teams 	 d = 3 	 x = teams 	 y=25
 # contents of t1 after value changes
-# 	 c = Teams
-# 	 d = 3
-# 	 x = teams
-# 	 y=8
+# c = Teams 	 d = 3 	 x = teams 	 y=8
 # contents of t2 after value changes
-# 	 c = Teams
-# 	 d = 3
-# 	 x = BJT
-# 	 y=25
+# c = Teams 	 d = 3 	 x = BJT 	 y=25
 # quit
-# End time: 10:08:54 on Sep 21,2022, Elapsed time: 0:00:01
+# End time: 02:36:28 on Oct 01,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
