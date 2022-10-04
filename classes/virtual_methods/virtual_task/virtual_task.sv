@@ -36,13 +36,13 @@ endclass//class 2
 
 module virtual_task;
 
-   initial begin
+   initial begin:BEGIN_I
 
       p2=new();
       p1=p2;
       $display("contents of pp0");
       p1.display();
 
-   end
+   end:BEGIN_I
 
- endmodule
+ endmodule:virtual_task
