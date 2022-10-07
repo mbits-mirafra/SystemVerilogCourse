@@ -1,6 +1,6 @@
 # vsim stat_array -l stat_arr_rndm_log.log -c -do "run -all; exit;" 
-# Start time: 23:25:52 on Sep 16,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 22:50:50 on Oct 06,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -26,11 +26,11 @@
 # -------------------------------------------------------------------
 # Before randomize the elements of arrayi 'a'
 # Assign by default value of array data type.
-#  0 0 0 0 0
+#  0 0 0 0 0 0 0
 # ------------------------------------------------------------------
 # After randomize the elements of array 'a'
-# Output =  81 98 10 53 -66 
+# Output =  81 98 10 53 -66 -122 103 
 # -------------------------------------------------------------------
 #  exit
-# End time: 23:25:54 on Sep 16,2022, Elapsed time: 0:00:02
+# End time: 22:50:51 on Oct 06,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
