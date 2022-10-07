@@ -1,0 +1,36 @@
+# vsim AND_Gate_tb -l assertion.log -c -do "run -all;quit;" 
+# Start time: 22:49:38 on Oct 07,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.AND_Gate_tb(fast)
+# run -all
+# 
+# A=0 B=0 Y=0
+# 5, A=0 and B=0,assertion failure
+# 
+# A=0 B=1 Y=0
+# 15, A=0 and B=1,assertion failure
+# 
+# A=1 B=0 Y=0
+# 25, A=1 and B=0,assertion failure
+# 
+# A=1 B=1 Y=1
+#  35, A=1 and B=1, assertion success
+# ** Note: $finish    : test.sv(31)
+#    Time: 45 ns  Iteration: 0  Instance: /AND_Gate_tb
+# End time: 22:49:39 on Oct 07,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
