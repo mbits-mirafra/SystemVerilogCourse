@@ -1,0 +1,32 @@
+# vsim seq1 -l sequence.log -c -do "run -all;quit;" 
+# Start time: 02:20:26 on Oct 08,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.seq1(fast)
+# run -all
+# ** Info: assertion passed
+#    Time: 50 ns Started: 30 ns  Scope: seq1.time_a File: sequence.sv Line: 24
+# ** Info: assertion passed
+#    Time: 54 ns Started: 34 ns  Scope: seq1.time_a File: sequence.sv Line: 24
+# ** Info: assertion passed
+#    Time: 58 ns Started: 38 ns  Scope: seq1.time_a File: sequence.sv Line: 24
+# ** Info: assertion passed
+#    Time: 62 ns Started: 42 ns  Scope: seq1.time_a File: sequence.sv Line: 24
+# ** Note: $finish    : sequence.sv(36)
+#    Time: 66 ns  Iteration: 0  Instance: /seq1
+# End time: 02:20:27 on Oct 08,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
