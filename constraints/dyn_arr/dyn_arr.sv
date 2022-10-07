@@ -20,9 +20,9 @@ initial begin
 
 void'(pack.randomize());
 
-for (int i = 0;i<pack.dyn_arr.size();i++)begin 
+ for (int i = 0;i<=2;i++)begin 
 
-  $display ("Iteration =%0p Value =%0p",i,pack.dyn_arr[i]);
+  $display ("Iteration =%0p Array  =%0p",i,pack.dyn_arr[]);
 end 
 end 
 endmodule 

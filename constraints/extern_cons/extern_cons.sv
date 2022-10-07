@@ -1,13 +1,13 @@
 class class_a;
   rand byte a;
   rand byte x;
-  constraint b{a<6;
+  constraint cons_name1{a<6;
                a>2;}
 
-  extern constraint y; 
+  extern constraint cons_name2; 
 endclass 
 
-constraint class_a:: y{x>7;}
+constraint class_a:: cons_name2{x>7;}
 module mod;
 class_a pack;
 initial begin 
