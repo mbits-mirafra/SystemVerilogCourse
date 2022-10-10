@@ -40,5 +40,8 @@ end
   
   else $display("%0t fail\n",$time);
   end
-
+  initial begin
+    $dumpfile("waveform.vcd");
+    $dumpvars();
+  end
 endmodule 

@@ -1,5 +1,5 @@
 # vsim top -l interface.log -c -do "run -all; exit;" 
-# Start time: 00:36:02 on Sep 29,2022
+# Start time: 21:53:18 on Sep 30,2022
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -32,5 +32,5 @@
 # 
 # input_a=1	 input_b=1	 output_y=1
 #  exit
-# End time: 00:36:03 on Sep 29,2022, Elapsed time: 0:00:01
+# End time: 21:53:19 on Sep 30,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 1
