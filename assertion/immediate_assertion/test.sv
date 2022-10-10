@@ -1,3 +1,4 @@
+`include "design.sv"
 module AND_Gate_tb;
 reg A;
 reg B;
@@ -40,5 +41,8 @@ end
   
   else $display("%0t fail\n",$time);
   end
-
+  initial begin
+    $dumpfile("waveform.vcd");
+    $dumpvars();
+  end
 endmodule 

@@ -1,5 +1,5 @@
 # vsim AND_Gate_tb -l assertion.log -c -do "run -all;quit;" 
-# Start time: 22:49:38 on Oct 07,2022
+# Start time: 23:20:23 on Oct 07,2022
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -32,5 +32,5 @@
 #  35, A=1 and B=1, assertion success
 # ** Note: $finish    : test.sv(31)
 #    Time: 45 ns  Iteration: 0  Instance: /AND_Gate_tb
-# End time: 22:49:39 on Oct 07,2022, Elapsed time: 0:00:01
+# End time: 23:20:23 on Oct 07,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

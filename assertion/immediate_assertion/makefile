@@ -1,14 +1,9 @@
-compile:
-	vlib work;
-	vlog -sv design.sv test.sv
-
 simulate:
-	vsim  AND_Gate_tb -l assertion.log -c -do "run -all;quit;"
+	vcs -V -R -full64 -sverilog +v2k -debug_access+all design.sv
+
+waveform:
+	nWave waveform.vcd
 
 all:
-	vlib work;
-	vlog -sv design.sv test.sv 
-	vsim  AND_Gate_tb -l assertion.log -c -do "run -all;quit;"
-
-clear:
-	clear
+	vcs -V -R -full64 -sverilog +v2k -debug_access+all design.sv
+	nWave waveform.vcd

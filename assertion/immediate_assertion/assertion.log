@@ -1,5 +1,5 @@
-# vsim AND_Gate_tb -l assertion.log -c -do "run -all;quit;" 
-# Start time: 22:49:25 on Oct 07,2022
+# vsim AND_Gate_tb -l assertion.log -c -do "log -r/*;add wave -r/*;run -all;quit;" -wlf waveform.wlf 
+# Start time: 02:39:16 on Oct 10,2022
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -17,6 +17,12 @@
 # //
 # Loading sv_std.std
 # Loading work.AND_Gate_tb(fast)
+# log -r/*
+# bad option "-r/*": must be -class, -depth, -drivers, -flush, -howmany, -in, -inout, -internals, -mvcall, -mvcovm, -mvcreccomplete, -noflush, -optcells, -out, -ports, -recursive, -type, -wdbwave, -obj, -filter, or -nofilter
+# Usage: log -flush <object> | {[-class <classtype>] [-filter <f> | -nofilter <f>] [-howmany] {[-in] [-inout] [-out] | [-ports]} [-internal] [-mvcall] [-mvcovm] [-mvcreccomplete] [-optcells] [-recursive [-depth <level>]] <object_name> ...}
+# add wave -r/*
+# bad option "-r/*": must be -class, -depth, -drivers, -flush, -howmany, -in, -inout, -internals, -mvcall, -mvcovm, -mvcreccomplete, -noflush, -optcells, -out, -ports, -recursive, -type, -wdbwave, -obj, -filter, or -nofilter
+# Usage: log -flush <object> | {[-class <classtype>] [-filter <f> | -nofilter <f>] [-howmany] {[-in] [-inout] [-out] | [-ports]} [-internal] [-mvcall] [-mvcovm] [-mvcreccomplete] [-optcells] [-recursive [-depth <level>]] <object_name> ...}
 # run -all
 # 
 # A=0 B=0 Y=0
@@ -36,5 +42,5 @@
 # 
 # ** Note: $finish    : test.sv(27)
 #    Time: 45 ns  Iteration: 0  Instance: /AND_Gate_tb
-# End time: 22:49:26 on Oct 07,2022, Elapsed time: 0:00:01
+# End time: 02:39:17 on Oct 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

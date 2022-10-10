@@ -1,3 +1,4 @@
+`include "design.sv"
 module AND_Gate_tb;
 reg A;
 reg B;
@@ -42,5 +43,9 @@ endproperty
 assert property (ppt) $display(" %0t, A=1 and B=1, assertion success",$time);
 else $display("%0t, A=%0b and B=%0b,assertion failure", $time,A,B);
 
+  initial begin
+    $dumpfile("waveform.vcd");
+    $dumpvars();
+  end
 
 endmodule
