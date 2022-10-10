@@ -1,0 +1,107 @@
+0 
+34
++
++itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab
++v2k
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include
+-Mxllcflags=
+-P
+-V
+-Xvcs_run_simv=1
+-debug_access
+-fsdb
+-full64
+-gen_obj
+-picarchive
+-sverilog
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1
+/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab
+formal_argument.sv
+58
+XMODIFIERS=@im=ibus
+XDG_SESSION_ID=2968
+XDG_RUNTIME_DIR=/run/user/4296
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/merlinjohnson/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XDG_CURRENT_DESKTOP=GNOME
+VTE_VERSION=5204
+VNCDESKTOP=HweServer.mirafra.com:5 (merlinjohnson)
+VMR_MODE_FLAG=64
+VERDI_HOME=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8
+VENDOR=unknown
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64
+SYNPLCTYD_LICENSE_FILE=27020@seerlnx001.seerakademi.com
+SSH_TTY=/dev/pts/5
+SSH_CONNECTION=157.45.143.133 61916 192.168.1.10 22
+SSH_CLIENT=157.45.143.133 61916 22
+SSH_AUTH_SOCK=/run/user/4296/keyring/ssh
+SSH_AGENT_PID=31508
+SPYGLASS_HOME=/hwetools/synosys/installed_tools/spyglass/S-2021.09-SP1/SPYGLASS_HOME
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/31396,unix/unix:/tmp/.ICE-unix/31396
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+REMOTEHOST=157.45.143.133
+QT_IM_MODULE=ibus
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+Prime_HOME=/hwetools/synosys/installed_tools/prime/S-2021.06-SP2
+OVA_UUM=0
+OSTYPE=linux
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+ICC_HOME=/hwetools/synosys/installed_tools/icc2/Q-2019.12-SP1
+HOSTTYPE=x86_64-linux
+HISTCONTROL=ignoredups
+GROUP=merlinjohnson
+GNOME_TERMINAL_SERVICE=:1.101
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/ac521408_5d22_4f75_a9da_0205dd3d9b86
+GNOME_SHELL_SESSION_MODE=classic
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+Fusion_Compiler_HOME=/hwetools/synosys/installed_tools/fusioncompiler/S-2021.06-SP2
+FORMALITY=/hwetools/synosys/installed_tools/fm/S-2021.06-SP2
+DC_HOME=/hwetools/synosys/installed_tools/syn/S-2021.06-SP4
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-nqYHAmgzab,guid=68203aa0aebaec22fd1ce87e633e3249
+COLORTERM=truecolor
+0
+3
+1665418296 formal_argument.sv
+1630405584 /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab
+1631416234 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab
+4
+1631417060 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so
+1631416743 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so
+1631416702 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so
+1631416739 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so
+1665418322 simv.daidir
+-1 partitionlib

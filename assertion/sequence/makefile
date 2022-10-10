@@ -1,13 +1,8 @@
 
-all:
-		make clear;make compile;make simulate
-
-compile:
-		vlib work;
-			vlog -sv sequence.sv
 
 simulate:
-		vsim seq1 -l sequence.log -c -do "run -all;quit;"
+	   vcs -V -R -full64 -sverilog +v2k -debug_access +  sequence.sv        
+	
 
 clear:
 		clear

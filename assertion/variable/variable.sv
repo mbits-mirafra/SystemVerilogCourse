@@ -27,4 +27,11 @@ endsequence
 a_1: assert property(@(posedge clk) a |-> delay_sequence(parameter_delay) |-> b)
 $info("assertion passed"); else $error("assertion failed");
 
+initial begin 
+  $dumpfile
+  ("waveform.vcd");
+  $dumpvars();
+end
+
+
 endmodule  

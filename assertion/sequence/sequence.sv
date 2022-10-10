@@ -36,4 +36,11 @@ initial begin
   #20; $finish;
 end
 
-endmodule    
+initial begin                                                                                       
+  $dumpfile                                                                                         
+  ("waveform.vcd");                                                                                 
+  $dumpvars();                                                                                      
+end                                                                                                 
+endmodule                                                                                           
+
+ 

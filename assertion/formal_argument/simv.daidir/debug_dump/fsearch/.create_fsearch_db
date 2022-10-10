@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib:/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcsfind_create_index.exe  -z  "/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/formal_argument/simv.daidir/debug_dump/fsearch/./idents_f4WhGg.xml.gz" "/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/formal_argument/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/formal_argument/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/formal_argument/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/formal_argument/simv.daidir/debug_dump/fsearch/fsearch.db"

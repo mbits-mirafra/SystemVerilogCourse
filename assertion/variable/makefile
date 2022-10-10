@@ -1,13 +1,8 @@
 
-all:
-		make clear;make compile;make simulate
-
-compile:
-		vlib work;
-			vlog -sv variable.sv
 
 simulate:
-		vsim variable -l variable.log -c -do "run -all;quit;"
+        
+				vcs -V -R -full64 -sverilog +v2k -debug_access + variable.sv
 
 clear:
 		clear

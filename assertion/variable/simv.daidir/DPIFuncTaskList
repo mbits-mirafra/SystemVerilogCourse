@@ -1,0 +1,6 @@
+DirectC svafm_initialize 
+DirectC svafm_endofsim 
+DirectC svafm_getThread 
+DirectC svafm_validThread 
+DirectC svafm_matchFound 
+DirectC svafm_purgeRunningThreads 

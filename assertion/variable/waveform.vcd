@@ -1,0 +1,71 @@
+$date
+	Mon Oct 10 21:23:53 2022
+$end
+
+$version
+	Synopsys VCS version Q-2020.03-SP2-8_Full64
+$end
+
+$timescale
+	1s
+$end
+
+$comment Csum: 1 61c10bfe980f93e4 $end
+
+
+$scope module variable $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 32 # parameter_delay [31:0] $end
+$var reg 1 $ clk $end
+
+$scope task _$$txp_pass_action_a_1 $end
+$upscope $end
+
+
+$scope task _$$txp_fail_action_a_1 $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+1!
+0"
+0$
+b00000000000000000000000000000010 #
+$end
+#5
+1$
+#10
+0$
+#15
+1$
+#20
+0!
+1"
+0$
+#25
+1$
+#30
+1!
+0$
+#35
+1$
+#40
+0$
+#45
+0!
+1$
+#50
+0$
+#55
+1!
+0"
+1$
+#60
+0$
+#65
+1$
