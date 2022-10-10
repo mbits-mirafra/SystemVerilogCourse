@@ -1,6 +1,6 @@
 # vsim -cvgperinstance options -l options.log -c -do "coverage save -onexit options.ucdb;run -all;exit;" 
-# Start time: 23:53:05 on Oct 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 23:09:28 on Oct 10,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,32 +20,17 @@
 # Loading work.options(fast)
 # coverage save -onexit options.ucdb
 # run -all
-# a=0 ; b= 8 ; coverage %= 16.07
-# coverpoint c1 coverage% = 0.00%
-# coverpoint c2 coverage% = 12.50%
-# coverpoint c3 coverage% = 50.00%
+# a=0 ; b= 8 ; coverage %= 18.75
 # -----------------------------------------------------
-# a=1 ; b= 6 ; coverage %= 32.14
-# coverpoint c1 coverage% = 0.00%
-# coverpoint c2 coverage% = 25.00%
-# coverpoint c3 coverage% = 100.00%
+# a=1 ; b= 6 ; coverage %= 37.50
 # -----------------------------------------------------
-# a=1 ; b= 8 ; coverage %= 39.29
-# coverpoint c1 coverage% = 50.00%
-# coverpoint c2 coverage% = 25.00%
-# coverpoint c3 coverage% = 100.00%
+# a=1 ; b= 8 ; coverage %= 50.00
 # -----------------------------------------------------
-# a=3 ; b= 4 ; coverage %= 48.21
-# coverpoint c1 coverage% = 50.00%
-# coverpoint c2 coverage% = 37.50%
-# coverpoint c3 coverage% = 100.00%
+# a=3 ; b= 4 ; coverage %= 56.25
 # -----------------------------------------------------
-# a=4 ; b= 4 ; coverage %= 57.14
-# coverpoint c1 coverage% = 50.00%
-# coverpoint c2 coverage% = 50.00%
-# coverpoint c3 coverage% = 100.00%
+# a=4 ; b= 4 ; coverage %= 62.50
 # -----------------------------------------------------
 # exit
 # Saving coverage database on exit...
-# End time: 23:53:06 on Oct 07,2022, Elapsed time: 0:00:01
+# End time: 23:09:28 on Oct 10,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

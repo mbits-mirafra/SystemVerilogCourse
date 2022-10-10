@@ -1,6 +1,6 @@
 # vsim mod -l stat_cons_log.log -c -do "run -all; exit;" 
-# Start time: 23:04:51 on Sep 20,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 22:54:39 on Oct 09,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -22,21 +22,24 @@
 # Randomization of multidimensional array
 # ----------------------------------------
 # Before randomization
-#  Array = {0 0 0 0} {0 0 0 0} {0 0 0 0}
+#  Array = {0 0 0} {0 0 0} {0 0 0}
 # -----------------------------------------------------------
 # After randomization
-#  Iteration = 0, Array = {8 10 11 2} {10 6 3 8} {10 7 7 7}
+#  Iteration = 1, Array = {0 8 4} {0 3 9} {5 2 5}
 # -----------------------------------------------------------
-#  Iteration = 1, Array = {5 0 5 4} {7 4 1 7} {2 4 9 5}
+# b=69376
+#  Iteration = 2, Array = {2 2 8} {12 0 0} {2 9 1}
 # -----------------------------------------------------------
-#  Iteration = 2, Array = {7 4 4 1} {11 4 0 0} {7 0 4 1}
+# b=69376
+#  Iteration = 3, Array = {8 3 1} {0 11 1} {10 0 2}
 # -----------------------------------------------------------
-#  Iteration = 3, Array = {4 6 8 8} {2 9 2 11} {7 10 9 5}
+# b=69376
+#  Iteration = 4, Array = {0 11 1} {9 2 1} {10 1 1}
 # -----------------------------------------------------------
-#  Iteration = 4, Array = {1 1 4 9} {9 3 1 10} {6 10 5 11}
+# b=69376
+#  Iteration = 5, Array = {5 3 4} {9 1 2} {2 5 5}
 # -----------------------------------------------------------
-#  Iteration = 5, Array = {10 2 8 2} {5 6 6 3} {6 10 8 9}
-# -----------------------------------------------------------
+# b=69376
 #  exit
-# End time: 23:04:52 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 22:54:41 on Oct 09,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
