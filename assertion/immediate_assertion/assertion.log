@@ -1,46 +1,94 @@
-# vsim AND_Gate_tb -l assertion.log -c -do "log -r/*;add wave -r/*;run -all;quit;" -wlf waveform.wlf 
-# Start time: 02:39:16 on Oct 10,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# //  Questa Sim
-# //  Version 10.6c linux Jul 25 2017
-# //
-# //  Copyright 1991-2017 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  QuestaSim and its associated documentation contain trade
-# //  secrets and commercial or financial information that are the property of
-# //  Mentor Graphics Corporation and are privileged, confidential,
-# //  and exempt from disclosure under the Freedom of Information Act,
-# //  5 U.S.C. Section 552. Furthermore, this information
-# //  is prohibited from disclosure under the Trade Secrets Act,
-# //  18 U.S.C. Section 1905.
-# //
-# Loading sv_std.std
-# Loading work.AND_Gate_tb(fast)
-# log -r/*
-# bad option "-r/*": must be -class, -depth, -drivers, -flush, -howmany, -in, -inout, -internals, -mvcall, -mvcovm, -mvcreccomplete, -noflush, -optcells, -out, -ports, -recursive, -type, -wdbwave, -obj, -filter, or -nofilter
-# Usage: log -flush <object> | {[-class <classtype>] [-filter <f> | -nofilter <f>] [-howmany] {[-in] [-inout] [-out] | [-ports]} [-internal] [-mvcall] [-mvcovm] [-mvcreccomplete] [-optcells] [-recursive [-depth <level>]] <object_name> ...}
-# add wave -r/*
-# bad option "-r/*": must be -class, -depth, -drivers, -flush, -howmany, -in, -inout, -internals, -mvcall, -mvcovm, -mvcreccomplete, -noflush, -optcells, -out, -ports, -recursive, -type, -wdbwave, -obj, -filter, or -nofilter
-# Usage: log -flush <object> | {[-class <classtype>] [-filter <f> | -nofilter <f>] [-howmany] {[-in] [-inout] [-out] | [-ports]} [-internal] [-mvcall] [-mvcovm] [-mvcreccomplete] [-optcells] [-recursive [-depth <level>]] <object_name> ...}
-# run -all
-# 
-# A=0 B=0 Y=0
-# 5, A=0 and B=0, assertion failed
-# 
-# 
-# A=0 B=1 Y=0
-# 15, A=0 and B=1, assertion failed
-# 
-# 
-# A=1 B=0 Y=0
-# 25, A=1 and B=0, assertion failed
-# 
-# 
-# A=1 B=1 Y=1
-# 35, A=1 and B=1,assertion Success
-# 
-# ** Note: $finish    : test.sv(27)
-#    Time: 45 ns  Iteration: 0  Instance: /AND_Gate_tb
-# End time: 02:39:17 on Oct 10,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+Command: vcs -V -R -full64 -sverilog +v2k -debug_access+all design.sv test.sv -l \
+assertion.log
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so " -Mexternalobj= \
+-Msaverestoreobj=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -l assertion.log -Xvcs_run_simv=1 -V -full64 +v2k -debug_access+all +vpi +vcsd1 \
++itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab \
+-picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
+-fsdb -sverilog -gen_obj design.sv test.sv  
+                         Chronologic VCS (TM)
+      Version Q-2020.03-SP2-8_Full64 -- Mon Oct 10 21:50:06 2022
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'design.sv'
+Parsing design file 'test.sv'
+Top Level Modules:
+       AND_Gate_tb
+No TimeScale specified
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module AND_Gate_tb
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221010162006_22204 product \
+)
+make[1]: Entering directory `/hwetools/work_area/frontend/mouna/System_verilog/SystemVerilog_Course/assertion/immediate_assertion/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib -L/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _22779_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/hwetools/work_area/frontend/mouna/System_verilog/SystemVerilog_Course/assertion/immediate_assertion/csrc' \
+
+Running simv -V +v2k -a assertion.log 
+Command: /hwetools/work_area/frontend/mouna/System_verilog/SystemVerilog_Course/assertion/immediate_assertion/./simv -V +v2k -a assertion.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 10 21:50 2022
+VCS Build Date = Sep 11 2021 20:22:52
+Start run at Oct 10 21:50 2022
+
+
+A=0 B=0 Y=0
+5, A=0 and B=0, assertion failed
+
+
+A=0 B=1 Y=0
+"test.sv", 33: AND_Gate_tb.unnamed$$_0: started at 15s failed at 15s
+	Offending '((A == 1'b0) && (B == 1'b0))'
+15, A=0 and B=1, assertion failed
+
+
+A=1 B=0 Y=0
+"test.sv", 33: AND_Gate_tb.unnamed$$_0: started at 25s failed at 25s
+	Offending '((A == 1'b0) && (B == 1'b0))'
+"test.sv", 35: AND_Gate_tb.unnamed$$_0.unnamed$$_1: started at 25s failed at 25s
+	Offending '((A == 1'b0) && (B == 1'b1))'
+25, A=1 and B=0, assertion failed
+
+
+A=1 B=1 Y=1
+"test.sv", 33: AND_Gate_tb.unnamed$$_0: started at 35s failed at 35s
+	Offending '((A == 1'b0) && (B == 1'b0))'
+"test.sv", 35: AND_Gate_tb.unnamed$$_0.unnamed$$_1: started at 35s failed at 35s
+	Offending '((A == 1'b0) && (B == 1'b1))'
+"test.sv", 37: AND_Gate_tb.unnamed$$_0.unnamed$$_1.unnamed$$_2: started at 35s failed at 35s
+	Offending '((A == 1'b1) && (B == 1'b0))'
+35, A=1 and B=1,assertion Success
+
+$finish called from file "test.sv", line 27.
+$finish at simulation time                   45
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 45
+CPU Time:      0.440 seconds;       Data structure size:   0.0Mb
+Mon Oct 10 21:50:22 2022
+CPU time: .308 seconds to compile + .361 seconds to elab + .287 seconds to link + .462 seconds in simulation

@@ -1,4 +1,3 @@
-`include "design.sv"
 module AND_Gate_tb;
 reg A;
 reg B;

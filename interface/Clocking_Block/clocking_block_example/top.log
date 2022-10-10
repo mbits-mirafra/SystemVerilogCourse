@@ -1,5 +1,5 @@
 # vsim top -l top.log -c -do "log -r /*; run -all;quit" -wlf waveform.wlf 
-# Start time: 02:23:08 on Sep 29,2022
+# Start time: 02:10:21 on Oct 10,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -37,5 +37,5 @@
 # test side[90] = d data is :1 and q data is :0
 # ** Note: $finish    : test.sv(16)
 #    Time: 90 ns  Iteration: 1  Instance: /top/t2
-# End time: 02:23:08 on Sep 29,2022, Elapsed time: 0:00:00
+# End time: 02:10:22 on Oct 10,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
