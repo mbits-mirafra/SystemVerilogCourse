@@ -111,6 +111,9 @@ FSM = 1
 Branch = 1
 [DesignTree]
 IfShowModule = {TRUE, FALSE}
+[DisabledMessages]
+version = Verdi_Q-2020.03-SP2-8
+50528646 = disabled
 [Editor]
 editorName = TurboEditor
 [Emacs]
@@ -311,6 +314,7 @@ Wave_comment_string_font = -f COURIER12 -c ID_RED5
 HB_designTreeFont = *-adobe-courier-medium-r-*-*-12-*-*-*-*-*-iso8859-*
 Text_font = COURIER12
 nMemory_font = Fixed 14
+Wave_getsignal_form_font = -f COURIER12
 [OtherEditor]
 cmd1 = "xterm -font 9x15 -fg black -bg gray -e"
 name = "vi"
@@ -322,7 +326,8 @@ PaperSize = A4 - 210x297 (mm)
 ColorPrint = FALSE
 [QtDialog]
 qWaveSignalDialog = 559,313,800,479
-QwQuestionMsgDlg = 797,477,324,114
+QwUserAskDlg = 350,317,324,162
+QwQuestionMsgDlg = 700,514,324,114
 [Session Cache]
 1 = string (session file name)
 2 = string (session file name)
@@ -535,8 +540,11 @@ SigGroupRuleFile =
 anaAuto100VertFit = FALSE
 DisplayFileName = FALSE
 waveform_vertical_scroll_bar = TRUE
+scope_to_save_with_macro
+open_file_dir
+open_rc_file_dir
 getSignalForm = 559 276 800 479 164 381 390 89
-viewPort = -1 27 1920 977 100 65
+viewPort = -1 27 1024 665 100 65
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -732,7 +740,6 @@ ResolveSymbolicLink = TRUE
 signal_rc_abspath = TRUE
 signal_rc_no_natural_bus_range = FALSE
 save_scope_with_macro = FALSE
-scope_to_save_with_macro
 TipInSignalWin = FALSE
 DisplayPackedSiganlInBitwiseManner = FALSE
 DisplaySignalTypeAheadOfSignalName = TRUE ICON
@@ -810,10 +817,9 @@ curveWindow_Drag&Drop_Mode = TRUE
 hspiceIncOpenMode = TRUE
 pcSelectMode = TRUE
 hierarchyDelimiter = /
-RecentFile1 = "\"/hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/repetition_operators/consecutive_repetition/waveform.vcd.fsdb\""
+RecentFile1 = "\"/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilog_Course/assertion/repetition_operators/consecutive_repetition/waveform.vcd.fsdb\""
+RecentFile2 = "\"/hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/repetition_operators/consecutive_repetition/waveform.vcd.fsdb\""
 open_file_time_range = FALSE
-open_file_dir
-open_rc_file_dir
 value_window_aligment = Right
 signal_window_alignment = Auto
 ShowDeltaTime = TRUE

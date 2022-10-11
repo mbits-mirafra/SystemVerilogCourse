@@ -36,7 +36,7 @@ a_1: assert property(p)
       $info("Fail");
 
       initial begin
-        $dumpfile("waveform.vcs");
+        $dumpfile("waveform.vcd");
         $dumpvars();
       end
 endmodule

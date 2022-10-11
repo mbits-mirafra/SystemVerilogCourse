@@ -1,3 +1,3 @@
 Command Line: /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/platform/LINUXAMD64/bin/Novas -nWave waveform.vcd
 uname(Linux HweServer.mirafra.com 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021 x86_64)
-au time 106.466282 3.188975 1.279248 delta 246513664 246513664 total 704323584 704323584
+au time 234.223754 4.402939 2.843808 delta 246214656 246214656 total 704024576 704024576

@@ -36,6 +36,6 @@ else
 
   initial begin
     $dumpfile("waveform.vcd");
-    $dumpfile();
+    $dumpvars();
   end
 endmodule  
