@@ -1,0 +1,72 @@
+Command: vcs -V -R -full64 -sverilog +v2k -debug_access +all -l nonconsecutive_repetition.log \
+nonconsecutive_repetition.sv
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so " -Mexternalobj= \
+-Msaverestoreobj=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -l nonconsecutive_repetition.log -Xvcs_run_simv=1 -V -full64 +v2k -debug_access \
++vpi +vcsd1 +itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab \
++all -picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
+-fsdb -sverilog -gen_obj nonconsecutive_repetition.sv  
+                         Chronologic VCS (TM)
+      Version Q-2020.03-SP2-8_Full64 -- Tue Oct 11 01:58:48 2022
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'nonconsecutive_repetition.sv'
+Top Level Modules:
+       nonconsecutive_repetition
+No TimeScale specified
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module nonconsecutive_repetition
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221010202847_9524 product \
+)
+make[2]: Entering directory `/hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/repetition_operators/nonconsecutive_repetition/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib -L/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _10039_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[2]: Leaving directory `/hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/repetition_operators/nonconsecutive_repetition/csrc' \
+
+Running simv -V +v2k +all -a nonconsecutive_repetition.log 
+Command: /hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/repetition_operators/nonconsecutive_repetition/./simv -V +v2k +all -a nonconsecutive_repetition.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 11 01:58 2022
+VCS Build Date = Sep 11 2021 20:22:52
+Start run at Oct 11 01:58 2022
+
+Info: "nonconsecutive_repetition.sv", 33: nonconsecutive_repetition.a_1: at time 85
+Pass
+Info: "nonconsecutive_repetition.sv", 33: nonconsecutive_repetition.a_1: at time 155
+Pass
+$finish called from file "nonconsecutive_repetition.sv", line 24.
+$finish at simulation time                  165
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 165
+CPU Time:      0.440 seconds;       Data structure size:   0.0Mb
+Tue Oct 11 01:59:04 2022
+CPU time: .303 seconds to compile + .254 seconds to elab + .373 seconds to link + .465 seconds in simulation
