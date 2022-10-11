@@ -1,6 +1,6 @@
-# vsim CLI_valargs -l CLI_valargs.log -c -do "run -all;quit" "+msg=Hey!" 
-# Start time: 02:26:03 on Oct 12,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim CLI_valargs -l CLI_valargs.log -c -do "run -all;quit" "+msg=Hey!" "+value=2" 
+# Start time: 02:45:17 on Oct 12,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,7 +20,7 @@
 # run -all
 # $value$plusargs used above returns 1
 # Hey!
-# Incremeneted value of y:1
+# Incremeneted value of y:3
 # quit
-# End time: 02:26:04 on Oct 12,2022, Elapsed time: 0:00:01
+# End time: 02:45:18 on Oct 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
