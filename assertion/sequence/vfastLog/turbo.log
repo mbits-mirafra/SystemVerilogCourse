@@ -1,3 +1,0 @@
-Command Line: /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/platform/LINUXAMD64/bin/vfast -silent -del . -o /hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/sequence/waveform.vcd.fsdb -ft verilog /hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/sequence/waveform.vcd
-uname(Linux HweServer.mirafra.com 3.10.0-1160.42.2.el7.x86_64 #1 SMP Tue Sep 7 14:49:57 UTC 2021 x86_64)
-au time 0.170878 0.000134 0.011386 delta 24702976 24702976 total 111554560 111554560
