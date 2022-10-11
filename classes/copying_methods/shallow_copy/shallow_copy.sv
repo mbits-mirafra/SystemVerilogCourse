@@ -1,27 +1,14 @@
-class company;
-  string a;
-  int b ;
-  
-  function new();   
-    a = "Mirafra";
-    b = 13;
-  endfunction:new
-
-endclass:company
- 
 class Mirafra;
   string c;
   int d;
-  company ar;
 
   function new();
     c = "Teams";
     d = 8;
-    ar = new();
   endfunction:new
 
   function void display();
-    $display("a=%0d,\t b=%0d,\t c=%0d,\t d=%0d",ar.a,ar.b,c,d);
+    $display("\t c=%0s,\t d=%0d",c,d);
   endfunction:display
 
 endclass:Mirafra
@@ -37,9 +24,7 @@ module shallow;
     p2 =new p1;
     $display("contents of p2");
     p2.display();
-    p2.c="BJT";
-    p2.ar.a="Team3";
-    p2.ar.b=4;
+    p2.c="place";
     $display("diplay contents of p1");
     p1.display();
     $display("diplay contents of p2");
