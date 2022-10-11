@@ -1,0 +1,2 @@
+We are trying to open this file using command line argument and it worked!
+Hurray!
