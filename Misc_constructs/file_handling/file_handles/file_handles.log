@@ -1,5 +1,5 @@
 # vsim file_handles -l file_handles.log -c -do "run -all;quit;" 
-# Start time: 02:19:03 on Oct 13,2022
+# Start time: 02:57:48 on Oct 13,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -19,5 +19,5 @@
 # Loading work.file_handles(fast)
 # run -all
 # quit
-# End time: 02:19:04 on Oct 13,2022, Elapsed time: 0:00:01
+# End time: 02:57:49 on Oct 13,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

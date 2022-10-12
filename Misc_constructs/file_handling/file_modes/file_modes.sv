@@ -6,7 +6,7 @@
 module file_modes;
   int f;
   string line;
-
+   int dummy;
    initial begin:BEGIN_I
 
 //open the file in write mode    
@@ -25,10 +25,10 @@ module file_modes;
     f = $fopen ("fileoperations", "r");
          $display("");
         $display("output of 'r' mode");
-         $fgets(line, f);
+        dummy= $fgets(line, f);
         // $display("");
            $display ("Line read : %s", line);
-         $fgets(line, f);
+       dummy = $fgets(line, f);
            $display ("Line read : %s", line);
 //Close the file in read mode
     $fclose(f);
@@ -40,13 +40,13 @@ module file_modes;
      //$rewind is used to change current read or write position 
      //within the file
      //-------------------------------------------------------
-      $rewind(f);
+     dummy= $rewind(f);
     $fclose(f);
 
 //open the file in 'r+' mode
   f = $fopen("fileoperations","r+");
        $display("output of 'r+' mode");
-        $fgets(line,f);
+        dummy=  $fgets(line,f);
           $display("line read :%0s",line);
           $display("");
     $fclose(f);

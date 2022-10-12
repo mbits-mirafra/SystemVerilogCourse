@@ -3,7 +3,7 @@ module scanf;
  int fd;
  int i;
  string str,str2;
-
+ int dummy;
   initial begin
 
     fd = $fopen ("hihihi.sv", "w");
@@ -17,10 +17,10 @@ module scanf;
     fd = $fopen("hihihi.sv","r");
 
 //Usage of fscanf
-   $fscanf(fd,"str=%0s",str);
+ dummy = $fscanf(fd,"str=%0s",str);
     repeat(2)
        begin
-        $fgets(str,fd);
+       dummy = $fgets(str,fd);
         $display("");
           $display("contents of fscanf");
           $display("str = %0s",str);
@@ -29,8 +29,8 @@ module scanf;
 //Usage of sscanf
     $display("contents of sscanf");
 
-    $fgets(str,fd);
-    $sscanf(str,"%0s",str2);
+   dummy = $fgets(str,fd);
+   dummy =  $sscanf(str,"%0s",str2);
       
       $display("str = %0s",str);
       $display("str2 = %0s",str2);

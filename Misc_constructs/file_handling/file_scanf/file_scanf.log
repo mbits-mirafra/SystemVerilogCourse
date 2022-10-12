@@ -1,5 +1,5 @@
 # vsim scanf -l file_scanf.log -c -do "run -all;quit;" 
-# Start time: 23:52:45 on Oct 12,2022
+# Start time: 03:00:33 on Oct 13,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -17,14 +17,6 @@
 # //
 # Loading sv_std.std
 # Loading work.scanf(fast)
-# ** Warning: (vsim-PLI-3691) file_scanf.sv(20): Expected a system task, not a system function '$fscanf'.
-#    Time: 0 ns  Iteration: 0  Instance: /scanf File: file_scanf.sv
-# ** Warning: (vsim-PLI-3691) file_scanf.sv(23): Expected a system task, not a system function '$fgets'.
-#    Time: 0 ns  Iteration: 0  Instance: /scanf File: file_scanf.sv
-# ** Warning: (vsim-PLI-3691) file_scanf.sv(32): Expected a system task, not a system function '$fgets'.
-#    Time: 0 ns  Iteration: 0  Instance: /scanf File: file_scanf.sv
-# ** Warning: (vsim-PLI-3691) file_scanf.sv(33): Expected a system task, not a system function '$sscanf'.
-#    Time: 0 ns  Iteration: 0  Instance: /scanf File: file_scanf.sv
 # run -all
 # 
 # contents of fscanf
@@ -40,5 +32,5 @@
 # str2 = BJT
 # 
 # quit
-# End time: 23:52:46 on Oct 12,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 4
+# End time: 03:00:34 on Oct 13,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
