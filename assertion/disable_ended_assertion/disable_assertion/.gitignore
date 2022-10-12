@@ -1,8 +1,10 @@
 csrc
-novas.conf
 nWaveLog
-simv.daidir
 ucli.key
-novas.rc
+waveform.vcd.fsdb
+novas.conf
 simv
+vfastLog
+novas.rc
+simv.daidir
 waveform.vcd
