@@ -1,0 +1,73 @@
+Command: vcs -V -R -full64 -sverilog +v2k -debug_access+all sequence.sv -l sequence.log \
+
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so " -Mexternalobj= \
+-Msaverestoreobj=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -l sequence.log -Xvcs_run_simv=1 -V -full64 +v2k -debug_access+all +vpi +vcsd1 \
++itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab \
+-picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
+-fsdb -sverilog -gen_obj sequence.sv  
+                         Chronologic VCS (TM)
+      Version Q-2020.03-SP2-8_Full64 -- Tue Oct 11 05:46:47 2022
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'sequence.sv'
+Top Level Modules:
+       seq1
+No TimeScale specified
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module seq1
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221011001646_16029 product \
+)
+make[1]: Entering directory `/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/sequence/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib -L/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _16529_archive_1.so \
+SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
+-lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory `/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/sequence/csrc' \
+
+Running simv -V +v2k -a sequence.log 
+Command: /hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/sequence/./simv -V +v2k -a sequence.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 11 05:46 2022
+VCS Build Date = Sep 11 2021 20:22:52
+Start run at Oct 11 05:46 2022
+
+Info: "sequence.sv", 25: seq1.time_a: at time 50
+assertion passed
+Info: "sequence.sv", 25: seq1.time_a: at time 54
+assertion passed
+Info: "sequence.sv", 25: seq1.time_a: at time 58
+assertion passed
+Info: "sequence.sv", 25: seq1.time_a: at time 62
+assertion passed
+$finish called from file "sequence.sv", line 37.
+$finish at simulation time                   66
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 66
+CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
+Tue Oct 11 05:47:03 2022
+CPU time: .320 seconds to compile + .252 seconds to elab + .355 seconds to link + .464 seconds in simulation

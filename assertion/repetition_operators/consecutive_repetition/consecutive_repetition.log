@@ -1,0 +1,57 @@
+Command: vcs -V -R -full64 -sverilog +v2k -debug_access +all -l consecutive_repetition.log \
+consecutive_repetition.sv
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so " -Mexternalobj= \
+-Msaverestoreobj=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -l consecutive_repetition.log -Xvcs_run_simv=1 -V -full64 +v2k -debug_access \
++vpi +vcsd1 +itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab \
++all -picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
+-fsdb -sverilog -gen_obj consecutive_repetition.sv  
+                         Chronologic VCS (TM)
+      Version Q-2020.03-SP2-8_Full64 -- Mon Oct 10 23:29:31 2022
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Running simv -V +v2k +all -a consecutive_repetition.log 
+Command: /hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/repetition_operators/consecutive_repetition/./simv -V +v2k +all -a consecutive_repetition.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 10 23:29 2022
+VCS Build Date = Sep 11 2021 20:22:52
+Start run at Oct 10 23:29 2022
+
+Info: "consecutive_repetition.sv", 34: consecutive_repetition.a_1: at time 55
+Pass
+"consecutive_repetition.sv", 34: consecutive_repetition.a_1: started at 65s failed at 95s
+	Offending 'b'
+Info: "consecutive_repetition.sv", 34: consecutive_repetition.a_1: at time 95
+Fail
+"consecutive_repetition.sv", 34: consecutive_repetition.a_1: started at 105s failed at 115s
+	Offending 'b'
+Info: "consecutive_repetition.sv", 34: consecutive_repetition.a_1: at time 115
+Fail
+"consecutive_repetition.sv", 34: consecutive_repetition.a_1: started at 125s failed at 155s
+	Offending 'b'
+Info: "consecutive_repetition.sv", 34: consecutive_repetition.a_1: at time 155
+Fail
+$finish called from file "consecutive_repetition.sv", line 24.
+$finish at simulation time                  165
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 165
+CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
+Mon Oct 10 23:29:41 2022
+CPU time: .464 seconds in simulation
