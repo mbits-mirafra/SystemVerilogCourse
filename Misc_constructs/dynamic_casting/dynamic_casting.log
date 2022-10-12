@@ -1,5 +1,5 @@
 # vsim casting -l dynamic_casting.log -c -do "run -all;quit;" 
-# Start time: 03:18:27 on Oct 13,2022
+# Start time: 03:40:35 on Oct 13,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -24,5 +24,5 @@
 # d=8
 # b = cafe
 # quit
-# End time: 03:18:28 on Oct 13,2022, Elapsed time: 0:00:01
+# End time: 03:40:35 on Oct 13,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
