@@ -1,12 +1,11 @@
 class Mirafra;
   string c;
   int d;
- // Mirafra pk;
+ 
   
   function new();
     c="team";
     d=4;
-   // pk=new();
   endfunction:new
   
   function void display();
