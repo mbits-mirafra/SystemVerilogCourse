@@ -27,8 +27,6 @@ module assignment;
     $display("contents of p2 before changes");
     p2.display();
     p2.c="BJT";
-   // p2.pk.c="Team3";
-  
     p2.d=8;
     $display("contents of p1 after changes");
     p1.display();

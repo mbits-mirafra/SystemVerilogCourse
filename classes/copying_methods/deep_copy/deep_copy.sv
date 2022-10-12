@@ -3,12 +3,9 @@
 //In deep copy we have two different memory locations and 
 //we use 'copy' in deep copy
 //-------------------------------------------------------
-
-//----class 2----
 class branches;
   string c;
   int d;
-  //companies pk;
   
   function new();
     c="Banglore";

@@ -1,0 +1,43 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/bhavana_b7/try/Misc/Misc Constructs/file_handling/file_scanf
+T_opt
+!s110 1665598965
+V@P@kjb9O=1d[`^N;lV1L82
+04 5 4 work scanf fast 0
+=1-a4badb503de1-634705f5-c55d8-6754
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+vscanf
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1665598964
+!i10b 1
+!s100 ZiRVB2kVN[W1MHXZlFZL73
+I3Ei=4hQ>`GE`o9<b:OIHe3
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 file_scanf_sv_unit
+S1
+R0
+w1665504899
+8file_scanf.sv
+Ffile_scanf.sv
+L0 1
+OE;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1665598964.000000
+!s107 file_scanf.sv|
+!s90 -sv|file_scanf.sv|
+!i113 0
+o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
