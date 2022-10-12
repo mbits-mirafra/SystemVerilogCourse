@@ -8,6 +8,8 @@ module f_get;
  int f;
  string line;
   
+ int dummy;
+
    initial begin
 //write operation
      f=$fopen("file","w");
@@ -20,14 +22,14 @@ module f_get;
      f=$fopen("file","r");
      $display("");
 
-     c=$fgetc(f);
-     $display("character read:%0s",c);
+     c = $fgetc(f);
+     $display("reading one character : %0s",c);
 
-     $ungetc(c,f);
-     $display("character insert:%0s",c);
+     dummy = $ungetc(c,f);
+     $display("character insert : %0s",c);
 
-     $fgets(line,f);
-     $display("line read:%0s",line);
+     dummy = $fgets(line,f);
+     $display("line read : %0s",line);
      
      $fclose(f);
     end

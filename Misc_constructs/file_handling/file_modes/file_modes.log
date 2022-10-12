@@ -1,5 +1,5 @@
 # vsim file_modes -l file_modes.log -c -do "run -all;quit;" 
-# Start time: 22:03:55 on Oct 11,2022
+# Start time: 02:57:19 on Oct 13,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -17,14 +17,6 @@
 # //
 # Loading sv_std.std
 # Loading work.file_modes(fast)
-# ** Warning: (vsim-PLI-3691) file_modes.sv(28): Expected a system task, not a system function '$fgets'.
-#    Time: 0 ns  Iteration: 0  Region: /file_modes/BEGIN_I File: file_modes.sv
-# ** Warning: (vsim-PLI-3691) file_modes.sv(31): Expected a system task, not a system function '$fgets'.
-#    Time: 0 ns  Iteration: 0  Region: /file_modes/BEGIN_I File: file_modes.sv
-# ** Warning: (vsim-PLI-3691) file_modes.sv(43): Expected a system task, not a system function '$rewind'.
-#    Time: 0 ns  Iteration: 0  Region: /file_modes/BEGIN_I File: file_modes.sv
-# ** Warning: (vsim-PLI-3691) file_modes.sv(49): Expected a system task, not a system function '$fgets'.
-#    Time: 0 ns  Iteration: 0  Region: /file_modes/BEGIN_I File: file_modes.sv
 # run -all
 # 
 # output of 'r' mode
@@ -37,5 +29,5 @@
 # 
 # 
 # quit
-# End time: 22:03:56 on Oct 11,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 4
+# End time: 02:57:19 on Oct 13,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
