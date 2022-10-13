@@ -8,7 +8,7 @@ int fd;
 string str;
 int dummy;
 
-  initial begin
+  initial begin:BEGIN_I
 
   //open the file in the write mode
     fd = $fopen ("hihihi.sv", "w+");
@@ -31,6 +31,6 @@ int dummy;
 
     $fclose(fd);
 
-  end
+  end:BEGIN_I
 
-endmodule
+endmodule:file_eof

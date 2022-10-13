@@ -10,7 +10,7 @@ module f_get;
   
  int dummy;
 
-   initial begin
+   initial begin:BEGIN_I
 //write operation
      f=$fopen("file","w");
      
@@ -32,6 +32,6 @@ module f_get;
      $display("line read : %0s",line);
      
      $fclose(f);
-    end
-endmodule
+    end:BEGIN_I
+endmodule:f_get
 
