@@ -4,27 +4,29 @@
 //It has size as a parameter that can be changed during
 //instantiation.
 //-------------------------------------------------------
-
-//----class 1----
 class mirafra #(parameter branch,employes);
   bit [branch-1:0]b1;
   bit [employes-1:0]b2;
-  
-  function new();
+ 
+   function new();
     b1=13;
-    b2=25;
-  endfunction:new
+    b2=9;
+   endfunction
+
+   function void disp();
+    $display("b1=%0d,b2=%0d",b1,b2);
+   endfunction
 
 endclass:mirafra
-
+ 
+mirafra#(3,2) m;
 module value;
-  mirafra#(5,7) m;
-  
-
   initial begin:BEGIN_I
     m=new();
-    $display("contents of m before value changes");
+    $display("");
+    $display("contents of m ");
     m.disp();
+    $display("");
   end:BEGIN_I
 
 endmodule:value
