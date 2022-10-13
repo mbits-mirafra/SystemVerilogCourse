@@ -6,7 +6,7 @@
 //the class.
 //-------------------------------------------------------
 
-//-- class 1 ---
+//class
 class data;
   const int a;
   string b;
@@ -22,27 +22,9 @@ class data;
 
 endclass:data
 
-//---- class 2 ---
-class pack;
-  int c;
-  int d;
-  data dt;
-  
-  function new();
-    c=3;
-    d=4;
-    dt=new();//class handle
-  endfunction:new
-  
-  function void display();
-    $display("a = %0d,\t b = %0d,\t c = %0d,\t d = %0d",dt.a,dt.b,c,d);
-  endfunction:display
+module instance_class;
+  data t1;
 
-endclass:pack
-
-module tb;
-  pack t1;
-  pack t2;
  
   initial begin:BEGIN_I
     t1=new();
@@ -53,16 +35,10 @@ module tb;
     // so if we assign any value to the 'a' it throws errors 
     // it won't take any value eventhough we declared.
     //-------------------------------------------------------
-    t1.dt.b="team";
+    t1.b="bjt";
+    $display("");
     t1.display();
-    t2= t1;//class_assignment
-    t2.d=7;
-    t2.display();
-    t2.c=8;
-    t2.d=0;
-    t2.dt.b="BJT";
-    t1.display();
-    t2.display();    
+    $display("");
   end:BEGIN_I
 
-endmodule:tb
+endmodule:instance_class

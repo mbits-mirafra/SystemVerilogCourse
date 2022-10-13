@@ -31,11 +31,11 @@ module deep;
     p1=new();
     p2=new();
     p2.deep(p1);//deep copy
+    $display("");
     $display("contents of branch p1 before changes");
     p1.disp();
     $display("contents of branch p2 before changes");
     p2.disp();
-    //changing the values of p1 and p2
     p1.c="Manipal";
     p2.c="Hyderabad";
 
@@ -43,6 +43,7 @@ module deep;
     p1.disp();
     $display("contents of branches p2 after changes");
     p2.disp(); 
+    $display("");
   end:BEGIN_I
 
 endmodule:deep

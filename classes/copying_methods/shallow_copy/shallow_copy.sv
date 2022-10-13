@@ -19,16 +19,18 @@ module shallow;
 
   initial begin:BEGIN_I
     p1 =new();
-    $display("contents of p1");
+    $display("");
+    $display("contents of p1 befor chnages");
     p1.display();
     p2 =new p1;
-    $display("contents of p2");
+    $display("contents of p2 before changes");
     p2.display();
     p2.c="place";
-    $display("diplay contents of p1");
+    $display("contents of p1 after changes");
     p1.display();
-    $display("diplay contents of p2");
+    $display("contents of p2 after changes");
     p2.display();
+    $display("");
   end:BEGIN_I
 
 endmodule:shallow

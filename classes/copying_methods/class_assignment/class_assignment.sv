@@ -20,6 +20,7 @@ module assignment;
 
   initial begin:BEGIN_I
     p1=new();
+    $display("");
     $display("contents of p1 before changes");
     p1.display();
     p2=p1;
@@ -31,6 +32,7 @@ module assignment;
     p1.display();
     $display("contents of p2 after changes");
     p2.display();
+    $display("");
   end:BEGIN_I
 
 endmodule:assignment

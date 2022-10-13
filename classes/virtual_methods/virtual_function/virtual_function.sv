@@ -39,7 +39,6 @@ class pack1 extends packet;
   endfunction:new
   
   function void display();
-    //super.display();
     $display("e = %0d",e);
   endfunction:display
 
@@ -58,8 +57,6 @@ module virt_fun;
     pp1=new p3;
     pp0.display();
     pp1.display();
-    //p3.e=7;
-    //pp1.display();
   end:BEGIN_I
 
 endmodule:virt_fun

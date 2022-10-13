@@ -1,5 +1,5 @@
 # vsim assignment -l class_assignment.log -c -do "run -all;quit;" 
-# Start time: 22:53:20 on Oct 11,2022
+# Start time: 00:28:05 on Oct 14,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -19,6 +19,7 @@
 # Loading work.class_assignment_sv_unit(fast)
 # Loading work.assignment(fast)
 # run -all
+# 
 # contents of p1 before changes
 # 	 c=team,d=4
 # contents of p2 before changes
@@ -27,6 +28,7 @@
 # 	 c=BJT,d=8
 # contents of p2 after changes
 # 	 c=BJT,d=8
+# 
 # quit
-# End time: 22:53:21 on Oct 11,2022, Elapsed time: 0:00:01
+# End time: 00:28:06 on Oct 14,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
