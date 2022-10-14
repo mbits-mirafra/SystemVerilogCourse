@@ -1,5 +1,5 @@
-Command: vcs -V -R -full64 -sverilog +v2k -debug_access +all andgate.sv test.sv -l \
-disable.log
+Command: vcs -V -R -full64 -sverilog +v2k -debug_access +all -l countones.log countones.sv \
+
 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
 -Masflags= -Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
 -Mxllcflags= -Mxcflags= -pipe -fPIC -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
@@ -9,11 +9,12 @@ disable.log
 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so " -Mexternalobj= \
 -Msaverestoreobj=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
 -Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
--ldl  -l disable.log -Xvcs_run_simv=1 -V -full64 +v2k -debug_access +vpi +vcsd1 +itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab \
+-ldl  -l countones.log -Xvcs_run_simv=1 -V -full64 +v2k -debug_access +vpi +vcsd1 \
++itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab \
 +all -picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
--fsdb -sverilog -gen_obj andgate.sv test.sv  
+-fsdb -sverilog -gen_obj countones.sv  
                          Chronologic VCS (TM)
-      Version Q-2020.03-SP2-8_Full64 -- Thu Oct 13 04:06:49 2022
+      Version Q-2020.03-SP2-8_Full64 -- Tue Oct 11 01:48:51 2022
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -21,18 +22,17 @@ This program is proprietary and confidential information of Synopsys Inc.
 and may be used and disclosed only as authorized in a license agreement
 controlling such use and disclosure.
 
-Parsing design file 'andgate.sv'
-Parsing design file 'test.sv'
+Parsing design file 'countones.sv'
 Top Level Modules:
-       AND_Gate
+       countones
 No TimeScale specified
 Starting vcs inline pass...
 
 1 module and 0 UDP read.
-	However, due to incremental compilation, no re-compilation is necessary.
-( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221012223649_1754 product \
+recompiling module countones
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221010201850_27615 product \
 )
-make[1]: Entering directory `/hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilog_Course/assertion/disable_ended_assertion/disable_assertion/csrc' \
+make[2]: Entering directory `/hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/SVA_Methods/countones/csrc' \
 
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
@@ -40,7 +40,7 @@ rm -f _cuarc0.so
 if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib -L/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib \
--Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _3225_archive_1.so _prev_archive_1.so \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _27981_archive_1.so _prev_archive_1.so \
 _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
 rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
 -luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
@@ -49,30 +49,42 @@ rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsi
 /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
 -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-make[1]: Leaving directory `/hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilog_Course/assertion/disable_ended_assertion/disable_assertion/csrc' \
+make[2]: Leaving directory `/hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/SVA_Methods/countones/csrc' \
 
-Running simv -V +v2k +all -a disable.log 
-Command: /hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilog_Course/assertion/disable_ended_assertion/disable_assertion/./simv -V +v2k +all -a disable.log
+Running simv -V +v2k +all -a countones.log 
+Command: /hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/SVA_Methods/countones/./simv -V +v2k +all -a countones.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 13 04:07 2022
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 11 01:49 2022
 VCS Build Date = Sep 11 2021 20:22:52
-Start run at Oct 13 04:07 2022
+Start run at Oct 11 01:49 2022
 
-"test.sv", 47: AND_Gate.unnamed$$_1: started at 30s failed at 30s
-	Offending '(A && B)'
-time=30, A=1 and B=0,assertion failure
-
-time=40,A=1 and B=1, assertion success
-
-time=50,A=1 and B=1, assertion success
-
-time=60,A=1 and B=1, assertion success
-
-$finish called from file "test.sv", line 34.
-$finish at simulation time                   62
+Info: "countones.sv", 33: countones.a_1: at time 25
+Pass
+"countones.sv", 33: countones.a_1: started at 45s failed at 45s
+	Offending '($countones(b) == 1)'
+Info: "countones.sv", 33: countones.a_1: at time 45
+Fail
+Info: "countones.sv", 33: countones.a_1: at time 65
+Pass
+"countones.sv", 33: countones.a_1: started at 85s failed at 85s
+	Offending '($countones(b) == 1)'
+Info: "countones.sv", 33: countones.a_1: at time 85
+Fail
+"countones.sv", 33: countones.a_1: started at 105s failed at 105s
+	Offending '($countones(b) == 1)'
+Info: "countones.sv", 33: countones.a_1: at time 105
+Fail
+"countones.sv", 33: countones.a_1: started at 125s failed at 125s
+	Offending '($countones(b) == 1)'
+Info: "countones.sv", 33: countones.a_1: at time 125
+Fail
+Info: "countones.sv", 33: countones.a_1: at time 145
+Pass
+$finish called from file "countones.sv", line 24.
+$finish at simulation time                  155
            V C S   S i m u l a t i o n   R e p o r t 
-Time: 62
-CPU Time:      0.440 seconds;       Data structure size:   0.0Mb
-Thu Oct 13 04:07:06 2022
-CPU time: .300 seconds to compile + .267 seconds to elab + .388 seconds to link + .472 seconds in simulation
+Time: 155
+CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
+Tue Oct 11 01:49:07 2022
+CPU time: .303 seconds to compile + .251 seconds to elab + .371 seconds to link + .460 seconds in simulation

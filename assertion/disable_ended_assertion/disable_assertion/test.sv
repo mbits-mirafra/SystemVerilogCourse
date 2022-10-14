@@ -12,35 +12,26 @@ andgate inst(.A(A), .B(B), .Y(Y), .clk(clk), .rst(rst));
   always #5 clk = ~clk;
   initial
   begin
+  rst <=1; //reset is asserted
   clk<=1;
   A<=0;
   B<=0;
-  rst <=0;//reset is deasserted
 
   #10
   A<=0;
   B<=1;
-
-  #10
+ 
+ 
+  #12
+  rst <=0;//reset is deasserted
   A<=1;
   B<=0;
 
-
-  #10
-  A<=0;
-  B<=1;
-
-  #10
+ #10
   A<=1;
   B<=1;
 
-   rst<=1; //reset is asserted
-
-  #12
-  A<=1;
-  B<=1;
-
-  #100 $finish;
+  #30 $finish;
   end
 //-------------------------------------------------------
 // Disable iff is used to disable the property when the
