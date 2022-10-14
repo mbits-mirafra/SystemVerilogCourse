@@ -1,6 +1,6 @@
 
 simulate:                                                                                           
-	       vcs -V -R -full64 -sverilog +v2k -debug_access +all sequence.sv sequence.log       
+	       vcs -V -R -full64 -sverilog +v2k -debug_access +all sequence.sv -l sequence.log 
 				                                                                                                     
 
 waveform:                                                                                           

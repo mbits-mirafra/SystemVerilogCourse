@@ -14,7 +14,7 @@ formal_argument.log
 -picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
 -fsdb -sverilog -gen_obj formal_argument.sv  
                          Chronologic VCS (TM)
-      Version Q-2020.03-SP2-8_Full64 -- Tue Oct 11 05:31:52 2022
+      Version Q-2020.03-SP2-8_Full64 -- Fri Oct 14 23:22:20 2022
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -29,18 +29,21 @@ No TimeScale specified
 Starting vcs inline pass...
 
 1 module and 0 UDP read.
-recompiling module formal_argument
-( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221011000152_10474 product \
+	However, due to incremental compilation, no re-compilation is necessary.
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221014175220_22164 product \
 )
 make[1]: Entering directory `/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/formal_argument/csrc' \
 
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
 if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib -L/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib \
--Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _10854_archive_1.so \
-SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
--lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _22874_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
 -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
 /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
@@ -52,9 +55,9 @@ Running simv -V +v2k -a formal_argument.log
 Command: /hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/formal_argument/./simv -V +v2k -a formal_argument.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 11 05:32 2022
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 14 23:22 2022
 VCS Build Date = Sep 11 2021 20:22:52
-Start run at Oct 11 05:32 2022
+Start run at Oct 14 23:22 2022
 
 "formal_argument.sv", 25: formal_argument.req_gnt_notype_assert: started at 39s failed at 45s
 	Offending '((~req) & gnt)'
@@ -64,6 +67,6 @@ $finish called from file "formal_argument.sv", line 54.
 $finish at simulation time                  137
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 137
-CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
-Tue Oct 11 05:32:08 2022
-CPU time: .318 seconds to compile + .251 seconds to elab + .355 seconds to link + .460 seconds in simulation
+CPU Time:      0.440 seconds;       Data structure size:   0.0Mb
+Fri Oct 14 23:22:36 2022
+CPU time: .306 seconds to compile + .261 seconds to elab + .381 seconds to link + .475 seconds in simulation
