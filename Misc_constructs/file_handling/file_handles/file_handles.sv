@@ -1,7 +1,7 @@
 module file_handles;
 int f;
 
- initial begin
+ initial begin:BEGIN_I
  
   f=$fopen("file_handle","w");
   
@@ -10,7 +10,7 @@ int f;
   
  $fclose(f);
 
-end 
+end:BEGIN_I
 
-endmodule
+endmodule:file_handles
 
