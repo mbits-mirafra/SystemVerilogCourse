@@ -14,7 +14,7 @@ variable_delay.log
 -picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
 -fsdb -sverilog -gen_obj variable_delay.sv  
                          Chronologic VCS (TM)
-      Version Q-2020.03-SP2-8_Full64 -- Fri Oct 14 23:24:16 2022
+      Version Q-2020.03-SP2-8_Full64 -- Fri Oct 14 23:35:23 2022
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -30,9 +30,9 @@ Running simv -V +v2k -a variable_delay.log
 Command: /hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/variable_delay/./simv -V +v2k -a variable_delay.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 14 23:24 2022
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 14 23:35 2022
 VCS Build Date = Sep 11 2021 20:22:52
-Start run at Oct 14 23:24 2022
+Start run at Oct 14 23:35 2022
 
 "variable_delay.sv", 27: variable.a_1: started at 5s failed at 15s
 	Offending 'b'
@@ -49,5 +49,5 @@ $finish at simulation time                   70
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 70
 CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
-Fri Oct 14 23:24:27 2022
-CPU time: .464 seconds in simulation
+Fri Oct 14 23:35:33 2022
+CPU time: .470 seconds in simulation
