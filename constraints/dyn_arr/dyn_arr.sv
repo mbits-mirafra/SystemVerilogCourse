@@ -18,11 +18,11 @@ initial begin
   pack = new();
 //$display ($size(pack.dyn_arr);
 
-void'(pack.randomize());
 
  for (int i = 0;i<=2;i++)begin 
+void'(pack.randomize());
 
-  $display ("Iteration =%0p Array  =%0p",i,pack.dyn_arr[]);
+  $display ("Iteration =%0p Array  =%0p",i,pack.dyn_arr);
 end 
 end 
 endmodule 
