@@ -31,7 +31,7 @@ always @ (posedge clk)
   always @ (posedge clk)
     d  <= c;
 
-    always  #3  clk ++;
+    always  #3  clk = ~clk;
     initial begin
       // Make the assertion pass
       #10  @ (posedge clk) req  <= 1;
