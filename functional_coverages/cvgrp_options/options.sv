@@ -21,9 +21,9 @@ repeat (5)begin
   void'(s.randomize());
   c.sample();
   $display("a=%d ; b=%d ; coverage %%= %.2f",s.a,s.b,c.get_inst_coverage());
-  //$display("coverpoint c1 coverage%% = %.2f%%",c.c1.get_coverage());
-  //$display("coverpoint c2 coverage%% = %.2f%%",c.c2.get_coverage());
-  //$display("coverpoint c3 coverage%% = %.2f%%",c.c3.get_coverage());
+  $display("coverpoint c1 coverage%% = %.2f%%",c.c1.get_coverage());
+  $display("coverpoint c2 coverage%% = %.2f%%",c.c2.get_coverage());
+  $display("coverpoint c3 coverage%% = %.2f%%",c.c3.get_coverage());
   $display("-----------------------------------------------------");
 
 end

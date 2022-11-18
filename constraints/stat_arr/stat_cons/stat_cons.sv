@@ -1,6 +1,6 @@
 
 class class_1;
-  rand bit [4:0]a[2:0][2:0];
+  rand bit [4:0]a[2:0][3:0];
   constraint b{foreach (a[i])    // standard way to represent multidimensional array using 
               a[i].sum()with (int'(item))==12;}           //foreach conditional statement 
               

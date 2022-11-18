@@ -14,7 +14,7 @@ initial begin
 c=new;
 repeat (5) begin
   void'(p.randomize);
-  c.sample();
+//  c.sample();
 $display ("a=%d ; b=%d ; coverage %%=%.2f%%",p.a,p.b,c.get_inst_coverage());
 end
 $finish;

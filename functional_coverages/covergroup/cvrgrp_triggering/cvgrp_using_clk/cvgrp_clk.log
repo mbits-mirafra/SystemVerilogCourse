@@ -1,6 +1,6 @@
 # vsim -cvgperinstance cvgrp_using_clk -l cvgrp_clk.log -c -do "coverage save -onexit cvgrp_using_clk.ucdb;run -all;exit;" 
-# Start time: 23:58:22 on Oct 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Start time: 22:30:13 on Oct 12,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -24,8 +24,8 @@
 # a=1 ; b=0 ; coverage %= 68.75
 # a=3 ; b=0 ; coverage %= 68.75
 # a=5 ; b=0 ; coverage %= 75.00
-# ** Note: $finish    : /hwetools/work_area/frontend/naveen_B7/practice/cover_groups/cvgrp_using_clk/cvgrp_using_clk.sv(20)
+# ** Note: $finish    : cvgrp_using_clk.sv(21)
 #    Time: 45 ns  Iteration: 1  Instance: /cvgrp_using_clk
 # Saving coverage database on exit...
-# End time: 23:58:22 on Oct 07,2022, Elapsed time: 0:00:00
+# End time: 22:30:14 on Oct 12,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
