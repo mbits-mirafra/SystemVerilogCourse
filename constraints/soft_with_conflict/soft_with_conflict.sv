@@ -22,7 +22,7 @@ pkh = new;
 $display("\n \t using soft constraint to solve conflict issue");
 for(int i =0; i<5;i++)
 begin
-void'(pkh.randomize()with {soft a<10;});
+  void'(pkh.randomize()with {soft a<5;});
 
 $display("\n \t a=%0d value =%0d",i,pkh.a);
 end
