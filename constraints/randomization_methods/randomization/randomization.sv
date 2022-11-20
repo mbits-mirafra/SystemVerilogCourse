@@ -6,25 +6,20 @@ endclass
 module randomization();
 
    generator gen = new();
-   int check;
   initial
   begin
 
       $display("\tCalling Randomize....");
-      check=gen.randomize();
-       $write("\tvalue: %0d ",gen.value);
-      if(check)
-        $display("\tRandomization successful");
+      if(gen.randomize())
+        $display("\tvalue: %0d \tRandomization successful",gen.value);
       else
-        $display("\tRandomization failed");
+        $display("\tvalue: %0d \tRandomization Failed",gen.value);
       
         $display("\tCalling Randomize....");
 
-      check=gen.randomize()with{value==2;};
-       $write("\tvalue: %0d ",gen.value);
-      if(check)
-        $display("\tRandomization successful");
+      if(gen.randomize()with{value==2;})
+        $display("\tvalue: %0d \tRandomization successful",gen.value);
       else
-        $display("\tRandomization failed");
+        $display("\tvalue: %0d \tRandomization Failed",gen.value);
   end
 endmodule

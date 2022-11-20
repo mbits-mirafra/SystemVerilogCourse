@@ -1,6 +1,6 @@
 # vsim randomization -l randomization_log.log -c -do "run -all;exit;" 
-# Start time: 22:38:44 on Sep 20,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 22:50:50 on Nov 18,2022
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -22,7 +22,7 @@
 # 	Calling Randomize....
 # 	value: 5 	Randomization successful
 # 	Calling Randomize....
-# 	value: 5 	Randomization failed
+# 	value: 5 	Randomization Failed
 # exit
-# End time: 22:38:44 on Sep 20,2022, Elapsed time: 0:00:00
+# End time: 22:50:52 on Nov 18,2022, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
