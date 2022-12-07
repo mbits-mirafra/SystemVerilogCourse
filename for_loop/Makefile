@@ -18,4 +18,4 @@ vcs_all:
 	make vcs_compile && make vcs_simulate
 
 clean:
-	rm -rf *.log *.conf *.rc work/ csrc/ simv simv.daidir *.key
+	rm -rf *.log *.conf *.rc work/ csrc/ simv simv.daidir *.key nWaveLog/ *.vcd *.fsdb vfastLog
