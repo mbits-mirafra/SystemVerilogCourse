@@ -17,5 +17,18 @@ vcs_simulate:
 vcs_all:
 	make vcs_compile && make vcs_simulate
 
+# To enable waveform dump in synopsys/cadence, we need the below code
+# in the top module
+# initial begin
+#     $dumpfile("verilog.vcd");
+#     $dumpvars();
+#   end
+#
+#   Also, make sure to include -debug_access+all in the compilation stage
+ 
+## To open the waveform, use the below command
+# verdi <name_of_vcd_file> &
+# ex: verdi verilog.vcd &
+
 clean:
-	rm -rf *.log *.conf *.rc work/ csrc/ simv simv.daidir *.key nWaveLog/ *.vcd *.fsdb vfastLog
+	rm -rf *.conf *.rc work/ csrc/ simv simv.daidir *.key nWaveLog/ *.vcd *.fsdb vfastLog
