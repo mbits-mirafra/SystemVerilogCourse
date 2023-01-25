@@ -1,5 +1,5 @@
 # vsim work.blocking_swap -l blocking_swap_log.log -c -do "run -all;exit;" 
-# Start time: 11:15:59 on Aug 26,2022
+# Start time: 22:51:46 on Sep 11,2022
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -25,5 +25,5 @@
 # swapping without Temporary variable : 
 # Greater_number=5 & Lesser_number=5
 # exit
-# End time: 11:15:59 on Aug 26,2022, Elapsed time: 0:00:00
+# End time: 22:51:47 on Sep 11,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

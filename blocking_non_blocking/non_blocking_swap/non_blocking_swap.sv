@@ -33,7 +33,7 @@ module non_blocking_swap();
     $display("Display : Greater_number=%0d & Lesser_number=%0d",Greater_number,Lesser_number); 
     $monitor("Monitor : Greater_number=%0d & Lesser_number=%0d",Greater_number,Lesser_number);
   end
-
+/*
   //-------------------------------------------------------
   // Explaining the user how regions work serially
   //-------------------------------------------------------
@@ -41,6 +41,6 @@ module non_blocking_swap();
   begin
     #5 $display(" \n \n In event scheduling semantics you can get how \n the process will work through different regions, \n but in general $display and the NBA(non-blocking assignments (RHS)) \n evualted in Active region and then next \n in NBA region NBA evaulated results will assigned to LHS and \n then in postponed region monitor will work so \n in display we can't get NBA output exactly \n but in monitor will get exact \n \n ");
   end
-
+*/
 endmodule : non_blocking_swap
 
