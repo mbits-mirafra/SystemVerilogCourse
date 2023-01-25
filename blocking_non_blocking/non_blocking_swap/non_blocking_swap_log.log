@@ -25,4 +25,18 @@
 # Monitor : Greater_number=2 & Lesser_number=5
 # exit
 # End time: 22:52:39 on Sep 11,2022, Elapsed time: 0:00:01
+#  
+#  
+#  In event scheduling semantics you can get how 
+#  the process will work through different regions, 
+#  but in general $display and the NBA(non-blocking assignments (RHS)) 
+#  evualted in Active region and then next 
+#  in NBA region NBA evaulated results will assigned to LHS and 
+#  then in postponed region monitor will work so 
+#  in display we can't get NBA output exactly 
+#  but in monitor will get exact 
+#  
+#  
+# exit
+# End time: 11:16:27 on Aug 26,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

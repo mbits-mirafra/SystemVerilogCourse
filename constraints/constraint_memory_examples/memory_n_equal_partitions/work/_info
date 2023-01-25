@@ -1,0 +1,67 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/hemanth_b7/system_verilog/constraints/practical_examples/memory_n_equal_partitions
+T_opt
+!s110 1663273870
+V3aIaVhFQi=JhUEGTbGQZE1
+04 25 4 work memory_n_equal_partitions fast 0
+=1-a4badb503ddf-63238b8e-3f1dc-797f
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+R0
+vmemory_n_equal_partitions
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 33 memory_n_equal_partitions_sv_unit 0 22 Zm4EW<f]Xi3984gGlASD53
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 923F3]ZlI4f42TomFa:P^0
+IM3>PNLc?4:<m6VB=mKY]f2
+!s105 memory_n_equal_partitions_sv_unit
+S1
+R0
+Z3 w1663282474
+Z4 8memory_n_equal_partitions.sv
+Z5 Fmemory_n_equal_partitions.sv
+L0 37
+Z6 OE;L;10.6c;65
+Z7 !s108 1663525988.000000
+!s107 memory_n_equal_partitions.sv|
+Z8 !s90 -sv|memory_n_equal_partitions.sv|
+!i113 0
+Z9 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xmemory_n_equal_partitions_sv_unit
+R2
+VZm4EW<f]Xi3984gGlASD53
+r1
+!s85 0
+31
+!i10b 1
+!s100 9fL3J6`IHj`VI[lXma<J02
+IZm4EW<f]Xi3984gGlASD53
+!i103 1
+S1
+R0
+R3
+R4
+R5
+L0 1
+R6
+R7
+Z10 !s107 memory_n_equal_partitions.sv|
+R8
+!i113 0
+R9
+R1

@@ -1,0 +1,31 @@
+# vsim -cvgperinstance cvgrp_cross -l cvgrp_cross.log -c -do "coverage save -onexit cross.ucdb;run -all;exit;" 
+# Start time: 23:49:53 on Oct 07,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.cvgrp_cross_sv_unit(fast)
+# Loading work.cvgrp_cross(fast)
+# coverage save -onexit cross.ucdb
+# run -all
+# a=1 ; b=0 ; coverage %=41.67
+# a=1 ; b=0 ; coverage %=41.67
+# a=0 ; b=1 ; coverage %=83.33
+# a=1 ; b=0 ; coverage %=83.33
+# a=1 ; b=1 ; coverage %=91.67
+# exit
+# Saving coverage database on exit...
+# End time: 23:49:54 on Oct 07,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

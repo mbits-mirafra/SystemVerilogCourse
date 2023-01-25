@@ -1,0 +1,67 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/hemanth_b7/system_verilog/constraints/inline_constraints/only_inline
+T_opt
+!s110 1663689851
+VVjzjWXhTEAGzZ6PmGJHzc1
+04 11 4 work only_inline fast 0
+=1-a4badb503ddf-6329e47b-bfe21-432b
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+R0
+vonly_inline
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 19 only_inline_sv_unit 0 22 l:hUC0=:Y0:CCAk4be;Ae1
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 K0Fhg2TSihWjD[:;`YHPG2
+I>N>AXIzQJkIGUScX>D=Id1
+!s105 only_inline_sv_unit
+S1
+R0
+Z3 w1663689821
+Z4 8only_inline.sv
+Z5 Fonly_inline.sv
+L0 7
+Z6 OE;L;10.6c;65
+Z7 !s108 1663690899.000000
+!s107 only_inline.sv|
+Z8 !s90 -sv|only_inline.sv|
+!i113 0
+Z9 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xonly_inline_sv_unit
+R2
+Vl:hUC0=:Y0:CCAk4be;Ae1
+r1
+!s85 0
+31
+!i10b 1
+!s100 KEd_om`KAI1N1=0OJkKhZ1
+Il:hUC0=:Y0:CCAk4be;Ae1
+!i103 1
+S1
+R0
+R3
+R4
+R5
+L0 1
+R6
+R7
+Z10 !s107 only_inline.sv|
+R8
+!i113 0
+R9
+R1

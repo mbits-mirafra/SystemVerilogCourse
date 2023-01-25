@@ -1,0 +1,29 @@
+# vsim work.while_basic -l while_basic_log.log -c -do "run -all;exit;" 
+# Start time: 05:58:37 on Sep 07,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.while_basic(fast)
+# run -all
+# -----while loop output----
+# 	 Value of apple = 1
+# 	 Value of apple = 2
+# 	 Value of apple = 3
+# 	 Value of apple = 4
+# 	 Value of apple = 5
+# exit
+# End time: 05:58:38 on Sep 07,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,13 @@
+# vsim work.event1 -l event_log.log -c -do "run -all;exit;" 
+# Start time: 13:19:38 on Sep 13,2022
+# ** Error: (vsim-7) Failed to open info file "/hwetools/work_area/frontend/hemanth_b7/system_verilog/control_flow/events/event/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error: (vopt-7) Failed to open info file "/hwetools/work_area/frontend/hemanth_b7/system_verilog/control_flow/events/event/work/_info" in read mode.
+# No such file or directory. (errno = ENOENT)
+# Optimization failed
+# ** Error: (vopt-1933) Unable to create temporary directory /hwetools/work_area/frontend/hemanth_b7/system_verilog/control_flow/events/event/work/_tempmsg
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 13:19:39 on Sep 13,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

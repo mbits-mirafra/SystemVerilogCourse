@@ -1,0 +1,37 @@
+# vsim memory_n_var_partitions -l memory_n_var_partitions_log.log -c -do "run -all;exit;" 
+# Start time: 00:23:45 on Sep 19,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.memory_n_var_partitions_sv_unit(fast)
+# Loading work.memory_n_var_partitions(fast)
+# run -all
+# 	RAM start addr : 0 
+# 	RAM end addr : 16383 
+# 	 No of Partitions : 8 
+# 
+# 	 [0;31m-----------partitions-----------[0m
+# 	 Partition : 0 with size :2048 from 0 to 2047 
+# 	 Partition : 1 with size :4096 from 2048 to 6143 
+# 	 Partition : 2 with size :256 from 6144 to 6399 
+# 	 Partition : 3 with size :4096 from 6400 to 10495 
+# 	 Partition : 4 with size :256 from 10496 to 10751 
+# 	 Partition : 5 with size :1024 from 10752 to 11775 
+# 	 Partition : 6 with size :4096 from 11776 to 15871 
+# 	 Partition : 7 with size :512 from 15872 to 16383 
+# exit
+# End time: 00:23:46 on Sep 19,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
