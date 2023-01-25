@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/Mahadevaswamy/system_verilog/extra_code/constraints/code/soft_with_conflict
+T_opt
+!s110 1663652002
+V1Q;Vl4FzQA^_Ob1Cid:2k2
+04 18 4 work soft_with_conflict fast 0
+=1-a4badb503ddf-632950a2-6ffe2-51f6
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+vsoft_with_conflict
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 26 soft_with_conflict_sv_unit 0 22 olmGd=8ic;f<iX<Hh1YJO3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 >P=k2ViAiU>RlR3XeP:3B1
+ID8U<okUG79hYB<N5VZzeU3
+Z4 !s105 soft_with_conflict_sv_unit
+S1
+R0
+Z5 w1663651996
+Z6 8soft_with_conflict.sv
+Z7 Fsoft_with_conflict.sv
+L0 8
+Z8 OE;L;10.6c;65
+Z9 !s108 1663652001.000000
+Z10 !s107 soft_with_conflict.sv|
+Z11 !s90 -sv|soft_with_conflict.sv|
+!i113 0
+Z12 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xsoft_with_conflict_sv_unit
+R2
+VolmGd=8ic;f<iX<Hh1YJO3
+r1
+!s85 0
+31
+!i10b 1
+!s100 6OIV4QcWmNOzYQh_@bodN3
+IolmGd=8ic;f<iX<Hh1YJO3
+!i103 1
+S1
+R0
+R5
+R6
+R7
+L0 3
+R8
+R9
+R10
+R11
+!i113 0
+R12
+R1
+vsoft_without_conflict
+R2
+DXx4 work 26 soft_with_conflict_sv_unit 0 22 Jc5cJgHafSU@KTNIaeTd[1
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 aXinW=aV<DDVEiM^2`3X=0
+Ie?:M1AIOjP2A>Rc[f]z_j1
+R4
+S1
+R0
+w1663644307
+R6
+R7
+L0 10
+R8
+!s108 1663644512.000000
+R10
+R11
+!i113 0
+R12
+R1

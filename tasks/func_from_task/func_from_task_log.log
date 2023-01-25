@@ -1,0 +1,32 @@
+# vsim work.func_from_task -l func_from_task_log.log -c -do "run -all;exit;" 
+# Start time: 10:58:31 on Sep 05,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: func_from_task.sv(20): (vopt-2250) Function "function_sum" has no return value assignment.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.func_from_task(fast)
+# run -all
+# 	 ----output for func from task----
+# 	@ 0 ns, In the initial block
+# 	calling task
+# 	@ 1 ns , I'm in task
+# 	calling func inside a task
+# 	@ 2 ns I'm in function
+# 	returned to task from function
+# 	returned to intial from function
+# exit
+# End time: 10:58:32 on Sep 05,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

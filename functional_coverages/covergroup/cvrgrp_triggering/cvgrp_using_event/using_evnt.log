@@ -1,0 +1,30 @@
+# vsim -cvgperinstance using_evnt -l using_evnt.log -c -do "coverage save -onexit using_evnt.ucdb;run -all;exit;" 
+# Start time: 23:22:40 on Oct 10,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.using_evnt(fast)
+# coverage save -onexit using_evnt.ucdb
+# run -all
+# a = 0 ; coverage = 25.00
+# a = 1 ; coverage = 25.00
+# a = 1 ; coverage = 25.00
+# a = 3 ; coverage = 25.00
+# a = 1 ; coverage = 25.00
+# exit
+# Saving coverage database on exit...
+# End time: 23:22:41 on Oct 10,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
