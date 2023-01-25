@@ -1,0 +1,10 @@
+# vsim top -l break_case_op.log -c -do "run -all;exit;" 
+# Start time: 12:13:59 on Sep 05,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit top.
+#         Searched libraries:
+#             work
+# Optimization failed
+# Error loading design
+# End time: 12:13:59 on Sep 05,2022, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

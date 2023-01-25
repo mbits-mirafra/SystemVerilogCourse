@@ -1,0 +1,32 @@
+# vsim -cvgperinstance cvgrp_inside_mod -l cvgrp_inside_mod.log -c -do "coverage save -onexit inside_mod.ucdb;run -all;exit;" 
+# Start time: 03:10:44 on Oct 11,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.cvgrp_inside_mod_sv_unit(fast)
+# Loading work.cvgrp_inside_mod(fast)
+# coverage save -onexit inside_mod.ucdb
+# run -all
+# a=0 ; b=0 ; coverage %=18.75%
+# a=0 ; b=2 ; coverage %=25.00%
+# a=1 ; b=1 ; coverage %=43.75%
+# a=0 ; b=2 ; coverage %=43.75%
+# a=2 ; b=7 ; coverage %=62.50%
+# ** Note: $finish    : /hwetools/work_area/frontend/naveen_B7/practice/cover_groups/cvgrp_inside_mod/cvgrp_inside_mod.sv(20)
+#    Time: 0 ns  Iteration: 0  Instance: /cvgrp_inside_mod
+# Saving coverage database on exit...
+# End time: 03:10:45 on Oct 11,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

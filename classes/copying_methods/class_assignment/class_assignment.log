@@ -1,0 +1,34 @@
+# vsim assignment -l class_assignment.log -c -do "run -all;quit;" 
+# Start time: 00:28:05 on Oct 14,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.class_assignment_sv_unit(fast)
+# Loading work.assignment(fast)
+# run -all
+# 
+# contents of p1 before changes
+# 	 c=team,d=4
+# contents of p2 before changes
+# 	 c=team,d=4
+# contents of p1 after changes
+# 	 c=BJT,d=8
+# contents of p2 after changes
+# 	 c=BJT,d=8
+# 
+# quit
+# End time: 00:28:06 on Oct 14,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

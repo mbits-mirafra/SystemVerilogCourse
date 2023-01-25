@@ -1,0 +1,41 @@
+# vsim memory_partition_with_spaces -l memory_partition_with_spaces_log.log -c -do "run -all;exit;" 
+# Start time: 12:43:24 on Sep 21,2022
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.memory_partition_with_spaces_sv_unit(fast)
+# Loading work.memory_partition_with_spaces(fast)
+# run -all
+# 	RAM start addr : 0 
+# 	RAM end addr : 9215 
+# 	No of Partitions : 5 
+# 	mem_part_size : 2048 256 256 2048 2048
+# 	mem_space : 256 1024 256 1024
+# 
+# 	 [1;32m-----------[1;34mpartitions[1;32m------------[0m
+# 	[0;34m Partition : 0 with size :2048 from 0 to 2047 [1;31m        
+# 		space_part : 256 bytes 
+# 	[0;34m Partition : 1 with size :256 from 2304 to 2303 [1;31m         
+# 		space_part : 1024 bytes
+# 	[0;34m Partition : 2 with size :256 from 3328 to 2559 [1;31m         
+# 		space_part : 256 bytes
+# 	[0;34m Partition : 3 with size :2048 from 2816 to 4607 [1;31m         
+# 		space_part : 1024 bytes
+# 	[0;34m Partition : 4 with size :2048 from 5632 to 9215 [0m
+# 
+# exit
+# End time: 12:43:25 on Sep 21,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

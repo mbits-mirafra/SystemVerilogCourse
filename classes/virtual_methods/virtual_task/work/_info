@@ -1,0 +1,66 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/bhavana_b7/SystemVerilog_Course/classes/virtual_methods/virtual_task
+T_opt
+!s110 1664817319
+V>HWJmJT7PRfaUTIe>K;0Z0
+04 12 4 work virtual_task fast 0
+=1-a4badb503de1-633b18a7-7eb20-379e
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+vvirtual_task
+Z2 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+DXx4 work 20 virtual_task_sv_unit 0 22 kL2QDl51XHea0c=aXnYin0
+VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 gVcC=fI7gXO0K<jmPZKcA3
+ITacBFg<_Y3?QNc;EFYh8L1
+!s105 virtual_task_sv_unit
+S1
+R0
+Z3 w1664817176
+Z4 8virtual_task.sv
+Z5 Fvirtual_task.sv
+L0 37
+Z6 OE;L;10.6c;65
+Z7 !s108 1664817318.000000
+Z8 !s107 virtual_task.sv|
+Z9 !s90 -sv|virtual_task.sv|
+!i113 0
+Z10 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+Xvirtual_task_sv_unit
+R2
+VkL2QDl51XHea0c=aXnYin0
+r1
+!s85 0
+31
+!i10b 1
+!s100 L@R0gOM23^nW2GcVE;JJ`1
+IkL2QDl51XHea0c=aXnYin0
+!i103 1
+S1
+R0
+R3
+R4
+R5
+L0 7
+R6
+R7
+R8
+R9
+!i113 0
+R10
+R1

@@ -1,0 +1,37 @@
+# vsim equality_code -l equality_code_output.log -c -do "run -all; exit;" 
+# Start time: 04:19:03 on Sep 07,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.equality_code(fast)
+# run -all
+# 
+#  	 the value of the a is x0x1
+# 
+#  	 the value of the b is 1100
+# 
+#  	 the value of the c is x0x1
+# 
+#  	 The output logical equality operator of a==b is 0
+# 
+#  	 The output logical inequality operator of a!=b is 1
+# 
+#  	 The output case equality operator of a===c is 1
+# 
+#  	 The output case inequality operator of a!==c  is 0
+#  exit
+# End time: 04:19:05 on Sep 07,2022, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

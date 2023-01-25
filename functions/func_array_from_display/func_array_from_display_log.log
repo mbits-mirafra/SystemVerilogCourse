@@ -1,0 +1,29 @@
+# vsim work.func_array_from_display -l func_array_from_display_log.log -c -do "run -all;exit;" 
+# Start time: 22:18:17 on Sep 06,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.func_array_from_display(fast)
+# run -all
+# 	 ----output for function returning an array to display-----
+# 	 calling the function
+# 	Entered into the function
+# 	values assigned to array elements starts from 1
+# 
+# 	@ 0 ns, Array elements = 1 2 3 4 5
+# exit
+# End time: 22:18:18 on Sep 06,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
