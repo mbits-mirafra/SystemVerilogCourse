@@ -1,5 +1,5 @@
-# vsim top -l modport.log -c -do "run -all; exit;" 
-# Start time: 10:08:10 on Sep 27,2022
+# vsim top -l interface.log -c -do "run -all; exit;" 
+# Start time: 21:53:18 on Sep 30,2022
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -17,13 +17,20 @@
 # //
 # Loading sv_std.std
 # Loading work.top(fast)
+# ** Warning: (vsim-3838) test.sv(7): Variable '/top/inf/output_y' written by continuous and procedural assignments. 
+# One of the assignments is implicit. See top.sv(9).
+#    Time: 0 ns  Iteration: 0  Instance: /top/a2 File: test.sv
 # run -all
 # 
-# input_p=0	 input_q=1	 output_r=0
-# input_p=1	 input_q=1	 output_r=1
-# input_p=1	 input_q=1	 output_r=1
-# input_p=1	 input_q=0	 output_r=0
-# input_p=1	 input_q=1	 output_r=1
+# // and gate output
+# 
+# input_a=0	 input_b=0	 output_y=0
+# 
+# input_a=1	 input_b=0	 output_y=0
+# 
+# input_a=0	 input_b=1	 output_y=0
+# 
+# input_a=1	 input_b=1	 output_y=1
 #  exit
-# End time: 10:08:10 on Sep 27,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 21:53:19 on Sep 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

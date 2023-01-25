@@ -1,0 +1,128 @@
+$date
+	Tue Oct 11 01:43:06 2022
+$end
+
+$version
+	Synopsys VCS version Q-2020.03-SP2-8_Full64
+$end
+
+$timescale
+	1s
+$end
+
+$comment Csum: 1 3839dd230bdba3b6 $end
+
+
+$scope module isunknown $end
+$var reg 1 ! a $end
+$var reg 5 " b [4:0] $end
+$var reg 1 # clk $end
+
+$scope task _$$txp______assert_a_1 $end
+$upscope $end
+
+
+$scope task _$$txp_pass_action_a_1 $end
+$upscope $end
+
+
+$scope task _$$txp_fail_action_a_1 $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0#
+b00000 "
+$end
+#5
+1#
+#10
+0#
+#15
+1!
+b001x0 "
+1#
+#20
+0#
+#25
+0!
+b01000 "
+1#
+#30
+0#
+#35
+1!
+b010z0 "
+1#
+#40
+0#
+#45
+0!
+b01000 "
+1#
+#50
+0#
+#55
+1!
+b10xz0 "
+1#
+#60
+0#
+#65
+0!
+b10000 "
+1#
+#70
+0#
+#75
+1!
+bxxxxx "
+1#
+#80
+0#
+#85
+0!
+b01100 "
+1#
+#90
+0#
+#95
+1!
+bzzzzz "
+1#
+#100
+0#
+#105
+0!
+b01000 "
+1#
+#110
+0#
+#115
+1!
+b10100 "
+1#
+#120
+0#
+#125
+0!
+b01000 "
+1#
+#130
+0#
+#135
+1!
+b10000 "
+1#
+#140
+0#
+#145
+b00100 "
+1#
+#150
+0#

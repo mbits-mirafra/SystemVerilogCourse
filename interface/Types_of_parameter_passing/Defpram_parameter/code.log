@@ -1,6 +1,6 @@
 # vsim top -l code.log -c -do "run -all;quit;" 
-# Start time: 07:47:13 on Sep 21,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 18:50:16 on Sep 27,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,15 +16,10 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.for_loop(fast)
+# Loading work.top(fast)
 # run -all
-# 	 ----for loop output ---
 # 
-# 	 Iteration 1 
-# 	 Iteration 2 
-# 	 Iteration 3 
-# 	 Iteration 4 
-# 	 Iteration 5 
+#  // Parameterised interface example
 # 
 # count=0
 # 
@@ -34,14 +29,60 @@
 # 
 # count=3
 # 
-# count=4
+# count=0
 # 
-# count=5
+# count=1
 # 
-# count=6
+# count=2
 # 
-# count=7
-# ** Note: $finish    : test.sv(14)
-#    Time: 90 ns  Iteration: 0  Instance: /top/u2
-# End time: 07:47:14 on Sep 21,2022, Elapsed time: 0:00:01
+# count=3
+# 
+# count=0
+# 
+# count=1
+# 
+# count=2
+# 
+# count=3
+# 
+# count=0
+# 
+# count=1
+# 
+# count=2
+# 
+# count=3
+# 
+# count=0
+# 
+# count=1
+# 
+# count=2
+# 
+# count=3
+# 
+# count=0
+# 
+# count=1
+# 
+# count=2
+# 
+# count=3
+# 
+# count=0
+# 
+# count=1
+# 
+# count=2
+# 
+# count=3
+# 
+# count=0
+# 
+# count=1
+# 
+# count=2
+# ** Note: $finish    : /hwetools/work_area/frontend/dilip_B7/interface/interface/inter_face/defparam_parameter/test.sv(18)
+#    Time: 320 ns  Iteration: 0  Instance: /top/u2
+# End time: 18:50:17 on Sep 27,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

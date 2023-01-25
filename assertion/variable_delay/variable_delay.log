@@ -1,0 +1,53 @@
+Command: vcs -V -R -full64 -sverilog +v2k -debug_access+all variable_delay.sv -l \
+variable_delay.log
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so " -Mexternalobj= \
+-Msaverestoreobj=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -l variable_delay.log -Xvcs_run_simv=1 -V -full64 +v2k -debug_access+all +vpi \
++vcsd1 +itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab \
+-picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
+-fsdb -sverilog -gen_obj variable_delay.sv  
+                         Chronologic VCS (TM)
+      Version Q-2020.03-SP2-8_Full64 -- Sat Oct 15 00:10:17 2022
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Running simv -V +v2k -a variable_delay.log 
+Command: /hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/variable_delay/./simv -V +v2k -a variable_delay.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 15 00:10 2022
+VCS Build Date = Sep 11 2021 20:22:52
+Start run at Oct 15 00:10 2022
+
+"variable_delay.sv", 27: variable.a_1: started at 5s failed at 15s
+	Offending 'b'
+Error: "variable_delay.sv", 27: variable.a_1: at time 15
+assertion failed
+Info: "variable_delay.sv", 27: variable.a_1: at time 35
+assertion passed
+Info: "variable_delay.sv", 27: variable.a_1: at time 55
+assertion passed
+Info: "variable_delay.sv", 27: variable.a_1: at time 65
+assertion passed
+$finish called from file "variable_delay.sv", line 17.
+$finish at simulation time                   70
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 70
+CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
+Sat Oct 15 00:10:28 2022
+CPU time: .461 seconds in simulation

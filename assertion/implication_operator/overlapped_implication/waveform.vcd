@@ -1,0 +1,114 @@
+$date
+	Tue Oct 11 01:45:43 2022
+$end
+
+$version
+	Synopsys VCS version Q-2020.03-SP2-8_Full64
+$end
+
+$timescale
+	1s
+$end
+
+$comment Csum: 1 5de3c4c0667e51c5 $end
+
+
+$scope module overlapped_assertion $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # valid $end
+$var reg 1 $ clk $end
+
+$scope task _$$txp_pass_action_a_1 $end
+$upscope $end
+
+
+$scope task _$$txp_fail_action_a_1 $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+1!
+1"
+0$
+1#
+$end
+#5
+1$
+#10
+0$
+#15
+0"
+1$
+#20
+0$
+#25
+1"
+1$
+#30
+0$
+#35
+1$
+#37
+0"
+#40
+0$
+#45
+1$
+#47
+0!
+1"
+0#
+#50
+0$
+#55
+1$
+#60
+0$
+#62
+1!
+0"
+#65
+1$
+#70
+0$
+#75
+1$
+#80
+0$
+#85
+1$
+#90
+0$
+#95
+1$
+#100
+0$
+#105
+1$
+#110
+0$
+#115
+1$
+#120
+0$
+#125
+1$
+#130
+0$
+#135
+1$
+#140
+0$
+#145
+1$
+#150
+0$
+#155
+1$
+#160
+0$
