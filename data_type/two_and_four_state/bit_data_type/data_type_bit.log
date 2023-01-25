@@ -1,0 +1,34 @@
+# vsim data_type_bit -l data_type_bit.log -c -do "run -all; exit;" 
+# Start time: 12:29:25 on Aug 25,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.data_type_bit(fast)
+# run -all
+# 
+# Before initialization Default value of single bit data = 0
+# Before initialization Default value of 4 bit data = 0
+# 
+# After initialization value of single bit data = 1
+# After initialization value of 4 bit data = 1100
+# 
+# //initialization x and z of 4-bit data = 4'b11xz
+# 
+# After assign x and z, value of 4 bit data = 1100
+# 
+#  exit
+# End time: 12:29:26 on Aug 25,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

@@ -1,0 +1,44 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/data_type/union/union-unpacked
+T_opt
+!s110 1661750493
+V9nD=5bAD=[kzbNe6OR2a>0
+04 6 4 work union1 fast 0
+=1-a4badb503ddd-630c4cdd-3fd64-3776
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OE;O;10.6c;65
+R0
+vunion1
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1661789879
+!i10b 1
+!s100 OPz]h1_h@lUTfIb3<@G?L3
+Ic<cE>8m72TUk@]86h`nQa0
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 union2dunpack_sv_unit
+S1
+R0
+w1661789867
+8union-unpack.sv
+Funion-unpack.sv
+L0 2
+OE;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1661789879.000000
+!s107 union-unpack.sv|
+!s90 -sv|union-unpack.sv|
+!i113 0
+o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
