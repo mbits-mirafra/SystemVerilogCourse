@@ -1,0 +1,46 @@
+# vsim array_order -l array_order.log -c -do "run -all; exit;" 
+# Start time: 21:58:53 on Aug 25,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.array_order(fast)
+# run -all
+# 
+#  array[8]={2,7,1,9,9,7,0,6}
+# 
+#  OUTPUT :
+# 
+#  // reverse()-Return the reverse order of array element: 
+# 	'{6, 0, 7, 9, 9, 1, 7, 2}
+# 
+#  // sort()-Return the array element in the ascending order: 
+# 	'{0, 1, 2, 6, 7, 7, 9, 9}
+# 
+#  // rsort()-Return the array element in the descending order: 
+# 	'{9, 9, 7, 7, 6, 2, 1, 0}
+# 
+#  // Shuffle()-shuffle the element such that the indicies place element should be different for each shuffle: 
+# 	'{9, 0, 9, 2, 7, 6, 7, 1}
+# 
+#  // Shuffle()-shuffle the element such that the indicies place element should be different for each shuffle: 
+# 	'{2, 7, 7, 1, 9, 9, 6, 0}
+# 
+#  // Shuffle()-shuffle the element such that the indicies place element should be different for each shuffle: 
+# 	'{1, 0, 6, 9, 7, 7, 2, 9}
+# 
+#  exit
+# End time: 21:58:54 on Aug 25,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

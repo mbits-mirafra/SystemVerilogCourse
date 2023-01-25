@@ -1,0 +1,40 @@
+# vsim tb -l arraymax.log -c -do "run -all; exit;" 
+# Start time: 10:54:40 on Aug 25,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.tb(fast)
+# run -all
+# 
+# array[8] = {1,9,9,7,2,7,0,6}
+# 
+#  OUTPUT: 
+# 
+#  // min()-Return the minimum value from the array: 
+# 	'{0} 
+# 
+#  // max()-Return the maximum value from the array: 
+# 	'{9} 
+# 
+#  // unique()-Return the unique value from the array repeated values can be return once: 
+# 	'{0, 1, 2, 6, 7, 9} 
+# 
+#  // unique_index()-Return the indices of all value having unique values: 
+# 	'{6, 0, 4, 7, 3, 1}
+# 
+#  exit
+# End time: 10:54:40 on Aug 25,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

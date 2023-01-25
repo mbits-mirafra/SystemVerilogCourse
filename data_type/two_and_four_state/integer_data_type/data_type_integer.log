@@ -1,0 +1,30 @@
+# vsim data_type_integer -l data_type_integer.log -c -do "run -all; exit;" 
+# Start time: 12:09:14 on Aug 25,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.data_type_integer(fast)
+# run -all
+# 
+# //integer is 4-state 32-bit signed number 
+# 
+# Before initialization Default value of integer = x
+# 
+# After initialization value of integer = 11x0101x1xz00111
+# 
+#  exit
+# End time: 12:09:15 on Aug 25,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

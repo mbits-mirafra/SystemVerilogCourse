@@ -1,0 +1,60 @@
+# vsim packed_array -l packed_array.log -c -do "run -all;quit;" 
+# Start time: 22:17:25 on Aug 25,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.packed_array(fast)
+# run -all
+# 
+# // example for single dimensional packed array
+# 
+# // displaying the bit data type values
+# data of abc[3] = 0
+# data of abc[2] = 1
+# data of abc[1] = 1
+# data of abc[0] = 0
+# 
+# // displaying the logic data type values
+# data of pqr[15] = 0
+# data of pqr[14] = 0
+# data of pqr[13] = 0
+# data of pqr[12] = 1
+# data of pqr[11] = 0
+# data of pqr[10] = 0
+# data of pqr[9] = 0
+# data of pqr[8] = 0
+# data of pqr[7] = 1
+# data of pqr[6] = 1
+# data of pqr[5] = 1
+# data of pqr[4] = 1
+# data of pqr[3] = 1
+# data of pqr[2] = 1
+# data of pqr[1] = 1
+# data of pqr[0] = 0
+# 
+# // displaying the reg data type values
+# data of xyz[7] = 0
+# data of xyz[6] = 0
+# data of xyz[5] = 0
+# data of xyz[4] = 1
+# data of xyz[3] = 0
+# data of xyz[2] = 0
+# data of xyz[1] = 0
+# data of xyz[0] = 0
+# 
+# quit
+# End time: 22:17:26 on Aug 25,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
