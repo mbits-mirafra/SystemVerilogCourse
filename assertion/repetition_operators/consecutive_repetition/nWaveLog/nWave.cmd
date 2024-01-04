@@ -1,9 +1,9 @@
 wvConvertFile -win $_nWave1 -o \
-           "/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilog_Course/assertion/repetition_operators/consecutive_repetition/waveform.vcd.fsdb" \
+           "/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilogCourse/assertion/repetition_operators/consecutive_repetition/waveform.vcd.fsdb" \
            "waveform.vcd"
 wvSetPosition -win $_nWave1 {("G1" 0)}
 wvOpenFile -win $_nWave1 \
-           {/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilog_Course/assertion/repetition_operators/consecutive_repetition/waveform.vcd.fsdb}
+           {/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilogCourse/assertion/repetition_operators/consecutive_repetition/waveform.vcd.fsdb}
 wvSetPosition -win $_nWave1 {("G1" 0)}
 nMemSetPreference
 wvAddAllSignals -win $_nWave1

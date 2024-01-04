@@ -1,9 +1,9 @@
 wvConvertFile -win $_nWave1 -o \
-           "/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/variable_delay/waveform.vcd.fsdb" \
+           "/hwetools/work_area/frontend/merlin_b7/SystemVerilogCourse/SystemVerilogCourse/assertion/variable_delay/waveform.vcd.fsdb" \
            "waveform.vcd"
 wvSetPosition -win $_nWave1 {("G1" 0)}
 wvOpenFile -win $_nWave1 \
-           {/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/variable_delay/waveform.vcd.fsdb}
+           {/hwetools/work_area/frontend/merlin_b7/SystemVerilogCourse/SystemVerilogCourse/assertion/variable_delay/waveform.vcd.fsdb}
 wvSetPosition -win $_nWave1 {("G1" 0)}
 nMemSetPreference
 wvGetSignalOpen -win $_nWave1

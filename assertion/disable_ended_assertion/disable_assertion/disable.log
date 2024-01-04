@@ -32,7 +32,7 @@ Starting vcs inline pass...
 	However, due to incremental compilation, no re-compilation is necessary.
 ( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221012223649_1754 product \
 )
-make[1]: Entering directory `/hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilog_Course/assertion/disable_ended_assertion/disable_assertion/csrc' \
+make[1]: Entering directory `/hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilogCourse/assertion/disable_ended_assertion/disable_assertion/csrc' \
 
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
@@ -49,10 +49,10 @@ rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsi
 /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
 -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-make[1]: Leaving directory `/hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilog_Course/assertion/disable_ended_assertion/disable_assertion/csrc' \
+make[1]: Leaving directory `/hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilogCourse/assertion/disable_ended_assertion/disable_assertion/csrc' \
 
 Running simv -V +v2k +all -a disable.log 
-Command: /hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilog_Course/assertion/disable_ended_assertion/disable_assertion/./simv -V +v2k +all -a disable.log
+Command: /hwetools/work_area/frontend/dilip_B7/system_verilog/SystemVerilogCourse/assertion/disable_ended_assertion/disable_assertion/./simv -V +v2k +all -a disable.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
 Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 13 04:07 2022

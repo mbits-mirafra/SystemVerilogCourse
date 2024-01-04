@@ -27,7 +27,7 @@ If you really want to, delete file simv.daidir/.vcs.timestamp and
 run VCS again.
 
 Running simv -V +v2k -a variable_delay.log 
-Command: /hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/variable_delay/./simv -V +v2k -a variable_delay.log
+Command: /hwetools/work_area/frontend/merlin_b7/SystemVerilogCourse/SystemVerilogCourse/assertion/variable_delay/./simv -V +v2k -a variable_delay.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
 Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 15 00:10 2022

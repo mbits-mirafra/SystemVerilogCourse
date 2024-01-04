@@ -32,7 +32,7 @@ Starting vcs inline pass...
 recompiling module nonconsecutive_repetition
 ( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221011071142_10044 product \
 )
-make[2]: Entering directory `/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilog_Course/assertion/repetition_operators/nonconsecutive_repetition/csrc' \
+make[2]: Entering directory `/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilogCourse/assertion/repetition_operators/nonconsecutive_repetition/csrc' \
 
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
@@ -49,10 +49,10 @@ rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsi
 /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
 -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-make[2]: Leaving directory `/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilog_Course/assertion/repetition_operators/nonconsecutive_repetition/csrc' \
+make[2]: Leaving directory `/hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilogCourse/assertion/repetition_operators/nonconsecutive_repetition/csrc' \
 
 Running simv -V +v2k +all -a nonconsecutive_repetition.log 
-Command: /hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilog_Course/assertion/repetition_operators/nonconsecutive_repetition/./simv -V +v2k +all -a nonconsecutive_repetition.log
+Command: /hwetools/work_area/frontend/gopal_b7/git_test1/SystemVerilogCourse/assertion/repetition_operators/nonconsecutive_repetition/./simv -V +v2k +all -a nonconsecutive_repetition.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
 Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 11 12:41 2022

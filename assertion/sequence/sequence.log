@@ -32,7 +32,7 @@ Starting vcs inline pass...
 	However, due to incremental compilation, no re-compilation is necessary.
 ( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221014174813_17929 product \
 )
-make[1]: Entering directory `/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/sequence/csrc' \
+make[1]: Entering directory `/hwetools/work_area/frontend/merlin_b7/SystemVerilogCourse/SystemVerilogCourse/assertion/sequence/csrc' \
 
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
 ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
@@ -49,10 +49,10 @@ rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsi
 /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
 -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-make[1]: Leaving directory `/hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/sequence/csrc' \
+make[1]: Leaving directory `/hwetools/work_area/frontend/merlin_b7/SystemVerilogCourse/SystemVerilogCourse/assertion/sequence/csrc' \
 
 Running simv -V +v2k +all -a sequence.log 
-Command: /hwetools/work_area/frontend/merlin_b7/systemverilog_course/SystemVerilog_Course/assertion/sequence/./simv -V +v2k +all -a sequence.log
+Command: /hwetools/work_area/frontend/merlin_b7/SystemVerilogCourse/SystemVerilogCourse/assertion/sequence/./simv -V +v2k +all -a sequence.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
 Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 14 23:18 2022
