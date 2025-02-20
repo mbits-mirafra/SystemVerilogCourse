@@ -8,8 +8,7 @@ int array[8] = {1,9,9,7,2,7,0,6};
 int result[$];
 
 
-initial
-begin
+initial begin
 
   $display("\narray[8] = {1,9,9,7,2,7,0,6}");
 
@@ -23,7 +22,6 @@ begin
 
   result = array.unique();
   $display("\n // unique()-Return the unique value from the array repeated values can be return once: \n\t%p ", result); 
-
 
   result = array.unique_index();
   $display("\n // unique_index()-Return the indices of all value having unique values: \n\t%p", result);

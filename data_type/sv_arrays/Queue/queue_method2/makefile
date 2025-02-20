@@ -1,4 +1,5 @@
-
+all:
+	make compile && make simulate
 
 compile:
 		vlib work;
@@ -7,5 +8,3 @@ compile:
 simulate:
 		vsim queue_data -l queue_data.log -c -do "run -all; exit;"
 
-all:
-	make compile && make simulate

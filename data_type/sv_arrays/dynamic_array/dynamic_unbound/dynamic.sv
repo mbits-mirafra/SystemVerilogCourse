@@ -1,8 +1,7 @@
 //start of dynamic
 module dynamic;
 int da [];
-initial
-begin
+initial begin
 
   da = new[5];
   da ='{1,2,5,6,8};
@@ -10,17 +9,17 @@ begin
 
   $display("");
 
-    $display(" //printring the value of  the each index place");
+  $display(" //printring the value of  the each index place");
   foreach(da[i])
     
-//displaying  the value of each index position
-    $display("da[%0d] = %0d",i,da[i]);
+  //displaying  the value of each index position
+  $display("da[%0d] = %0d",i,da[i]);
 
-    $display("");
-    //initializing the out of bound memory
-    $display("//out of bound ", "display default value of data_type ","\n\tda[1024]=%0d",da[1024]);
+  $display("");
+  //initializing the out of bound memory
+  $display("//out of bound ", "display default value of data_type ","\n\tda[1024]=%0d",da[1024]);
 
-$display(" ");
-  end
+  $display(" ");
+end
   
-  endmodule:dynamic
+endmodule:dynamic

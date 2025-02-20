@@ -14,9 +14,7 @@ string check;
 //Declare the queue of variable size to store the int element in the queue  name 'a'
 int a[$];
 //int a;
-initial
-begin
-
+initial begin
 
   $display("\narray[5] = ['bangalore', 'yelahanka', 'maruthinagar', 'oldtown', 'newtown']");
 
@@ -43,6 +41,6 @@ begin
 
   a = array.find_last_index(check) with (check < "oldtown");
   $display("\n // find_last_index()-Returns the index of the last element satisfying (check < 'oldtown'): \n\t %p", a);
-$display("");
+  $display("");
 end
 endmodule: array_find
