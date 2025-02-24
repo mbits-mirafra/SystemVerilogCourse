@@ -6,16 +6,17 @@ string y;
 string a,b;
 initial begin
 
-a = "true";
-b = "false";
-c=4'b0011;
-d=4'b1001;
+  a = "true";
+  b = "false";
+  c=4'b0011;
+  d=4'b1001;
 
-$display("\n \t the value of c is %0b",c);
+  $display("\n \t the value of c is %0b",c);
 
-$display("\n \t the value of d is %0b",d);
+  $display("\n \t the value of d is %0b",d);
 
-y=c>d?a:b;
-$display("\n \t the conditional output is %0b",y);
+  y=c>d?a:b;
+  $display("\n \t the conditional output is %0b",y);
+  $display("\n \t Because the c value is lessthan d values");
 end
 endmodule 

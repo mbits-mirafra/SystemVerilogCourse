@@ -3,8 +3,8 @@ module queue_data;
 string queue1[$];
 //int queue2[$];
 
-initial 
-begin
+initial begin
+
   queue1 = {"manipal", "banglaore", "udupi"};
 
   $display("\nqueue1 = ['manipal', 'banglaore', 'udupi']");

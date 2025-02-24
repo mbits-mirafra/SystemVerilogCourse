@@ -1,6 +1,6 @@
-# vsim conditional_code -l conditional_code_output.log -c -do "run -all; exit;" 
-# Start time: 16:27:35 on Feb 24,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim union_type -l union_unpack.log -c -do "run -all;quit;" 
+# Start time: 18:31:40 on Feb 20,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,16 +16,20 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.conditional_code(fast)
+# Loading work.union_type(fast)
 # run -all
 # 
-#  	 the value of c is 11
+#  x = abcf10cd
 # 
-#  	 the value of d is 1001
+#  y = cd
 # 
-#  	 the conditional output is false
+#  x = abcf1056
 # 
-#  	 Because the c value is lessthan d values
-#  exit
-# End time: 16:27:36 on Feb 24,2025, Elapsed time: 0:00:01
+#  y = 56
+# 
+#  data = '{x:abcf1056, y:56}
+# 
+#  size of unpacked union :         32
+# quit
+# End time: 18:31:41 on Feb 20,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

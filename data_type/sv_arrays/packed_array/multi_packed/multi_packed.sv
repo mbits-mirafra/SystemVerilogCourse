@@ -19,9 +19,9 @@ module multi_packed();
 
     // iterating through all elements of array
     foreach(xyz[i]) begin
-      foreach(xyz[i][j]) begin
-        $display("value of xyz[%0d][%0d] = %0d",i,j,xyz[i][j]);
-      end
+       foreach(xyz[i][j]) begin
+         $display("value of xyz[%0d][%0d] = %0d",i,j,xyz[i][j]);
+       end
     end
   end
 endmodule : multi_packed

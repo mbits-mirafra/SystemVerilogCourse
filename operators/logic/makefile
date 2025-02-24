@@ -1,11 +1,15 @@
+all:
+	make clear;
+	make compile;
+	make simulate
+
 compile:
-			vlib work;
-			vlog -sv logic_code.sv
+	vlib work;
+	vlog -sv logic_code.sv
 
 simulate:
-			vsim logic_code -l logic_code_output.log -c -do "run -all; exit;"
+	vsim logic_code -l logic_code_output.log -c -do "run -all; exit;"
+	
+clear:
+	clear
 
-all:
-			vlib work;
-			vlog -sv logic_code.sv
-			vsim logic_code -l logic_code_output.log -c -do "run -all; exit;"

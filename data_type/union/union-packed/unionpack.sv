@@ -7,17 +7,17 @@ typedef union packed {
 
 module unionpacked;
   
-  ABC_u abc; 
+ ABC_u abc; 
   initial begin 
     
- //Initialization of values
-  abc.B = 'hab;
+//Initialization of values
+    abc.B = 'hab;
     $display("\n abc.B = %0h" ,abc.B);
  
- abc.C = 'hcd;
+    abc.C = 'hcd;
     $display("\n abc.C = %0h" ,abc.C); 
     $display("\n size is:",$bits(ABC_u));
 
-  end 
+ end 
 endmodule:ABC_u
 
