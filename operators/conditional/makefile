@@ -1,11 +1,15 @@
+all:
+	make clear;
+	make compile;
+	make simulate
+
 compile:
-			vlib work;
-			vlog -sv conditional_code.sv
+	vlib work;
+	vlog -sv conditional_code.sv
 
 simulate:
-			vsim conditional_code -l conditional_code_output.log -c -do "run -all; exit;"
+	vsim conditional_code -l conditional_code_output.log -c -do "run -all; exit;"
 
-all:
-			vlib work;
-			vlog -sv conditional_code.sv
-			vsim conditional_code -l conditional_code_output.log -c -do "run -all; exit;"
+clear:
+	clear
+
