@@ -1,17 +1,17 @@
 all:
+	make compile;
+	make simulate;
+	make clear;
 
-		vlib work;
-		vlog -sv relational_code.sv
-		vsim relational_code -l relational_code_output.log -c -do "run -all;quit;"
 compile:
-		vlib work;
-		vlog -sv relational_code.sv
+	vlib work;
+	vlog -sv relational_code.sv
 
 simulate:
-		vsim relational_code -l relational_code_output.log -c -do "run -all;quit;"
+	vsim relational_code -l relational_code_output.log -c -do "run -all;quit;"
 
 clear:
-		clearall:
-			make clear;make compile;make simulate
+	clearall:
+	make clear;make compile;make simulate
 
 

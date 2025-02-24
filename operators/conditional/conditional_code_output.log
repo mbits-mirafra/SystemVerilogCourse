@@ -1,6 +1,6 @@
 # vsim conditional_code -l conditional_code_output.log -c -do "run -all; exit;" 
-# Start time: 23:10:53 on Sep 06,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 16:27:35 on Feb 24,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -24,6 +24,8 @@
 #  	 the value of d is 1001
 # 
 #  	 the conditional output is false
+# 
+#  	 Because the c value is lessthan d values
 #  exit
-# End time: 23:10:53 on Sep 06,2022, Elapsed time: 0:00:00
+# End time: 16:27:36 on Feb 24,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
