@@ -1,17 +1,17 @@
 //--------------------------------------------------------------------------------------------
-// Here we are calling a function by using positional arguements 
-// syntax : function_name(.arg_name(value)); 
+// Here we are calling a function by using values through variables 
+// syntax : function_name(); 
 //--------------------------------------------------------------------------------------------
-module func_pass_by_positional;
+module func_default_value;
   int result;
   initial begin
-    $display("\n ----output for function passing by posiitonal arguements-----");
+    $display("\n ----output for function passing by values through variables-----");
     $display("\tcalling the function");
     //-------------------------------------------------------
-    // calling the function with passing 5,6 by using
-    // names of function variables and return value storing in variable result
+    // calling the function using
+    // names of function and return value storing in variable result
     //-------------------------------------------------------
-    result=sum(.var1(5),.var2(6));
+    result=sum();
     $display("\treturned from function and");
     $display("\tstored the value of sum in result");
     $display("\n\t@ %0t ns, value of sum is %0d\n",$time,result);
@@ -19,9 +19,9 @@ module func_pass_by_positional;
   //-------------------------------------------------------
   // Writing the definition of the function.
   //-------------------------------------------------------
-  function int sum(input int var1,var2);
+  function int sum(input int var1=2,var2=3);
     $display("\n\tentered into function");
     return var1+var2;
   endfunction : sum
 
-endmodule : func_pass_by_positional
+endmodule : func_default_value

@@ -12,8 +12,7 @@ module func_array_from_display;
   //-------------------------------------------------------
   typedef int array[5];
   array array_hndl;
-  initial
-  begin
+  initial begin
     $display("\t ----output for function returning an array to display-----");
     $display("\t calling the function");
     //-------------------------------------------------------
@@ -31,9 +30,9 @@ module func_array_from_display;
     foreach(arr[i])begin
       arr[i]=i+1;
     end
-      $display("\tvalues assigned to array elements starts from 1");
-      array_hndl=arr;
-      return array_hndl;
-    endfunction
+    $display("\tvalues assigned to array elements starts from 1");
+    array_hndl=arr;
+    return array_hndl;
+  endfunction
 
 endmodule : func_array_from_display
