@@ -1,5 +1,5 @@
-# vsim func_automatic -c -do "run -all;exit;" 
-# Start time: 00:06:31 on Sep 10,2022
+# vsim work.func_default_value -l func_default_value_log.log -c -do "run -all;exit;" 
+# Start time: 22:53:04 on Feb 24,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,10 +16,18 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.func_automatic(fast)
+# Loading work.func_default_value(fast)
 # run -all
-# factorial_static:1
-# factorial_automatic:120
+# 
+#  ----output for function passing by values through variables-----
+# 	calling the function
+# 
+# 	entered into function
+# 	returned from function and
+# 	stored the value of sum in result
+# 
+# 	@ 0 ns, value of sum is 5
+# 
 # exit
-# End time: 00:06:31 on Sep 10,2022, Elapsed time: 0:00:00
+# End time: 22:53:05 on Feb 24,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,6 +1,6 @@
 # vsim work.func_pass_by_positional -l func_pass_by_positional_log.log -c -do "run -all;exit;" 
-# Start time: 11:11:29 on Sep 05,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 20:53:41 on Feb 24,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,7 +18,8 @@
 # Loading sv_std.std
 # Loading work.func_pass_by_positional(fast)
 # run -all
-# 	 ----output for function passing by posiitonal arguements-----
+# 
+#  ----output for function passing by posiitonal arguements-----
 # 	calling the function
 # 
 # 	entered into function
@@ -26,6 +27,7 @@
 # 	stored the value of sum in result
 # 
 # 	@ 0 ns, value of sum is 11
+# 
 # exit
-# End time: 11:11:29 on Sep 05,2022, Elapsed time: 0:00:00
+# End time: 20:53:42 on Feb 24,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

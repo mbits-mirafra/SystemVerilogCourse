@@ -4,16 +4,13 @@
 // function are not only to local but effect globally.
 // 
 // syntax : function_return_type result = function_name(arguements);
-//
 //          function automatic func_name(ref arguments);
-//
 // for giving the reference we need to add the keywords as ref and also automatic 
 //--------------------------------------------------------------------------------------------
 module func_pass_by_ref;
   
   int result,addend,augend;
-  initial
-  begin
+  initial begin
     $display("\t ----output for function passing by reference -----");
     //-------------------------------------------------------
     // assigning values to addend and augend
@@ -57,6 +54,3 @@ module func_pass_by_ref;
   endfunction : sum_without_ref
 
 endmodule : func_pass_by_ref
-
-
-

@@ -1,6 +1,6 @@
 # vsim work.disable_task -l disable_task_log.log -c -do "run -all;exit;" 
-# Start time: 22:14:43 on Sep 05,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 11:32:08 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,8 +20,8 @@
 # run -all
 # 	 ----output of disable task----
 # 	 @ 0 ns , task_A initiated
-# 	 @ 20 ns , task_B initiated
-# 	 @ 30 ns , task_B finished
+# 	 @ 0 ns , task_B initiated
+# 	 @ 10 ns , task_B finished
 # exit
-# End time: 22:14:44 on Sep 05,2022, Elapsed time: 0:00:01
+# End time: 11:32:08 on Feb 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

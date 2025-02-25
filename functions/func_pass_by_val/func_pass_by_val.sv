@@ -7,8 +7,7 @@
 module func_pass_by_val;
   
   int result;
-  initial
-  begin
+  initial begin
     $display("\t ----output for function passing by values directly-----");
     $display("\t calling the function");
     //-------------------------------------------------------
