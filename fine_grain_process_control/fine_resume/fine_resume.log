@@ -1,6 +1,6 @@
-# vsim fine_resume -l fine_resume.log -c -do "run -all;quit;" 
-# Start time: 01:41:44 on Sep 10,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim work.fine_resume -l fine_resume.log -c -do "run -all;exit;" 
+# Start time: 23:33:09 on Feb 25,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -29,6 +29,6 @@
 # [3] Status of p1 after resuming: FINISHED
 # [4] Final status of p1: FINISHED
 # [4] Final status of p2: FINISHED
-# quit
-# End time: 01:41:45 on Sep 10,2022, Elapsed time: 0:00:01
+# exit
+# End time: 23:33:10 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

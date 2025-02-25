@@ -1,6 +1,6 @@
-# vsim fine_status -l fine_status.log -c -do "run -all;quit;" 
-# Start time: 23:29:55 on Sep 08,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim work.fine_status -l fine_status.log -c -do "run -all;exit;" 
+# Start time: 23:34:33 on Feb 25,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,17 +19,16 @@
 # Loading work.fine_status(fast)
 # run -all
 # [0] Seeking status:
+# [0] I am in process p3
+# [0] status of p3: FINISHED
 # [1] I am in process p1
 # [1] Initial status of p1: RUNNING
-# [1] I am in process p3
-# [1] status of p3: FINISHED
 # [2] Still working in p1
-# [2] Final status of p3: FINISHED
 # [2] Final status of p1: FINISHED
 # [3] I am in process p2
 # [3] Initial status of p2: RUNNING
 # [3] Still working in p2
 # [3] Final status of p2: FINISHED
-# quit
-# End time: 23:29:55 on Sep 08,2022, Elapsed time: 0:00:00
+# exit
+# End time: 23:34:34 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,12 +1,9 @@
 //--------------------------------------------------------------------------------------------
 //Fine Grain Process Control Methods:
-//
 // self():
-//
 // It will return the handle of the process.That means it will create an object for 
 // the pre-define class called 'process'.
 //--------------------------------------------------------------------------------------------
-
 module fine_self; // Defining a module
   event e1,e2,e3,e4;
   process p1; 
@@ -19,13 +16,12 @@ module fine_self; // Defining a module
     //Later after delay 10 we are creating an object inside 
     //self().
     //-------------------------------------------------------
-
     $display("[%0t] We are getting into fork-join block",$time);
 
     fork:FORK_F1
-      
       $display("[%0t] Entered into fork-join and started first check for the process",$time);
-      #1 ->e1;
+      #1;
+      ->e1;
       
       begin:BEGIN_B2
         wait(e1.triggered);
@@ -34,10 +30,12 @@ module fine_self; // Defining a module
         else
           $display("[%0t] Created",$time);
         ->e3;
-        #1 ->e2;
+        #1;
+        ->e2;
       end:BEGIN_B2
       
-      #2 p1 = process :: self();
+      #2;
+      p1 = process :: self();
 
       begin:BEGIN_B3
         wait(e2.triggered);
@@ -62,9 +60,7 @@ module fine_self; // Defining a module
         end:BEGIN_B5
       
       join:FORK_F2
-
     join:FORK_F1
-
   end:BEGIN_B1
 
 endmodule:fine_self
