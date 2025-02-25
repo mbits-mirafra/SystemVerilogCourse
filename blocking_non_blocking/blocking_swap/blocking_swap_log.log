@@ -1,6 +1,6 @@
 # vsim work.blocking_swap -l blocking_swap_log.log -c -do "run -all;exit;" 
-# Start time: 22:51:46 on Sep 11,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 21:37:31 on Feb 25,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,12 +18,12 @@
 # Loading sv_std.std
 # Loading work.blocking_swap(fast)
 # run -all
-# Inital : 
+# Initial Values 
 # Greater_number=5 & Lesser_number=2
-# swapping with Temporary variable : 
+# swapping Values with Temporary variable 
 # Greater_number=2 & Lesser_number=5
-# swapping without Temporary variable : 
+# swapping without Temporary variable  
 # Greater_number=5 & Lesser_number=5
 # exit
-# End time: 22:51:47 on Sep 11,2022, Elapsed time: 0:00:01
+# End time: 21:37:31 on Feb 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
