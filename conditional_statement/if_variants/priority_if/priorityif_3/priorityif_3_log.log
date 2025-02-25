@@ -1,6 +1,7 @@
 # vsim priorityif_3 -l priorityif_3_log.log -c -do "run -all; exit;" 
-# Start time: 06:47:52 on Sep 06,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 11:34:59 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: priorityif_3.sv(9): (vopt-2589) No condition is true in the unique/priority if statement
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -25,5 +26,5 @@
 # Out from the conditional block
 # Do more shopping for more discount ......
 #  exit
-# End time: 06:47:53 on Sep 06,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 11:35:00 on Feb 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

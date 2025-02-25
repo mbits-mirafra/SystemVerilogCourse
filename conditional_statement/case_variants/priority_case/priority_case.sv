@@ -1,21 +1,9 @@
 //This is similar to case but checks the case expressions
 // in a serial manner by giving priority
-// even if you have multiple expressions correct then the
-// first correct expression only will be evaluated
-
-
-//Syntax :
-//        priority case(condition)  
-//        condition_1: Statements ;  
-//        condition_2: Statements ;  
-//        ...........  
-//        conditon_N: Statements;  
-//        endcase 
+// even if you have multiple expressions correct then the first correct expression only will be evaluated
 
 //In this priority case, two condition is true 
 //but this will execute the first condition without giving any warning and error
-//
-
 
 module top;
 bit [2:0] pqr;

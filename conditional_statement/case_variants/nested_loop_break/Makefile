@@ -1,11 +1,13 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-		vlib work;
-			vlog -sv nested_loop.sv
+	vlog -sv nested_loop.sv
 
 simulate:
-		vsim nested_loop -l nested_loop_op.log -c -do "run -all; exit;"
+	vsim nested_loop -l nested_loop_op.log -c -do "run -all; exit;"
 
-all:
-		 vlib work;
-		 vlog -sv nested_loop.sv
-		 vsim nested_loop -l nested_loop_op.log -c -do "run -all; exit;"
+clear:
+	clear

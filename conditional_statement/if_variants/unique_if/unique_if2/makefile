@@ -1,13 +1,13 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-		vlib work;
-			vlog -sv unique_if2.sv
+	vlog -sv unique_if2.sv
 
 simulate:
-		vsim unique_if2 -l unique_if2_log.log -c -do "run -all; exit;"
+	vsim unique_if2 -l unique_if2_log.log -c -do "run -all; exit;"
 
-all:
-
-		vlib work;
-			vlog -sv unique_if2.sv
-		vsim unique_if2 -l unique_if2_log.log -c -do "run -all; exit;"
-
+clear:
+	clear

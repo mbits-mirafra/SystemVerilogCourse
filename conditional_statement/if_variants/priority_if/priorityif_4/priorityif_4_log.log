@@ -1,6 +1,6 @@
 # vsim priorityif_4 -l priorityif_4_log.log -c -do "run -all; exit;" 
-# Start time: 06:50:00 on Sep 06,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 11:36:25 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -25,5 +25,5 @@
 # Out from the conditional block
 # Do more shopping for more discount ......
 #  exit
-# End time: 06:50:01 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 11:36:26 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

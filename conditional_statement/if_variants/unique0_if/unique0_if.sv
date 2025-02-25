@@ -6,7 +6,7 @@ initial begin
   age = 17;
   $display ("The age of the person = %0d ",age);
   $display ("----------------------------------");
-unique0 if(age >18)begin // false  
+  unique0 if(age >18)begin // false  
     $display ("Inside the unique 0 if block ");
     $display ("Eligible for voting");
   end 
@@ -17,8 +17,8 @@ unique0 if(age >18)begin // false
   else if(age ==10)begin // false 
     $display ("Inside the second else if block ");
     $display ("Wait for 8 years more. ");
-end 
-$display ("Out from the conditional block ");
+  end 
+  $display ("Out from the conditional block ");
 
 end 
 endmodule 

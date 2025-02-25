@@ -1,5 +1,5 @@
 # vsim unique_if2 -l unique_if2_log.log -c -do "run -all; exit;" 
-# Start time: 05:18:25 on Sep 06,2022
+# Start time: 11:23:19 on Feb 25,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -20,12 +20,12 @@
 # run -all
 # The value of a = 12
 # ------------------------
-# ** Warning: (vsim-8360) unique_if2.sv(11): The if/case statement is not unique.
+# ** Warning: (vsim-8360) unique_if2.sv(9): The if/case statement is not unique.
 #    Time: 0 ns  Iteration: 0  Instance: /unique_if2
 # Inside the unique if block 
 # a is an even number.
 # Out from the conditional blocks
 # ---------------------------------
 #  exit
-# End time: 05:18:25 on Sep 06,2022, Elapsed time: 0:00:00
+# End time: 11:23:19 on Feb 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1

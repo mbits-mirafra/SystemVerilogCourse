@@ -1,6 +1,6 @@
 # vsim top -l unique_case_default_op.log -c -do "run -all;exit;" 
-# Start time: 12:27:16 on Sep 05,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 11:54:41 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,5 +20,5 @@
 # run -all
 #  Value of x is = 1
 # exit
-# End time: 12:27:17 on Sep 05,2022, Elapsed time: 0:00:01
+# End time: 11:54:42 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

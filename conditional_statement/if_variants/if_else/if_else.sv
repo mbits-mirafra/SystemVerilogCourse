@@ -11,6 +11,6 @@ initial begin
   end 
   else 
     $display ("Number is negative");
-  $display ("Out of if else block");
+    $display ("Out of if else block");
 end 
 endmodule 

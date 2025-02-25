@@ -1,18 +1,6 @@
 
-//--------------------------------------------------------------------------------------------
-// Syntax : 
-//      for([initialization]; <condition>; [modifier])
-//        begin
-//          for([initialization]; <condition>; [modifier])
-//          begin
-//           multiple statements;
-//          end
-//        end
-//--------------------------------------------------------------------------------------------
-
 module nested_loop;
-  initial 
-  begin
+  initial begin
     $display("\t ----nested loop output ---\n");
     nes();
   end
@@ -29,5 +17,5 @@ module nested_loop;
           $display("\t i= %0d , j= %0d ",i,j);
         end
       end
-    endtask
+  endtask
 endmodule:nested_loop

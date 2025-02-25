@@ -1,5 +1,5 @@
 # vsim if_elseif -l if_elseif_log.log -c -do "run -all; exit;" 
-# Start time: 05:12:18 on Sep 06,2022
+# Start time: 10:47:34 on Feb 25,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -25,5 +25,5 @@
 # ----------------------------------------------------
 # Out from ladder block
 #  exit
-# End time: 05:12:19 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 10:47:35 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

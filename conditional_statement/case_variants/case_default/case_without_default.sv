@@ -20,10 +20,10 @@ initial begin
   //Execution will exit the case block without doing nothing if none of the case items match the given expression
   //and also default statement is not given. 
     case(x)
-      00 : $display("Value of x = %0b", x);
+      00 : $display("Value of x = %0b",x);
       01 : $display("Value of x = %0b",x);
       10 : $display("Value of x = %0b",x);
-      11 : $display("Value of x = %0b" ,x);
+      11 : $display("Value of x = %0b",x);
     endcase
   end
   endmodule

@@ -1,16 +1,5 @@
 // case statement allows us to execute the code for the particular case expression
 
-
-//Syntax:
-//       case(condition)
-//       condition_1: Statements ;
-//       condition_2: Statements ;
-//       ...........
-//       conditon_N: Statements;
-//       default   : Statements;
-//       endcase
-
-
 module top;
 bit [1:0] x;
 

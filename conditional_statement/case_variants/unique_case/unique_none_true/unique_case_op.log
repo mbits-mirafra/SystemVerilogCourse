@@ -1,6 +1,7 @@
 # vsim top -l unique_case_op.log -c -do "run -all;exit;" 
-# Start time: 11:45:29 on Sep 05,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 11:52:46 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: unique_case.sv(9): (vopt-2586) No condition is true in the unique/priority case statement
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,8 +19,8 @@
 # Loading sv_std.std
 # Loading work.top(fast)
 # run -all
-# ** Warning: (vsim-8315) unique_case.sv(27): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) unique_case.sv(9): No condition is true in the unique/priority if/case statement.
 #    Time: 0 ns  Iteration: 0  Instance: /top
 # exit
-# End time: 11:45:30 on Sep 05,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 11:52:47 on Feb 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2

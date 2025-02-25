@@ -1,6 +1,6 @@
 # vsim unique_if4 -l unique_if4_log.log -c -do "run -all; exit;" 
-# Start time: 05:24:35 on Sep 06,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 10:58:53 on Feb 25,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -24,5 +24,5 @@
 # --------------------------------
 # Out of the conditional block 
 #  exit
-# End time: 05:24:36 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 10:58:54 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

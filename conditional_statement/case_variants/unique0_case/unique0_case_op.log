@@ -1,6 +1,7 @@
 # vsim top -l unique0_case_op.log -c -do "run -all;exit;" 
-# Start time: 12:02:40 on Sep 05,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 11:49:38 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: unique0_case.sv(25): (vopt-2584) there is a matching case item hence not unique
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,9 +19,9 @@
 # Loading sv_std.std
 # Loading work.top(fast)
 # run -all
-# ** Warning: (vsim-8360) unique0_case.sv(26): The if/case statement is not unique.
+# ** Warning: (vsim-8360) unique0_case.sv(20): The if/case statement is not unique.
 #    Time: 0 ns  Iteration: 0  Instance: /top
 #  Value of x is = 1
 # exit
-# End time: 12:02:41 on Sep 05,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 11:49:38 on Feb 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
