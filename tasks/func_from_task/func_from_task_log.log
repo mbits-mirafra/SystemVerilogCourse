@@ -1,7 +1,6 @@
 # vsim work.func_from_task -l func_from_task_log.log -c -do "run -all;exit;" 
-# Start time: 10:58:31 on Sep 05,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: func_from_task.sv(20): (vopt-2250) Function "function_sum" has no return value assignment.
+# Start time: 11:33:47 on Feb 25,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -28,5 +27,5 @@
 # 	returned to task from function
 # 	returned to intial from function
 # exit
-# End time: 10:58:32 on Sep 05,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 11:33:48 on Feb 25,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
