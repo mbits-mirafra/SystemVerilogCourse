@@ -1,5 +1,5 @@
-# vsim top -l code.log -c -do "run -all;quit;" 
-# Start time: 07:47:13 on Sep 21,2022
+# vsim work.nested_for_loop -l nested_for_loop_log.log -c -do "run -all;exit;" 
+# Start time: 16:35:02 on Feb 25,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,32 +16,37 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.for_loop(fast)
+# Loading work.nested_for_loop(fast)
 # run -all
-# 	 ----for loop output ---
+# 	 ----Tables using nested for---
 # 
-# 	 Iteration 1 
-# 	 Iteration 2 
-# 	 Iteration 3 
-# 	 Iteration 4 
-# 	 Iteration 5 
+# 	1 Table:
 # 
-# count=0
+# 	 1 X 1 = 1
+# 	 1 X 2 = 2
+# 	 1 X 3 = 3
+# 	 1 X 4 = 4
+# 	 1 X 5 = 5
+# 	 1 X 6 = 6
+# 	 1 X 7 = 7
+# 	 1 X 8 = 8
+# 	 1 X 9 = 9
+# 	 1 X 10 = 10
 # 
-# count=1
+# 	2 Table:
 # 
-# count=2
+# 	 2 X 1 = 2
+# 	 2 X 2 = 4
+# 	 2 X 3 = 6
+# 	 2 X 4 = 8
+# 	 2 X 5 = 10
+# 	 2 X 6 = 12
+# 	 2 X 7 = 14
+# 	 2 X 8 = 16
+# 	 2 X 9 = 18
+# 	 2 X 10 = 20
 # 
-# count=3
-# 
-# count=4
-# 
-# count=5
-# 
-# count=6
-# 
-# count=7
-# ** Note: $finish    : test.sv(14)
-#    Time: 90 ns  Iteration: 0  Instance: /top/u2
-# End time: 07:47:14 on Sep 21,2022, Elapsed time: 0:00:01
+# 	 ----out of loop----
+# exit
+# End time: 16:35:02 on Feb 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

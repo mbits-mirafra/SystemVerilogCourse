@@ -1,5 +1,5 @@
 # vsim work.func_default_value -l func_default_value_log.log -c -do "run -all;exit;" 
-# Start time: 22:53:04 on Feb 24,2025
+# Start time: 21:44:40 on Feb 25,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -29,5 +29,5 @@
 # 	@ 0 ns, value of sum is 5
 # 
 # exit
-# End time: 22:53:05 on Feb 24,2025, Elapsed time: 0:00:01
+# End time: 21:44:41 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

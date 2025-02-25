@@ -1,6 +1,6 @@
 # vsim work.while_basic -l while_basic_log.log -c -do "run -all;exit;" 
-# Start time: 05:58:37 on Sep 07,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 16:49:18 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -25,5 +25,5 @@
 # 	 Value of apple = 4
 # 	 Value of apple = 5
 # exit
-# End time: 05:58:38 on Sep 07,2022, Elapsed time: 0:00:01
+# End time: 16:49:19 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

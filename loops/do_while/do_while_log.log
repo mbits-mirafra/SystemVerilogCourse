@@ -1,5 +1,5 @@
-# vsim forever_loop -l forever_loop_output.log -c -do "run -all; exit;" 
-# Start time: 22:16:20 on Sep 06,2022
+# vsim work.do_while -l do_while_log.log -c -do "run -all;exit;" 
+# Start time: 16:00:35 on Feb 25,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,17 +16,14 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.forever_loop(fast)
+# Loading work.do_while(fast)
 # run -all
-# 	 ----forever loop----
-# 	 @ 0 ns Iteration 0
-# 	 @ 4 ns Iteration 1
-# 	 @ 8 ns Iteration 2
-# 	 @ 12 ns Iteration 3
-# 	 @ 16 ns Iteration 4
-# 
-# 	@ 20 ns Stopped using $finish
-# ** Note: $finish    : forever_loop.sv(32)
-#    Time: 20 ns  Iteration: 0  Instance: /forever_loop
-# End time: 22:16:20 on Sep 06,2022, Elapsed time: 0:00:00
+# ------do while output ---
+# 	 Value of apple = 1
+# 	 Value of apple = 2
+# 	 Value of apple = 3
+# 	 Value of apple = 4
+# 	 Value of apple = 5
+# exit
+# End time: 16:00:36 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

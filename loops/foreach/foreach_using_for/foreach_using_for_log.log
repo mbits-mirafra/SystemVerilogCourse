@@ -1,6 +1,6 @@
 # vsim work.foreach_using_for -l foreach_using_for_log.log -c -do "run -all;exit;" 
-# Start time: 22:15:04 on Sep 06,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 16:38:39 on Feb 25,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -30,5 +30,5 @@
 # 	----outside for loop----
 # 
 # exit
-# End time: 22:15:05 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 16:38:40 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

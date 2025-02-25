@@ -1,11 +1,13 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-		vlib work;
-		vlog -sv for_code.sv
+	vlog -sv for_loop.sv
 
 simulate:
-		vsim for_loop -l for_loop_output.log -c -do "run -all; exit;"
+	vsim work.for_loop -l for_loop_log.log -c -do "run -all;exit;"
 
-all:
-	vlib work;
-	vlog -sv for_code.sv
-	vsim for_loop -l for_loop_output.log -c -do "run -all; exit;"
+clear:
+	clear
