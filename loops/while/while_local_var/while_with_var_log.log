@@ -1,6 +1,6 @@
-# vsim work.while_simple -l while_variable_log.log -c -do "run -all;exit;" 
-# Start time: 05:24:42 on Sep 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim work.while_with_var -l while_with_var_log.log -c -do "run -all;exit;" 
+# Start time: 16:58:37 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,7 +16,7 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.while_simple(fast)
+# Loading work.while_with_var(fast)
 # run -all
 # Iteration = 2
 # a is a local variable
@@ -40,5 +40,5 @@
 # The value of x = 7
 # ------------------------
 # exit
-# End time: 05:24:43 on Sep 07,2022, Elapsed time: 0:00:01
+# End time: 16:58:38 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

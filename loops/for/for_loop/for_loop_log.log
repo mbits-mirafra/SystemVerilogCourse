@@ -1,5 +1,5 @@
-# vsim top -l code.log -c -do "run -all;quit;" 
-# Start time: 07:47:13 on Sep 21,2022
+# vsim work.for_loop -l for_loop_log.log -c -do "run -all;exit;" 
+# Start time: 16:31:23 on Feb 25,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -26,22 +26,7 @@
 # 	 Iteration 4 
 # 	 Iteration 5 
 # 
-# count=0
-# 
-# count=1
-# 
-# count=2
-# 
-# count=3
-# 
-# count=4
-# 
-# count=5
-# 
-# count=6
-# 
-# count=7
-# ** Note: $finish    : test.sv(14)
-#    Time: 90 ns  Iteration: 0  Instance: /top/u2
-# End time: 07:47:14 on Sep 21,2022, Elapsed time: 0:00:01
+# 	 ----out of loop----
+# exit
+# End time: 16:31:24 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,14 +1,13 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-		vlib work;
-			vlog -sv repeat.sv
+	vlog -sv repeat_code.sv
 
 simulate:
-		vsim repeat_code -l repeat_code_log.log -c -do "run -all; exit;"
+	vsim work.repeat_code -l repeat_code_log.log -c -do "run -all;exit;"
 
-all:
-
-		vlib work;
-			vlog -sv repeat.sv
-		vsim repeat_code -l repeat_code_log.log -c -do "run -all; exit;"
-
-		
+clear:
+	clear

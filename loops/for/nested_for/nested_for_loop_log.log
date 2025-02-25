@@ -1,5 +1,5 @@
-# vsim table_for_loop -l tabe_for_loop_output.log -c -do "run -all; exit;" 
-# Start time: 21:55:56 on Sep 06,2022
+# vsim work.nested_for_loop -l nested_for_loop_log.log -c -do "run -all;exit;" 
+# Start time: 16:35:02 on Feb 25,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,7 +16,7 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.table_for_loop(fast)
+# Loading work.nested_for_loop(fast)
 # run -all
 # 	 ----Tables using nested for---
 # 
@@ -47,6 +47,6 @@
 # 	 2 X 10 = 20
 # 
 # 	 ----out of loop----
-#  exit
-# End time: 21:55:58 on Sep 06,2022, Elapsed time: 0:00:02
+# exit
+# End time: 16:35:02 on Feb 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

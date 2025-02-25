@@ -1,6 +1,6 @@
-# vsim forever_loop -l forever_loop_output.log -c -do "run -all; exit;" 
-# Start time: 22:15:47 on Sep 06,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim work.forever_loop -l forever_loop_log.log -c -do "run -all;exit;" 
+# Start time: 16:43:12 on Feb 25,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -30,6 +30,6 @@
 # 	 @ 32 ns Iteration 8
 # 
 # 	@ 36 ns Stopped using break
-#  exit
-# End time: 22:15:48 on Sep 06,2022, Elapsed time: 0:00:01
+# exit
+# End time: 16:43:13 on Feb 25,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,0 +1,10 @@
+# vsim work.for_code -l for_code_log.log -c -do "run -all;exit;" 
+# Start time: 16:30:19 on Feb 25,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-13130) Failed to find design unit for_code.
+#         Searched libraries:
+#             work
+# Optimization failed
+# Error loading design
+# End time: 16:30:19 on Feb 25,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
