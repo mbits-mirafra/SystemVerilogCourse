@@ -1,13 +1,13 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-		vlib work;
-			vlog -sv rand.sv
+	vlog -sv rand_variable.sv
 
 simulate:
-		vsim rand_var -l rand_log.log -c -do "run -all; exit;"
+	vsim rand_var -l rand_variable.log -c -do "run -all; exit;"
 
-all:
-
-		vlib work;
-			vlog -sv rand.sv
-		vsim rand_var -l rand_log.log -c -do "run -all; exit;"
+clear:
+	clear

@@ -1,5 +1,5 @@
-# vsim tb -l class_std_rand_log.log -c -do "run -all; exit;" 
-# Start time: 01:04:15 on Nov 21,2022
+# vsim tb -l std_random_class.log -c -do "run -all; exit;" 
+# Start time: 11:18:43 on Feb 26,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,7 +16,7 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.class_std_rand_sv_unit(fast)
+# Loading work.std_random_class_sv_unit(fast)
 # Loading work.tb(fast)
 # run -all
 # using std_randomize 0 ,0
@@ -38,5 +38,5 @@
 # using std_randomize with constraint,c: 2
 # this randomize 1190730858 4           2
 #  exit
-# End time: 01:04:17 on Nov 21,2022, Elapsed time: 0:00:02
+# End time: 11:18:44 on Feb 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,5 +1,5 @@
-# vsim std_random -l std_random.log -c -do "run -all; exit;" 
-# Start time: 00:54:08 on Nov 21,2022
+# vsim std_random_module -l std_random_module.log -c -do "run -all; exit;" 
+# Start time: 11:11:50 on Feb 26,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,7 +16,7 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.std_random(fast)
+# Loading work.std_random_module(fast)
 # run -all
 # value of a   8
 # value of b :13
@@ -35,5 +35,5 @@
 # value of c : 3 and d   1 
 # value of e : 3 
 #  exit
-# End time: 00:54:09 on Nov 21,2022, Elapsed time: 0:00:01
+# End time: 11:11:51 on Feb 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

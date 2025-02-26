@@ -1,6 +1,6 @@
-# vsim randc_var -l randc_var_log.log -c -do "run -all; exit;" 
-# Start time: 04:46:13 on Sep 16,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim randc_var -l randc_variable.log -c -do "run -all; exit;" 
+# Start time: 11:04:06 on Feb 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,7 +16,7 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.randc_var_sv_unit(fast)
+# Loading work.randc_variable_sv_unit(fast)
 # Loading work.randc_var(fast)
 # run -all
 #  randc - It  is cyclic in nature . It will repeat 
@@ -36,5 +36,5 @@
 # Iteration =  12    Random Value =  6 
 # ---------------------------------------------------
 #  exit
-# End time: 04:46:14 on Sep 16,2022, Elapsed time: 0:00:01
+# End time: 11:04:06 on Feb 26,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

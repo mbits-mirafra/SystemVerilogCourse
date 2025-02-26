@@ -1,9 +1,10 @@
-class pack;
+class randc_variable;
   randc bit [2:0]a;
 endclass
+
 module randc_var;
 
-pack pk=new();
+randc_variable randc_handle=new();
 initial begin 
 
  
@@ -13,10 +14,9 @@ initial begin
   
   
   for (int i =0; i<=12;i++)begin
- void'(pk.randomize ());
-  $display("Iteration =  %0d    Random Value =  %0d ", i ,pk.a);
-
-end 
+  void'(randc_handle.randomize ());
+  $display("Iteration =  %0d    Random Value =  %0d ", i ,randc_handle.a);
+  end 
 $display ("---------------------------------------------------");
 end 
 endmodule 

@@ -1,6 +1,6 @@
-# vsim rand_var -l rand_log.log -c -do "run -all; exit;" 
-# Start time: 04:37:55 on Sep 16,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim rand_var -l rand_variable.log -c -do "run -all; exit;" 
+# Start time: 10:59:26 on Feb 26,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,7 +16,7 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.rand_sv_unit(fast)
+# Loading work.rand_variable_sv_unit(fast)
 # Loading work.rand_var(fast)
 # run -all
 # rand - Randomizing the value of the variable in non cycling form  
@@ -33,5 +33,5 @@
 # Iterantion = 10 Random value of a = 2
 # -----------------------------------------------------------------
 #  exit
-# End time: 04:37:55 on Sep 16,2022, Elapsed time: 0:00:00
+# End time: 10:59:27 on Feb 26,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
