@@ -1,14 +1,9 @@
-//--------------------------------------------------------------------------------------------
-//
 //fork-join_any block: 
-//
 //This is a process control block where it can have multiple threads in it. 
 //This is very similar to fork-join block. 
-//
 //Here in fork-join all the main Threads after join will wait until all the child Threads 
 //get executed but where as in fork-join_any any of the one child thread get executed 
 //then all the main thread will also works parallely to child threads.
-//--------------------------------------------------------------------------------------------
 
 module fork_join_any();
 
@@ -21,14 +16,10 @@ module fork_join_any();
     a = "Kapu";
     c = "Malpe";
     
-    //-------------------------------------------------------
-    //
     //This is a fork-join block.
     //In this block we can have multiple threads like
     //begin-end,$displays
     //Even a fork-join_any has nested fork-join in it.
-    //
-    //-------------------------------------------------------
     
     fork:FORK_F1
       

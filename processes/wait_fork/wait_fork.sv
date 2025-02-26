@@ -1,11 +1,7 @@
-//--------------------------------------------------------------------------------------------
-//
 //wait fork:
-//
 //This is used to wait for all the Threads of the entire 
 //fork block to get executed then all the remaining main Threads will get executed.
-//
-//--------------------------------------------------------------------------------------------
+
 module wait_fork();
   
   event e1;
@@ -17,14 +13,10 @@ module wait_fork();
     
     #1 $display("[%0t] Thread_T1: values of a = %0s,b = %0s,c = %0s",$time,a,b,c); 
     
-    //-------------------------------------------------------
-    //
     //This is a fork-join block.
     //In this block we can have multiple threads like
     //begin-end,$displays
     //Even a fork-join has nested fork-join in it.
-    //
-    //-------------------------------------------------------
 
     fork:FORK_F1 //Thread 2
     
