@@ -1,6 +1,6 @@
-# vsim fine_suspend -l fine_suspend.log -c -do "run -all;quit;" 
-# Start time: 04:10:21 on Sep 10,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim work.fine_suspend -l fine_suspend.log -c -do "run -all;exit;" 
+# Start time: 23:34:56 on Feb 25,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -26,6 +26,6 @@
 # [2] Initial status of p2: RUNNING
 # [3] status of p1 after suspended: SUSPENDED
 # [3] Final status of p2: FINISHED
-# quit
-# End time: 04:10:22 on Sep 10,2022, Elapsed time: 0:00:01
+# exit
+# End time: 23:34:56 on Feb 25,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
