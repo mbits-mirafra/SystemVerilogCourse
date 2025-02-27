@@ -1,5 +1,5 @@
-# vsim constraint_top -l bidirectional_const.sv.log -c -do "run -all;exit;" 
-# Start time: 04:54:19 on Sep 19,2022
+# vsim top -l bidirectional_const.log -c -do "run -all;exit;" 
+# Start time: 23:36:43 on Feb 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -17,7 +17,7 @@
 # //
 # Loading sv_std.std
 # Loading work.bidirectional_const_sv_unit(fast)
-# Loading work.constraint_top(fast)
+# Loading work.top(fast)
 # run -all
 #  -----Output for bidirectional constraint-----
 #  -----constraint 1 & 2 limits the value to 7,8,9,10 and 11-----
@@ -33,5 +33,5 @@
 # [0] @ iteration 9 -----> value1 = 10
 # ----------------------------------------------------------------
 # exit
-# End time: 04:54:20 on Sep 19,2022, Elapsed time: 0:00:01
+# End time: 23:36:44 on Feb 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

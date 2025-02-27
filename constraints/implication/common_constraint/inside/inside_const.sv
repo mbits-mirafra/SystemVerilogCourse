@@ -1,42 +1,40 @@
-//In inside block, we write  inside keyword foillowed by curly braces {}
- //The values contain by the inside block is variable,value or range.
- 
+// The 'inside' keyword is used to constrain a variable to a specific set of values or a range  
+// Syntax: constraint constraint_name { variable inside {[min:max]}; }  
 
-// Syntax: constraint const_name { (variable inside {[a:b]};}
+// Class declaration  
+class PQR;  
 
+  // Declare a 4-bit random variable  
+  rand bit [3:0] var1;  
 
- // class declaration
-class PQR; 
+  // Constraint: Restrict var1 to be within the range [3:9]  
+  constraint C1 { (var1 inside {[3:9]}); }  
 
-  // random variable declared using the rand keyword
-  rand bit [3:0] var1;
+endclass  
 
-  //constraint block
-  constraint C1 {(var1 inside {[3:9]});}
+// Define the module  
+module top;  
 
-endclass
-  
-module top;
-initial begin
+  initial begin  
+    int i; // Declare an integer variable for iteration  
 
-int i;
+    // Declare a handle for the PQR class  
+    PQR pqr;  
 
-  //Here, we need to create handle
-  //handle name is pkt
-  PQR pqr;
+    // Allocate memory for the handle  
+    pqr = new();  
 
-  //memory allocation to the handle
-  pqr=new();
-  $display("-------Output for  inside constraint-------");
-  $display("-------------------------------------------");
-  for(int i =1; i<7;i++)
-  
-  begin
+    $display("------- Output for inside constraint -------");  
+    $display("-------------------------------------------");  
 
-    // The .randomize() function is used to randomize properties of an object of a class
-    void'(pqr.randomize());
-    $display("[%0t] @ iteration: %0d -----> var1=%0d",$time,i,pqr.var1);
-  end
-  $display("-------------------------------------------");
-end
-endmodule
+    // Run randomization and display results for 6 iterations  
+    for (int i = 1; i < 7; i++) begin  
+      void'(pqr.randomize()); // Randomize the variable  
+      $display("[%0t] @ iteration: %0d -----> var1 = %0d", $time, i, pqr.var1);  
+    end  
+
+    $display("-------------------------------------------");  
+  end  
+
+endmodule  
+

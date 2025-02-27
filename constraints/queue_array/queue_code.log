@@ -1,5 +1,5 @@
-# vsim mod -l dyn_arr_log.log -c -do "run -all; exit;" 
-# Start time: 23:03:58 on Feb 27,2025
+# vsim mod -l queue_code.log -c -do "run -all; exit;" 
+# Start time: 23:10:01 on Feb 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,12 +16,14 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.dyn_arr_sv_unit(fast)
+# Loading work.queue_code_sv_unit(fast)
 # Loading work.mod(fast)
 # run -all
-# Iteration = 0, Array = 0 1 4 9
-# Iteration = 1, Array = 0 1 4 9 16
-# Iteration = 2, Array = 0 1 4 9 16 25
+# Iteration = 0, The value of array = 30
+# Iteration = 1, The value of array = 1
+# Iteration = 2, The value of array = 60
+# Iteration = 3, The value of array = 8
+# Iteration = 4, The value of array = 26
 #  exit
-# End time: 23:03:59 on Feb 27,2025, Elapsed time: 0:00:01
+# End time: 23:10:02 on Feb 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

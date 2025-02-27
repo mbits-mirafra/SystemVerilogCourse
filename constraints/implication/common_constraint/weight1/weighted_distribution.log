@@ -1,6 +1,6 @@
-# vsim top -l wighted_distribution.sv.log -c -do "run -all;exit;" 
-# Start time: 04:47:10 on Sep 19,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim top -l weighted_distribution.log -c -do "run -all;exit;" 
+# Start time: 23:29:11 on Feb 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -34,5 +34,5 @@
 # [0] @ iteration 9  -----> value1=4
 # ---------------------------------
 # exit
-# End time: 04:47:11 on Sep 19,2022, Elapsed time: 0:00:01
+# End time: 23:29:11 on Feb 27,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
