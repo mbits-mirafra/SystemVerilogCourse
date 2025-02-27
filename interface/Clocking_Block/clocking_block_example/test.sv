@@ -1,13 +1,11 @@
 //module: test
 module test(dff.tb intf);
-
   //task:drv
   task drv;
     //loop
-    repeat(10)
-    begin
-    //test triggering at posedge
-    @(posedge intf.clk )
+    repeat(10) begin
+      //test triggering at posedge
+      @(posedge intf.clk )
 
       //randomzing the d
       intf.d <= $random;
@@ -15,6 +13,7 @@ module test(dff.tb intf);
     end
     $finish;
   endtask 
+
   //calling the task drv
   initial begin
     drv();

@@ -1,12 +1,13 @@
 all:
-		make clear;make compile;make simulate
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-		vlib work;
-			vlog -sv code.sv interface.sv test.sv top.sv
+	vlog -sv up_counter.sv test.sv interface.sv top.sv
 
 simulate:
-		vsim top -l code.log -c -do "run -all;quit;"
+	vsim top -l interface.log -c -do "run -all;exit;"
 
 clear:
-		clear
+	clear

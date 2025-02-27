@@ -1,10 +1,7 @@
 //Declaring top module
 module top();
-
   //parameterised interface
   count_if intf();
-
-  
   //-------------------------------------------------------
   // defparam is used for overridding the parameter value
   // by using the hierarchical name instance
@@ -19,4 +16,4 @@ module top();
   //testbench for up_counter
   upcounter_testbench u2(intf);
 
-endmodule:top
+endmodule: top

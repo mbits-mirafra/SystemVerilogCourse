@@ -1,5 +1,5 @@
-# vsim top -l code.log -c -do "run -all;quit;" 
-# Start time: 18:50:36 on Sep 27,2022
+# vsim top -l interface.log -c -do "run -all;exit;" 
+# Start time: 23:54:06 on Feb 27,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -92,7 +92,7 @@
 # count=2
 # 
 # count=3
-# ** Note: $finish    : /hwetools/work_area/frontend/dilip_B7/interface/interface/inter_face/parameter/test.sv(16)
+# ** Note: $finish    : test.sv(17)
 #    Time: 370 ns  Iteration: 0  Instance: /top/u2
-# End time: 18:50:37 on Sep 27,2022, Elapsed time: 0:00:01
+# End time: 23:54:07 on Feb 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

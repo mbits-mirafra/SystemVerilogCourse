@@ -1,6 +1,5 @@
 // creating top module 
 // in this file design,testbench,interface modules are called
-
 module top();
 
   // interfce module called

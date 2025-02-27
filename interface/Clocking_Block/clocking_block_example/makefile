@@ -1,9 +1,13 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-	vlib work;
 	vlog -sv top.sv
 
 simulate:
-	vsim top -l top.log -c -do "log -r /*; run -all;quit" -wlf waveform.wlf
+	vsim top -l clocking_block.log -c -do "log -r /*; run -all;exit;" -wlf waveform.wlf
 
-all:
-	make compile && make simulate
+clear:
+	clear
