@@ -1,5 +1,5 @@
-# vsim std_random_module -l std_random_module.log -c -do "run -all; exit;" 
-# Start time: 21:45:16 on Feb 27,2025
+# vsim top -l invert_inside.log -c -do "run -all;exit;" 
+# Start time: 23:23:38 on Feb 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,24 +16,18 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.std_random_module(fast)
+# Loading work.invert_inside_sv_unit(fast)
+# Loading work.top(fast)
 # run -all
-# Value of a:  8
-# Value of b: 13
-# Value of c:  2 and d:  1
-# Value of e:  4
-# Value of a:  6
-# Value of b:  7
-# Value of c:  3 and d:  0
-# Value of e:  4
-# Value of a:  7
-# Value of b: 15
-# Value of c:  1 and d:  1
-# Value of e:  1
-# Value of a: 15
-# Value of b: 15
-# Value of c:  3 and d:  1
-# Value of e:  3
-#  exit
-# End time: 21:45:17 on Feb 27,2025, Elapsed time: 0:00:01
+# -----Output for invert inside constraint-----
+# ---------------------------------------------
+# [0] @ iteration: 1 -----> var2=11
+# [0] @ iteration: 2 -----> var2=10
+# [0] @ iteration: 3 -----> var2=13
+# [0] @ iteration: 4 -----> var2=14
+# [0] @ iteration: 5 -----> var2=2
+# [0] @ iteration: 6 -----> var2=12
+# ---------------------------------------------
+# exit
+# End time: 23:23:39 on Feb 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -4,10 +4,10 @@ all:
 	make simulate;
 
 compile:
-	vlog -sv dyn_arr.sv
+	vlog -sv queue_code.sv 
 
 simulate:
-	vsim mod -l dyn_arr_log.log -c -do "run -all; exit;"
+	vsim mod -l queue_code.log -c -do "run -all; exit;"
 
 clear:
 	clear

@@ -1,5 +1,5 @@
 # vsim randc_var -l randc_variable.log -c -do "run -all; exit;" 
-# Start time: 11:04:06 on Feb 26,2025
+# Start time: 21:43:06 on Feb 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -19,22 +19,22 @@
 # Loading work.randc_variable_sv_unit(fast)
 # Loading work.randc_var(fast)
 # run -all
-#  randc - It  is cyclic in nature . It will repeat 
-#          it's value after completing one cycle .
-# Iteration =  0    Random Value =  0 
-# Iteration =  1    Random Value =  7 
-# Iteration =  2    Random Value =  3 
-# Iteration =  3    Random Value =  6 
-# Iteration =  4    Random Value =  5 
-# Iteration =  5    Random Value =  2 
-# Iteration =  6    Random Value =  1 
-# Iteration =  7    Random Value =  4 
-# Iteration =  8    Random Value =  4 
-# Iteration =  9    Random Value =  1 
-# Iteration =  10    Random Value =  2 
-# Iteration =  11    Random Value =  5 
-# Iteration =  12    Random Value =  6 
-# ---------------------------------------------------
+# randc - It is cyclic in nature. It will repeat its values after completing one full cycle.
+# -----------------------------------------------------------------------------
+# Iteration = 0, Random Value = 0
+# Iteration = 1, Random Value = 7
+# Iteration = 2, Random Value = 3
+# Iteration = 3, Random Value = 6
+# Iteration = 4, Random Value = 5
+# Iteration = 5, Random Value = 2
+# Iteration = 6, Random Value = 1
+# Iteration = 7, Random Value = 4
+# Iteration = 8, Random Value = 4
+# Iteration = 9, Random Value = 1
+# Iteration = 10, Random Value = 2
+# Iteration = 11, Random Value = 5
+# Iteration = 12, Random Value = 6
+# -----------------------------------------------------------------------------
 #  exit
-# End time: 11:04:06 on Feb 26,2025, Elapsed time: 0:00:00
+# End time: 21:43:08 on Feb 27,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0

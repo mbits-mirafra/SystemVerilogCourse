@@ -1,6 +1,6 @@
 # vsim mod -l dyn_arr_log.log -c -do "run -all; exit;" 
-# Start time: 00:01:15 on Sep 17,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 23:03:58 on Feb 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,10 +19,9 @@
 # Loading work.dyn_arr_sv_unit(fast)
 # Loading work.mod(fast)
 # run -all
-# Iteration =0 Value =0
-# Iteration =1 Value =1
-# Iteration =2 Value =4
-# Iteration =3 Value =9
+# Iteration = 0, Array = 0 1 4 9
+# Iteration = 1, Array = 0 1 4 9 16
+# Iteration = 2, Array = 0 1 4 9 16 25
 #  exit
-# End time: 00:01:15 on Sep 17,2022, Elapsed time: 0:00:00
+# End time: 23:03:59 on Feb 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

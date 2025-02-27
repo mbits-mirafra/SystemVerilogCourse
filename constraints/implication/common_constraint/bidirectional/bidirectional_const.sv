@@ -18,7 +18,7 @@ class items;
 endclass
 
 // module name is constraint_top
-module constraint_top;
+module top;
 initial begin
 
     int i;

@@ -1,5 +1,5 @@
-# vsim std_random_module -l std_random_module.log -c -do "run -all; exit;" 
-# Start time: 21:45:16 on Feb 27,2025
+# vsim top -l inside_const.log -c -do "run -all;exit;" 
+# Start time: 23:26:25 on Feb 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,24 +16,18 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.std_random_module(fast)
+# Loading work.inside_const_sv_unit(fast)
+# Loading work.top(fast)
 # run -all
-# Value of a:  8
-# Value of b: 13
-# Value of c:  2 and d:  1
-# Value of e:  4
-# Value of a:  6
-# Value of b:  7
-# Value of c:  3 and d:  0
-# Value of e:  4
-# Value of a:  7
-# Value of b: 15
-# Value of c:  1 and d:  1
-# Value of e:  1
-# Value of a: 15
-# Value of b: 15
-# Value of c:  3 and d:  1
-# Value of e:  3
-#  exit
-# End time: 21:45:17 on Feb 27,2025, Elapsed time: 0:00:01
+# ------- Output for inside constraint -------
+# -------------------------------------------
+# [0] @ iteration: 1 -----> var1 = 9
+# [0] @ iteration: 2 -----> var1 = 8
+# [0] @ iteration: 3 -----> var1 = 8
+# [0] @ iteration: 4 -----> var1 = 8
+# [0] @ iteration: 5 -----> var1 = 5
+# [0] @ iteration: 6 -----> var1 = 4
+# -------------------------------------------
+# exit
+# End time: 23:26:27 on Feb 27,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
