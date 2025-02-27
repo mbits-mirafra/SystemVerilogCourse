@@ -1,6 +1,6 @@
 # vsim mod -l extern_cons_log.log -c -do "run -all; exit;" 
-# Start time: 22:53:55 on Sep 20,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 21:48:47 on Feb 27,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -32,5 +32,5 @@
 # Iteration = 5  Value of a = 4 Value of x = 11  
 # ------------------------------------------------
 #  exit
-# End time: 22:53:56 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 21:48:48 on Feb 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

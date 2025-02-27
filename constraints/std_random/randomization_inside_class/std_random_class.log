@@ -1,5 +1,5 @@
 # vsim tb -l std_random_class.log -c -do "run -all; exit;" 
-# Start time: 11:18:43 on Feb 26,2025
+# Start time: 21:46:48 on Feb 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -19,24 +19,24 @@
 # Loading work.std_random_class_sv_unit(fast)
 # Loading work.tb(fast)
 # run -all
-# using std_randomize 0 ,0
-# randomize(a) 7
-# using std_randomize(a) -1660044954
-# using std_randomize b: 6
-# using std_randomize with constraint,c: 3
-# this randomize -1660044954 6           3
-# using std_randomize -1660044954 ,6
-# randomize(a) 3
-# using std_randomize(a) 1003556722
-# using std_randomize b: 6
-# using std_randomize with constraint,c: 3
-# this randomize 1003556722 6           3
-# using std_randomize 1003556722 ,6
-# randomize(a) 7
-# using std_randomize(a) 1190730858
-# using std_randomize b: 4
-# using std_randomize with constraint,c: 2
-# this randomize 1190730858 4           2
+# Using std::randomize: a = 0, b = 0
+# Using randomize(a): 7
+# Using std::randomize(a): -1660044954
+# Using std::randomize(b): 6
+# Using std::randomize with constraint, c: 3
+# Using this.randomize(): a = -1660044954, b = 6, c =           3
+# Using std::randomize: a = -1660044954, b = 6
+# Using randomize(a): 3
+# Using std::randomize(a): 1003556722
+# Using std::randomize(b): 6
+# Using std::randomize with constraint, c: 3
+# Using this.randomize(): a = 1003556722, b = 6, c =           3
+# Using std::randomize: a = 1003556722, b = 6
+# Using randomize(a): 7
+# Using std::randomize(a): 1190730858
+# Using std::randomize(b): 4
+# Using std::randomize with constraint, c: 2
+# Using this.randomize(): a = 1190730858, b = 4, c =           2
 #  exit
-# End time: 11:18:44 on Feb 26,2025, Elapsed time: 0:00:01
+# End time: 21:46:50 on Feb 27,2025, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0

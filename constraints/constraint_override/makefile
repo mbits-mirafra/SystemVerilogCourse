@@ -1,13 +1,13 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-			vlib work;
-			vlog -sv overrding_code.sv 
+	vlog -sv overrding_code.sv 
 
 simulate:
-			vsim top -l overrding_output.log -c -do "run -all; exit;"
+	vsim top -l overrding_output.log -c -do "run -all; exit;"
 
-all:
-
-			vlib work;	
-			vlog -sv overrding_code.sv 
-			vsim top -l overrding_output.log -c -do "run -all; exit;"
-
+clear:
+	clear

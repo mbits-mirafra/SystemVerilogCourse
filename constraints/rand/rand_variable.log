@@ -1,5 +1,5 @@
 # vsim rand_var -l rand_variable.log -c -do "run -all; exit;" 
-# Start time: 10:59:26 on Feb 26,2025
+# Start time: 21:43:23 on Feb 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -19,19 +19,19 @@
 # Loading work.rand_variable_sv_unit(fast)
 # Loading work.rand_var(fast)
 # run -all
-# rand - Randomizing the value of the variable in non cycling form  
-# Iterantion = 0 Random value of a = 0
-# Iterantion = 1 Random value of a = 1
-# Iterantion = 2 Random value of a = 1
-# Iterantion = 3 Random value of a = 3
-# Iterantion = 4 Random value of a = 4
-# Iterantion = 5 Random value of a = 5
-# Iterantion = 6 Random value of a = 5
-# Iterantion = 7 Random value of a = 2
-# Iterantion = 8 Random value of a = 1
-# Iterantion = 9 Random value of a = 7
-# Iterantion = 10 Random value of a = 2
+# rand - Randomizing the value of the variable in non-cycling form
+# Iteration = 0, Random value of a = 0
+# Iteration = 1, Random value of a = 1
+# Iteration = 2, Random value of a = 1
+# Iteration = 3, Random value of a = 3
+# Iteration = 4, Random value of a = 4
+# Iteration = 5, Random value of a = 5
+# Iteration = 6, Random value of a = 5
+# Iteration = 7, Random value of a = 2
+# Iteration = 8, Random value of a = 1
+# Iteration = 9, Random value of a = 7
+# Iteration = 10, Random value of a = 2
 # -----------------------------------------------------------------
 #  exit
-# End time: 10:59:27 on Feb 26,2025, Elapsed time: 0:00:01
+# End time: 21:43:24 on Feb 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
