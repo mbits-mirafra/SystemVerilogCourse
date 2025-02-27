@@ -1,5 +1,5 @@
 # vsim stat_array -l single_static_array.log -c -do "run -all; exit;" 
-# Start time: 22:34:21 on Feb 27,2025
+# Start time: 22:46:28 on Feb 27,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -32,5 +32,5 @@
 # Output = 81 98 10 53 -66 -122 103
 # -------------------------------------------------------------------
 #  exit
-# End time: 22:34:22 on Feb 27,2025, Elapsed time: 0:00:01
+# End time: 22:46:29 on Feb 27,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
