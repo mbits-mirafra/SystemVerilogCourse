@@ -1,5 +1,10 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+	make report;
+
 compile:
-	vlib work;
 	vlog -sv expression.sv
 
 simulate :
@@ -8,9 +13,5 @@ simulate :
 report:
 	vcover report -details expression_report.ucdb
 
-all:
-	vlib work;
-	vlog -sv expression.sv
-	vsim -cvgperinstance work.expression -l expression.log -c -do\
-		"coverage save -onexit expression_report.ucdb;run -all;exit;"
-	vcover report -details expression_report.ucdb
+clear:
+	clear

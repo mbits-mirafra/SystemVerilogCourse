@@ -1,8 +1,6 @@
 # vsim -cvgperinstance cross_var -l cross_var.log -c -do "coverage save -onexit cross_var.ucdb;run -all;exit;" 
-# Start time: 22:19:08 on Feb 28,2025
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: cross_var.sv(9): (vopt-2727) One of implicit coverpoints at line '9' is a duplicate of the explicitly declared coverpoint 'c1' at line '7'. The coverage score may be skewed as a result.
-# ** Warning: cross_var.sv(9): (vopt-2727) One of implicit coverpoints at line '9' is a duplicate of the explicitly declared coverpoint 'c2' at line '8'. The coverage score may be skewed as a result.
+# Start time: 22:44:33 on Feb 28,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -28,5 +26,5 @@
 # a=1 ; b=1 ; coverage %=95.00
 # exit
 # Saving coverage database on exit...
-# End time: 22:19:09 on Feb 28,2025, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 2
+# End time: 22:44:34 on Feb 28,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

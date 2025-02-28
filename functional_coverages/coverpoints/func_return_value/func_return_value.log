@@ -1,5 +1,5 @@
-# vsim -cvgperinstance work.part_select -l part_select_log.log -c -do "coverage save -onexit part_select.ucdb;run -all;exit;" 
-# Start time: 23:26:56 on Feb 28,2025
+# vsim -cvgperinstance work.func_return_value -l func_return_value.log -c -do "coverage save -onexit func_return_value.ucdb;run -all;exit;" 
+# Start time: 23:35:55 on Feb 28,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,20 +16,21 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.part_select(fast)
-# coverage save -onexit part_select.ucdb
+# Loading work.func_return_value_sv_unit(fast)
+# Loading work.func_return_value(fast)
+# coverage save -onexit func_return_value.ucdb
 # run -all
-# a=4 a1=00 a2=0 a3=10
-# 	coverage %=33.33
-# a=1 a1=01 a2=1 a3=00
-# 	coverage %=66.67
-# a=1 a1=01 a2=1 a3=00
-# 	coverage %=66.67
-# a=3 a1=11 a2=1 a3=01
-# 	coverage %=83.33
-# a=5 a1=01 a2=1 a3=10
-# 	coverage %=83.33
+# a = 0, b = 1; add =           1
+# 	coverage %=18.75
+# a = 1, b = 0; add =           1
+# 	coverage %=35.42
+# a = 2, b = 3; add =           5
+# 	coverage %=54.17
+# a = 3, b = 2; add =           5
+# 	coverage %=70.83
+# a = 2, b = 0; add =           2
+# 	coverage %=72.92
 # exit
 # Saving coverage database on exit...
-# End time: 23:26:57 on Feb 28,2025, Elapsed time: 0:00:01
+# End time: 23:35:56 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

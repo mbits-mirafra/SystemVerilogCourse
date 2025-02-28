@@ -1,6 +1,6 @@
 # vsim -cvgperinstance work.expression -l expression.log -c -do "coverage save -onexit expression_report.ucdb;run -all;exit;" 
-# Start time: 23:33:57 on Oct 07,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 23:00:55 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -31,5 +31,5 @@
 # a=1 b=7 axb=7 coverage %=83.33
 # exit
 # Saving coverage database on exit...
-# End time: 23:33:58 on Oct 07,2022, Elapsed time: 0:00:01
+# End time: 23:00:56 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
