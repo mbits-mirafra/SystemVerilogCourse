@@ -1,6 +1,6 @@
 # vsim -cvgperinstance outside -l cvgrp_outside.log -c -do "coverage save -onexit outside.ucdb;run -all;exit;" 
-# Start time: 23:47:53 on Oct 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 16:33:40 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,13 +20,13 @@
 # Loading work.outside(fast)
 # coverage save -onexit outside.ucdb
 # run -all
-# a =0 b=2; coverage %= 18.75
-# a =3 b=1; coverage %= 37.50
-# a =0 b=0; coverage %= 50.00
-# a =6 b=2; coverage %= 56.25
-# a =3 b=0; coverage %= 56.25
+# a = 0 b = 2; coverage % = 18.75
+# a = 3 b = 1; coverage % = 37.50
+# a = 0 b = 0; coverage % = 50.00
+# a = 6 b = 2; coverage % = 56.25
+# a = 3 b = 0; coverage % = 56.25
 # 56.250000
 # exit
 # Saving coverage database on exit...
-# End time: 23:47:57 on Oct 07,2022, Elapsed time: 0:00:04
+# End time: 16:33:41 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,6 +1,6 @@
 # vsim -cvgperinstance cover_grp -l cover_group.log -c -do "coverage save -onexit cover_group.ucdb;run -all;exit;" 
-# Start time: 23:25:22 on Oct 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 16:16:34 on Feb 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -24,8 +24,8 @@
 # a=1 ; b=1 ; coverage %= 50.00
 # a=1 ; b=2 ; coverage %= 62.50
 # a=1 ; b=1 ; coverage %= 62.50
-# overall functional coverage% = 62.50%
+# Overall functional coverage = 62.50%
 # exit
 # Saving coverage database on exit...
-# End time: 23:25:23 on Oct 07,2022, Elapsed time: 0:00:01
+# End time: 16:16:35 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,18 +1,19 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+	make report;
+
 compile :
-				vlib work;
-				vlog -sv cover_grp.sv
+	vlog -sv cover_grp.sv
 
 simulate:
-	    vsim -cvgperinstance cover_grp -l cover_group.log -c -do "coverage save -onexit cover_group.ucdb;run -all;exit;"
+	vsim -cvgperinstance cover_grp -l cover_group.log -c -do "coverage save -onexit cover_group.ucdb;run -all;exit;"
 
 report :
-			vcover report -details cover_group.ucdb
+	vcover report -details cover_group.ucdb
 
-all :
+clear:
 		clear;
-				vlib work;
-				vlog -sv cover_grp.sv
-	      vsim -cvgperinstance cover_grp -l cover_group.log -c -do "coverage save -onexit cover_group.ucdb;run -all;exit;"
-		  	vcover report -details cover_group.ucdb
 
 

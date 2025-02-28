@@ -1,6 +1,6 @@
 # vsim -cvgperinstance cvgrp_inside_class -l cvgrp_inside_class.log -c -do "coverage save -onexit inside_class.ucdb;run -all;exit;" 
-# Start time: 23:44:53 on Oct 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Start time: 16:28:38 on Feb 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -27,5 +27,5 @@
 # a=2 ; b=0 ; coverage %=75.00
 # exit
 # Saving coverage database on exit...
-# End time: 23:44:53 on Oct 07,2022, Elapsed time: 0:00:00
+# End time: 16:28:38 on Feb 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

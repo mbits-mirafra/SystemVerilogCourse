@@ -1,6 +1,6 @@
 # vsim -cvgperinstance cvgrp_inside_mod -l cvgrp_inside_mod.log -c -do "coverage save -onexit inside_mod.ucdb;run -all;exit;" 
-# Start time: 03:10:44 on Oct 11,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 16:21:06 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,13 +20,13 @@
 # Loading work.cvgrp_inside_mod(fast)
 # coverage save -onexit inside_mod.ucdb
 # run -all
-# a=0 ; b=0 ; coverage %=18.75%
-# a=0 ; b=2 ; coverage %=25.00%
-# a=1 ; b=1 ; coverage %=43.75%
-# a=0 ; b=2 ; coverage %=43.75%
-# a=2 ; b=7 ; coverage %=62.50%
-# ** Note: $finish    : /hwetools/work_area/frontend/naveen_B7/practice/cover_groups/cvgrp_inside_mod/cvgrp_inside_mod.sv(20)
+# a=0 ; b=3 ; coverage %= 18.75%
+# a=1 ; b=1 ; coverage %= 37.50%
+# a=3 ; b=6 ; coverage %= 56.25%
+# a=3 ; b=6 ; coverage %= 56.25%
+# a=2 ; b=2 ; coverage %= 75.00%
+# ** Note: $finish    : cvgrp_inside_mod.sv(30)
 #    Time: 0 ns  Iteration: 0  Instance: /cvgrp_inside_mod
 # Saving coverage database on exit...
-# End time: 03:10:45 on Oct 11,2022, Elapsed time: 0:00:01
+# End time: 16:21:06 on Feb 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
