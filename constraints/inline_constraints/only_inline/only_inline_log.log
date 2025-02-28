@@ -1,6 +1,6 @@
 # vsim only_inline -l only_inline_log.log -c -do "run -all;exit;" 
-# Start time: 21:51:39 on Sep 20,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 13:22:55 on Feb 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -22,5 +22,5 @@
 # 	[1] @ iteration: 1 -----> value: 3
 # 	[2] @ iteration: 2 -----> value: 3
 # exit
-# End time: 21:51:40 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 13:22:55 on Feb 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

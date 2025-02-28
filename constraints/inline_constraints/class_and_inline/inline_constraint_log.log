@@ -1,6 +1,6 @@
 # vsim inline_constraint -l inline_constraint_log.log -c -do "run -all;exit;" 
-# Start time: 21:35:54 on Sep 21,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 13:26:23 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,8 +19,8 @@
 # Loading work.inline_constraint_sv_unit(fast)
 # Loading work.inline_constraint(fast)
 # run -all
-# 	[1] @ iteration: 1  -----> value: 3
-# 	[2] @ iteration: 2  -----> value: 7
+# 	[1] @ iteration: 1 -----> value: 3
+# 	[2] @ iteration: 2 -----> value: 7
 # exit
-# End time: 21:35:55 on Sep 21,2022, Elapsed time: 0:00:01
+# End time: 13:26:24 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

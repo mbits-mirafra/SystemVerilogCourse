@@ -1,12 +1,13 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-	vlib work;
-		vlog -sv memory_n_equal_partitions.sv 
+	vlog -sv memory_n_equal_partitions.sv 
 
 simulate:
 	vsim memory_n_equal_partitions -l memory_n_equal_partitions_log.log -c -do "run -all;exit;"
 
-all:
+clear:
 	clear
-	vlib work;
-	vlog -sv memory_n_equal_partitions.sv
-	vsim memory_n_equal_partitions -l memory_n_equal_partitions_log.log -c -do "run -all;exit;"

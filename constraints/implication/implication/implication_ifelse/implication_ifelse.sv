@@ -8,24 +8,25 @@ class basic;
   rand bit [3:0] value1;
   rand bit [2:0] value2;
 
+  constraint c_var {  
+  // If 'value1' is within the range 0x3 to 0x9 (hexadecimal 3 to 9),  
+  // then 'value2' must be equal to 1  
+  if (value1 inside {[4'h3:4'h9]})  
+    value2 == 1;  
 
-  constraint c_var {
-
-    if(value1 inside {[4'h3:4'h9]})
-      value2 == 1;
-
-      else {
-        value2 == 0;}
-
-      }
-
-    endclass
+  // Otherwise, if 'value1' is outside the range 3 to 9,  
+  // 'value2' must be equal to 0  
+  else {  
+    value2 == 0;  
+  }  
+}  
+endclass
 
     //module name is top
-    module top;
+module top;
 
-    int i=1;
-    initial begin
+  int i=1;
+  initial begin
 
       //here, we need to create handle
       //handle name is pkt
@@ -44,5 +45,5 @@ class basic;
 
       end
       $display("-----------------------------------------------");
-    end
-    endmodule
+  end
+endmodule

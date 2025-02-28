@@ -1,6 +1,6 @@
 # vsim pre_randomization -l pre_randomization_log.log -c -do "run -all;exit;" 
-# Start time: 22:38:03 on Sep 20,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 13:12:02 on Feb 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,16 +19,16 @@
 # Loading work.pre_randomization_sv_unit(fast)
 # Loading work.pre_randomization(fast)
 # run -all
-# 	[0]Calling Randomize....
-# 	stopping randomization
+# 	[0] Calling Randomize....
+# 	Stopping randomization
 # 	[1] @ iteration: 1 -----> value: 0 
-# 	[1]Calling Randomize....
+# 	[1] Calling Randomize....
 # 	[2] @ iteration: 2 -----> value: 4 
-# 	[2]Calling Randomize....
-# 	stopping randomization
+# 	[2] Calling Randomize....
+# 	Stopping randomization
 # 	[3] @ iteration: 3 -----> value: 4 
-# 	[3]Calling Randomize....
+# 	[3] Calling Randomize....
 # 	[4] @ iteration: 4 -----> value: 13 
 # exit
-# End time: 22:38:04 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 13:12:02 on Feb 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

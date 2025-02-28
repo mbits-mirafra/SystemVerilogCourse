@@ -1,6 +1,6 @@
 # vsim conflict_with_inline -l conflict_with_inline_log.log -c -do "run -all;exit;" 
-# Start time: 21:36:43 on Sep 21,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 13:30:56 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -22,5 +22,5 @@
 # 	Randomization Failed 	 @ iteration: 1 -----> value: 0
 # 	Randomization Failed 	 @ iteration: 2 -----> value: 0
 # exit
-# End time: 21:36:45 on Sep 21,2022, Elapsed time: 0:00:02
+# End time: 13:30:57 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

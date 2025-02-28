@@ -1,6 +1,6 @@
 # vsim single_memory_block -l single_memory_block_log.log -c -do "run -all;exit;" 
-# Start time: 00:00:56 on Sep 19,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 14:07:42 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -26,5 +26,5 @@
 # 	 BLOCK end addr : 1959
 # 	 BLOCK SIZE:64
 # exit
-# End time: 00:00:56 on Sep 19,2022, Elapsed time: 0:00:00
+# End time: 14:07:43 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

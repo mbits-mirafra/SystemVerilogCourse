@@ -1,6 +1,8 @@
 # vsim randomization_mode -l randomization_mode_code_output.log -c -do "run -all; exit;" 
-# Start time: 19:52:00 on Sep 20,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 13:56:41 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: randomization_mode_code.sv(41): (vopt-2240) Treating stand-alone use of function 'rand_mode1' as an implicit VOID cast.
+# ** Warning: randomization_mode_code.sv(7): (vopt-2250) Function "rand_mode1" has no return value assignment.
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,24 +21,24 @@
 # Loading work.randomization_mode_code_sv_unit(fast)
 # Loading work.randomization_mode(fast)
 # run -all
-# Before Randomization data1 = 0 data2= 0
+# Before Randomization data1 = 0 data2 = 0
 # randomization of all variables are enabled
-# [0] After enable the randomizations data1 =5, data2 = 1
+# [0] After enable the randomizations data1 = 5, data2 = 1
 # [0] state = 1
-# [0] After disable in the randomization data1 =5, data2 = 1
-# [1] After enable the randomizations data1 =0, data2 = 0
+# [0] After disable in the randomization data1 = 5, data2 = 1
+# [1] After enable the randomizations data1 = 0, data2 = 0
 # [1] state = 1
-# [1] After disable in the randomization data1 =0, data2 = 0
-# [2] After enable the randomizations data1 =7, data2 = 3
+# [1] After disable in the randomization data1 = 0, data2 = 0
+# [2] After enable the randomizations data1 = 7, data2 = 3
 # [2] state = 1
-# [2] After disable in the randomization data1 =7, data2 = 3
-# [3] After enable the randomizations data1 =5, data2 = 2
+# [2] After disable in the randomization data1 = 7, data2 = 3
+# [3] After enable the randomizations data1 = 5, data2 = 2
 # [3] state = 1
 # [3] state = 0
-# [3] After disable in the randomization data1 =5, data2 = 2
-# [4] After enable the randomizations data1 =5, data2 = 2
+# [3] After disable in the randomization data1 = 5, data2 = 2
+# [4] After enable the randomizations data1 = 5, data2 = 2
 # [4] state = 0
-# [4] After disable in the randomization data1 =5, data2 = 2
+# [4] After disable in the randomization data1 = 5, data2 = 2
 #  exit
-# End time: 19:52:01 on Sep 20,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# End time: 13:56:41 on Feb 28,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2

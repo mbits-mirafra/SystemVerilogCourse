@@ -1,6 +1,7 @@
 # vsim memory_n_var_partitions -l memory_n_var_partitions_log.log -c -do "run -all;exit;" 
-# Start time: 00:23:45 on Sep 19,2022
+# Start time: 14:11:44 on Feb 28,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: memory_n_var_partitions.sv(35): (vopt-2250) Function "display" has no return value assignment.
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,19 +20,19 @@
 # Loading work.memory_n_var_partitions_sv_unit(fast)
 # Loading work.memory_n_var_partitions(fast)
 # run -all
-# 	RAM start addr : 0 
-# 	RAM end addr : 16383 
+# 	 RAM start addr : 0 
+# 	 RAM end addr : 16383 
 # 	 No of Partitions : 8 
 # 
-# 	 [0;31m-----------partitions-----------[0m
-# 	 Partition : 0 with size :2048 from 0 to 2047 
-# 	 Partition : 1 with size :4096 from 2048 to 6143 
-# 	 Partition : 2 with size :256 from 6144 to 6399 
-# 	 Partition : 3 with size :4096 from 6400 to 10495 
-# 	 Partition : 4 with size :256 from 10496 to 10751 
-# 	 Partition : 5 with size :1024 from 10752 to 11775 
-# 	 Partition : 6 with size :4096 from 11776 to 15871 
-# 	 Partition : 7 with size :512 from 15872 to 16383 
+# 	 -----------Partitions-----------
+# 	 Partition : 0 with size : 2048 from 0 to 2047 
+# 	 Partition : 1 with size : 4096 from 2048 to 6143 
+# 	 Partition : 2 with size : 256 from 6144 to 6399 
+# 	 Partition : 3 with size : 4096 from 6400 to 10495 
+# 	 Partition : 4 with size : 256 from 10496 to 10751 
+# 	 Partition : 5 with size : 1024 from 10752 to 11775 
+# 	 Partition : 6 with size : 4096 from 11776 to 15871 
+# 	 Partition : 7 with size : 512 from 15872 to 16383 
 # exit
-# End time: 00:23:46 on Sep 19,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# End time: 14:11:45 on Feb 28,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

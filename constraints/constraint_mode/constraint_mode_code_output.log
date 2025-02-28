@@ -1,6 +1,6 @@
 # vsim constraint_mode -l constraint_mode_code_output.log -c -do "run -all; exit;" 
-# Start time: 19:52:32 on Sep 20,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 13:52:39 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,18 +19,18 @@
 # Loading work.constraint_mode_code_sv_unit(fast)
 # Loading work.constraint_mode(fast)
 # run -all
-# 	 If constraint is mode is 1 it will display the 5,10,15
-# 	 If constraint is mode is 0 it will display the random values
+# 	 If constraint mode is 1, it will display 5, 10, or 15
+# 	 If constraint mode is 0, it will display random values
 # 	 Before Constraint disable
 # 	 Value of constraint mode = 1
-# 	data = 15
+# 	 data = 15
 # 	 After Constraint disable
 # 	 Value of constraint mode = 0
-# 	data = 6
-# 	data = 2
-# 	data = 7
-# 	data = 8
-# 	data = 7
+# 	 data = 6
+# 	 data = 2
+# 	 data = 7
+# 	 data = 8
+# 	 data = 7
 #  exit
-# End time: 19:52:33 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 13:52:40 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

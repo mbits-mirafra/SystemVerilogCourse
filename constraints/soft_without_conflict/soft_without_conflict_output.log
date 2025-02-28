@@ -1,6 +1,6 @@
 # vsim soft_without_conflict -l soft_without_conflict_output.log -c -do "run -all; exit;" 
-# Start time: 11:16:54 on Sep 20,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 13:35:57 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,29 +19,29 @@
 # Loading work.soft_without_conflict_sv_unit(fast)
 # Loading work.soft_without_conflict(fast)
 # run -all
-# without using soft constraint output
+# Without using soft constraint output
 # 
-#  	 a=0 value =9
+#  	 a = 0 value = 9
 # 
-#  	 a=1 value =6
+#  	 a = 1 value = 6
 # 
-#  	 a=2 value =6
+#  	 a = 2 value = 6
 # 
-#  	 a=3 value =15
+#  	 a = 3 value = 15
 # 
-#  	 a=4 value =12
+#  	 a = 4 value = 12
 # 
-#  	 output of without conflict
+#  	 Output of without conflict
 # 
-#  	 a=0 value =8
+#  	 a = 0 value = 8
 # 
-#  	 a=1 value =7
+#  	 a = 1 value = 7
 # 
-#  	 a=2 value =6
+#  	 a = 2 value = 6
 # 
-#  	 a=3 value =8
+#  	 a = 3 value = 8
 # 
-#  	 a=4 value =7
+#  	 a = 4 value = 7
 #  exit
-# End time: 11:16:55 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 13:35:58 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,31 +1,35 @@
-//constraint c_name {soft variable {conditions};}
+// Class definition for randomization  
+class pack;  
+  // Declare a 4-bit random variable  
+  rand bit [3:0] a;  
 
-class pack;
-rand bit [0:3]a;
-constraint addr_a{a>5;}
-endclass
+  // Constraint: Ensure 'a' is always greater than 5  
+  constraint addr_a { a > 5; }  
+endclass  
 
-module soft_with_conflict;
+// Module to test soft constraints with conflicts  
+module soft_with_conflict;  
 
-pack pkh;
-initial begin
+  pack pkh;  
 
-pkh = new;
-$display("output of soft with conflict ");
-for(int i =0; i<5;i++)
-begin
-void'(pkh.randomize()with {a<5;});
+  initial begin  
+    pkh = new;  
+    $display("Output of soft with conflict");  
 
-$display("\n \t a=%0d value =%0d",i,pkh.a);
-end
-pkh = new;
-$display("\n \t using soft constraint to solve conflict issue");
-for(int i =0; i<5;i++)
-begin
-  void'(pkh.randomize()with {soft a<5;});
+    // Randomization with an inline constraint that contradicts the class constraint  
+    for (int i = 0; i < 5; i++) begin  
+      void'(pkh.randomize() with { a < 5; });  
+      $display("\n \t a = %0d value = %0d", i, pkh.a);  
+    end  
 
-$display("\n \t a=%0d value =%0d",i,pkh.a);
-end
-end
-endmodule 
+    pkh = new;  
+    $display("\n \t Using soft constraint to solve conflict issue");  
+
+    // Randomization with a soft constraint that allows flexibility  
+    for (int i = 0; i < 5; i++) begin  
+      void'(pkh.randomize() with { soft a < 5; });  
+      $display("\n \t a = %0d value = %0d", i, pkh.a);  
+    end  
+  end  
+endmodule  
 

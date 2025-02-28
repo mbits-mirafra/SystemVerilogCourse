@@ -1,6 +1,6 @@
 # vsim r_case -l randcase_code_output.log -c -do "run -all; exit;" 
-# Start time: 20:13:35 on Sep 20,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 13:59:29 on Feb 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -33,5 +33,5 @@
 # 	 
 #  output of randcase 3
 #  exit
-# End time: 20:13:36 on Sep 20,2022, Elapsed time: 0:00:01
+# End time: 13:59:30 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

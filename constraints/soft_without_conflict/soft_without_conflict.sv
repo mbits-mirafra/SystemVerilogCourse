@@ -1,32 +1,35 @@
+// Class definition for randomization  
+class pack;  
+  // Declare a 4-bit random variable  
+  rand bit [3:0] a;  
 
-//constraint c_name {soft variable {conditions};}
+  // Constraint: Ensure 'a' is always greater than 5  
+  constraint addr_a { a > 5; }  
+endclass  
 
-class pack;
-rand bit [0:3]a;
-constraint addr_a{a>5;}
-endclass
+// Module to test randomization without soft constraints  
+module soft_without_conflict;  
 
-module soft_without_conflict;
+  pack pkh;  
 
-pack pkh;
-initial begin
+  initial begin  
+    pkh = new();  
+    $display("Without using soft constraint output");  
 
-pkh = new;
-$display("without using soft constraint output");
-  for(int i =0; i<5;i++)
-begin
-void'(pkh.randomize());
+    // Randomization using the default constraint (a > 5)  
+    for (int i = 0; i < 5; i++) begin  
+      void'(pkh.randomize());  
+      $display("\n \t a = %0d value = %0d", i, pkh.a);  
+    end  
 
-$display("\n \t a=%0d value =%0d",i,pkh.a);
-end
-pkh = new;
-$display("\n \t output of without conflict");
-for(int i =0; i<5;i++)
-begin
-void'(pkh.randomize()with {a<10;});
+    pkh = new();  
+    $display("\n \t Output of without conflict");  
 
-$display("\n \t a=%0d value =%0d",i,pkh.a);
-end
-end
-endmodule 
+    // Randomization with an additional inline constraint (a < 10)  
+    for (int i = 0; i < 5; i++) begin  
+      void'(pkh.randomize() with { a < 10; });  
+      $display("\n \t a = %0d value = %0d", i, pkh.a);  
+    end  
+  end  
+endmodule  
 
