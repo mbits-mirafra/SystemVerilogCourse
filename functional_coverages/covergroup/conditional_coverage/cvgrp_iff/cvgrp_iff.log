@@ -1,6 +1,6 @@
 # vsim -cvgperinstance cvgrp_iff -l cvgrp_iff.log -c -do "coverage save -onexit iff.ucdb;run -all;exit;" 
-# Start time: 03:29:54 on Oct 11,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 18:47:20 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,16 +19,16 @@
 # Loading work.cvgrp_iff(fast)
 # coverage save -onexit iff.ucdb
 # run -all
-# a=4 ; b=1 ; coverage %= 0.00
-# a=1 ; b=3 ; coverage %= 0.00
-# a=5 ; b=1 ; coverage %= 0.00
-# if 'b' is 2 then coverpoints are executed ; 	a=5 ; b=2 ; coverage %= 50.00
-# a=1 ; b=1 ; coverage %= 50.00
-# a=6 ; b=1 ; coverage %= 50.00
-# a=5 ; b=0 ; coverage %= 50.00
-# if 'b' is 2 then coverpoints are executed ; 	a=1 ; b=2 ; coverage %= 50.00
-# ** Note: $finish    : cvgrp_iff.sv(21)
+# a = 4 ; b = 1 ; coverage % = 0.00
+# a = 1 ; b = 3 ; coverage % = 0.00
+# a = 5 ; b = 1 ; coverage % = 0.00
+# if 'b' is 2 then coverpoints are executed ; 	a = 5 ; b = 2 ; coverage % = 50.00
+# a = 1 ; b = 1 ; coverage % = 50.00
+# a = 6 ; b = 1 ; coverage % = 50.00
+# a = 5 ; b = 0 ; coverage % = 50.00
+# if 'b' is 2 then coverpoints are executed ; 	a = 1 ; b = 2 ; coverage % = 50.00
+# ** Note: $finish    : cvgrp_iff.sv(35)
 #    Time: 75 ns  Iteration: 1  Instance: /cvgrp_iff
 # Saving coverage database on exit...
-# End time: 03:29:55 on Oct 11,2022, Elapsed time: 0:00:01
+# End time: 18:47:21 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

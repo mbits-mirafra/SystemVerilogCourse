@@ -1,6 +1,6 @@
 # vsim -cvgperinstance cvgrp_start_stop -l cvgrp_start_stop.log -c -do "coverage save -onexit start_stop.ucdb;run -all;exit;" 
-# Start time: 23:42:15 on Oct 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 22:05:23 on Feb 28,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -23,10 +23,12 @@
 # a=0 ; b=0 ; coverage = 31.25
 # a=1 ; b=1 ; coverage = 62.50
 # a=6 ; b=0 ; coverage = 68.75
-# if coverage% is greater than 65%,stop executing covergroup
+# If coverage% is greater than 65%, stop executing covergroup
 # a=7 ; b=1 ; coverage = 68.75
+# If coverage% is greater than 65%, stop executing covergroup
 # a=4 ; b=0 ; coverage = 68.75
+# If coverage% is greater than 65%, stop executing covergroup
 # exit
 # Saving coverage database on exit...
-# End time: 23:42:16 on Oct 07,2022, Elapsed time: 0:00:01
+# End time: 22:05:23 on Feb 28,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

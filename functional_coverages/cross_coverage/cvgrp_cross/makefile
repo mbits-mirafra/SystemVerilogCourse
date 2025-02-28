@@ -1,21 +1,21 @@
+all:
+	make clear;
+	make compile;
+	make simulate;
+	make report;
+
 compile :
-	vlib work;
 	vlog -sv cvgrp_cross.sv
 
-simulate: 
-	    vsim -cvgperinstance cvgrp_cross -l cvgrp_cross.log -c -do \
+simulate:
+	vsim -cvgperinstance cvgrp_cross -l cvgrp_cross.log -c -do \
 				"coverage save -onexit cross.ucdb;run -all;exit;"
 
-report :
+report:
 			vcover report -details cross.ucdb
 
-all :
+clear:
 		clear;
-		  vlib work;
-	    vlog -sv cvgrp_cross.sv
-	    vsim -cvgperinstance cvgrp_cross -l cvgrp_cross.log -c -do \
-				"coverage save -onexit cross.ucdb;run -all;exit;"
-			vcover report -details cross.ucdb
 
 
 

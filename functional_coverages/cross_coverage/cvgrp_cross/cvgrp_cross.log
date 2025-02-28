@@ -1,6 +1,6 @@
 # vsim -cvgperinstance cvgrp_cross -l cvgrp_cross.log -c -do "coverage save -onexit cross.ucdb;run -all;exit;" 
-# Start time: 23:49:53 on Oct 07,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 22:17:53 on Feb 28,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -27,5 +27,5 @@
 # a=1 ; b=1 ; coverage %=91.67
 # exit
 # Saving coverage database on exit...
-# End time: 23:49:54 on Oct 07,2022, Elapsed time: 0:00:01
+# End time: 22:17:54 on Feb 28,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
