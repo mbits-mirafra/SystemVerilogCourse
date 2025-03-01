@@ -4,10 +4,10 @@ all:
 	make simulate;
 
 compile:
-	vlog -sv class.sv
+	vlog -sv local.sv
 
 simulate:
-	vsim work.check_electricity -l class.log -c -do "run -all;exit;"
+	vsim work.local_variable -l local.log -c -do "run -all;exit;"
 
 clear:
 	clear

@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv global_class.sv && vsim global_class -l global_class.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv global_class.sv
 
 simulate:
-	vsim global_class -l global_class.log -c -do "run -all;quit;"
+	vsim work.global_class -l global_class.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

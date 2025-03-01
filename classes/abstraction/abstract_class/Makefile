@@ -1,18 +1,13 @@
 all:
-	rm -rf abstract_op.log
-	rm -rf work 
-	clear
-	vlib work;
-	vlog -sv abstract.sv && vsim abstract_ex -l abstract_op.log -c -do "run -all;quit;"
-							
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-	vlib work;
-	vlog -sv abstract.sv
+	vlog -sv abstract_class.sv
 
 simulate:
-	vsim abstract_ex -l abstract_op.log -c -do "run -all;quit;"
+	vsim work.abstract_class -l abstract_class.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf abstract_op.log
-	rm -rf work
 	clear

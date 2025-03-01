@@ -1,6 +1,6 @@
-# vsim super_ex -l super.log -c -do "run -all;exit" 
-# Start time: 21:58:53 on Sep 14,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# vsim work.abstract_class -l abstract_class.log -c -do "run -all;exit;" 
+# Start time: 01:04:41 on Mar 02,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,9 +16,11 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.super_sv_unit(fast)
-# Loading work.super_ex(fast)
+# Loading work.abstract_class_sv_unit(fast)
+# Loading work.abstract_class(fast)
 # run -all
-# switch is ON  that's why fan is ON exit
-# End time: 21:58:54 on Sep 14,2022, Elapsed time: 0:00:01
+# 1.Value of a = 5
+# 2.Value of a = 10
+# exit
+# End time: 01:04:42 on Mar 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

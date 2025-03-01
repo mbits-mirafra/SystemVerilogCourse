@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv over_riding_class.sv && vsim over_riding -l over_riding_class.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
-	vlog -sv over-riding_class.sv
+	vlog -sv over_riding_class.sv
 
 simulate:
-	vsim over_riding -l over_riding_class.log -c -do "run -all;quit;"
+	vsim work.over_riding -l over_riding_class.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

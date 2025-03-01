@@ -1,6 +1,6 @@
-# vsim over_riding -l over_riding_class.log -c -do "run -all;quit;" 
-# Start time: 02:55:18 on Oct 01,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim work.over_riding -l over_riding_class.log -c -do "run -all;exit;" 
+# Start time: 16:38:59 on Mar 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,9 +20,9 @@
 # Loading work.over_riding(fast)
 # run -all
 # contents before over-riding
-# Team=Team3,	 members=4,	 place=
+# Team=Team3,	 members=4,	 place=manipal
 # contents after over-riding
-# Team=BJT,	 members=8,	 place=Manipal
-# quit
-# End time: 02:55:19 on Oct 01,2022, Elapsed time: 0:00:01
+# Team=BJT,	 members=8,	 place=mirafra
+# exit
+# End time: 16:39:00 on Mar 01,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

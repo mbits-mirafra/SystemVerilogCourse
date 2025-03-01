@@ -1,19 +1,13 @@
 all:
-	rm -rf handle.log
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv handle.sv && vsim tb -l handle.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv handle.sv
 
 simulate:
-	vsim tb -l handle.log -c -do "run -all;quit;"
+	vsim work.tb -l handle.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf handle.log
-	rm -rf work
 	clear
-

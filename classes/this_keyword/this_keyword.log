@@ -1,5 +1,5 @@
-# vsim pub -l pub_op.log -c -do "run -all;quit;" 
-# Start time: 22:52:51 on Sep 27,2022
+# vsim work.check_electricity -l this_keyword.log -c -do "run -all;exit;" 
+# Start time: 12:04:42 on Mar 01,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,12 +16,11 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.pub_sv_unit(fast)
-# Loading work.pub(fast)
+# Loading work.this_keyword_sv_unit(fast)
+# Loading work.check_electricity(fast)
 # run -all
-# sum = 15
-# 1.d = 5
-# 2.d = 10
-# quit
-# End time: 22:52:52 on Sep 27,2022, Elapsed time: 0:00:01
+# Inside class method :- switch is ON that's why fan is ON
+# Outside class :- switch is ON that's why fan is ON
+# exit
+# End time: 12:04:43 on Mar 01,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

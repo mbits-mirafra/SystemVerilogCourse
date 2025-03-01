@@ -10,13 +10,13 @@ class home;
   extern function void display();
 endclass:home
 
-//function implementation outside class body
+//function implementation outside class body using scope resolution
 function void home::display();
   string switch="OFF";
   $display("The switch is %0s that's why fan is %0s",fan,switch);
 endfunction:display
 
-module extern_example;
+module extern_keyword;
   home h;
 
   initial begin:BEGIN_I
@@ -26,4 +26,4 @@ module extern_example;
     h.display;
   end:BEGIN_I
 
-endmodule:extern_example
+endmodule:extern_keyword

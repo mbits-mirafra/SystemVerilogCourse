@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv class_assignment.sv && vsim assignment -l class_assignment.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv class_assignment.sv
 
 simulate:
-	vsim assignment -l class_assignment.log -c -do "run -all;quit;"
+	vsim work.assignment -l class_assignment.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

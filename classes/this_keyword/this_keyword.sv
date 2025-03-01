@@ -2,7 +2,6 @@
 //The this keyword resolves the ambiguity of a compiler when
 //class properties and arguments passed to class methods are the same.
 //--------------------------------------------------------------------
-
 class base_class; //define a class
 
   //define a properties of class

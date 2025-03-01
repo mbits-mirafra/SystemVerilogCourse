@@ -1,6 +1,6 @@
-# vsim virtual_task -l virtual_task.log -c -do "run -all;quit;" 
-# Start time: 22:45:19 on Oct 03,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim work.virtual_task -l virtual_task.log -c -do "run -all;exit;" 
+# Start time: 16:17:56 on Mar 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,9 +19,9 @@
 # Loading work.virtual_task_sv_unit(fast)
 # Loading work.virtual_task(fast)
 # run -all
-# contents of pp0
+# contents of p1
 # c=BJT
 # d=8
-# quit
-# End time: 22:45:20 on Oct 03,2022, Elapsed time: 0:00:01
+# exit
+# End time: 16:17:57 on Mar 01,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

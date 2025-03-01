@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv virtual_task.sv && vsim virtual_task -l virtual_task.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv virtual_task.sv
 
 simulate:
-	vsim virtual_task -l virtual_task.log -c -do "run -all;quit;"
+	vsim work.virtual_task -l virtual_task.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

@@ -25,10 +25,12 @@ class Mirafra;
 endclass:Mirafra
 
 module static_properties;
-  Mirafra m[4];//declared array of m here
+  Mirafra m[4];//declared class handle using array of m here
 
   initial begin:BEGIN_I
   
+    //this loop create memory for handle m[i] and 
+    //because of static property it will increament team value
     foreach(m[i]) begin:BEGIN_LOOP
       m[i] = new();
       $display("contents of teams");

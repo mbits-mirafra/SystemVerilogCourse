@@ -1,18 +1,13 @@
 all:
-	rm -rf prot_op.log
-	rm -rf work 
-	clear
-	vlib work;
-	vlog -sv prot.sv && vsim prot -l prot_op.log -c -do "run -all;quit;"
-							
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-	vlib work;
-	vlog -sv prot.sv
+	vlog -sv protected.sv
 
 simulate:
-	vsim prot -l prot_op.log -c -do "run -all;quit;"
+	vsim work.protected_variable -l protected.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf prot_op.log
-	rm -rf work
 	clear

@@ -1,17 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work
-	vlog -sv without_this.sv && vsim check_electricity -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-		vlib work
-		vlog -sv without_this.sv
+	vlog -sv without_this.sv
 
 simulate:
-		vsim check_electricity -l this.log -c -do "run -all;quit;"
+	vsim work.check_electricity -l without_this.log -c -do "run -all;exit;"
 
 clear:
-		
-	rm -rf work
 	clear
