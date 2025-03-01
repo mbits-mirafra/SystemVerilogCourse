@@ -1,6 +1,6 @@
 # vsim -cvgperinstance explicit_bin -l explicit_bin.log -c -do "coverage save -onexit explicit_bin.ucdb;run -all;exit;" 
-# Start time: 00:19:18 on Oct 08,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 09:15:46 on Mar 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,12 +19,12 @@
 # Loading work.explicit_bin(fast)
 # coverage save -onexit explicit_bin.ucdb
 # run -all
-# a=4,coverage = 0.00 %
-# a=1,coverage = 0.00 %
-# a=1,coverage = 0.00 %
-# a=3,coverage = 50.00 %
-# a=5,coverage = 50.00 %
+# a = 4, coverage = 0.00 %
+# a = 1, coverage = 0.00 %
+# a = 1, coverage = 0.00 %
+# a = 3, coverage = 50.00 %
+# a = 5, coverage = 50.00 %
 # exit
 # Saving coverage database on exit...
-# End time: 00:19:20 on Oct 08,2022, Elapsed time: 0:00:02
+# End time: 09:15:47 on Mar 01,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

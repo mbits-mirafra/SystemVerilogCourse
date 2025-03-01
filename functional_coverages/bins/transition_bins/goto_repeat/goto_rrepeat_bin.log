@@ -1,5 +1,5 @@
-# vsim -cvgperinstance ignore_bin -l ignore_bin.log -c -do "coverage save -onexit ignore_bin.ucdb;run -all;exit;" 
-# Start time: 10:03:59 on Mar 01,2025
+# vsim -cvgperinstance goto_repeat_bin -l goto_rrepeat_bin.log -c -do "coverage save -onexit goto_repeat_bin.ucdb;run -all;exit;" 
+# Start time: 09:57:02 on Mar 01,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,14 +16,20 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.ignore_bin(fast)
-# coverage save -onexit ignore_bin.ucdb
+# Loading work.goto_repeat_bin(fast)
+# coverage save -onexit goto_repeat_bin.ucdb
 # run -all
-# val = 0, cov = 50.00 %
-# val = 1, cov = 50.00 %
-# val = 2, cov = 50.00 %
-# val = 3, cov = 100.00 %
+# val =  1, cov = 0.00 %
+# val =  2, cov = 0.00 %
+# val =  3, cov = 0.00 %
+# val =  4, cov = 0.00 %
+# val =  3, cov = 0.00 %
+# val =  4, cov = 0.00 %
+# val =  2, cov = 0.00 %
+# val =  3, cov = 0.00 %
+# val =  4, cov = 0.00 %
+# val =  5, cov = 100.00 %
 # exit
 # Saving coverage database on exit...
-# End time: 10:04:00 on Mar 01,2025, Elapsed time: 0:00:01
+# End time: 09:57:02 on Mar 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

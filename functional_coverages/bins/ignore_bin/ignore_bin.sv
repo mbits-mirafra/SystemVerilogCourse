@@ -1,23 +1,32 @@
 module ignore_bin;
 
-  bit [0:1] a;
-  bit [0:1] values[$]= '{0,1,2,3};
+  // Declare a 2-bit variable 'a'
+  bit [1:0] a;
 
-covergroup cov_grp;
-  c1 : coverpoint a {
-                    ignore_bins b1 ={1,2};
-                   }
-  
+  // Declare a dynamic array with predefined values
+  bit [1:0] values[$] = '{0,1,2,3};
+
+  // Define a covergroup with ignored bins
+  covergroup cov_grp;
+    c1 : coverpoint a {
+      ignore_bins b1 = {1,2}; // Ignore values 1 and 2 from coverage
+    }
   endgroup
-  
+
+  // Create an instance of the covergroup
   cov_grp cg = new();
+
   initial
   begin
+    // Iterate over each value in the array and sample coverage
     foreach(values[i])
-      begin
-        a = values[i];
-        cg.sample();
-        $display("val=%d,cov = %.2f %%",a,cg.get_inst_coverage());
-      end
-  end 
+    begin
+      a = values[i]; // Assign value from the array
+      cg.sample();   // Sample coverage
+
+      // Display the current value and coverage percentage
+      $display("val = %d, cov = %.2f %%", a, cg.get_inst_coverage());
+    end
+  end
 endmodule
+

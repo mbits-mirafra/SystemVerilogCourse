@@ -1,0 +1,7 @@
+# vsim -cvgperinstance set_of_trans_bin -l set_of_trans_bin set_of_trans_bin.log -c -do "coverage save -onexit set_of_trans_bin.ucdb;run -all;exit;" 
+# Start time: 09:30:30 on Mar 01,2025
+# ** Error (suppressible): (vsim-19) Failed to access library 'set_of_trans_bin' at "set_of_trans_bin".
+# Not a directory. (errno = ENOTDIR)
+# Error loading design
+# End time: 09:30:30 on Mar 01,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

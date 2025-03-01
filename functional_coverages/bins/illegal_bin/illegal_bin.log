@@ -1,6 +1,6 @@
 # vsim -cvgperinstance illegal_bin -l illegal_bin.log -c -do "coverage save -onexit illegal_bin.ucdb;run -all;exit;" 
-# Start time: 00:22:31 on Oct 08,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 10:06:15 on Mar 01,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,13 +19,13 @@
 # Loading work.illegal_bin(fast)
 # coverage save -onexit illegal_bin.ucdb
 # run -all
-# val=0,cov = 33.33 %
-# val=1,cov = 66.67 %
+# val = 0, cov = 33.33 %
+# val = 1, cov = 66.67 %
 # ** Error: (vsim-8565) Illegal state bin was hit at value=2. The bin counter for the illegal bin '\/illegal_bin/cg .c1.b1' is 1.
 #    Time: 0 ns  Iteration: 0  Instance: /illegal_bin
-# val=2,cov = 66.67 %
-# val=3,cov = 100.00 %
+# val = 2, cov = 66.67 %
+# val = 3, cov = 100.00 %
 # exit
 # Saving coverage database on exit...
-# End time: 00:22:32 on Oct 08,2022, Elapsed time: 0:00:01
+# End time: 10:06:16 on Mar 01,2025, Elapsed time: 0:00:01
 # Errors: 1, Warnings: 0

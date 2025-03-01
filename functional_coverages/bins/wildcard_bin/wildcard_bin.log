@@ -1,6 +1,6 @@
 # vsim -cvgperinstance wildcard_bin -l wildcard_bin.log -c -do "coverage save -onexit wildcard_bin.ucdb;run -all;exit;" 
-# Start time: 00:33:34 on Oct 08,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 10:00:45 on Mar 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,11 +19,11 @@
 # Loading work.wildcard_bin(fast)
 # coverage save -onexit wildcard_bin.ucdb
 # run -all
-# val= 8,cov = 50.00 %
-# val= 9,cov = 50.00 %
-# val=10,cov = 100.00 %
-# val=11,cov = 100.00 %
+# val =  8, cov = 50.00 %
+# val =  9, cov = 50.00 %
+# val = 10, cov = 100.00 %
+# val = 11, cov = 100.00 %
 # exit
 # Saving coverage database on exit...
-# End time: 00:33:35 on Oct 08,2022, Elapsed time: 0:00:01
+# End time: 10:00:46 on Mar 01,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

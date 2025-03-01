@@ -1,6 +1,6 @@
 # vsim -cvgperinstance range_of_repeat_bin -l range_of_repeat_bin.log -c -do "coverage save -onexit range_of_repeat_bin.ucdb;run -all;exit;" 
-# Start time: 00:27:35 on Oct 08,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 09:52:30 on Mar 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,15 +19,15 @@
 # Loading work.range_of_repeat_bin(fast)
 # coverage save -onexit range_of_repeat_bin.ucdb
 # run -all
-# val= 2,cov = 0.00 %
-# val= 3,cov = 0.00 %
-# val= 2,cov = 0.00 %
-# val= 2,cov = 0.00 %
-# val= 2,cov = 50.00 %
-# val= 2,cov = 50.00 %
-# val= 4,cov = 50.00 %
-# val= 4,cov = 50.00 %
+# val =  2, cov = 0.00 %
+# val =  3, cov = 0.00 %
+# val =  2, cov = 0.00 %
+# val =  2, cov = 0.00 %
+# val =  2, cov = 50.00 %
+# val =  2, cov = 50.00 %
+# val =  4, cov = 50.00 %
+# val =  4, cov = 50.00 %
 # exit
 # Saving coverage database on exit...
-# End time: 00:27:35 on Oct 08,2022, Elapsed time: 0:00:00
+# End time: 09:52:31 on Mar 01,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

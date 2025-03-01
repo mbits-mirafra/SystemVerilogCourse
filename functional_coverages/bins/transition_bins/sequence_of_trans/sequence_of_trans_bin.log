@@ -1,5 +1,5 @@
 # vsim -cvgperinstance sequence_of_trans_bin -l sequence_of_trans_bin.log -c -do "coverage save -onexit sequence_of_trans_bin.ucdb;run -all;exit;" 
-# Start time: 00:29:10 on Oct 08,2022
+# Start time: 09:28:15 on Mar 01,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -25,5 +25,5 @@
 # val= 4,cov = 50.00 %
 # exit
 # Saving coverage database on exit...
-# End time: 00:29:11 on Oct 08,2022, Elapsed time: 0:00:01
+# End time: 09:28:15 on Mar 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
