@@ -1,0 +1,130 @@
+Command: vcs -V -R -full64 -sverilog +v2k -debug_access+all ended.sv -l ended.log \
+
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
+-Masflags= -Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mxllcflags= -Mxcflags= -pipe -fPIC -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
+-Mldflags= -rdynamic  -Mout=simv -Mamsrun="" -Mvcsaceobjs="" -Mobjects=" /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvirsim.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/liberrorinf.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libsnpsmalloc.so \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/libvfs.so " -Mexternalobj= \
+-Msaverestoreobj=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+-Mcrt0= -Mcrtn="" -Mcsrc="" -Msyslibs=/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -l ended.log -Xvcs_run_simv=1 -V -full64 +v2k -debug_access+all +vpi +vcsd1 \
++itf+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcsdp_lite.tab \
+-picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
+-fsdb -sverilog -gen_obj ended.sv  
+                         Chronologic VCS (TM)
+      Version Q-2020.03-SP2-8_Full64 -- Sun Mar  2 19:49:43 2025
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file 'ended.sv'
+Top Level Modules:
+       assertion_ex
+No TimeScale specified
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module assertion_ex
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20250302141943_11069 product \
+)
+make[2]: Entering directory `/hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/disable_ended_assertion/ended_assertion/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib -L/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _11450_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
+/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
+/hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+make[2]: Leaving directory `/hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/disable_ended_assertion/ended_assertion/csrc' \
+
+Running simv -V +v2k -a ended.log 
+Command: /hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/disable_ended_assertion/ended_assertion/./simv -V +v2k -a ended.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Mar  2 19:49 2025
+VCS Build Date = Sep 11 2021 20:22:52
+Start run at Mar  2 19:49 2025
+
+"ended.sv", 45: assertion_ex.a_1: started at 5s failed at 45s
+	Offending 'seq_2.ended'
+Info: "ended.sv", 45: assertion_ex.a_1: at time 45
+failed
+"ended.sv", 45: assertion_ex.a_1: started at 15s failed at 55s
+	Offending 'seq_2.ended'
+Info: "ended.sv", 45: assertion_ex.a_1: at time 55
+failed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 65
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 75
+passed
+"ended.sv", 45: assertion_ex.a_1: started at 45s failed at 85s
+	Offending 'seq_2.ended'
+Info: "ended.sv", 45: assertion_ex.a_1: at time 85
+failed
+"ended.sv", 45: assertion_ex.a_1: started at 55s failed at 95s
+	Offending 'seq_2.ended'
+Info: "ended.sv", 45: assertion_ex.a_1: at time 95
+failed
+"ended.sv", 45: assertion_ex.a_1: started at 65s failed at 105s
+	Offending 'seq_2.ended'
+Info: "ended.sv", 45: assertion_ex.a_1: at time 105
+failed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 135
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 145
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 155
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 165
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 175
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 185
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 195
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 205
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 215
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 225
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 235
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 245
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 255
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 265
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 275
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 285
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 295
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 305
+passed
+Info: "ended.sv", 45: assertion_ex.a_1: at time 315
+passed
+$finish called from file "ended.sv", line 21.
+$finish at simulation time                  322
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 322
+CPU Time:      0.440 seconds;       Data structure size:   0.0Mb
+Sun Mar  2 19:49:50 2025
+CPU time: .322 seconds to compile + .262 seconds to elab + .429 seconds to link + .478 seconds in simulation

@@ -1,10 +1,9 @@
-clear:
-		   clear
-		
+all:
+	make clear
+	make simulate
+
 simulate:
-	vcs -V -R -full64 -sverilog +v2k -debug_access +all -l isunknown.log isunknown.sv 
+	vcs -V -R -full64 -sverilog +v2k -debug_access +all isunknown.sv -l isunknown.log
 
-all:	
-	 make clear;
-	 make simulate;
-
+clear:
+	clear

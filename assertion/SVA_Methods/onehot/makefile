@@ -1,10 +1,9 @@
-clear:
-		   clear
-		
+all:
+	make clear
+	make simulate
+
 simulate:
-	vcs -V -R -full64 -sverilog +v2k -debug_access +all -l onehot.log onehot.sv 
+	vcs -V -R -full64 -sverilog +v2k -debug_access +all onehot.sv -l onehot.log
 
-all:	
-	 make clear;
-	 make simulate;
-
+clear:
+	clear

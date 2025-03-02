@@ -1,4 +1,4 @@
-Command: vcs -V -R -full64 -sverilog +v2k -debug_access +all -l past.log past.sv \
+Command: vcs -V -R -full64 -sverilog +v2k -debug_access +all past.sv -l past.log \
 
 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/bin/vcs1 -Mcc=gcc -Mcplusplus=g++ \
 -Masflags= -Mcfl= -pipe -fPIC -O -I/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/include \
@@ -13,7 +13,7 @@ Command: vcs -V -R -full64 -sverilog +v2k -debug_access +all -l past.log past.sv
 +all -picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
 -fsdb -sverilog -gen_obj past.sv  
                          Chronologic VCS (TM)
-      Version Q-2020.03-SP2-8_Full64 -- Tue Oct 11 02:09:22 2022
+      Version Q-2020.03-SP2-8_Full64 -- Sun Mar  2 18:36:11 2025
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -29,60 +29,63 @@ Starting vcs inline pass...
 
 1 module and 0 UDP read.
 recompiling module past
-( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221010203921_19068 product \
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20250302130610_6958 product \
 )
-make[2]: Entering directory `/hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/SVA_Methods/past/csrc' \
+make[2]: Entering directory `/hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/SVA_Methods/past/csrc' \
 
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
 if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib -L/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib \
--Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _20202_archive_1.so \
-SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
--lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _8057_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
 -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
 /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
 -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-make[2]: Leaving directory `/hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/SVA_Methods/past/csrc' \
+make[2]: Leaving directory `/hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/SVA_Methods/past/csrc' \
 
 Running simv -V +v2k +all -a past.log 
-Command: /hwetools/work_area/frontend/gopal_b7/git_test1/My_Github_exp/My_Github_exp/System_Verilog/Assertions/SVA_Methods/past/./simv -V +v2k +all -a past.log
+Command: /hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/SVA_Methods/past/./simv -V +v2k +all -a past.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 11 02:09 2022
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Mar  2 18:36 2025
 VCS Build Date = Sep 11 2021 20:22:52
-Start run at Oct 11 02:09 2022
+Start run at Mar  2 18:36 2025
 
-"past.sv", 32: past.a_1: started at 25s failed at 25s
+"past.sv", 38: past.a_1: started at 25s failed at 25s
 	Offending '($past(b, 2) == 1)'
-Info: "past.sv", 32: past.a_1: at time 25
-Fail
-Info: "past.sv", 32: past.a_1: at time 45
-Pass
-Info: "past.sv", 32: past.a_1: at time 65
-Pass
-Info: "past.sv", 32: past.a_1: at time 85
-Pass
-"past.sv", 32: past.a_1: started at 95s failed at 95s
+Info: "past.sv", 38: past.a_1: at time 25
+fail
+Info: "past.sv", 38: past.a_1: at time 45
+pass
+Info: "past.sv", 38: past.a_1: at time 65
+pass
+Info: "past.sv", 38: past.a_1: at time 85
+pass
+"past.sv", 38: past.a_1: started at 95s failed at 95s
 	Offending '($past(b, 2) == 1)'
-Info: "past.sv", 32: past.a_1: at time 95
-Fail
-Info: "past.sv", 32: past.a_1: at time 105
-Pass
-"past.sv", 32: past.a_1: started at 125s failed at 125s
+Info: "past.sv", 38: past.a_1: at time 95
+fail
+Info: "past.sv", 38: past.a_1: at time 105
+pass
+"past.sv", 38: past.a_1: started at 125s failed at 125s
 	Offending '($past(b, 2) == 1)'
-Info: "past.sv", 32: past.a_1: at time 125
-Fail
-"past.sv", 32: past.a_1: started at 145s failed at 145s
+Info: "past.sv", 38: past.a_1: at time 125
+fail
+"past.sv", 38: past.a_1: started at 145s failed at 145s
 	Offending '($past(b, 2) == 1)'
-Info: "past.sv", 32: past.a_1: at time 145
-Fail
-$finish called from file "past.sv", line 23.
+Info: "past.sv", 38: past.a_1: at time 145
+fail
+$finish called from file "past.sv", line 28.
 $finish at simulation time                  155
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 155
-CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
-Tue Oct 11 02:09:38 2022
-CPU time: .299 seconds to compile + .250 seconds to elab + .355 seconds to link + .460 seconds in simulation
+CPU Time:      0.450 seconds;       Data structure size:   0.0Mb
+Sun Mar  2 18:36:17 2025
+CPU time: .324 seconds to compile + .262 seconds to elab + .433 seconds to link + .482 seconds in simulation

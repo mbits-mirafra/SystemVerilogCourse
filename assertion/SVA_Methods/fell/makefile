@@ -1,10 +1,9 @@
-clear:
-		   clear
-		
+all:
+	make clear
+	make simulate
+
 simulate:
-	vcs -V -R -full64 -sverilog +v2k -debug_access +all -l fell.log fell.sv 
+	vcs -V -R -full64 -sverilog +v2k -debug_access +all fell.sv -l fell.log
 
-all:	
-	 make clear;
-	 make simulate;
-
+clear:
+	clear

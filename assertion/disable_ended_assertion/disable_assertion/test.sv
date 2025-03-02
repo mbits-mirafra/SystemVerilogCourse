@@ -1,54 +1,63 @@
 //module AND_gate_tb;
 module AND_Gate;
-reg A;
-reg B;
-reg clk;
-wire Y;
-reg rst;
-
-//Design instantiation
-andgate inst(.A(A), .B(B), .Y(Y), .clk(clk), .rst(rst));
-
+  //declared variable to drive values from test to dut
+  reg A;
+  reg B;
+  reg clk;
+  wire Y;
+  reg rst;
+  
+  //Design instantiation
+  andgate inst(.A(A), .B(B), .Y(Y), .clk(clk), .rst(rst));
+  
+  //generation clock
   always #5 clk = ~clk;
-  initial
-  begin
-  rst <=1; //reset is asserted
-  clk<=1;
-  A<=0;
-  B<=0;
 
-  #10
-  A<=0;
-  B<=1;
- 
- 
-  #12
-  rst <=0;//reset is deasserted
-  A<=1;
-  B<=0;
-
- #10
-  A<=1;
-  B<=1;
-
-  #30 $finish;
+  initial begin
+    // Initialize signals at time 0
+    rst <=1; //reset is asserted
+    clk<=1;
+    A<=0;
+    B<=0;
+  
+    // Apply test cases every delay time units
+    #10;
+    A<=0;
+    B<=1;
+   
+    #12;
+    rst <=0; //reset is deasserted
+    A<=1;
+    B<=0;
+  
+    #10;
+    A<=1;
+    B<=1;
+  
+    // Wait for 30 time units before terminating the simulation
+    #30;
+    // End the simulation
+    $finish;
   end
-//-------------------------------------------------------
-// Disable iff is used to disable the property when the
-// reset is active. Assertion output is disable whether it
-// failure or pass.It is used when we don't want to check 
-// some conditions
-//-------------------------------------------------------
-property p;
-  @(posedge clk) disable iff(rst)//disable if reset is assereted
-    A&&B;
+  //-------------------------------------------------------
+  // Disable iff is used to disable the property when the
+  // reset is active. Assertion output is disable whether it
+  // failure or pass.It is used when we don't want to check 
+  // some conditions
+  //-------------------------------------------------------
+  property p;
+    @(posedge clk) disable iff(rst) //disable if reset is assereted
+    A && B;
   endproperty
-
-  assert property (p) $display("time=%0t,A=%0b and B=%0b, assertion success\n",$time,A,B);
-  else $display("time=%0t, A=%0b and B=%0b,assertion failure\n", $time,A,B);
-initial
-begin
-  $dumpfile("waveform.vcd");
-  $dumpvars();
-end
+  
+  assert property (p) 
+    $display("time=%0t,A=%0b and B=%0b, assertion success\n",$time,A,B);
+  else 
+    $display("time=%0t, A=%0b and B=%0b,assertion failure\n", $time,A,B);
+ 
+  // Initial block to generate waveform dump for simulation
+  initial begin
+    $dumpfile("waveform.vcd");
+    $dumpvars();
+  end
 endmodule:AND_Gate
