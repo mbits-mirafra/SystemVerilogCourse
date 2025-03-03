@@ -11,7 +11,7 @@ module func_pass_by_variables;
   initial begin
     $display("\t ----output for function passing by values through variables-----");
     //-------------------------------------------------------
-    // assigning values to addend and augend
+    // assigning values to a and b 
     //-------------------------------------------------------
     a = 5;
     b = 6;
@@ -30,6 +30,7 @@ module func_pass_by_variables;
   //-------------------------------------------------------
   function int sum(input int a,b);
     $display("\n\tentered into function");
+    //returning sum of a+b
     return a + b;
   endfunction : sum
 

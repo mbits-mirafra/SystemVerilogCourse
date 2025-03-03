@@ -9,7 +9,8 @@ module func_pass_by_positional;
     $display("\tcalling the function");
     //-------------------------------------------------------
     // calling the function with passing 5,6 by using
-    // names of function variables and return value storing in variable result
+    // names of function variables and in order of arguments
+    // and return value storing in variable result
     //-------------------------------------------------------
     result=sum(.var1(5),.var2(6));
     $display("\treturned from function and");
@@ -21,6 +22,7 @@ module func_pass_by_positional;
   //-------------------------------------------------------
   function int sum(input int var1,var2);
     $display("\n\tentered into function");
+    //returning sum value of var1 and var2
     return var1+var2;
   endfunction : sum
 

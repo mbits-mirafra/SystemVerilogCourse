@@ -1,5 +1,5 @@
 # vsim work.func_pass_by_ref -l func_pass_by_ref_log.log -c -do "run -all;exit;" 
-# Start time: 20:57:29 on Feb 24,2025
+# Start time: 11:06:08 on Mar 03,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -15,20 +15,5 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Loading sv_std.std
-# Loading work.func_pass_by_ref(fast)
-# run -all
-# 	 ----output for function passing by reference -----
-# 	Before calling function -> addend = 5 , augend = 6
-# 	calling the functions
-# 
-# 	entered into without ref function
-# 	swapped variables by without using ref 
-# 	after calling function without ref -> addend = 5, augend =6
-# 
-# 	entered into with ref function
-# 	swapped variables by using ref 
-# 	after calling function with ref -> addend = 6, augend =5
-# exit
-# End time: 20:57:29 on Feb 24,2025, Elapsed time: 0:00:00
+# End time: 11:06:19 on Mar 03,2025, Elapsed time: 0:00:11
 # Errors: 0, Warnings: 0

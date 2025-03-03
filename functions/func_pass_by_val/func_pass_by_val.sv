@@ -11,7 +11,8 @@ module func_pass_by_val;
     $display("\t ----output for function passing by values directly-----");
     $display("\t calling the function");
     //-------------------------------------------------------
-    // calling the function with passing 5,6 directly and return value storing in variable result
+    // calling the function with passing 5,6 directly 
+    // and return value storing in variable result
     //-------------------------------------------------------
     result=sum(5,6);
     $display("\treturned from function and");
@@ -23,6 +24,7 @@ module func_pass_by_val;
   //-------------------------------------------------------
   function int sum(input int var1,var2);
     $display("\n\tentered into function");
+    //returning sum of var1+var2
     return var1+var2;
   endfunction : sum
 
