@@ -5,6 +5,7 @@
 module top;
   bit clk=1;
   initial
+    //generation clock
     forever #5 clk = ~clk;
 
   //creating interface instance
@@ -17,5 +18,6 @@ module top;
   test t2(intf);
 
   initial
+    //monitoring value d and q at every change
     $monitor("DUT side [%0t] = d data is: %d and q data is: %d",$time,intf.cb.d, intf.cb.q);
 endmodule : top
