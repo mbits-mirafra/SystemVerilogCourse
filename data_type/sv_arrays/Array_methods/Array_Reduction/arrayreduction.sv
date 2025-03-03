@@ -14,18 +14,23 @@ initial begin
 
   $display("\n OUTPUT : ");
 
+  // Use the sum() method to calculate the sum of all elements in the array
   res = array.sum(); 
   $display("\n // sum()-sum of all element of array: \n\t%0d", res);
 
+  // Use the product() method to calculate the product of all elements in the array
   res = array.product(); 
   $display("\n // product()-product of all element of array: \n\t%0d", res);
 
+  // Use the and() method to perform a bitwise AND operation on all elements of the array
   res = array.and(); 
   $display("\n // and()-Bitwise AND operation of all element of array: \n\t%b", res);
 
+  // Use the or() method to perform a bitwise OR operation on all elements of the array
   res = array.or(); 
   $display("\n // or()-Bitwise OR operation of all element of array: \n\t%b", res);
 
+  // Use the xor() method to perform a bitwise XOR operation on all elements of the array
   res = array.xor(); 
   $display("\n // xor()-Bitwise XOR operation of all element of array: \n\t%b", res);
   $display("");

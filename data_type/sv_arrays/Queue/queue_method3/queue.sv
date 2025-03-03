@@ -16,13 +16,15 @@ initial begin
   //  queue1.size();
   $display("\n // size()-The size of queue1: \n\t\t%p", queue1.size());
 
+  // Deleting the element at index 0 (which is '2' in this case)
   queue1.delete(0);
   $display("\n // delete()-After Deleting the int type value '7' from the queue1: \n\t%p", queue1);
 
+  // Inserting the value '2' at index 0
   queue1.insert(0, 2);
   $display("\n // insert()-After insert the array element '2' at zeroth index position of queue1: \n\t%p", queue1);
  // $display("");
-
+  //deleting the whole array
   queue1.delete();
   $display("\n // Deleting the whole array elements of queue1: \n\t{%0p}",  queue1);
 

@@ -1,17 +1,15 @@
 // module declaration for packed array
 module packed_array;
 
-//first declaring single bit data type bit,logic
-  bit [3:0]abc;
-  logic [15:0]pqr;
-  reg [7:0]xyz;
+  bit [3:0]abc;       // 4-bit packed array using 'bit' (only stores 0 or 1)
+  logic [15:0] pqr;   // 16-bit packed array using 'logic' (stores 0, 1, x, z)
+  reg [7:0] xyz;      // 8-bit packed array using 'reg' (legacy type, similar to logic
 
  initial begin
-  // assigning value to the array
-  abc = 4'b0110;
-  pqr = 16'h10fe;
-  xyz = 8'd16;
- 
+  abc = 4'b0110;     // Assigning a 4-bit binary value to 'abc'  
+  pqr = 16'h10FE;    // Assigning a 16-bit hexadecimal value to 'pqr'  
+  xyz = 8'd16;       // Assigning an 8-bit decimal value to 'xyz'  
+  
   $display("");
   $display("// example for single dimensional packed array");
   $display("");

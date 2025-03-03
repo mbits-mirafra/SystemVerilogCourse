@@ -1,6 +1,6 @@
 # vsim associative_array -l associative_array.log -c -do "run -all;quit;" 
-# Start time: 00:10:52 on Aug 26,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 14:52:51 on Mar 03,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -28,5 +28,5 @@
 # pqr = '{"fruits":"mango", "season":"monsoon", "vegetables":"cucumber" }
 # 
 # quit
-# End time: 00:10:52 on Aug 26,2022, Elapsed time: 0:00:00
+# End time: 14:52:51 on Mar 03,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

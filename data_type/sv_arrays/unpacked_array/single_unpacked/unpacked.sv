@@ -1,12 +1,11 @@
 // module declaration for packed array
 module unpacked_array;
 
-//declaring byte and int type for unpacked arrays
-  byte a[8];
-  int abc[10];
+  byte a[8]; // Unpacked array of 8 elements (each byte is 8-bit signed)
+  int abc[10];  // Unpacked array of 10 elements (each int is 32-bit signed)
 
   initial begin
-    // assigning value to array
+    // Assigning values to the unpacked array 'a' using an array literal
     a = '{4,5,6,2,3,7,9,10};
     
     // generating random values between (10,50) for int type unpacked arrays
@@ -27,7 +26,7 @@ module unpacked_array;
     $display("// displaying another unpacked array values in one line");
     $display("abc = %p",abc);
     $display("");
-  end
+    end
 endmodule : unpacked_array
 
 

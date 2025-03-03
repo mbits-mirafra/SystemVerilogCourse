@@ -27,18 +27,23 @@ initial begin
   $display("\n // find()-Returns all elements satisfying (check >='oldtown'):\n\t %p", result);
   // $display("find the index of the name : %0d",a);
 
+  // Use the find_index() method to return the indices of all elements that satisfy the condition (check == "yelahanka")
   a = array.find_index(check) with (check =="yelahanka");
   $display("\n // find_index()-Returns the indices of all elements satisfying(check =='yelahanka'):\n\t %p",a);
 
+  // Use the find_first() method to return the first element that satisfies the condition (check < "yelahanka" & check >= "newton")
   result = array.find_first(check) with (check < "yelahanka" & check >= "newton" );
   $display("\n // find_first()-Returns the first element satisfying(check < 'yelahanka' & check >= 'newton' ): \n\t %p",result);
 
+  // Use the find_first_index() method to return the index of the first element that satisfies the condition (check < "yelahanka")
   a = array.find_first_index(check) with (check < "yelahanka");
   $display("\n // find_first_index()-Returns the index of the first element satisfying(check < 'yelahanka'): \n\t %p",a);
 
+  // Use the find_last() method to return the last element that satisfies the condition (check < "oldtown")
   result = array.find_last(check) with (check <"oldtown");
   $display("\n // find_last()- Returns the last element satisfying(check <'oldtown'): \n\t %p", result);
 
+   // Use the find_last_index() method to return the index of the last element that satisfies the condition (check < "oldtown")
   a = array.find_last_index(check) with (check < "oldtown");
   $display("\n // find_last_index()-Returns the index of the last element satisfying (check < 'oldtown'): \n\t %p", a);
   $display("");

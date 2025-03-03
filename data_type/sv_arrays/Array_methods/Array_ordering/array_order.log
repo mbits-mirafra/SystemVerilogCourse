@@ -1,6 +1,6 @@
 # vsim array_order -l array_order.log -c -do "run -all; exit;" 
-# Start time: 21:58:53 on Aug 25,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 17:18:16 on Mar 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -42,5 +42,5 @@
 # 	'{1, 0, 6, 9, 7, 7, 2, 9}
 # 
 #  exit
-# End time: 21:58:54 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 17:18:17 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

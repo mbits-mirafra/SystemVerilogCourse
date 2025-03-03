@@ -1,14 +1,13 @@
 // module declaration for multi dimensional packed array
 module multi_packed();
 
-// declaring two dimensional bit data type
-  bit [2:0][3:0] xyz;
+bit [2:0][3:0] xyz; // Declare a 2D packed array (3 rows of 4-bit each)
 
   initial begin
-    // assigning the value to the array
+    // Assigning a 12-bit hexadecimal value to the 2D array  
     xyz = 12'hdfe;
 
-    // displaying the value in one line
+    // Displaying the array value in one line using %p (pretty-print format)  
     $display("");
     $display("// example of 2 dimensional array");
     $display("");

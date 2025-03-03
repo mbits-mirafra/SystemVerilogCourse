@@ -1,6 +1,6 @@
 # vsim emp_info -l struct-packed.log -c -do "run -all;quit;" 
-# Start time: 00:13:38 on Aug 30,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 17:34:52 on Mar 03,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -32,5 +32,5 @@
 # 
 #  Bitstream size of emp_info1: 32
 # quit
-# End time: 00:13:39 on Aug 30,2022, Elapsed time: 0:00:01
+# End time: 17:34:53 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

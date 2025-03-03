@@ -1,6 +1,6 @@
 # vsim union_type -l union_unpack.log -c -do "run -all;quit;" 
-# Start time: 18:31:40 on Feb 20,2025
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Start time: 18:01:27 on Mar 03,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -31,5 +31,5 @@
 # 
 #  size of unpacked union :         32
 # quit
-# End time: 18:31:41 on Feb 20,2025, Elapsed time: 0:00:01
+# End time: 18:01:27 on Mar 03,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

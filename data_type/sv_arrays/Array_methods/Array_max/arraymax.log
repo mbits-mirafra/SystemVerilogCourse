@@ -1,6 +1,6 @@
 # vsim tb -l arraymax.log -c -do "run -all; exit;" 
-# Start time: 10:54:40 on Aug 25,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 17:15:11 on Mar 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -36,5 +36,5 @@
 # 	'{6, 0, 4, 7, 3, 1}
 # 
 #  exit
-# End time: 10:54:40 on Aug 25,2022, Elapsed time: 0:00:00
+# End time: 17:15:12 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

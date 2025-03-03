@@ -2,13 +2,13 @@
 module dynamic_array;
 
 // creating dynamic array of type int
-  int abc [];
+  int abc []; // Declare a dynamic array of integers (size not fixed initially)
 
   initial begin
     // give size of dynamic array for eg. take 7
     $display("");
     $display("// setting array size to seven");
-    abc = new[7];
+    abc = new[7]; // Allocate memory for 7 elements
 
     // initialize array elements with 7 values
     abc = '{11,12,13,14,15,16,17};

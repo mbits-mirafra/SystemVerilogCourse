@@ -3,6 +3,7 @@ module associative_method();
 
 // Declare an associative array abc of type int and index type string
   int abc[string];
+  // Declare string variables
   string variable;
   string val1;
 
