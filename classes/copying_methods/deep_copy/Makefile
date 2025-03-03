@@ -1,17 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv deep_copy.sv && vsim deep -l deep_copy.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv deep_copy.sv
 
 simulate:
-	vsim deep -l deep_copy.log -c -do "run -all;quit;"
+	vsim work.deep -l deep_copy.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear
-

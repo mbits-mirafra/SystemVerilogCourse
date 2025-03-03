@@ -1,10 +1,8 @@
 //--------------------------------------------------------------------------------------------
 // Here we are calling a function calling from display
 // and returning an array
-// 
 // syntax : function  
 //--------------------------------------------------------------------------------------------
-
 module func_array_from_display;
   //-------------------------------------------------------
   // creating the datatype of array[5] of int type using typedef
@@ -27,11 +25,14 @@ module func_array_from_display;
 
   function array fun_arr(int arr[5]);
     $display("\tEntered into the function");
+    //assigning i+1 value in a[i] location
     foreach(arr[i])begin
       arr[i]=i+1;
     end
     $display("\tvalues assigned to array elements starts from 1");
+    //Assigning arr to array_hndl handle of array
     array_hndl=arr;
+    //returning array handle
     return array_hndl;
   endfunction
 

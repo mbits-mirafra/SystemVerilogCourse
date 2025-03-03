@@ -1,18 +1,13 @@
 all:
-	rm -rf poly_op.log
-	rm -rf work 
-	clear
-	vlib work;
-	vlog -sv poly.sv && vsim poly_ex -l poly_op.log -c -do "run -all;quit;"
-							
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-	vlib work;
-	vlog -sv poly.sv
+	vlog -sv polymorphism.sv
 
 simulate:
-	vsim poly_ex -l poly_op.log -c -do "run -all;quit;"
+	vsim work.polymorphism -l polymorphism.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf poly_op.log
-	rm -rf work
 	clear

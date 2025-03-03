@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -s virtual_function.sv && vsim virt_fun -l virtual_function.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv virtual_function.sv
 
 simulate:
-	vsim virt_fun -l virtual_function.log -c -do "run -all;quit;"
+	vsim work.virtual_function -l virtual_function.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

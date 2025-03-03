@@ -21,6 +21,7 @@ module func_default_value;
   //-------------------------------------------------------
   function int sum(input int var1=2,var2=3);
     $display("\n\tentered into function");
+    //returning sum value of var1+var2
     return var1+var2;
   endfunction : sum
 

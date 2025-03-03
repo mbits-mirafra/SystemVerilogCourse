@@ -1,0 +1,88 @@
+$date
+	Sun Mar  2 15:37:14 2025
+$end
+
+$version
+	Synopsys VCS version Q-2020.03-SP2-8_Full64
+$end
+
+$timescale
+	1s
+$end
+
+$comment Csum: 1 aed964868501bb5c $end
+
+
+$scope module formal_argument $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # c $end
+$var reg 1 $ d $end
+$var reg 1 % clk $end
+
+$scope task _$$txp______assert_a_b_notype_assert $end
+$upscope $end
+
+
+$scope task _$$txp______assert_c_d_type_assert $end
+$upscope $end
+
+
+$scope task _$$txp_pass_action_a_b_notype_assert $end
+$upscope $end
+
+
+$scope task _$$txp_fail_action_a_b_notype_assert $end
+$upscope $end
+
+
+$scope task _$$txp_pass_action_c_d_type_assert $end
+$upscope $end
+
+
+$scope task _$$txp_fail_action_c_d_type_assert $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0"
+0#
+0%
+0$
+$end
+#5
+1%
+#10
+0%
+#15
+1!
+1$
+1%
+#20
+0%
+#25
+1"
+1#
+1%
+#30
+0%
+#35
+0"
+1%
+#40
+0%
+#45
+1"
+0$
+1%
+#50
+0%
+#55
+1%
+#60
+0%

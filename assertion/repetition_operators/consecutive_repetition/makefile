@@ -1,10 +1,9 @@
-clear:
-		   clear
-		
+all:
+	make clear
+	make simulate
+
 simulate:
-	vcs -V -R -full64 -sverilog +v2k -debug_access +all -l consecutive_repetition.log consecutive_repetition.sv 
+	vcs -V -R -full64 -sverilog +v2k -debug_access+all consecutive_repetition.sv -l consecutive_repetition.log
 
-all:	
-	 make clear;
-	 make simulate;
-
+clear:
+	clear

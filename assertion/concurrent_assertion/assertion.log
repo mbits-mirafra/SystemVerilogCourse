@@ -14,7 +14,7 @@ assertion.log
 -picarchive -P /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/verdi.tab \
 -fsdb -sverilog -gen_obj design.sv test.sv  
                          Chronologic VCS (TM)
-      Version Q-2020.03-SP2-8_Full64 -- Mon Oct 10 21:53:17 2022
+      Version Q-2020.03-SP2-8_Full64 -- Sun Mar  2 15:09:46 2025
                Copyright (c) 1991-2020 by Synopsys Inc.
                          ALL RIGHTS RESERVED
 
@@ -31,54 +31,57 @@ Starting vcs inline pass...
 
 1 module and 0 UDP read.
 recompiling module AND_Gate_tb
-( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20221010162316_26227 product \
+( cd csrc ; make -f Makefile SNPS_VCS_TMPDIR=/tmp/vcs_20250302093946_14682 product \
 )
-make[1]: Entering directory `/hwetools/work_area/frontend/mouna/System_verilog/SystemVerilogCourse/assertion/concurrent_assertion/csrc' \
+make[2]: Entering directory `/hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/concurrent_assertion/csrc' \
 
 rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+ld -shared  -Bsymbolic   -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
 if [ -x ../simv ]; then chmod a-x ../simv; fi
 g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
 -Wl,-rpath=/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib -L/hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib \
--Wl,-rpath-link=./  /usr/lib64/libnuma.so.1   objs/amcQw_d.o   _26725_archive_1.so \
-SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o \
--lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile -luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1     _15204_archive_1.so _prev_archive_1.so \
+_cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc -lvfs    -lvcsnew -lsimprofile \
+-luclinative /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_tls.o \
 -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive        _vcs_pli_stub_.o   \
 /hwetools/synosys/installed_tools/vcs/Q-2020.03-SP2-8/linux64/lib/vcs_save_restore_new.o \
 /hwetools/synosys/installed_tools/verdi/Q-2020.03-SP2-8/share/PLI/VCS/LINUX64/pli.a \
 -ldl  -lc -lm -lpthread -ldl 
 ../simv up to date
-make[1]: Leaving directory `/hwetools/work_area/frontend/mouna/System_verilog/SystemVerilogCourse/assertion/concurrent_assertion/csrc' \
+make[2]: Leaving directory `/hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/concurrent_assertion/csrc' \
 
 Running simv -V +v2k -a assertion.log 
-Command: /hwetools/work_area/frontend/mouna/System_verilog/SystemVerilogCourse/assertion/concurrent_assertion/./simv -V +v2k -a assertion.log
+Command: /hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/assertion/concurrent_assertion/./simv -V +v2k -a assertion.log
 Chronologic VCS simulator copyright 1991-2020
 Contains Synopsys proprietary information.
-Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 10 21:53 2022
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Mar  2 15:09 2025
 VCS Build Date = Sep 11 2021 20:22:52
-Start run at Oct 10 21:53 2022
+Start run at Mar  2 15:09 2025
 
 
 A=0 B=0 Y=0
-"test.sv", 42: AND_Gate_tb.unnamed$$_1: started at 5s failed at 5s
+"test.sv", 54: AND_Gate_tb.unnamed$$_1: started at 5s failed at 5s
 	Offending '((A == 1'b1) && (B == 1'b1))'
 5, A=0 and B=0,assertion failure
 
 A=0 B=1 Y=0
-"test.sv", 42: AND_Gate_tb.unnamed$$_1: started at 15s failed at 15s
+"test.sv", 54: AND_Gate_tb.unnamed$$_1: started at 15s failed at 15s
 	Offending '((A == 1'b1) && (B == 1'b1))'
 15, A=0 and B=1,assertion failure
 
 A=1 B=0 Y=0
-"test.sv", 42: AND_Gate_tb.unnamed$$_1: started at 25s failed at 25s
+"test.sv", 54: AND_Gate_tb.unnamed$$_1: started at 25s failed at 25s
 	Offending '((A == 1'b1) && (B == 1'b1))'
 25, A=1 and B=0,assertion failure
 
 A=1 B=1 Y=1
  35, A=1 and B=1, assertion success
-$finish called from file "test.sv", line 31.
+$finish called from file "test.sv", line 38.
 $finish at simulation time                   45
            V C S   S i m u l a t i o n   R e p o r t 
 Time: 45
-CPU Time:      0.430 seconds;       Data structure size:   0.0Mb
-Mon Oct 10 21:53:33 2022
-CPU time: .316 seconds to compile + .359 seconds to elab + .288 seconds to link + .465 seconds in simulation
+CPU Time:      0.440 seconds;       Data structure size:   0.0Mb
+Sun Mar  2 15:09:54 2025
+CPU time: .346 seconds to compile + .398 seconds to elab + .341 seconds to link + .473 seconds in simulation

@@ -11,6 +11,7 @@ class data;
   const int a;
   string b;
   
+  //here we assign the value to a only in this class we can assign
   function new();
     a=5;
     b="bhavana";
@@ -24,7 +25,6 @@ endclass:data
 
 module instance_class;
   data t1;
-
  
   initial begin:BEGIN_I
     t1=new();

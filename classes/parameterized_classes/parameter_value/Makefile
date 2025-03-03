@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv parameter_value.sv && vsim value -l parameter_value.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv parameter_value.sv
 
 simulate:
-	vsim value -l parameter_value.log -c -do "run -all;quit;"
+	vsim work.value -l parameter_value.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

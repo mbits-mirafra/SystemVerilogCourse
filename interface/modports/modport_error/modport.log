@@ -1,14 +1,6 @@
 # vsim top -l modport.log -c -do "run -all;exit;" 
-# Start time: 00:07:22 on Feb 28,2025
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-8637) and_gate.sv(6): A modport ('DUT_MP') should not be used in a hierarchical path.
-# ** Warning: (vopt-8637) and_gate.sv(6): A modport ('DUT_MP') should not be used in a hierarchical path.
-# ** Warning: (vopt-8637) and_gate.sv(6): A modport ('DUT_MP') should not be used in a hierarchical path.
-# ** Warning: (vopt-8637) test.sv(7): A modport ('TB_MP') should not be used in a hierarchical path.
-# ** Warning: (vopt-8637) test.sv(9): A modport ('TB_MP') should not be used in a hierarchical path.
-# ** Warning: (vopt-8637) test.sv(11): A modport ('TB_MP') should not be used in a hierarchical path.
-# ** Warning: and_gate.sv(6): (vopt-2596) Component name 'p' is not on a downward path.
-# ** Warning: and_gate.sv(6): (vopt-2596) Component name 'p' is not on a downward path.
+# Start time: 00:59:23 on Feb 28,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -28,5 +20,5 @@
 # ** Error: (vsim-3043) Unresolved reference to 'p' in p.
 #    Time: 0 ns  Iteration: 0  Instance: /top File: and_gate.sv Line: 6
 # Error loading design
-# End time: 00:07:25 on Feb 28,2025, Elapsed time: 0:00:03
-# Errors: 1, Warnings: 8
+# End time: 00:59:23 on Feb 28,2025, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

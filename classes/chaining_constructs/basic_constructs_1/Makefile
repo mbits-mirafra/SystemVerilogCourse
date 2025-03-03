@@ -1,19 +1,13 @@
 all:
-	rm -rf chain_constructs.log
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv chain_constructs.sv && vsim basic_chain_construct -l chain_constructs.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv chain_constructs.sv
 
 simulate:
-	vsim basic_chain_construct -l chain_constructs.log -c -do "run -all;quit;"
+	vsim work.basic_chain_construct -l chain_constructs.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf chain_constructs.log
-	rm -rf work
 	clear
-

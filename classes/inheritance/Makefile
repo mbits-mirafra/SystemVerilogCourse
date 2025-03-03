@@ -1,19 +1,13 @@
 all:
-	rm -rf inh_op.log
-	rm -rf work 
-	clear
-	vlib work;
-	vlog -sv inh.sv && vsim inh_sam -l inh_op.log -c -do "run -all;quit;"
-	
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
-	vlog -sv inh.sv
+	vlog -sv inheritance.sv
 
 simulate:
-	vsim -l inh_sam inh_op.log -c -do "run -all;quit;"
+	vsim work.inheritance -l inheritance.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf inh_op.log
-	rm -rf work
 	clear

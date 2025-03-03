@@ -1,19 +1,13 @@
 all:
-		rm -rf work
-		rm -rf transcript
-		clear
-		vlib work
-		vlog -sv extern.sv && vsim extern_example -l extern.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-			vlib work
-			vlog -sv extern.sv
+	vlog -sv extern_keyword.sv
 
 simulate:
-			vsim extern_example -l extern.log -c -do "run -all;quit;"
+	vsim work.extern_keyword -l extern_keyword.log -c -do "run -all;exit;"
 
-clear:	
-			rm -rf work
-			rm -rf transcript
-			clear
-			
+clear:
+	clear

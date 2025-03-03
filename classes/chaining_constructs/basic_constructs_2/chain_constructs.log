@@ -1,6 +1,6 @@
-# vsim chain_constructs -l chain_constructs.log -c -do "run -all;quit;" 
-# Start time: 13:59:10 on Sep 21,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim work.chain_constructs -l chain_constructs.log -c -do "run -all;exit;" 
+# Start time: 12:30:28 on Mar 01,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,7 +19,7 @@
 # Loading work.chain_constructs_sv_unit(fast)
 # Loading work.chain_constructs(fast)
 # run -all
-# a = 3,b = 2,c = 1
-# quit
-# End time: 13:59:11 on Sep 21,2022, Elapsed time: 0:00:01
+# a = 3, b = 2, c = 1
+# exit
+# End time: 12:30:28 on Mar 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

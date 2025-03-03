@@ -1,10 +1,9 @@
-	
 all:
-		make clear;make compile;make simulate 
+	make clear
+	make simulate
 
 simulate:
-		vcs -V -R -full64 -sverilog +v2k -debug_access +all Example.sv -l Example.log
-	
+	vcs -V -R -full64 -sverilog +v2k -debug_access+all without_ended.sv -l without_ended.log
 
 clear:
-	   clear
+	clear

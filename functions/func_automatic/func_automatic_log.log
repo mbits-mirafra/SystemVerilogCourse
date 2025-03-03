@@ -1,5 +1,5 @@
 # vsim work.func_automatic -l func_automatic_log.log -c -do "run -all;exit;" 
-# Start time: 20:43:52 on Feb 24,2025
+# Start time: 10:50:21 on Mar 03,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -15,13 +15,5 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Loading sv_std.std
-# Loading work.func_automatic(fast)
-# run -all
-# 
-# factorial_static:1
-# factorial_automatic:120
-# 
-# exit
-# End time: 20:43:53 on Feb 24,2025, Elapsed time: 0:00:01
+# End time: 10:50:39 on Mar 03,2025, Elapsed time: 0:00:18
 # Errors: 0, Warnings: 0

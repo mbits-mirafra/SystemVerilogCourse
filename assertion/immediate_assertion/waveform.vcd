@@ -1,0 +1,77 @@
+$date
+	Sun Mar  2 14:40:47 2025
+$end
+
+$version
+	Synopsys VCS version Q-2020.03-SP2-8_Full64
+$end
+
+$timescale
+	1s
+$end
+
+$comment Csum: 1 60be1bb851586dee $end
+
+
+$scope module AND_Gate_tb $end
+$var reg 1 ! A $end
+$var reg 1 " B $end
+$var reg 1 # clk $end
+$var wire 1 $ Y $end
+
+$scope module inst $end
+$var wire 1 % A $end
+$var wire 1 & B $end
+$var wire 1 $ Y $end
+$var wire 1 ' clk $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0"
+0$
+0#
+0%
+0&
+0'
+$end
+#5
+1#
+1'
+#10
+0#
+0'
+1"
+1&
+#15
+1#
+1'
+#20
+0#
+0'
+1!
+1%
+1$
+0"
+0&
+0$
+#25
+1#
+1'
+#30
+0#
+0'
+1"
+1&
+1$
+#35
+1#
+1'
+#40
+0#
+0'

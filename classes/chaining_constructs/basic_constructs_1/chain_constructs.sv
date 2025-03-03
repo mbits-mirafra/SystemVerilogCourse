@@ -18,16 +18,17 @@
 // only happening in new() method.
 //--------------------------------------------------------------------------------------------
 
-
 //-------------------------------------------------------
 // parent class having 1 properties and 2 methods.
 // methods include new() and display().
 //-------------------------------------------------------
 class parent;
   int a;
+  //this class method
   function new();
     a = 1;
   endfunction
+  //declaration of function outside
   extern function void display();
 endclass:parent
 
@@ -36,9 +37,11 @@ endclass:parent
 //-------------------------------------------------------
 class child extends parent;
   int b;
+  //this class method
   function new();
     b = 2;
   endfunction
+  //declaration of function outside
   extern function void display();
 endclass:child
 
@@ -60,14 +63,13 @@ function void child::display();
 endfunction
 
 module basic_chain_construct();
+  // creating a child class handle 'c'.
+  child c;
 
-// creating a child class handle 'c'.
-child c;
-
-initial begin
-  // creating an object for that handle 'c' using new() method.
-  c = new;
-  c.display(); // using that handle calling display function.
-end
+  initial begin
+    // creating an object for that handle 'c' using new() method.
+    c = new;
+    c.display(); // using that handle calling display function.
+  end
 
 endmodule:basic_chain_construct

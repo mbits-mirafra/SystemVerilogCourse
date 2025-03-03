@@ -1,5 +1,5 @@
-# vsim global_class -l global_class.log -c -do "run -all;quit;" 
-# Start time: 01:49:29 on Oct 14,2022
+# vsim work.global_class -l global_class.log -c -do "run -all;exit;" 
+# Start time: 12:36:45 on Mar 01,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -22,6 +22,6 @@
 # 
 # a=team,b=1
 # 
-# quit
-# End time: 01:49:30 on Oct 14,2022, Elapsed time: 0:00:01
+# exit
+# End time: 12:36:45 on Mar 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

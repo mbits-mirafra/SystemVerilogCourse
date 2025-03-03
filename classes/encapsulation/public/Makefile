@@ -1,18 +1,13 @@
 all:
-	rm -rf pub_op.log
-	rm -rf work 
-	clear
-	vlib work;
-	vlog -sv pub.sv && vsim pub -l pub_op.log -c -do "run -all;quit;"
-							
+	make clear;
+	make compile;
+	make simulate;
+
 compile:
-	vlib work;
-	vlog -sv pub.sv
+	vlog -sv public.sv
 
 simulate:
-	vsim pub -l pub_op.log -c -do "run -all;quit;"
+	vsim work.public_variable -l public.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf pub_op.log
-	rm -rf work
 	clear

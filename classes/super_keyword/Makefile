@@ -1,16 +1,13 @@
 all:
-		rm -rf work
-		clear
-	  vlib work
-		vlog -sv super.sv && vsim super_example -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-		vlib work
-		vlog -sv super.sv
+	vlog -sv super_keyword.sv
 
 simulate:
-		vsim super_example -l super.log -c -do "run -all;quit;"
+	vsim work.super_keyword -l super_keyword.log -c -do "run -all;exit;"
 
-clear:	
-		rm -rf work
-		clear
+clear:
+	clear

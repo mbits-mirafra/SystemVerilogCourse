@@ -7,11 +7,12 @@
 class data;
   string a;
   const int b=1;//global constant
-  
+  //class construct
   function new();
     a="team";
   endfunction:new
   
+  //printing value of a and b
   function void display();
     $display("a=%0d,b=%0d",a,b);
   endfunction:display
@@ -19,12 +20,13 @@ class data;
 endclass:data
 
 module global_class;
+  //creating handle of class
   data p1;
-
 
   initial begin:BEGIN_I
     p1=new();
     $display(""); 
+    //calling class display function
     p1.display();
     // p1.b=2;// invalid usage of b
     //-------------------------------------------------------

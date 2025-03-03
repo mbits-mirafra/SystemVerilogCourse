@@ -1,6 +1,6 @@
-# vsim tb -l handle.log -c -do "run -all;quit;" 
-# Start time: 22:39:24 on Sep 30,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim work.tb -l handle.log -c -do "run -all;exit;" 
+# Start time: 11:53:06 on Mar 01,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -22,6 +22,6 @@
 # Let's declare handle
 # Check wheather the object is created or not
 # object is empty
-# quit
-# End time: 22:39:26 on Sep 30,2022, Elapsed time: 0:00:02
+# exit
+# End time: 11:53:06 on Mar 01,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
