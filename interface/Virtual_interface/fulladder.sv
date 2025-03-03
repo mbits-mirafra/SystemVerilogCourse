@@ -14,6 +14,7 @@ module fulladder(in_a,
   output out_carry;
 
   //continuous input_assignment statement
+  //performing full adder operation
   assign out_sum = in_a^in_b^in_c;
   assign out_carry = (in_a&in_b)|(in_b&in_c)| (in_c&in_a);
 

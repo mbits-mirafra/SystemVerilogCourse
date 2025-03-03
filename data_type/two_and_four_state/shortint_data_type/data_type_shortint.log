@@ -1,5 +1,5 @@
 # vsim data_type_shortint -l data_type_shortint.log -c -do "run -all; exit;" 
-# Start time: 12:35:12 on Aug 25,2022
+# Start time: 11:58:24 on Mar 03,2025
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -28,5 +28,5 @@
 # After initialization maximum value of shortint = 111111111111111
 # 
 #  exit
-# End time: 12:35:13 on Aug 25,2022, Elapsed time: 0:00:01
+# End time: 11:58:25 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,12 +1,18 @@
-module do_while; 
-  int apple = 1; //int data type and variable name is apple
-  initial begin //procedural block
+module do_while;
+  // declaring variable of int type and assigning value to it
+  int apple = 1;
+  initial begin 
+    // display before do while loop
     $display("------do while output ---");
-    do //do statements
+    // initialization of do while loop
+    do
     begin
+      // display inside loop
       $display("\t Value of apple = %0d", apple);
+      // increamenting the value of variable 
       apple = apple +1;
     end
-    while(apple<6); //while loop condition
+    // checking the condition for do while loop
+    while(apple<6);
   end
 endmodule :do_while

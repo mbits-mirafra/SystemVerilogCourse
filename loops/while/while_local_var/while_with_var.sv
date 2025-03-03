@@ -2,11 +2,14 @@
 // end of the loop.
 
 module while_with_var;
-  int x = 2; // variable declare 
+  // declaring variable of int type and assigning value to it
+  int x = 2;
 
   initial begin 
+    // while loop initialization with required condition
     while (x<5) begin 
-      int a;  // declare the variable inside the loop 
+      // declaring the variable inside loop
+      int a;
       $display ("Iteration = %0d",x); 
       $display ("a is a local variable");
       $display ("The size of a = %0d",$size(a));

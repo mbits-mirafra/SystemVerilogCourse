@@ -2,7 +2,7 @@
 module test(dff.tb intf);
   //task:drv
   task drv;
-    //loop
+    //loop- repeating 10 time
     repeat(10) begin
       //test triggering at posedge
       @(posedge intf.clk )

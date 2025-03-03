@@ -3,6 +3,7 @@
 module data_type_integer;  // declare module name
  integer integer_data; //declare integer variable, by default integer is signed
  
+ //inside the initial begin assigning the values and displaying it
 initial begin
   
   $display("\n//integer is 4-state 32-bit signed number ");
