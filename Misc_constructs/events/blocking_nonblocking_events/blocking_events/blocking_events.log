@@ -1,5 +1,5 @@
-# vsim work.events -l events.log -c -do "run -all;exit;" 
-# Start time: 22:46:55 on Sep 28,2022
+# vsim blocking_event -l blocking_events.log -c -do "run -all;exit;" 
+# Start time: 11:18:48 on Mar 03,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,10 +16,12 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.events(fast)
+# Loading work.blocking_event(fast)
 # run -all
-# [5] Event_1 Triggered from block1
-# [5] Event_1 catched in block2
+#                    0	 triggering the event
+#                    0	 waiting for the event using wait
+#                    0	 event BJT is triggered using wait
+#                    0	 waiting for the event using @
 # exit
-# End time: 22:46:56 on Sep 28,2022, Elapsed time: 0:00:01
+# End time: 11:18:49 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

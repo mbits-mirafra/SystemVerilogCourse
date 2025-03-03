@@ -1,5 +1,5 @@
-# vsim wait_example -l wait_@.log -c -do "run -all;quit;" 
-# Start time: 13:16:05 on Mar 01,2025
+# vsim merge_events -l merging_events.log -c -do "run -all;quit;" 
+# Start time: 14:39:55 on Mar 02,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -16,12 +16,9 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.wait_example(fast)
+# Loading work.merge_events(fast)
 # run -all
-#                    0	 triggering the event
-#                    0	 waiting for the event using wait
-#                    0	 event is triggered using wait
-#                    0	 waiting for the event using @
+# [30] event a is done
 # quit
-# End time: 13:16:06 on Mar 01,2025, Elapsed time: 0:00:01
+# End time: 14:39:56 on Mar 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
