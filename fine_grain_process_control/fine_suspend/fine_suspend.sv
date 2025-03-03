@@ -4,7 +4,9 @@
 // This command will suspends the thread for some indefinite time.
 //--------------------------------------------------------------------------------------------
 module fine_suspend;
+  //declare process
   process p1,p2;
+  //declare event
   event e1,e2;
   
   initial begin: BEGIN_B1 //Procedural block
@@ -17,25 +19,29 @@ module fine_suspend;
     fork:FORK_F1
                    
       begin:BEGIN_B2
+        //creating process p1
         p1 = process :: self();
         #1;
         $display("[%0t] I am in process p1",$time);
         $display("[%0t] Initial status of p1: %s",$time,p1.status());
+        //trigger event e1
         ->e1;
-
+        //checking p1 finished 
         if(p1.status() != process :: FINISHED)
         
-        begin:BEGIN_B3
-          #1;
-          $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());
-          p1.suspend();
-          $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());
-        end:BEGIN_B3
+          begin:BEGIN_B3
+            #1;
+            $display("[%0t] Status of p1 before suspending: %s",$time,p1.status());
+            p1.suspend();
+            $display("[%0t] Status of p2 in p1 block: %s",$time,p2.status());
+          end:BEGIN_B3
 
       end:BEGIN_B2 
 
       begin:BEGIN_B4
+        //waiting trigger event e1
         wait(e1.triggered);
+        //creating process p2
         p2 = process :: self();
 
         #1;
@@ -43,10 +49,12 @@ module fine_suspend;
         $display("[%0t] Initial status of p2: %s",$time,p2.status());
         #1;
         $display("[%0t] status of p1 after suspended: %s",$time,p1.status());
+        //trigger event e2
         ->e2;
       end:BEGIN_B4
 
       begin:BEGIN_B5
+        //waiting trigger event e2
         wait(e2.triggered);
         $display("[%0t] Final status of p2: %s",$time,p2.status());
       end:BEGIN_B5

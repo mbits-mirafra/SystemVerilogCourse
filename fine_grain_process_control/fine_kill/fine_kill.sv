@@ -16,12 +16,16 @@ module fine_kill;
     fork:FORK_F1
 
       begin:BEGIN_B2
+        //creating process ID for p1
         p1 = process :: self();
         #1;
+        //displaying p1 status
         $display("[%0t] I am in process p1",$time);
         $display("[%0t] Initial status check of p1: %s",$time,p1.status); 
+        //trigger even e1
         ->e1;
         
+        //kill process p1 if it will not finished
         if(p1.status() != process :: FINISHED)
           p1.kill();
         $display("hi i am working");
@@ -29,6 +33,7 @@ module fine_kill;
       end:BEGIN_B2
       
       begin:BEGIN_B3
+        //waiting e1 to trigger
         wait(e1.triggered);
         #1;
         $display("[%0t] Status of p1 before killing: %s",$time,p1.status());
