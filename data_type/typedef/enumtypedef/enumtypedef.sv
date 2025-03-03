@@ -2,7 +2,7 @@
 //typedef with enum datatype
 module enumtype;
 
-//Use typedef to create enum type
+//Using typedef to create enum type
 typedef enum {RORITO, FLAIRFX, REYNOLDS} e_pen;
 
 initial begin
