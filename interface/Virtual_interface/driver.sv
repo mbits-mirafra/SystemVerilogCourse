@@ -13,6 +13,7 @@ class driver;
  
   //task
   task run();
+    //loop -repeating 10 time and randomizing variables
     repeat(10) begin
       //interface_instance.variable
       vif.in_a = $random;

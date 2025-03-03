@@ -1,5 +1,5 @@
 # vsim casting_shortint -l shortint_casting.log -c -do "run -all; exit;" 
-# Start time: 11:26:54 on Aug 31,2022
+# Start time: 13:15:50 on Mar 03,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -26,5 +26,5 @@
 # after casting shortint to longint = 0000000000000000000000000000000000000000000000000000000010110011
 # 
 #  exit
-# End time: 11:26:55 on Aug 31,2022, Elapsed time: 0:00:01
+# End time: 13:15:50 on Mar 03,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

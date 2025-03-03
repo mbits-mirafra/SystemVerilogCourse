@@ -5,7 +5,9 @@
 //will be done.
 //--------------------------------------------------------------------------------------------
 module fine_await;
+  //declare process
   process p1,p2;
+  //declare event
   event e1,e2;
   
   initial begin:BEGIN_B1 //Procedural block
@@ -18,12 +20,14 @@ module fine_await;
     fork:FORK_F1
     
       begin:BEGIN_B2
+        //creating process ID for p1
         p1 = process :: self();
         #1;
+        //displaying p1 status
         $display("[%0t] I am in process p1",$time);
         $display("[%0t] Initial status of p1: %s",$time,p1.status());
         $display("[%0t] Status of p1 before await: %s",$time,p1.status());
-        
+        //waiting for p2 to complete in order to complete p1 
         if(p1.status() != process :: FINISHED)
           p2.await();
         
@@ -33,21 +37,26 @@ module fine_await;
       $display("[%0t] Status of p1 after await: %s",$time,p1.status());
     
       begin:BEGIN_B4 
+        //creating process ID for p2
         p2 = process :: self();
         #1;
         $display("[%0t] I am in process p2",$time);
         $display("[%0t] Initial status of p2: %s",$time,p2.status());
         #2;
+        //trigger event e2
         ->e2;
       end:BEGIN_B4
      
       begin:BEGIN_B5
+        //wait for event trigger e2
         wait(e2.triggered);
         $display("[%0t] Final status of p2: %s",$time,p2.status());
+        //trigger event e1
         ->e1;
       end:BEGIN_B5
 
       begin:BEGIN_B6
+        //wait for event trigger e1
         wait(e1.triggered);
         $display("[%0t] Final status of p1: %s",$time,p1.status());
       end:BEGIN_B6

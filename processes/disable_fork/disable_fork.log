@@ -1,6 +1,6 @@
 # vsim disable_fork -l disable_fork.log -c -do "run -all;quit;" 
-# Start time: 10:38:15 on Feb 26,2025
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 15:07:59 on Mar 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,10 +18,10 @@
 # Loading sv_std.std
 # Loading work.disable_fork(fast)
 # run -all
-# [0] Thread_T1: Values of a = Malpe,b = Kudlu,c = 
-# [1] Thread_T4: Values of a = Malpe,b = Kudlu,c = Hoode
-# [1] Thread_T5: Values of a = Malpe,b = Kudlu,c = Hoode
+# [0] Thread_T1: Values of a = Malpe, b = Kudlu, c = 
+# [1] Thread_T4: Values of a = Malpe, b = Kudlu, c = Hoode
+# [1] Thread_T5: Values of a = Malpe, b = Kudlu, c = Hoode
 # [2] Thread_T6: ending of fork-join
 # quit
-# End time: 10:38:16 on Feb 26,2025, Elapsed time: 0:00:01
+# End time: 15:07:59 on Mar 03,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

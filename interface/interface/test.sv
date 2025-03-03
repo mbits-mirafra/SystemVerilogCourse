@@ -2,7 +2,9 @@
 module tb(and_if inf);
   initial begin
     $display("\n// and gate output");
+    //monitoring signals value at every change
     $monitor("\ninput_a=%b\t input_b=%b\t output_y=%b",inf.input_a,inf.input_b,inf.output_y);
+    //generation of signal input_a and input_b
     inf.output_y=0;
     inf.input_a = 0; inf.input_b = 0; 
     #1;

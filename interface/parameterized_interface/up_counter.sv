@@ -1,5 +1,6 @@
 //Design code for up counter
 module up_counter(clk,reset,counter);
+  //declare signals using input output and reg
   input clk, reset;
   output [2:0] counter;
   reg [2:0] counter_up;
@@ -11,5 +12,6 @@ module up_counter(clk,reset,counter);
     else
       counter_up <= counter_up + 3'd1;
   end
+  //assigning counter value using assign
   assign counter = counter_up;
 endmodule:up_counter
