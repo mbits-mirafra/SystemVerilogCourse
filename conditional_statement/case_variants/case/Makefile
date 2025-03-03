@@ -7,7 +7,7 @@ compile:
 	vlog -sv case.sv
 
 simulate:
-	vsim top -l case.sv.log -c -do "run -all;exit;"
+	vsim top -l case_op.log -c -do "run -all;exit;"
 
 clear:
 	clear
