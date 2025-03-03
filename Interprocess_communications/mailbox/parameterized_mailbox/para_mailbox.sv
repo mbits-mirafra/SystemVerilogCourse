@@ -6,99 +6,109 @@
 //--------------------------------------------------------------------------------------------
 
 //Transmitter
+// Define class A
 class A;
-  int i;
-  string country;
-  string place;
-  
-  mailbox #(string) m;
+   int i; // Integer variable (not used in this example)
+   string country; // String variable to store country name
+   string place; // String variable to store place name
 
-  function new(mailbox m1);
+   mailbox #(string) m; // Mailbox to hold strings, used for communication between classes
 
-    this.m = m1;
+   // Constructor for class A, takes a mailbox as an argument
+   function new(mailbox m1);
+      this.m = m1; // Assign the passed mailbox to the local mailbox variable
+   endfunction
 
-  endfunction
+   // Task to transmit data (country and place) to the mailbox
+   task tra_data();
 
-  task tra_data();
-
-      country = "India";    
-     // country = string'(7'h31);    
+      // First set of data
+      country = "India";
       place = "Kashmir";
-  
-      m.put(country);
-      m.put(place);
+      m.put(country); // Put the country into the mailbox
+      m.put(place); // Put the place into the mailbox
       $display("Transmitter: Country = %0s , must visit place = %0s",country,place);
-  
+
+      // Second set of data
       country = "South Africa";
       place = "Cape Town";
-      m.put(country);
-      m.put(place);
+      m.put(country); // Put the country into the mailbox
+      m.put(place); // Put the place into the mailbox
       $display("Transmitter: Country = %0s , must visit place = %0s",country,place);
 
+      // Third set of data
       country = "Spain";
       place = "Barcelona";
-      m.put(country);
-      m.put(place);
+      m.put(country); // Put the country into the mailbox
+      m.put(place); // Put the place into the mailbox
       $display("Transmitter: Country = %0s , must visit place = %0s",country,place);
 
-  endtask
+   endtask
 
 endclass:A
 
-
-//Receiver
+// Define class B
 class B;
 
-  string country;
-  string place;
-  mailbox #(string) m;
-   
-  function new(mailbox m2);
-   
-    this.m = m2;
-   
-  endfunction
+   string country; // String variable to store country name
+   string place; // String variable to store place name
+   mailbox #(string) m; // Mailbox to hold strings, used for communication between classes
 
-  task rec_data();
-   
-       m.get(country);
-       m.get(place);
+   // Constructor for class B, takes a mailbox as an argument
+   function new(mailbox m2);
+      this.m = m2; // Assign the passed mailbox to the local mailbox variable
+   endfunction
+
+   // Task to receive data (country and place) from the mailbox
+   task rec_data();
+
+       // Receive the first set of data
+       m.get(country); // Get the country from the mailbox
+       m.get(place); // Get the place from the mailbox
        $display("Receiver: Country = %0s , must visit place = %0s",country,place);
 
-        m.get(country);
-        m.get(place);
-        $display("Receiver: Country = %0s , must visit place = %0s",country,place);
+       // Receive the second set of data
+       m.get(country); // Get the country from the mailbox
+       m.get(place); // Get the place from the mailbox
+       $display("Receiver: Country = %0s , must visit place = %0s",country,place);
 
-        m.get(country);
-        m.get(place);
-        $display("Receiver: Country = %0s , must visit place = %0s",country,place);
-      endtask
+       // Receive the third set of data
+       m.get(country); // Get the country from the mailbox
+       m.get(place); // Get the place from the mailbox
+       $display("Receiver: Country = %0s , must visit place = %0s",country,place);
 
- endclass:B
+   endtask
 
+endclass:B
 
+// Define the testbench module
 module  tb();
 
-  A a1;
-  B b1;
-  int i;
-  mailbox #(string) main = new(6);
-  initial begin:BEGIN_MAIN
+   A a1; // Instance of class A
+   B b1; // Instance of class B
+   int i; // Integer variable (not used in this example)
+   mailbox #(string) main = new(6); // Create a mailbox with a depth of 6
 
+   initial begin:BEGIN_MAIN
 
-    a1= new(main);
-    b1 = new(main);
+      // Instantiate class A and class B with the same mailbox
+      a1= new(main);
+      b1 = new(main);
 
-    $display("");
-    $display("");
-    a1.tra_data();
-    $display(".......................................................................");
-    
-    b1.rec_data();
-  
+      // Display empty lines for better readability
+      $display("");
+      $display("");
 
-  end:BEGIN_MAIN
+      // Call the task in class A to transmit data
+      a1.tra_data();
 
-  endmodule:tb
+      // Display a separator line
+      $display(".......................................................................");
 
+      // Call the task in class B to receive data
+      b1.rec_data();
+
+   end:BEGIN_MAIN
+
+endmodule:tb
 

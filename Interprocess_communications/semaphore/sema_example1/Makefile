@@ -1,19 +1,14 @@
 all:
-		rm -rf sema_exm1.log
-		rm -rf work
-		clear
-		vlib work;
-		vlog -sv sema_exm1.sv && vsim semaphore_example_1 -l sema_exm1.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-		vlib work;
-		vlog -sv sema_exm1.sv
+	vlog -sv sema_exm1.sv
 
 simulate:
-		vsim semaphore_example_1 -l sema_exm1.log -c -do "run -all;quit;"
+	vsim semaphore_example_1 -l sema_exm1.log -c -do "run -all;quit;"
 
 clear:
-		rm -rf sema_exm1.log
-		rm -rf work
-		clear
+	clear
 				

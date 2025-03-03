@@ -6,52 +6,48 @@
 //
 //--------------------------------------------------------------------------------------------
 class A;
-    
-  int a;
-  int i;
-  mailbox m;
-          
-  function new(mailbox m1);
-    this.m = m1;
+
+   int a;  // Integer variable to store data.
+   int i;  // Loop counter variable.
+   mailbox m;  // Mailbox handle for inter-process communication.
+
+   function new(mailbox m1);
+      this.m = m1;  // Assign the passed mailbox handle to class member.
   endfunction
-                    
+
   task tra_data();
 
-    for(i =0;i<3;i++)begin:BEGIN_MAIN
+     for(i = 0; i < 3; i++) begin:BEGIN_MAIN  // Loop to put 3 values into the mailbox.
 
-      a++;
-      m.put(a);
-                                                    
-      $display("[%0t] Transmitter: value of a = %0d",$time,a);
+        a++;  // Increment 'a' before putting it into the mailbox.
+        m.put(a);  // Insert the value of 'a' into the mailbox.
+        $display("[%0t] Transmitter: value of a = %0d", $time, a);  // Display the current value of 'a' along with simulation time.
+        $display(" No of messages in mailbox = %0d", m.num());  // Display the current number of messages in the mailbox.
 
-      $display(" No of messages in mailbox = %0d",m.num());
-                                                          
-                                                          
-    end:BEGIN_MAIN
+      end:BEGIN_MAIN
 
-    $display(".....................................................");
-                                                                    
-  endtask
-                                                         
+      $display(".....................................................");  // Print a separator for clarity.
+
+   endtask
+
 endclass:A
 
-
-
 module tb();
-    
-  A a1;
-  mailbox main = new();  
-        
-  initial begin:BEGIN_MAIN
 
-    a1 = new(main);                         
-    repeat(2)
-    begin:BEGIN_1
+   A a1;  // Declare an object of class A.
+   mailbox main = new();  // Create an unbounded mailbox.
 
-      a1.tra_data();
-               
+   initial begin:BEGIN_MAIN
+
+      a1 = new(main);  // Instantiate class A and pass the mailbox.
+      repeat(2)  // Repeat the transaction process twice.
+      begin:BEGIN_1
+
+         a1.tra_data();  // Call the task to send data into the mailbox.
+
     end:BEGIN_1
 
-  end:BEGIN_MAIN
+   end:BEGIN_MAIN
 
 endmodule:tb
+

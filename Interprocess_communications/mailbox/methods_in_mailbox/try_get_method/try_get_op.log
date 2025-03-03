@@ -1,5 +1,5 @@
 # vsim tb -l try_get_op.log -c -do "run -all;quit;" 
-# Start time: 01:29:04 on Oct 10,2022
+# Start time: 11:20:12 on Mar 03,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -29,7 +29,7 @@
 # [0] 2. Receiver: value of a = 2
 # [0] 2. Receiver: value of a = 3
 # [0] 2. Receiver: value of a = 4
-# Failed while trying to get the value as mailbox is empty
+# Failed while getting the value as mailbox is empty 
 # get successful
 # [0] 1. Transmitter: value of a = 5
 # [0] 1. Transmitter: value of a = 6
@@ -41,8 +41,8 @@
 # [0] 2. Receiver: value of a = 6
 # [0] 2. Receiver: value of a = 7
 # [0] 2. Receiver: value of a = 8
-# Failed while trying to get the value as mailbox is empty
+# Failed while getting the value as mailbox is empty 
 # get successful
 # quit
-# End time: 01:29:05 on Oct 10,2022, Elapsed time: 0:00:01
+# End time: 11:20:13 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

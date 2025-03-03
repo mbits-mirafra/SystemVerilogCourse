@@ -1,6 +1,6 @@
 # vsim semaphore_exm_2 -l sema_exm2.log -c -do "run -all;quit;" 
-# Start time: 21:44:26 on Oct 09,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 21:14:30 on Mar 02,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -19,10 +19,10 @@
 # Loading work.semaphore_exm_2(fast)
 # run -all
 # In first initial block At time=[0]
-# Thread 1:Accessing 4 keys from semaphore  At time=[0]
-# In second initial block  At time=[0]
-# Thread 1:Done using 2 keys  At time=[5]
-# Thread 1:Still using the remainig 2 keys  At time=[25]
+# Thread 1: Accessing 4 keys from semaphore At time=[0]
+# In second initial block At time=[0]
+# Thread 1: Done using 2 keys At time=[5]
+# Thread 1: Still using the remaining 2 keys At time=[25]
 # quit
-# End time: 21:44:27 on Oct 09,2022, Elapsed time: 0:00:01
+# End time: 21:14:31 on Mar 02,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

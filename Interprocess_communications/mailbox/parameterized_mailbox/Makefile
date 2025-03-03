@@ -1,18 +1,13 @@
 all:
-	rm -rf para_op.log
-	rm -rf work 
-	clear
-	vlib work;
-	vlog -sv para_mailbox.sv && vsim tb -l para_op.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 							
 compile:
-	vlib work;
-	vlog -sv bound.sv
+	vlog -sv para_mailbox.sv
 
 simulate:
-	vsim tb -l para_op.log -c -do "run -all;quit;"
+	vsim tb -l para_mailbox.log -c -do "run -all;quit;"
 
 clear:
-	rm -rf para_op.log
-	rm -rf work
 	clear

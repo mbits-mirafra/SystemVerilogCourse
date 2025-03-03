@@ -1,5 +1,5 @@
-# vsim tb -l para_op.log -c -do "run -all;quit;" 
-# Start time: 04:51:57 on Oct 09,2022
+# vsim tb -l para_mailbox.log -c -do "run -all;quit;" 
+# Start time: 21:57:29 on Mar 02,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -21,13 +21,13 @@
 # run -all
 # 
 # 
-# Transmitter: Country = 1 , must visit place = Kashmir
+# Transmitter: Country = India , must visit place = Kashmir
 # Transmitter: Country = South Africa , must visit place = Cape Town
 # Transmitter: Country = Spain , must visit place = Barcelona
 # .......................................................................
-# Receiver: Country = 1 , must visit place = Kashmir
+# Receiver: Country = India , must visit place = Kashmir
 # Receiver: Country = South Africa , must visit place = Cape Town
 # Receiver: Country = Spain , must visit place = Barcelona
 # quit
-# End time: 04:51:58 on Oct 09,2022, Elapsed time: 0:00:01
+# End time: 21:57:29 on Mar 02,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

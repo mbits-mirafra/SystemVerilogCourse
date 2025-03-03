@@ -6,81 +6,79 @@
 //--------------------------------------------------------------------------------------------
 //Transmitter
 class A;
-    
-  int a;
-  int i;
-  mailbox m;
-          
-  function new(mailbox m1);
-    this.m = m1;
-  endfunction
-                    
-  task tra_data();
 
-    for(i =0;i<4;i++)begin:BEGIN_MAIN
+   int a;  // Integer variable to store data.
+   int i;  // Loop counter variable.
+   mailbox m;  // Mailbox handle for inter-process communication.
 
-      a++;
-      m.put(a);
-      $display("[%0t] 1. Transmitter: value of a = %0d",$time,a);
-  
-    end:BEGIN_MAIN
+   function new(mailbox m1);
+      this.m = m1;  // Assign the passed mailbox handle to class member.
+   endfunction
 
-    $display("put successful");  
-                                                                    
-  endtask
-                                                         
+   task tra_data();
+
+      for(i = 0; i < 4; i++) begin:BEGIN_MAIN  // Loop to put 4 values into the mailbox.
+
+         a++;  // Increment 'a' before inserting into the mailbox.
+         m.put(a);  // Insert the value of 'a' into the mailbox.
+         $display("[%0t] 1. Transmitter: value of a = %0d", $time, a);  // Display transmitted value.
+
+      end:BEGIN_MAIN
+
+      $display("put successful");  // Print confirmation message.
+
+   endtask
+
 endclass:A
 
-//Receiver
 class B;
 
-  int a;
-  int i;
-  mailbox m;
-        
-  function new(mailbox m2);
-    this.m = m2;
-  endfunction
-               
-  task rec_data();
+   int a;  // Integer variable to store received data.
+   int i;  // Loop counter variable.
+   mailbox m;  // Mailbox handle for receiving data.
 
-    repeat(5)begin:BEGIN_MAIN
+   function new(mailbox m2);
+      this.m = m2;  // Assign the passed mailbox handle to class member.
+   endfunction
 
-     if( m.try_get(a))
+   task rec_data();
 
-      $display("[%0t] 2. Receiver: value of a = %0d",$time,a);
+      repeat(5) begin:BEGIN_MAIN  // Attempt to retrieve 5 values from the mailbox.
 
-      else
+         if( m.try_get(a))  // Try to get a value from the mailbox without blocking.
+            $display("[%0t] 2. Receiver: value of a = %0d", $time, a);  // Display received value.
 
-        $display("Failed while trying to get the value as mailbox is empty");
+         else
+            $display("Failed while getting the value as mailbox is empty ");  // Print error if mailbox is empty.
 
-    end:BEGIN_MAIN
-    
-    $display("get successful");
+      end:BEGIN_MAIN
 
-  endtask
+      $display("get successful");  // Print confirmation message.
+
+   endtask
 
 endclass:B
 
-
 module tb();
-    
-  A a1;
-  B b1;
-  mailbox main = new(4);  
-        
-  initial begin:BEGIN_MAIN
 
-    a1 = new(main);
-    b1 = new(main);
-    repeat(2)
-    begin:BEGIN_1
- 
-      a1.tra_data();
-      $display("...............................................");
-      b1.rec_data();
-    end:BEGIN_1
+   A a1;  // Declare an object of class A (Transmitter).
+   B b1;  // Declare an object of class B (Receiver).
+   mailbox main = new(4);  // Create a bounded mailbox with a size of 4.
 
-  end:BEGIN_MAIN
+   initial begin:BEGIN_MAIN
+
+      a1 = new(main);  // Instantiate class A and pass the mailbox.
+      b1 = new(main);  // Instantiate class B and pass the same mailbox.
+
+      repeat(2) begin:BEGIN_1  // Repeat the transaction process twice.
+
+         a1.tra_data();  // Call the transmitter task to send data into the mailbox.
+         $display("...............................................");  // Print separator.
+         b1.rec_data();  // Call the receiver task to retrieve data from the mailbox.
+
+       end:BEGIN_1
+
+   end:BEGIN_MAIN
 
 endmodule:tb
+

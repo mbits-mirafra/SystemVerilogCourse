@@ -4,71 +4,61 @@
 //Used to create mailbox.
 //
 //--------------------------------------------------------------------------------------------
-
-//Transmitter
 class A;
-  
-  int a;
-  int i;
-  mailbox  m;
 
-  function new(mailbox m1);
+   int a;  // Integer variable to store data.
+   int i;  // Loop counter variable.
+   mailbox  m;  // Mailbox handle for inter-process communication.
 
-    this.m = m1;
+   function new(mailbox m1);
+      this.m = m1;  // Assign the passed mailbox handle to class member.
+   endfunction
 
-  endfunction
- 
-  function void check();
-   
-    if(m == null)begin:BEGIN_1
-        $display("Mailbox is not created");
+   function void check();
+
+      if(m == null)begin:BEGIN_1  // Check if the mailbox is null.
+         $display("Mailbox is not created");
       end:BEGIN_1
 
-  
-
       else
-        $display("Mailbox is created");
+         $display("Mailbox is created");  // Display message if mailbox exists.
 
-        $display("............................................");
+         $display("............................................");
 
-  endfunction
+   endfunction
 
-  task tra_data();
+   task tra_data();
 
-    for(i=0;i<5;i++)begin:BEGIN_2
-          m.put(a);
-          a++;
-          $display("Value of a =%0d",a);
+      for(i=0; i<5; i++) begin:BEGIN_2  // Loop to put values into the mailbox.
+         m.put(a);  // Put the value of 'a' into the mailbox.
+         a++;  // Increment 'a' after putting it into the mailbox.
+         $display("Value of a = %0d", a);  // Display the value of 'a'.
+      end:BEGIN_2
 
-        end:BEGIN_2
-      
-      $display("No of messages in mailbox=%0d",m.num());
-  endtask
+      $display("No of messages in mailbox = %0d", m.num());  // Display the number of messages in the mailbox.
+   endtask
 
 endclass:A
 
+module tb();
 
-module  tb();
+   A a1;  // Declare an object of class A.
+   mailbox main = new();  // Create a mailbox with default size (infinite).
 
-  A a1;
-  mailbox main = new();
-  initial begin:BEGIN_MAIN
+   initial begin:BEGIN_MAIN
 
+      a1 = new(main);  // Create an instance of class A and pass the mailbox.
 
-    a1= new(main);
+      $display("");
+      $display("");
+      a1.check();  // Call check() function to verify mailbox creation.
 
-    $display("");
-    $display("");
-    a1.check();
-    repeat(2)begin:BEGIN_1
+      repeat(2) begin:BEGIN_1  // Repeat the tra_data task twice.
+         $display("............................................");
+         a1.tra_data();  // Call the task to transfer data to the mailbox.
+      end:BEGIN_1
 
-      $display("............................................");
-      a1.tra_data();
+   end:BEGIN_MAIN
 
-    end:BEGIN_1
-
-  end:BEGIN_MAIN
-
-  endmodule:tb
-
+endmodule:tb
 
