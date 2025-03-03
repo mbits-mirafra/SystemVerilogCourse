@@ -1,6 +1,6 @@
 # vsim fork_join_any -l fork_join_any.log -c -do "run -all;quit;" 
-# Start time: 10:31:14 on Feb 26,2025
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 15:18:35 on Mar 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -25,5 +25,5 @@
 # [3] Thread_T4: Values of a =Kapu,b =Kapu,c =Malpe,d =
 # [3] Thread_T6: Values of a =Kapu,b =Kapu,c =Malpe,d =Kodi
 # quit
-# End time: 10:31:14 on Feb 26,2025, Elapsed time: 0:00:00
+# End time: 15:18:36 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
