@@ -2,8 +2,10 @@
 
 module repeat_for;
   initial begin
-    for (int i = 1;i<=4;i++)begin   // for loop initialization, repeat the statements inside it for  
-      $display ("Good morning");   // 4 times (i =1,2,3,4)
+    // for loop initialization and repeat statements inside loop for four times
+    for (int i = 1;i<=4;i++)begin
+      // inside for display contents
+      $display ("Good morning");   
       $display ("Keep Shining");
       $display ("------------");
     end 
