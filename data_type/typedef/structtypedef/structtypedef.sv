@@ -8,7 +8,7 @@ typedef struct {
   longint li;	
 }personal_details_s;   //structure_name
 
-//structure name variable  
+//structure name variable declaration 
 personal_details_s  details;
 
 initial begin
@@ -19,13 +19,13 @@ initial begin
   details.li = 22;
 
 
-  //Displaying the values of members.  
+  //Displaying the values of structure members
   $display("\n typedef structure example");          
   $display("\n details.name = %p" ,details.name); 
   $display("\n details.id = %p" ,details.id);
   $display("\n details.li = %p" ,details.li);
 
-
+  // displaying the size of the structure 
   $display("\n Bitstream size of personal_details_s: %0d", $bits(details));
  end 
 endmodule:structtype
