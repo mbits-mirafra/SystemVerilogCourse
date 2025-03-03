@@ -1,6 +1,6 @@
-# vsim top -l modport.log -c -do "run -all; exit;" 
-# Start time: 10:08:10 on Sep 27,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim logic_code -l logic_code_output.log -c -do "run -all; exit;" 
+# Start time: 21:00:35 on Mar 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -16,14 +16,20 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading sv_std.std
-# Loading work.top(fast)
+# Loading work.logic_code(fast)
 # run -all
 # 
-# input_p=0	 input_q=1	 output_r=0
-# input_p=1	 input_q=1	 output_r=1
-# input_p=1	 input_q=1	 output_r=1
-# input_p=1	 input_q=0	 output_r=0
-# input_p=1	 input_q=1	 output_r=1
+#  	 The value of a is 4
+# 
+#  	 The value of b is 111
+# 
+#  	 The value of c is 0x
+# 
+#  	 The output of logic OR a||c is 1
+# 
+#  	 The output of logic AND b && c is 0x
+# 
+#  	 The output of logic NOT !b is 0x
 #  exit
-# End time: 10:08:10 on Sep 27,2022, Elapsed time: 0:00:00
+# End time: 21:00:36 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

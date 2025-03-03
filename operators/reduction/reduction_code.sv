@@ -1,29 +1,47 @@
-module reduction_code;
-logic [0:3]a,y;
+module test;
+  // Declare a 4-bit logic variable 'a' and an output variable 'y'
+  logic [3:0] a;
+  logic y;
 
-initial begin
-a=4'b1010;
+  initial begin
+    a = 4'b1011;
+    $display("\n \t The value of a is %0b", a);
 
-  $display("\n \t the value a is %0b",a);
-  y=!a;
-  $display("\n \t the reduction output of NOT is %d ",y);
+    // Reduction NOT (~)
+    y = !a;  
+    $display("\n \t The reduction output of NOT is %0d", y);
+    // '!' (logical NOT) checks if 'a' is zero; returns 1 if a=0, else returns 0
 
-  y=|a;
-  $display("\n \t the reduction output of OR is %0b ",y);
+    // Reduction OR (|)
+    y = |a;  
+    $display("\n \t The reduction output of OR is %0b", y);
+    // '|' (reduction OR) performs a bitwise OR across all bits of 'a'
 
-  y=&a;
-  $display("\n \t the reduction output of AND is %0d ",y);
+    // Reduction AND (&)
+    y = &a;  
+    $display("\n \t The reduction output of AND is %0d", y);
+    // '&' (reduction AND) performs a bitwise AND across all bits of 'a'
 
-  y=~|a;
-  $display("\n \t the reduction output of NOR is %0b ",y);
+    // Reduction NOR (~|)
+    y = ~|a;  
+    $display("\n \t The reduction output of NOR is %0b", y);
+    // '~|' (reduction NOR) is the negation of reduction OR
 
-  y=~&a;
-  $display("\n \t the reduction output of NAND is %0b ",y);
+    // Reduction NAND (~&)
+    y = ~&a;  
+    $display("\n \t The reduction output of NAND is %0b", y);
+    // '~&' (reduction NAND) is the negation of reduction AND
 
-  y=^a;
-  $display("\n \t the reduction output of XOR is %0b ",y);
+    // Reduction XOR (^)
+    y = ^a;  
+    $display("\n \t The reduction output of XOR is %0b", y);
+    // '^' (reduction XOR) performs a bitwise XOR across all bits of 'a'
 
-  y=~^a;
-  $display("\n \t the reduction output of XNOR is %0b ",y);
-end
-endmodule 
+    // Reduction XNOR (~^)
+    y = ~^a;  
+    $display("\n \t The reduction output of XNOR is %0b", y);
+    // '~^' (reduction XNOR) is the negation of reduction XOR
+
+  end
+endmodule
+

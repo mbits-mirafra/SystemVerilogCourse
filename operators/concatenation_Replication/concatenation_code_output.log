@@ -1,6 +1,6 @@
 # vsim concatenation_code -l concatenation_code_output.log -c -do "run -all; exit;" 
-# Start time: 10:41:28 on Sep 07,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 21:56:33 on Mar 03,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -29,5 +29,5 @@
 # 
 #  	 the output a,b,3c of Replicates operators output is 11110110111011101
 #  exit
-# End time: 10:41:29 on Sep 07,2022, Elapsed time: 0:00:01
+# End time: 21:56:34 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

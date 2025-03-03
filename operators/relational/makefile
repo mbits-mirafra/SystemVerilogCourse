@@ -1,10 +1,9 @@
 all:
+	make clear;
 	make compile;
 	make simulate;
-	make clear;
 
 compile:
-	vlib work;
 	vlog -sv relational_code.sv
 
 simulate:

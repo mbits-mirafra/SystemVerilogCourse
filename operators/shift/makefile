@@ -4,7 +4,6 @@ all:
 	make simulate
 
 compile:
-	vlib work;
 	vlog -sv shift_code.sv
 
 simulate:

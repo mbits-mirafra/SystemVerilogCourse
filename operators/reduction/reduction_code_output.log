@@ -1,5 +1,5 @@
 # vsim reduction_code -l reduction_code_output.log -c -do "run -all; exit;" 
-# Start time: 23:13:30 on Sep 06,2022
+# Start time: 21:52:02 on Mar 03,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
@@ -35,5 +35,5 @@
 # 
 #  	 the reduction output of XNOR is 1 
 #  exit
-# End time: 23:13:31 on Sep 06,2022, Elapsed time: 0:00:01
+# End time: 21:52:02 on Mar 03,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

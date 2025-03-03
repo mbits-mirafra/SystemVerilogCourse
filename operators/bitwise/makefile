@@ -4,7 +4,6 @@ all:
 	make simulate
 
 compile:
-	vlib work;
 	vlog -sv bitwise_code.sv
 
 simulate:

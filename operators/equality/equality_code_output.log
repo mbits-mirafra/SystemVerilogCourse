@@ -1,6 +1,6 @@
 # vsim equality_code -l equality_code_output.log -c -do "run -all; exit;" 
-# Start time: 04:19:03 on Sep 07,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 20:56:35 on Mar 03,2025
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -33,5 +33,5 @@
 # 
 #  	 The output case inequality operator of a!==c  is 0
 #  exit
-# End time: 04:19:05 on Sep 07,2022, Elapsed time: 0:00:02
+# End time: 20:56:36 on Mar 03,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

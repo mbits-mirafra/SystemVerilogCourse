@@ -4,7 +4,6 @@ all:
 	make simulate
 
 compile:
-	vlib work;
 	vlog -sv logic_code.sv
 
 simulate:

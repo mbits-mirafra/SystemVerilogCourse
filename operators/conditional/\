@@ -6,7 +6,6 @@ string y;
 string a,b;
 initial begin
 
- // Assign string values
   a = "true";
   b = "false";
   // Assign binary values to integers (interpreted as decimal)
@@ -17,12 +16,8 @@ initial begin
 
   $display("\n \t the value of d is %0b",d);
 
-  // Conditional (ternary) operator: if c > d, assign 'a' else assign 'b':
-
   y=c>d?a:b;
-  // Display the conditional output
   $display("\n \t the conditional output is %0b",y);
-  // Print the reason for the condition
   $display("\n \t Because the c value is lessthan d values");
 end
 endmodule 

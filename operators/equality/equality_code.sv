@@ -5,8 +5,8 @@
   logic [0:3] a, b,c,y;
 
   initial begin 
-    a=4'bx0x1;
-    b=4'b1100;
+    a=4'bx0x1; // Assign a 4-bit value to 'a' with unknown ('x') bits
+    b=4'b1100; // Assign a 4-bit binary value 1100 (decimal 12) to 'b'
     c=4'bx0x1;
     $display("\n \t the value of the a is %0b",a);
     
@@ -14,18 +14,22 @@
     
 
     $display("\n \t the value of the c is %0b",c);
+    //Logical equality (==) compares 'a' and 'b', treating 'x' as unknown 
     y =(a==b);
     
     $display("\n \t The output logical equality operator of a==b is %0b",y);
-
+   
+    // Logical inequality (!=) - compares 'a' and 'b', treating 'x' as unknown
     y =(a!=b);
     
     $display("\n \t The output logical inequality operator of a!=b is %0b",y);
 
+    // Case equality (===) - strict comparison, including 'x' and 'z' value
     y =(a===c);
     
     $display("\n \t The output case equality operator of a===c is %0b",y);
 
+    // Case inequality (!==) - strict inequality check, considering 'x' and 'z'
     y =(a!==c);
     $display("\n \t The output case inequality operator of a!==c  is %0b",y);
 
