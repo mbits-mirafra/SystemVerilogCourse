@@ -1,6 +1,6 @@
 # vsim CLI_testargs -l CLI_testargs.log -c -do "run -all;quit;" "+START" 
-# Start time: 02:03:32 on Oct 13,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 11:12:59 on Mar 04,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -21,5 +21,5 @@
 # $test$plusargs returns 1
 # Start process
 # quit
-# End time: 02:03:32 on Oct 13,2022, Elapsed time: 0:00:00
+# End time: 11:13:00 on Mar 04,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

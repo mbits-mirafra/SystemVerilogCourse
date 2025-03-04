@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv file_eof.sv && vsim file_eof -l file_eof.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv file_eof.sv
 
 simulate:
-	vsim file_eof -l file_eof.log -c -do "run -all;quit;"
+	vsim file_eof -l file_eof.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

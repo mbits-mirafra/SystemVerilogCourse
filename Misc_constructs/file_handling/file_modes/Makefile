@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv file_modes.sv && vsim file_modes -l file_modes.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv file_modes.sv
 
 simulate:
-	vsim file_modes -l file_modes.log -c -do "run -all;quit;"
+	vsim file_modes -l file_modes.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

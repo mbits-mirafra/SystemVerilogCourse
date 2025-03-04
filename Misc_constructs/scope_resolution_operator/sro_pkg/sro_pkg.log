@@ -1,6 +1,6 @@
-# vsim pkg_exm -l sro_pkg.log -c -do "run -all;quit;" 
-# Start time: 00:14:36 on Oct 10,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim pkg_exm -l sro_pkg.log -c -do "run -all;exit;" 
+# Start time: 10:37:52 on Mar 04,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -21,6 +21,6 @@
 # run -all
 # Assining the value of a (properties of package) into b without importing package
 # b=5
-# quit
-# End time: 00:14:37 on Oct 10,2022, Elapsed time: 0:00:01
+# exit
+# End time: 10:37:53 on Mar 04,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

@@ -1,19 +1,13 @@
 all:
-			rm -rf sro_static.log
-			rm -rf work
-			clear
-			vlib work;
-			vlog -sv sro_static.sv && vsim static_exm -l sro_static.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-			vlib work;
-			vlog -sv sro_static.sv
+	vlog -sv sro_static.sv
 
 simulate:
-			vsim static_exm -l sro_static.log -c -do "run -all;quit;"
+	vsim static_exm -l sro_static.log -c -do "run -all;exit;"
 
 clear:
-			rm -rf sro_static.log
-			rm -rf work
-			clear
-											
+	clear

@@ -1,19 +1,13 @@
 all:
-			rm -rf sro_pkg.log
-			rm -rf work
-			clear
-			vlib work;
-			vlog -sv sro_pkg.sv && vsim pkg_exm -l sro_pkg.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-			vlib work;
-			vlog -sv sro_pkg.sv
+	vlog -sv sro_pkg.sv
 
 simulate:
-			vsim pkg_exm -l sro_pkg.log -c -do "run -all;quit;"
+	vsim pkg_exm -l sro_pkg.log -c -do "run -all;exit;"
 
 clear:
-			rm -rf sro_pkg.log
-			rm -rf work
-			clear
-											
+	clear

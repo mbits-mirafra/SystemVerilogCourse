@@ -1,6 +1,6 @@
-# vsim file_modes -l file_modes.log -c -do "run -all;quit;" 
-# Start time: 02:57:19 on Oct 13,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim file_modes -l file_modes.log -c -do "run -all;exit;" 
+# Start time: 23:12:20 on Mar 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -28,6 +28,6 @@
 # line read :filemodes
 # 
 # 
-# quit
-# End time: 02:57:19 on Oct 13,2022, Elapsed time: 0:00:00
+# exit
+# End time: 23:12:20 on Mar 03,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

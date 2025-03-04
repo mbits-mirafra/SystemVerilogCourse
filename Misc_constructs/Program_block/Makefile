@@ -1,18 +1,13 @@
 all:
-	clear
-	rm -rf work program.log
-	vlib work
-	vlog program_block.sv
-	vsim DUT TB_using_Module TB_using_Program -l program.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	rm -rf work program.log
-	vlib work
-	vlog program_block.sv
+	vlog -sv program_block.sv
 
 simulate:
-	vsim DUT TB_using_Module TB_using_Program -l program.log -c -do "run -all;quit;"
+	vsim DUT TB_using_Module TB_using_Program -l program_block.log -c -do "run -all;exit;"
 
 clear:
 	clear
-	rm -rf work program.log

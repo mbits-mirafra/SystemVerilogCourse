@@ -1,17 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv file_readmem.sv && vsim readmem -l file_readmem.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv file_readmem.sv
 
 simulate:
-	vsim readmem -l file_readmem.log -c -do "run -all;quit;"
+	vsim readmem -l file_readmem.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear
-

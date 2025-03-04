@@ -1,12 +1,13 @@
-compile:
-	clear
-	rm -rf work package_mod1.log
-	vlog -sv package_ex.sv package_mod1.sv
- 
-simulate:
-	vsim mod1 -l package_mod1.log -c -do "run -all;exit;" 
-
 all:
+	make clear;
+	make compile;
+	make simulate;
+
+compile:
+	vlog -sv package_module.sv package_ex.sv
+
+simulate:
+	vsim module_ex -l package.log -c -do "run -all;exit;"
+
+clear:
 	clear
-	rm -rf work package_mod1.log
-	vlog -sv package_ex.sv package_mod1.sv && vsim mod1 -l package_mod1.log -c -do "run -all;exit;" 

@@ -1,16 +1,13 @@
 all:
-	rm -rf work
-	clear
-	vlib work;
-	vlog -sv file_scanf.sv && vsim scanf -l file_scanf.log -c -do "run -all;quit;"
+	make clear;
+	make compile;
+	make simulate;
 
 compile:
-	vlib work;
 	vlog -sv file_scanf.sv
 
 simulate:
-	vsim scanf -l file_scanf.log -c -do "run -all;quit;"
+	vsim scanf -l file_scanf.log -c -do "run -all;exit;"
 
 clear:
-	rm -rf work
 	clear

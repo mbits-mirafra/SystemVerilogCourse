@@ -1,3 +1,5 @@
 We are trying to open this file using command line arhgument and it worked!
 Hurray!
 Hurray!
+Hurray!
+Hurray!

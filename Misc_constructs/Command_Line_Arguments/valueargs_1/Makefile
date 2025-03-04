@@ -1,13 +1,9 @@
 all:
-	clear
-	rm -rf work CLI_valueargs.log
-	vlib work
-	vlog CLI_valueargs.sv
-	vsim CLI_valargs -l CLI_valueargs.log -c -do "run -all;quit;" +msg=HEY! +value=2
+	make clear
+	make compile
+	make simulate
 
 compile:
-	rm -rf work CLI_valueargs.log
-	vlib work
 	vlog CLI_valueargs.sv
 
 simulate:
@@ -15,4 +11,3 @@ simulate:
 
 clear:
 	clear
-	rm -rf work CLI_valueargs.log

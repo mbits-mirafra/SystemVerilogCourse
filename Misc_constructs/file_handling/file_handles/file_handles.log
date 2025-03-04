@@ -1,6 +1,6 @@
-# vsim file_handles -l file_handles.log -c -do "run -all;quit;" 
-# Start time: 02:57:48 on Oct 13,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim file_handles -l file_handles.log -c -do "run -all;exit;" 
+# Start time: 22:08:15 on Mar 03,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -18,6 +18,6 @@
 # Loading sv_std.std
 # Loading work.file_handles(fast)
 # run -all
-# quit
-# End time: 02:57:49 on Oct 13,2022, Elapsed time: 0:00:01
+# exit
+# End time: 22:08:15 on Mar 03,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

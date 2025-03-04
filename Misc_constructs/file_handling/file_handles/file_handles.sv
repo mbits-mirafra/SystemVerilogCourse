@@ -1,16 +1,18 @@
 module file_handles;
-int f;
+  //declare variable using integer
+  int f;
 
- initial begin:BEGIN_I
- 
-  f=$fopen("file_handle","w");
+  initial begin: BEGIN_I
+    //open file in write mode
+    f=$fopen("file_handle","w");
   
-   $fdisplay(f,"fileoperations");
-   $fdisplay(f,"sv course");
+    //displays the contents into the file.
+    $fdisplay(f,"fileoperations");
+    $fdisplay(f,"sv course");
   
- $fclose(f);
+    //close file in write mode
+    $fclose(f);
 
-end:BEGIN_I
+  end: BEGIN_I
 
 endmodule:file_handles
-

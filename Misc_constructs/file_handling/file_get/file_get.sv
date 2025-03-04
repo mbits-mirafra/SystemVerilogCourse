@@ -4,34 +4,40 @@
 //$ungetc:Inserts the specified character.
 //-------------------------------------------------------
 module f_get;
- int c;
- int f;
- string line;
+  //declare variables
+  int c;
+  int f;
+  string line;
   
- int dummy;
+  int dummy;
 
-   initial begin:BEGIN_I
-//write operation
-     f=$fopen("file","w");
+  initial begin: BEGIN_I
+    //open file in write mode
+    f=$fopen("file","w");
      
-     $fdisplay(f,"sv course");
-     $fdisplay(f,"filehandling");
+    //displays the contents into the file.
+    $fdisplay(f,"sv course");
+    $fdisplay(f,"filehandling");
      
-     $fclose(f);
-//read operation
-     f=$fopen("file","r");
-     $display("");
+    //close file
+    $fclose(f);
+    //open file in read mode
+    f=$fopen("file","r");
+    $display("");
+    
+    //$fgetc will read single character
+    c = $fgetc(f);
+    $display("reading one character : %0s",c);
 
-     c = $fgetc(f);
-     $display("reading one character : %0s",c);
+    //$ungetc insert the character in the file
+    dummy = $ungetc(c,f);
+    $display("character insert : %0s",c);
 
-     dummy = $ungetc(c,f);
-     $display("character insert : %0s",c);
-
-     dummy = $fgets(line,f);
-     $display("line read : %0s",line);
-     
-     $fclose(f);
-    end:BEGIN_I
+    //$fgets will read single line
+    dummy = $fgets(line,f);
+    $display("line read : %0s",line);
+    //close file 
+    $fclose(f);
+  end: BEGIN_I
 endmodule:f_get
 

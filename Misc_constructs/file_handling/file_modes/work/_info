@@ -7,27 +7,27 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/hwetools/work_area/frontend/bhavana_b7/SystemVerilogCourse/Misc_constructs/file_handling/file_modes
+Z0 d/hwetools/work_area/frontend/gopal_b7/git_test1/mBits/SystemVerilogCourse/Misc_constructs/file_handling/file_modes
 T_opt
-!s110 1665610039
-V08cDA2zhzG7JiB8[V=CcB1
+!s110 1741023740
+VCa<?H0oI;BJ]hH9J@0oXj2
 04 10 4 work file_modes fast 0
-=1-a4badb503de1-63473137-576f6-1b75
+=1-a4badb503ddf-67c5e9fc-28917-78e6
 o-quiet -auto_acc_if_foreign -work work
 Z1 tCvgOpt 0
 n@_opt
 OE;O;10.6c;65
 vfile_modes
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1665610038
+!s110 1741023739
 !i10b 1
-!s100 I`S3iNiN[zl34O3R`G=P=3
-IXkL[c1]ZeT1=[>_944>L<2
+!s100 RP0BWiO_f]3k>N9VefM7=3
+IcoJ3hA`GbO;z_JG=L7`_I1
 VDg1SIo80bB@j0V0VzS_@n1
 !s105 file_modes_sv_unit
 S1
 R0
-w1665610036
+w1741023684
 8file_modes.sv
 Ffile_modes.sv
 L0 6
@@ -35,7 +35,7 @@ OE;L;10.6c;65
 r1
 !s85 0
 31
-!s108 1665610038.000000
+!s108 1741023739.000000
 !s107 file_modes.sv|
 !s90 -sv|file_modes.sv|
 !i113 0

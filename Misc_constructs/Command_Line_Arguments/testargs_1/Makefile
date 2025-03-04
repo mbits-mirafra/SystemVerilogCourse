@@ -1,13 +1,9 @@
 all:
-	clear
-	rm -rf work CLI_testargs.log
-	vlib work
-	vlog CLI_testargs.sv
-	vsim CLI_testargs -l CLI_testargs.log -c -do "run -all;quit;" +START
+	make clear
+	make compile
+	make simulate
 
 compile:
-	rm -rf work CLI_testargs.log
-	vlib work
 	vlog CLI_testargs.sv
 
 simulate:
@@ -15,4 +11,3 @@ simulate:
 
 clear:
 	clear
-	rm -rf work CLI_testargs.log

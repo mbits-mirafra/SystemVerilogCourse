@@ -1,6 +1,6 @@
-# vsim file_eof -l file_eof.log -c -do "run -all;quit;" 
-# Start time: 21:59:34 on Oct 13,2022
-# ** Note: (vsim-3812) Design is being optimized...
+# vsim file_eof -l file_eof.log -c -do "run -all;exit;" 
+# Start time: 00:18:45 on Mar 04,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,6 +20,6 @@
 # run -all
 # line:teams
 # 
-# quit
-# End time: 21:59:35 on Oct 13,2022, Elapsed time: 0:00:01
+# exit
+# End time: 00:18:45 on Mar 04,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
